@@ -1,0 +1,203 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Poke
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/Home/Logo poke.svg"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#home"} Menu
+              %li.nav-item
+                %a.nav-link{:href => "#services"} Nosotros
+              %li.nav-item
+                %a.nav-link{:href => "#about"} Ubicaciones
+              %li.nav-item
+                %a.nav-link{:href => "#portfolio"} Poke puntos
+              %li.nav-item
+                %a.nav-link{:href => "#team"} Ambiental
+              %li.nav-item
+                %a.nav-link{:href => "#"} Eventos
+              %li.nav-item
+                .main-nav__btn
+                  .btn__buy
+                    %a.btn-btn_custom.btn--medium.btn--filled.btn--filled--buy{:href => ""} 
+                      %img{ :src => "assets/img/Home/R Rappi.svg"}/
+                      %span.line
+                      Pide en línea
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .mask
+            .main-banner__boxtext
+              .main-banner__text
+                .main-banner__title
+                  %p Pura Sabrosura
+                .btn-box
+                  %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+                    Menú
+          .main-banner__img
+            %img{ :src => "assets/img/Home/POKE_-267-2.png"}/
+        .main-banner__item
+          .mask
+            .main-banner__boxtext
+              .main-banner__text
+                .main-banner__title
+                  %p Pura Sabrosura
+                .btn-box
+                  %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+                    Menú
+          .main-banner__img
+            %img{ :src => "assets/img/Home/POKE_-267-2.png"}/
+    
+    .container
+      .main-general__boxsubtitle
+        .main-general__subtitle
+          %h3 eat better, feel better
+    .main-about{ :style=>"background-image: url('assets/img/Home/--75.png');"}
+      .container
+        .main-about__content
+          .main-about__item
+            .main-general__title
+              %h2 nuestro compromiso
+            .main-general__description
+              %p Alimentar el cambio para una generación sostenible. 
+              %p ¿Por qué? 
+              %p Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipo, nuestros clientes y el medio ambiente. 
+              %p Porque queremos disrumpir, reinventar y ser agentes de cambio.
+            .btn-box--about.float-left
+              %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+                Nosotros
+    .container
+      .main-general__boxsubtitle
+        .main-general__subtitle
+          %h3 eat better, feel better
+  
+    .main-about.main-about__height{ :style=>"background-image: url('assets/img/Home/POKE_-245.png');"}
+      .container
+        .main-why__content
+          .main-why__item
+          .main-why__item
+            .main-general__title.main-general__title--font
+              %h2 ¿Qué es poke?
+            .main-general__description.main-general__description--font
+              %p Poke significa “cortar” en hawaiano. Su significado le da vida a un plato típico de la gastronomía de Hawaii.
+              %p El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.
+              %p Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico y sabores asiáticos que provienen de Japón.
+    .main-follow
+      .container
+        .main-general__boxsubtitle
+          .main-general__subtitle
+            %h3 if you dig us, like us
+          .main-general__subtitle--medium
+            %h4 Follow us
+      .main-follow__content
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/1.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/2.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/3.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/4.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/5.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/6.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/7.png"}/
+        .main-follow__item
+          .main-follow__img
+            %img{ :src => "assets/img/Home/8.png"}/
+    %footer.main-footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__box
+              .main-footer__logo
+                %img{ :src => "assets/img/Home/poke bowls.svg"}/
+              .main-footer__boxsmall
+                .main-footer__boxitem
+                  %img{ :src => "assets/img/Home/Endeavor.svg"}/
+                .main-footer__boxitem
+                  .main-footer__text
+                    %p Part of Foodie Group S.A.S & Endeavor company
+              .main-footer__address
+                %p Cl. 69a #No.6-37 - Bogotá, Colombia
+          .main-footer__item
+            .main-footer__box
+              .main-footer__title
+                %p mas informacion
+              %ul
+                %li 
+                  %a{ :href=>"#"}
+                    ESCRÍBENOS
+                %li 
+                  %a{ :href=>"#"}
+                    TRABAJA CON NOSOTROS
+                %li 
+                  %a{ :href=>"#"}
+                    CUÉNTANOS TU EXPERIENCIA
+                %li 
+                  %a{ :href=>"#"}
+                    TERMINOS Y CONDICIONES
+                %li 
+                  %a{ :href=>"#"}
+                    POLITICA DE PRIVACIDAD
+              
+          .main-footer__item
+            .main-footer__box
+              .main-footer__title
+                %p NEWSLETTER
+              .main-footer__subscribe
+                %form
+                  .form-group
+                    %input#formGroupExampleInput.form-control{:placeholder => "Correo electronico", :type => "email"}/
+                  .main-footer__btn
+                    %button.btn_custom.btn--medium.btn--filled-gray
+                      Enviar
+          .main-footer__item
+            .main-footer__box
+              .main-footer__redes
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/f_logo_RGB-White_1024_1024.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/glyph-logo_IG-01.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/linked in logo circulo.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/Twitter_Logo_WhiteOnImage.svg"}/
+              .main-footer__email
+                %p servicios@pokecolombia.co
+      .main-footer__copy
+        %p Poke colombia, 2019 - Todos los derechos Reservados
+                  
+                  
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
+

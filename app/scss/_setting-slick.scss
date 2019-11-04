@@ -1,0 +1,226 @@
+.main-banner__content {
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    left: -1%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $white;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    right: -1%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $white;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $white;
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 9%;
+    width: 0%;
+
+    clip-path: polygon(50% 0%, 100% 31%, 100% 69%, 50% 100%, 0% 69%, 0% 31%);
+    width: 16px;
+    height: 17px;
+    background: #fff;
+    position: absolute;
+
+    @include respond-to(md) {
+      left: 45%;
+    }
+
+    @include respond-to(sm) {
+      left: 45%;
+    }
+
+    @include respond-to(xs) {
+      left: 35%;
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          color: $dots-color-active;
+          opacity: 0.75;
+          width: 35px;
+          margin: 0;
+
+          
+        }
+      }
+    }
+
+    li {
+      margin: 0 10px;
+
+      button {
+
+        &:before {
+          color: $dots-color;
+          content: '';
+          height: $dots-size;
+          width: 35px;
+          display: inline-block;
+          background: $white;
+          border-radius: 0px;
+          cursor: pointer;
+          transition: all 300ms ease;
+        }
+
+        &:hover:before,
+        &:focus:before {
+          color: $dots-color-active;
+        }
+      }
+    }
+  }
+}
+
+
+
+.main-election__items {
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: -20%;
+    right: 3%;
+    background-color: transparent;
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $orange;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $orange;
+    }
+  }
+
+  .slick-next {
+    right: -1%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: -20%;
+    background-color: transparent;
+    // border: 1px solid rgba(255, 255, 255, .5);
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $orange;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $orange;
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: -30%;
+    right: 55%;
+    width: 0%;
+
+    @include respond-to(md) {
+      left: 40%;
+    }
+
+    @include respond-to(sm) {
+      left: 35%;
+    }
+
+    @include respond-to(xs) {
+      left: 35%;
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          color: $dots-color-active;
+          opacity: 0.75;
+          width: 35px;
+          margin: 0;
+        }
+      }
+    }
+
+    li {
+      margin: 0 10px;
+
+      button {
+
+        &:before {
+          color: $dots-color;
+          content: '';
+          height: $dots-size;
+          width: $dots-size;
+          display: inline-block;
+          background: $orange;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 300ms ease;
+        }
+
+        &:hover:before,
+        &:focus:before {
+          color: $dots-color-active;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Poke
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/Home/Logo poke.svg"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#home"} Menu
+              %li.nav-item
+                %a.nav-link{:href => "#services"} Nosotros
+              %li.nav-item
+                %a.nav-link{:href => "#about"} Ubicaciones
+              %li.nav-item
+                %a.nav-link{:href => "#portfolio"} Poke puntos
+              %li.nav-item
+                %a.nav-link{:href => "#team"} Ambiental
+              %li.nav-item
+                %a.nav-link{:href => "#"} Eventos
+              %li.nav-item
+                .main-nav__btn
+                  .btn__buy
+                    %a.btn-btn_custom.btn--medium.btn--filled.btn--filled--buy{:href => ""} 
+                      %img{ :src => "assets/img/Home/R Rappi.svg"}/
+                      %span.line
+                      Pide en línea
+    .about-banner{style:"background-image: url('assets/img/About/--46.png');"}
+      .overlay
+      .about-banner__title
+        %h3 Noble food.
+        %h3 Noble people.
+    .container
+      .main-general__boxsubtitle
+        .main-general__subtitle
+          %h3 keep it fresh
+
+    .main-ourorigin
+      .main-ourorigin__content
+        .main-ourorigin__item
+          .main-ourorigin__img
+            %img{ :src => "assets/img/About/_DSC0704.png"}/
+        .main-ourorigin__item.main-ourorigin__item--top 
+          .container
+            .main-ourorigin__box
+              .main-general__title.main-general__title--color
+                %h2 nuestro origen 
+              .main-ourorigin__descrption
+                %p Poke nace como el proyecto de una pareja emprendedora, amantes de la gastronomía, y apasionados por generar experiencias memorables.
+                %p En Agosto de 2016 abren las puertas de su primer restaurante. Con esfuerzo y perseverancia pronto se posicionó como la primera cadena de restaurantes "healthy, fast-casual" en Colombia.
+                %p Con un anhelo de ser la generación del cambio, Poke busca promover una cultura de alimentación consciente, siendo sostenibles con el medio ambiente y generando impacto social.
+    .main-content__img
+      %img{ :src => "assets/img/About/--36.png"}/
+    .main-ourorigin
+      .main-ourorigin__content
+        .main-ourorigin__item
+          .main-ourorigin__img
+            %img{ :src => "assets/img/About/POKE_-30.png"}/
+        .main-ourorigin__item.main-ourorigin__item--top 
+          .container
+            .main-ourorigin__box
+              .main-general__title.main-general__title--color
+                %h2 nuestra PROMESA
+              .main-ourorigin__descrption
+                %p Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más a alta calidad.
+                %p Las recetas y preparaciones se realizan todos los días en nuestras cocinas. Los cortes y procesos se hacen de manera artesanal por nuestro equipo. Ningún producto contiene aditivos, preservantes, o colorantes.
+                %p En Poke trabajamos de la mano de nuestros aliados y proveedores locales, en busca de ofrecer los mejores ingredientes para cada preparación.
+    .container
+      .main-general__boxsubtitle
+        .main-general__subtitle
+          %h3 foot evolution
+    .main-ourorigin
+      .main-ourorigin__content
+        .main-ourorigin__item.main-ourorigin__item--top 
+          .container
+            .main-ourorigin__box
+              .main-general__title.main-general__title--color.title--left
+                %h2 nuestra PROMESA
+              .main-ourorigin__descrption.main-ourorigin__descrption--left
+                %p Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más a alta calidad.
+                %p Las recetas y preparaciones se realizan todos los días en nuestras cocinas. Los cortes y procesos se hacen de manera artesanal por nuestro equipo. Ningún producto contiene aditivos, preservantes, o colorantes.
+                %p En Poke trabajamos de la mano de nuestros aliados y proveedores locales, en busca de ofrecer los mejores ingredientes para cada preparación.
+        .main-ourorigin__item
+          .main-ourorigin__img
+            %img{ :src => "assets/img/About/POKE_-30.png"}/
+    .container
+      .main-general__boxsubtitle
+        .main-general__subtitle
+          %h3 keep it fresh!
+    .main-about{ :style=>"background-image: url('assets/img/About/--7.png');"}
+      .container
+        .main-about__content
+          .main-about__item
+            .main-general__title
+              %h2 nuestro talento
+            .main-general__description
+              %p Nuestro talento es jovial,
+              %p Nuestro talento es diverso,
+              %p Nuestro talento es determinado,
+              %p Nuestro talento es responsable,
+              %p Nuestro talento es empoderado,
+              %p Nuestro talento es apasionado.
+              %strong Nuestro talento es nuestro recurso más valioso.
+    
+  
+    
+    %footer.main-footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__box
+              .main-footer__logo
+                %img{ :src => "assets/img/Home/Logo poke.svg"}/
+              .main-footer__boxsmall
+                .main-footer__boxitem
+                  %img{ :src => "assets/img/Home/Endeavor.svg"}/
+                .main-footer__boxitem
+                  .main-footer__text
+                    %p Part of Foodie Group S.A.S & Endeavor company
+              .main-footer__address
+                %p Cl. 69a #No.6-37 - Bogotá, Colombia
+          .main-footer__item
+            .main-footer__box
+              .main-footer__title
+                %p mas informacion
+              %ul
+                %li 
+                  %a{ :href=>"#"}
+                    ESCRÍBENOS
+                %li 
+                  %a{ :href=>"#"}
+                    TRABAJA CON NOSOTROS
+                %li 
+                  %a{ :href=>"#"}
+                    CUÉNTANOS TU EXPERIENCIA
+                %li 
+                  %a{ :href=>"#"}
+                    TERMINOS Y CONDICIONES
+                %li 
+                  %a{ :href=>"#"}
+                    POLITICA DE PRIVACIDAD
+              
+          .main-footer__item
+            .main-footer__box
+              .main-footer__title
+                %p NEWSLETTER
+              .main-footer__subscribe
+                %form
+                  .form-group
+                    %input#formGroupExampleInput.form-control{:placeholder => "Correo electronico", :type => "email"}/
+                  .main-footer__btn
+                    %button.btn_custom.btn--medium.btn--filled-gray
+                      Enviar
+          .main-footer__item
+            .main-footer__box
+              .main-footer__redes
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/f_logo_RGB-White_1024_1024.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/glyph-logo_IG-01.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/linked in logo circulo.svg"}/
+                %a{ :href=>""}
+                  %img{ :src => "assets/img/Home/Twitter_Logo_WhiteOnImage.svg"}/
+              .main-footer__email
+                %p servicios@pokecolombia.co
+      .main-footer__copy
+        %p Poke colombia, 2019 - Todos los derechos Reservados
+                  
+                  
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
+
