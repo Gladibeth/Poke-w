@@ -3,8 +3,8 @@ $('.main-banner__content').slick({
   autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: false,
-  arrows: false,
+  dots: true,
+  arrows: true,
   responsive: [{
       breakpoint: 1200,
       settings: {

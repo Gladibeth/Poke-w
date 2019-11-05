@@ -6,6 +6,42 @@ $(function () {
   })
 })
 
+$('.date').datepicker({
+  multidate: true,
+  format: 'dd-mm-yyyy'
+});
+
+$('input[type="file"]').each(function () {
+  // get label text
+  var label = $(this).parents('.form-group').find('label').text();
+  label = (label) ? label : 'Upload File';
+
+  // wrap the file input
+  $(this).wrap('<div class="input-file"></div>');
+  // display label
+  $(this).before('<span class="btn">' + label + '</span>');
+  // we will display selected file here
+  $(this).before('<span class="file-selected"></span>');
+
+  // file input change listener 
+  $(this).change(function (e) {
+    // Get this file input value
+    var val = $(this).val();
+
+    // Let's only show filename.
+    // By default file input value is a fullpath, something like 
+    // C:\fakepath\Nuriootpa1.jpg depending on your browser.
+    var filename = val.replace(/^.*[\\\/]/, '');
+
+    // Display the filename
+    $(this).siblings('.file-selected').text(filename);
+  });
+});
+
+// Open the file browser when our custom button is clicked.
+$('.input-file .btn').click(function () {
+  $(this).siblings('input[type="file"]').trigger('click');
+});
 
 
 
@@ -78,87 +114,3 @@ $(document).ready(function () {
     s.parentNode.insertBefore(wf, s);
   })();
 });
-
-// $(document).ready(function () {
-//   // Add smooth scrolling to all links
-//   $("a").on('click', function (event) {
-
-//     // Make sure this.hash has a value before overriding default behavior
-//     if (this.hash !== "") {
-//       // Prevent default anchor click behavior
-//       event.preventDefault();
-
-//       // Store hash
-//       var hash = this.hash;
-
-//       // Using jQuery's animate() method to add smooth page scroll
-//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-//       $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//       }, 800, function () {
-
-//         // Add hash (#) to URL when done scrolling (default click behavior)
-//         window.location.hash = hash;
-//       });
-//     } // End if
-//   });
-// });
-
-var TxtType = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-  var that = this;
-  var delta = 200 - Math.random() * 100;
-
-  if (this.isDeleting) {
-    delta /= 2;
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 900;
-  }
-
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function () {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-type');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-};

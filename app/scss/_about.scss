@@ -15,44 +15,91 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .about-banner__title {
+  .about-banner__text {
     z-index: 99;
     padding-left: 180px;
+    width: 90%;
+    height: 50%;
 
-    @include respond-to(md) {
-      padding-left: 30px;
+    &.about-banner__text--acenter {
+      display: flex;
+      align-items: center;
+    }
+
+    &.about-banner__text--center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        text-shadow: 0px 4px 11px #000000AC;
+        letter-spacing: 6.86px;
+      }
     }
 
     @include respond-to(sm) {
-      padding-left: 10px;
+      padding-left: 0;
+      height: 60%;
     }
 
     @include respond-to(xs) {
-      padding-left: 10px;
+      padding-left: 0;
+      height: 40%;
     }
 
-
-    h3 {
-      padding: 0 25px;
-      color: $white;
-      @include font(65px, $superBold);
-      line-height: 1;
-      margin: 0;
-      font-family: $Raleway;
-      text-transform: uppercase;
-
+    .about-banner__title {
 
       @include respond-to(md) {
-        font-size: 55px;
+        padding-left: 30px;
+      }
+
+      @include respond-to(sm) {
+        padding-left: 10px;
       }
 
       @include respond-to(xs) {
-        font-size: 30px;
-        padding: 0;
+        padding-left: 10px;
       }
 
+
+      h3 {
+        padding: 0 25px;
+        color: $white;
+        @include font(65px, $superBold);
+        line-height: 1;
+        margin: 0;
+        font-family: $Raleway;
+        text-transform: uppercase;
+
+
+        @include respond-to(md) {
+          font-size: 55px;
+        }
+
+        @include respond-to(xs) {
+          font-size: 30px;
+          padding: 0;
+        }
+
+      }
+
+      span {
+        padding: 0 25px;
+        color: $white;
+        @include font(30px, $semibold);
+        line-height: 1;
+        margin: 0;
+        font-family: $Raleway;
+        text-transform: uppercase;
+
+        @include respond-to(xs) {
+          @include font(18px, $semibold);
+          padding: 0;
+        }
+      }
     }
   }
+
 }
 
 .main-ourorigin__content {

@@ -81,6 +81,12 @@ button {
       color: $white;
     }
   }
+
+  &.btn--filled--border {
+    background-color: transparent;
+    border: 1px solid $black;
+    border-radius: 5px;
+  }
 }
 
 .btn--filled-gray {
@@ -117,8 +123,28 @@ button {
     padding: 0;
     margin-top: 30px;
   }
+
+  &.btn-box--resgister {
+    width: 25%;
+
+    @include respond-to(sm) {
+      width: 43%;
+    }
+
+    @include respond-to(xs) {
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
 }
 
 .btn-box--about {
   width: 150px;
+}
+
+.btn-form__center {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
 }

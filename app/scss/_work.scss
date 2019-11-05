@@ -1,0 +1,202 @@
+.main-work {
+  padding: 130px 0 50px 0;
+}
+
+label {
+  color: $text;
+  @include font(20px, $bold);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-family: $Raleway;
+
+  &.label-cap {
+    color: $text;
+    @include font(18px, $semibold);
+    letter-spacing: 0;
+    font-family: $Raleway;
+    text-transform: none;
+  }
+
+  @include respond-to(sm) {
+    @include font(15px, $bold);
+  }
+
+  @include respond-to(xs) {
+    @include font(15px, $bold);
+  }
+}
+
+.label {
+  color: $text;
+  @include font(20px, $bold);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-family: $Raleway;
+
+  @include respond-to(sm) {
+    @include font(15px, $bold);
+  }
+
+  @include respond-to(xs) {
+    @include font(15px, $bold);
+  }
+
+
+}
+
+.format {
+  color: $text;
+  @include font(14px, $light);
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-family: $Raleway;
+}
+
+.custom-control-label {
+  @include font(18px, $regular);
+  color: $text;
+  text-transform: none;
+
+  @include respond-to(xs) {
+    @include font(15px, $regular);
+  }
+}
+
+.text-link {
+  @include font(18px, $regular);
+  color: $text;
+  text-transform: none;
+  transition: .3s ease-in-out;
+
+  @include respond-to(xs) {
+    @include font(15px, $regular);
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    transition: .3s ease-in-out;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="checkbox"] {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #96B5CE;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  font-family: $Raleway;
+
+  &:focus {
+    background: rgba(150, 181, 206, 0.48);
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+  }
+
+  &::placeholder {
+    color: #898989 !important;
+  }
+}
+
+#inputState {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #96B5CE;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  font-family: $Raleway;
+
+  &:focus {
+    background: rgba(150, 181, 206, 0.48);
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+  }
+
+  &::placeholder {
+    color: #898989 !important;
+  }
+}
+
+
+
+
+textarea {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #96B5CE;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  height: 100px;
+  resize: none;
+  font-family: $Raleway;
+
+
+  &:focus {
+    background: rgba(150, 181, 206, 0.48);
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+  }
+
+  &::placeholder {
+    color: #898989 !important;
+  }
+}
+
+// Input Styles
+.input-file {
+  input[type="file"] {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    font-family: $Raleway;
+    height: 50px;
+  }
+
+  .btn {
+    background-color: #f75d63;
+    border-color: #f75d63;
+    color: $white;
+  }
+
+  .file-selected {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+  }
+}
