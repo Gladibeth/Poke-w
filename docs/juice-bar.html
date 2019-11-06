@@ -94,7 +94,7 @@
       </div>
       <hr class="line-gray line-gray--entries">
       <div class="main-pokebowls__content">
-        <div class="main-entries__item">
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/limonada.png">
           </div>
@@ -103,8 +103,8 @@
               <h3>limonada</h3>
             </div>
           </div>
-        </div>
-        <div class="main-entries__item">
+        </a>
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/jugo mandarina.png">
           </div>
@@ -113,8 +113,8 @@
               <h3>mandarina</h3>
             </div>
           </div>
-        </div>
-        <div class="main-entries__item">
+        </a>
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/Carrott Blast.png">
           </div>
@@ -123,8 +123,8 @@
               <h3>carrot blast</h3>
             </div>
           </div>
-        </div>
-        <div class="main-entries__item">
+        </a>
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/fresh beet.png">
           </div>
@@ -133,8 +133,8 @@
               <h3>fresh beet</h3>
             </div>
           </div>
-        </div>
-        <div class="main-entries__item">
+        </a>
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/Green Fix.png">
           </div>
@@ -143,8 +143,8 @@
               <h3>Green Fix</h3>
             </div>
           </div>
-        </div>
-        <div class="main-entries__item">
+        </a>
+        <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
           <div class="main-entries__img">
             <img src="assets/img/Juice_bar/Lulada.png">
           </div>
@@ -153,7 +153,7 @@
               <h3>Lulada</h3>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -260,6 +260,59 @@
       <p>Poke colombia, 2019 - Todos los derechos Reservados</p>
     </div>
   </footer>
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="juicebar-modals modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+          <div class="main-modal__content">
+            <div class="main-modal__item">
+              <div class="main-modal__img">
+                <img src="assets/img/Juice_bar/Green Fix.png">
+              </div>
+            </div>
+            <div class="main-modal__item">
+              <div class="main-modal__text">
+                <div class="main-modal__title">
+                  <p class="mt-2">green mix</p>
+                </div>
+                <hr class="line-gray line-gray--entries">
+                <div class="main-modal__description">
+                  <strong>Ingredientes:</strong>
+                  <p>Pepino, Manzana Verde, y Hierbabuena</p>
+                  <strong>Beneficios:</strong>
+                  <p>Gracias a los ingredientes usados es ideal para combatir el estrés, el cansancio, además te aporta vitamina C.</p>
+                </div>
+                <div class="main-modal__boxdetails">
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Calorías</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Carbohidratos</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123g</span>
+                    <p>Grasas</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Superfoods</p>
+                  </div>
+                </div>
+                <div class="main-modal__price">
+                  <p>COP 6.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>

@@ -96,7 +96,7 @@
       <div class="tab-content">
         <div aria-labelledby="pills-home-tab" class="tab-pane fade show active" id="pills-home" role="tabpanel">
           <div class="main-entries__content">
-            <div class="main-entries__item">
+            <a class="main-entries__item" data-target=".entries-modals" data-toggle="modal" href="">
               <div class="main-entries__img">
                 <img src="assets/img/Menu_entradas/ceviche.png">
               </div>
@@ -105,8 +105,8 @@
                   <h3>ceviche</h3>
                 </div>
               </div>
-            </div>
-            <div class="main-entries__item">
+            </a>
+            <a class="main-entries__item" data-target=".entries-modals" data-toggle="modal" href="">
               <div class="main-entries__img">
                 <img src="assets/img/Menu_entradas/tartar.png">
               </div>
@@ -115,7 +115,7 @@
                   <h3>tartar</h3>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -224,6 +224,69 @@
       <p>Poke colombia, 2019 - Todos los derechos Reservados</p>
     </div>
   </footer>
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="entries-modals modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+          <div class="main-modal__content">
+            <div class="main-modal__item">
+              <div class="main-modal__img">
+                <img src="assets/img/Menu_entradas/tartar.png">
+              </div>
+            </div>
+            <div class="main-modal__item">
+              <div class="main-modal__text">
+                <div class="main-modal__title d-flex">
+                  <p class="mt-2">tartar</p>
+                  <span class="line line-color"></span>
+                  <div class="main-modals__icons mt-4">
+                    <img src="assets/img/Menu_entradas/noun_Flame_816755.svg">
+                    <img src="assets/img/Menu_entradas/noun_sesame_1048330.svg">
+                  </div>
+                </div>
+                <hr class="line-gray line-gray--entries">
+                <div class="main-modal__description">
+                  <strong>Ingredientes:</strong>
+                  <p>Tartar de atún, aguacate, maduritos, cebolla crunch, ajonjolí y sriracha mayo.</p>
+                </div>
+                <div class="main-modal__boxdetails">
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Calorías</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Carbohidratos</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123g</span>
+                    <p>Grasas</p>
+                  </div>
+                  <div class="main-modal__details">
+                    <span class="badge badge-secondary">123</span>
+                    <p>Superfoods</p>
+                  </div>
+                </div>
+                <div class="main-modal__price">
+                  <p>COP: 19.000</p>
+                </div>
+                <div class="btn-modal">
+                  <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" href="">
+                      <img src="assets/img/Home/R Rappi.svg">
+                      <span class="line"></span>
+                      Pide en línea
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>

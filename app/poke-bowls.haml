@@ -62,37 +62,37 @@
               ARMA TU BOWL
         %hr.line-gray.line-gray--entries
         .main-pokebowls__content
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo amarillo.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 shaka
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo naranja 1.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 pulled pork
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo piel.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 alii
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo azul agua marina.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 luau
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo azul.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 mahalo
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
             .main-entries__img
               %img{ :src => "assets/img/Poke_bowls/fondo amarillo pollo.png"}/
             .main-entries__text
@@ -166,7 +166,49 @@
         %p Poke colombia, 2019 - Todos los derechos Reservados
                   
                   
-
+    .pokebolws-modals.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+            .main-modal__content
+              .main-modal__item
+                .main-modal__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo amarillo pollo.png"}/
+              .main-modal__item
+                .main-modal__text
+                  .main-modal__title
+                    %p.mt-2 palenq'
+                  %hr.line-gray.line-gray--entries
+                  .main-modal__description  
+                    %strong Ingredientes: 
+                    %p Arroz con coco, pescado frito, aguacate, platanitos, maíz tierno cebollín.
+                  .main-modal__boxdetails
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Calorías
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Carbohidratos
+                    .main-modal__details
+                      %span.badge.badge-secondary 123g
+                      %p Grasas
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Superfoods
+                  .main-modal__price
+                    .main-modal__smallprice
+                      %span M:
+                      %p COP 24.000
+                    .main-modal__smallprice
+                      %span G:
+                      %p COP 28.000
+                  .btn-modal
+                    %a.btn-btn_custom.btn--medium.btn--filled.btn--filled-gray{:href => ""} 
+                      %img{ :src => "assets/img/Home/R Rappi.svg"}/
+                      %span.line
+                      Pide en línea
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}

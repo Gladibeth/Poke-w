@@ -1,0 +1,123 @@
+.modal-dialog {
+  min-width: 1000px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #C5614F;
+  }
+}
+
+.main-modal__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-modal__img {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-modal__title {
+  p {
+    @include font(55px, $bold);
+    letter-spacing: 3.2px;
+    color: $text;
+    text-transform: uppercase;
+    font-family: $Raleway;
+  }
+}
+
+.main-modal__description {
+  padding: 40px 0 20px 0;
+
+  strong {
+    letter-spacing: 1.82px;
+    color: $text;
+    font-family: $Raleway;
+  }
+
+  p {
+    letter-spacing: 1.82px;
+    color: $text;
+    font-family: $Raleway;
+  }
+}
+
+.main-modal__details {
+  p {
+    @include font(15px, $light);
+    letter-spacing: 3.2px;
+    color: $text;
+    font-style: italic;
+    font-family: $Raleway;
+  }
+}
+
+
+
+.main-modal__details {
+  display: flex;
+  align-items: baseline;
+  font-family: $Raleway;
+
+  span {
+    margin-right: 10px;
+    background-color: #B4B4B4;
+  }
+}
+
+.main-modal__boxdetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.main-modal__item {
+  &:nth-child(2) {
+    padding: 20px;
+  }
+}
+
+.main-modal__price {
+  padding: 40px 0;
+
+  .main-modal__smallprice {
+    display: flex;
+
+    span {
+      @include font(25px, $bold);
+      letter-spacing: 3.2px;
+      color: $text;
+      text-transform: uppercase;
+      font-family: $Raleway;
+      margin-right: 5px;
+    }
+  }
+
+  p {
+    @include font(25px, $bold);
+    letter-spacing: 3.2px;
+    color: $text;
+    text-transform: uppercase;
+    font-family: $Raleway;
+    margin-bottom: 0px;
+  }
+}

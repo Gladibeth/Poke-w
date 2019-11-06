@@ -64,13 +64,13 @@
         .tab-content
           #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
             .main-entries__content
-              .main-entries__item
+              %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
                 .main-entries__img
                   %img{ :src => "assets/img/Menu_entradas/ceviche.png"}/
                 .main-entries__text
                   .main-entries__title
                     %h3 ceviche
-              .main-entries__item
+              %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
                 .main-entries__img
                   %img{ :src => "assets/img/Menu_entradas/tartar.png"}/
                 .main-entries__text
@@ -143,6 +143,53 @@
         %p Poke colombia, 2019 - Todos los derechos Reservados
                   
                   
+    -# %button.btn.btn-primary{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+    -#   Launch demo modal
+    -# / Modal
+    .entries-modals.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+            .main-modal__content
+              .main-modal__item
+                .main-modal__img
+                  %img{ :src => "assets/img/Menu_entradas/tartar.png"}/
+              .main-modal__item
+                .main-modal__text
+                  .main-modal__title.d-flex
+                    %p.mt-2 tartar
+                    %span.line.line-color
+                    .main-modals__icons.mt-4
+                      %img{ :src => "assets/img/Menu_entradas/noun_Flame_816755.svg"}/
+                      %img{ :src => "assets/img/Menu_entradas/noun_sesame_1048330.svg"}/
+                  %hr.line-gray.line-gray--entries
+                  .main-modal__description  
+                    %strong Ingredientes: 
+                    %p Tartar de atún, aguacate, maduritos, cebolla crunch, ajonjolí y sriracha mayo.
+                  .main-modal__boxdetails
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Calorías
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Carbohidratos
+                    .main-modal__details
+                      %span.badge.badge-secondary 123g
+                      %p Grasas
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Superfoods
+                  .main-modal__price
+                    %p COP: 19.000
+                  .btn-modal
+                    %a.btn-btn_custom.btn--medium.btn--filled.btn--filled-gray{:href => ""} 
+                      %img{ :src => "assets/img/Home/R Rappi.svg"}/
+                      %span.line
+                      Pide en línea
+
+                      
 
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}

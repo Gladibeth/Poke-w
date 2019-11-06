@@ -9,6 +9,7 @@
 @import "entries";
 @import "environmental";
 @import "work";
+@import "modals";
 
 
 body {
@@ -39,6 +40,11 @@ button:focus {
 .line {
   border-right: 1px solid $white;
   margin: 0 10px;
+
+  &.line-color {
+    border-right: 1px solid $line;
+    margin: 20px 10px;
+  }
 }
 
 .line-gray {

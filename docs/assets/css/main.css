@@ -536,6 +536,10 @@ button {
   margin-top: 40px;
 }
 
+.btn-modal {
+  width: 40%;
+}
+
 .about-banner {
   background-size: cover;
   height: 100vh;
@@ -1383,6 +1387,125 @@ textarea::placeholder {
   margin-top: 5px;
 }
 
+.modal-dialog {
+  min-width: 1000px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.close span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #C5614F;
+}
+
+.main-modal__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-modal__img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-modal__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-modal__title p {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #686868;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-modal__description {
+  padding: 40px 0 20px 0;
+}
+
+.main-modal__description strong {
+  letter-spacing: 1.82px;
+  color: #686868;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-modal__description p {
+  letter-spacing: 1.82px;
+  color: #686868;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-modal__details p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 3.2px;
+  color: #686868;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-modal__details {
+  display: flex;
+  align-items: baseline;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-modal__details span {
+  margin-right: 10px;
+  background-color: #B4B4B4;
+}
+
+.main-modal__boxdetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-modal__item:nth-child(2) {
+  padding: 20px;
+}
+
+.main-modal__price {
+  padding: 40px 0;
+}
+
+.main-modal__price .main-modal__smallprice {
+  display: flex;
+}
+
+.main-modal__price .main-modal__smallprice span {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #686868;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin-right: 5px;
+}
+
+.main-modal__price p {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #686868;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
@@ -1412,6 +1535,11 @@ button:focus {
 .line {
   border-right: 1px solid #fff;
   margin: 0 10px;
+}
+
+.line.line-color {
+  border-right: 1px solid rgba(112, 112, 112, 0.35);
+  margin: 20px 10px;
 }
 
 .line-gray {

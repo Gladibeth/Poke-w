@@ -62,37 +62,37 @@
               ARMA TU BOWL
         %hr.line-gray.line-gray--entries
         .main-pokebowls__content
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/limonada.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 limonada
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/jugo mandarina.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 mandarina
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/Carrott Blast.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 carrot blast
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/fresh beet.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 fresh beet
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/Green Fix.png"}/
             .main-entries__text
               .main-entries__title
                 %h3 Green Fix
-          .main-entries__item
+          %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
             .main-entries__img
               %img{ :src => "assets/img/Juice_bar/Lulada.png"}/
             .main-entries__text
@@ -164,7 +164,43 @@
       .main-footer__copy
         %p Poke colombia, 2019 - Todos los derechos Reservados
                   
-                  
+    .juicebar-modals.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+            .main-modal__content
+              .main-modal__item
+                .main-modal__img
+                  %img{ :src => "assets/img/Juice_bar/Green Fix.png"}/
+              .main-modal__item
+                .main-modal__text
+                  .main-modal__title
+                    %p.mt-2 green mix
+                  %hr.line-gray.line-gray--entries
+                  .main-modal__description
+                    %strong Ingredientes: 
+                    %p Pepino, Manzana Verde, y Hierbabuena
+
+                    
+                    %strong Beneficios: 
+                    %p Gracias a los ingredientes usados es ideal para combatir el estrés, el cansancio, además te aporta vitamina C.
+                  .main-modal__boxdetails
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Calorías
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Carbohidratos
+                    .main-modal__details
+                      %span.badge.badge-secondary 123g
+                      %p Grasas
+                    .main-modal__details
+                      %span.badge.badge-secondary 123
+                      %p Superfoods
+                  .main-modal__price
+                    %p COP 6.000
 
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
