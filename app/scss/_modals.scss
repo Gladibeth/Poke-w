@@ -1,5 +1,17 @@
 .modal-dialog {
-  min-width: 1000px;
+  max-width: 1000px;
+
+  @include respond-to(md) {
+    max-width: 900px;
+  }
+
+  @include respond-to(sm) {
+    max-width: 700px;
+  }
+
+  @include respond-to(xs) {
+    max-width: 100%;
+  }
 }
 
 .modal-body {
@@ -22,6 +34,10 @@
 .main-modal__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include respond-to(xs) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main-modal__img {
@@ -42,11 +58,27 @@
     color: $text;
     text-transform: uppercase;
     font-family: $Raleway;
+
+    @include respond-to(md) {
+      @include font(40px, $bold);
+    }
+
+    @include respond-to(sm) {
+      @include font(35px, $bold);
+    }
+
+    @include respond-to(xs) {
+      @include font(30px, $bold);
+    }
   }
 }
 
 .main-modal__description {
   padding: 40px 0 20px 0;
+
+  @include respond-to(sm) {
+    padding: 15px 0 10px 0;
+  }
 
   strong {
     letter-spacing: 1.82px;
@@ -58,6 +90,10 @@
     letter-spacing: 1.82px;
     color: $text;
     font-family: $Raleway;
+
+    @include respond-to(xs) {
+      @include font(15px, $light);
+    }
   }
 }
 
@@ -88,16 +124,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @include respond-to(xs) {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .main-modal__item {
   &:nth-child(2) {
     padding: 20px;
+
+    @include respond-to(xs) {
+      padding: 10px;
+    }
   }
 }
 
 .main-modal__price {
   padding: 40px 0;
+
+  @include respond-to(sm) {
+    padding: 20px 0;
+  }
+
+  @include respond-to(xs) {
+    padding: 20px 0;
+  }
 
   .main-modal__smallprice {
     display: flex;
@@ -109,6 +161,18 @@
       text-transform: uppercase;
       font-family: $Raleway;
       margin-right: 5px;
+
+      @include respond-to(md) {
+        @include font(18px, $bold);
+      }
+
+      @include respond-to(sm) {
+        @include font(18px, $bold);
+      }
+
+      @include respond-to(xs) {
+        @include font(18px, $bold);
+      }
     }
   }
 
@@ -119,5 +183,17 @@
     text-transform: uppercase;
     font-family: $Raleway;
     margin-bottom: 0px;
+
+    @include respond-to(md) {
+      @include font(18px, $bold);
+    }
+
+    @include respond-to(sm) {
+      @include font(18px, $bold);
+    }
+
+    @include respond-to(xs) {
+      @include font(18px, $bold);
+    }
   }
 }
