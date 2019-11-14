@@ -2,7 +2,7 @@
   .slick-prev {
     z-index: 2;
     top: 93%;
-    left: 43%;
+    left: 41%;
 
 
     &:before {
@@ -45,28 +45,29 @@
     display: flex;
     position: absolute;
     bottom: 5%;
-    left: 45%;
+    left: 44%;
+    transform: translateX(-44%);
     width: 0%;
     position: absolute;
 
-    @include respond-to(md) {
-      left: 45%;
-    }
+    // @include respond-to(md) {
+    //   left: 45%;
+    // }
 
-    @include respond-to(sm) {
-      left: 45%;
-    }
+    // @include respond-to(sm) {
+    //   left: 45%;
+    // }
 
-    @include respond-to(xs) {
-      left: 35%;
-    }
+    // @include respond-to(xs) {
+    //   left: 35%;
+    // }
 
     .slick-active {
       button {
         &:before {
           color: $dots-color-active;
           opacity: 0.75;
-          width: 35px;
+          width: 12px;
           margin: 0;
 
 
@@ -82,11 +83,11 @@
         &:before {
           color: $dots-color;
           content: '';
-          height: $dots-size;
-          width: 35px;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
           display: inline-block;
           background: $white;
-          border-radius: 0px;
           cursor: pointer;
           transition: all 300ms ease;
         }

@@ -9,7 +9,6 @@
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
     %link{rel: "stylesheet", href:"assets/css/datepicker.css"}/
-    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
   %body
     %header#home
       %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
@@ -41,127 +40,74 @@
                       %img{ :src => "assets/img/Home/R Rappi.svg"}/
                       %span.line
                       Pide en línea
-    .main-banner
-      .main-banner__content
-        .main-banner__item
-          .mask
-            .container
-              .main-banner__boxtext
-                .main-banner__text
-                  .main-banner__title
-                    %h1 Pura Sabrosura
-                  .btn-box
-                    %a.btn_custom.btn--large.btn--filled{ :href=>"entries.html"}
-                      Menú
-          .main-banner__img
-            %img{ :src => "assets/img/Home/POKE_-267-2.png"}/
-        .main-banner__item
-          .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %h1 new bowls
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
-                    PIDE AQUÍ
-          .main-banner__img
-            %img{ :src => "assets/img/Home/4.1.png"}/
-        .main-banner__item
-          .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %h1 cultivando el cambio
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"about.html"}
-                    nosotros
-          .main-banner__img
-            %img{ :src => "assets/img/Home/boat-daytime-fisherman-1105386.png"}/
-        .main-banner__item
-          .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %p the poke generation
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
-                    ubicaciones
-          .main-banner__img
-            %img{ :src => "assets/img/Home/boat-daytime-fisherman-1105386.png"}/
-    
-    .container
-      .main-general__boxsubtitle
-        .main-general__subtitle
-          %h3 eat better, feel better
-    .main-about{ :style=>"background-image: url('assets/img/Home/--75.png');"}
-      .container
-        .main-about__content
-          .main-about__item
-            .main-general__title
-              %h2 nuestro compromiso
-            .main-general__description
-              %p Alimentar el cambio para una generación sostenible. 
-              %p ¿Por qué? 
-              %p Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipo, nuestros clientes y el medio ambiente. 
-              %p Porque queremos disrumpir, reinventar y ser agentes de cambio.
-            .btn-box--about.float-left
-              %a.btn_custom.btn--large.btn--filled{ :href=>"about.html"}
-                Nosotros
-    .container
-      .main-general__boxsubtitle
-        .main-general__subtitle
-          %h3 eat better, feel better
-  
     .main-about.main-about__height{ :style=>"background-image: url('assets/img/Home/POKE_-245.png');"}
       .container
         .main-why__content
           .main-why__item
           .main-why__item
-            .main-general__title.main-general__title--font
-              %h2 ¿Qué es poke?
-            .main-general__description.main-general__description--font
-              %p Poke significa “cortar” en hawaiano. Su significado le da vida a un plato típico de la gastronomía de Hawaii.
-              %p El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.
-              %p Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico y sabores asiáticos que provienen de Japón.
-    .main-follow
-      .container
-        .main-general__boxsubtitle
-          .main-general__subtitle
-            %h3 if you dig us, like us
-          .main-general__subtitle--medium
-            %h4 Follow us
-      .main-follow__content
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/1.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/2.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/3.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/4.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/5.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/6.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/7.png"}/
-        .main-follow__item
-          .main-follow__img
-            %img{ :src => "assets/img/Home/8.png"}/
+            .main-general__title.main-general__title--event
+              %h2 ¡poke para tus eventos!
+            %form
+              %label.label--white Datos personales
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "tel"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .row
+                .form-group.col-md-4
+                  %label.label--white{:for => "inputState"} Fecha de nacimiento
+                  %input.form-control.date{:placeholder => "DD / MM / YYYY", :type => "text"}/
+                .form-group.col-md-4 
+                  %input.mt-4.form-control.date{:placeholder => "HH:MM", :type => "text"}/
+              .row
+                .form-group.col-md-4
+                  %label.label--white{:for => "inputState"} invitados
+                  %select#inputState.form-control
+                    %option{:selected => "selected"} Adultos
+                    %option ...
+                .form-group.col-md-4
+                  %label.label--white{:for => "inputState"} 
+                  %select#inputState.form-control
+                    %option{:selected => "selected"} Niños
+                    %option ...
+              
+              .row
+                .form-group.col-md-4
+                  %label.label--white{:for => "inputState"} ubicacion
+                  %select#inputState.form-control
+                    %option{:selected => "selected"} Ciudad
+                    %option ...
+                .form-group.col-md-4
+                  %label.label--white{:for => "inputState"} 
+                  %select#inputState.form-control
+                    %option{:selected => "selected"} Dirección
+                    %option ...
+              .form-group
+                %textarea{:placeholder => "Mensaje  (opcional)",:rows => "8"}
+              .custom-control.custom-checkbox.my-1.mr-sm-2
+                %input#customControlInline.custom-control-input{:type => "checkbox"}/
+                %label.custom-control-label.label--white{:for => "customControlInline"} 
+                  Acepto 
+                %a.text-link.text-link--white{ :href=>"#"}
+                  %strong
+                    política de privacidad 
+                  y 
+                %a.text-link.text-link--white{ :href=>"#"}
+                  %strong
+                    términos y condiciones
+              .float-left
+                %a.btn_custom.btn--medium.btn--filled{ :href=>"#"}
+                  Enviar
+               
     %footer.main-footer
       .container
         .main-footer__content
           .main-footer__item
             .main-footer__box
               .main-footer__logo
-                %img{ :src => "assets/img/Home/poke bowls.svg"}/
+                %img{ :src => "assets/img/Home/Logo poke.svg"}/
               .main-footer__boxsmall
                 .main-footer__boxitem
                   %img{ :src => "assets/img/Home/Endeavor.svg"}/

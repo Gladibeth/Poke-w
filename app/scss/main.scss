@@ -133,9 +133,9 @@ button:focus {
 .nav-link {
   color: $white;
   transition: 0.3s ease-in-out;
-  @include font(17px, $bold);
+  @include font(23px, $bold);
   text-transform: uppercase;
-  font-family: $Raleway;
+  font-family: $Ostrich;
 
   @include respond-to(xs) {
     color: $black;
@@ -235,6 +235,8 @@ button:focus {
 
   .main-banner__item {
     position: relative;
+
+
   }
 
   .mask {
@@ -244,6 +246,10 @@ button:focus {
     top: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
+
+    .container {
+      height: 100%;
+    }
 
     .main-banner__boxtext {
       width: 100%;
@@ -261,7 +267,7 @@ button:focus {
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
-      padding-left: 160px;
+      // padding-left: 160px;
 
       @include respond-to(md) {
         padding-left: 20px;
@@ -290,8 +296,8 @@ button:focus {
           text-align: left;
         }
 
-        p {
-          padding: 0 25px;
+        h1 {
+          padding: 0px;
           color: $white;
           @include font(65px, $superBold);
           line-height: 1;
@@ -392,6 +398,28 @@ button:focus {
       @include respond-to(xs) {
         letter-spacing: 0.25px;
         @include font(50px, $bold);
+      }
+    }
+  }
+
+  &.main-general__title--event {
+    h2 {
+      letter-spacing: 5.25px;
+      @include font(45px, $bold);
+
+      @include respond-to(md) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
+      }
+
+      @include respond-to(sm) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
+      }
+
+      @include respond-to(xs) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
       }
     }
   }

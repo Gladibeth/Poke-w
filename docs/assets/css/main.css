@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url("../fonts/OstrichSans-Heavy.woff2") format("woff2"), url("../fonts/OstrichSans-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -187,7 +194,7 @@ body {
 .main-banner__content .slick-prev {
   z-index: 2;
   top: 93%;
-  left: 43%;
+  left: 41%;
 }
 
 .main-banner__content .slick-prev:before {
@@ -228,33 +235,16 @@ body {
   display: flex;
   position: absolute;
   bottom: 5%;
-  left: 45%;
+  left: 44%;
+  transform: translateX(-44%);
   width: 0%;
   position: absolute;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .main-banner__content .slick-dots {
-    left: 45%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-banner__content .slick-dots {
-    left: 45%;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-banner__content .slick-dots {
-    left: 35%;
-  }
 }
 
 .main-banner__content .slick-dots .slick-active button:before {
   color: #00b050;
   opacity: 0.75;
-  width: 35px;
+  width: 12px;
   margin: 0;
 }
 
@@ -266,10 +256,10 @@ body {
   color: gray;
   content: '';
   height: 12px;
-  width: 35px;
+  width: 12px;
+  border-radius: 50%;
   display: inline-block;
   background: #fff;
-  border-radius: 0px;
   cursor: pointer;
   transition: all 300ms ease;
 }
@@ -398,25 +388,25 @@ body {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ostrich Sans";
 }
 
 .btn--small {
   padding: 8px 12px;
   min-width: 65px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .btn--medium {
   padding: 10px 14px;
   min-width: 85px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .btn--large {
   padding: 12px 30px;
   min-width: 105px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -455,6 +445,8 @@ button {
 .btn--filled.btn--filled--buy {
   background-color: #f75d63;
   color: #fff;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .btn--filled.btn--filled--buy:hover {
@@ -491,7 +483,7 @@ button {
 }
 
 .btn-box {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -566,6 +558,10 @@ button {
   align-items: center;
 }
 
+.about-banner .container {
+  z-index: 999;
+}
+
 .about-banner .overlay {
   position: absolute;
   top: 0;
@@ -577,8 +573,7 @@ button {
 
 .about-banner .about-banner__text {
   z-index: 99;
-  padding-left: 180px;
-  width: 90%;
+  width: 100%;
   height: 50%;
 }
 
@@ -631,7 +626,6 @@ button {
 }
 
 .about-banner .about-banner__text .about-banner__title h3 {
-  padding: 0 25px;
   color: #fff;
   font-size: 65px;
   font-weight: 900;
@@ -701,6 +695,14 @@ button {
   }
 }
 
+.main-ourorigin__box {
+  max-width: 80%;
+}
+
+.main-ourorigin__box.main-ourorigin__box--ml {
+  margin-left: 17%;
+}
+
 .main-ourorigin__img {
   height: 780px;
 }
@@ -711,7 +713,7 @@ button {
   object-fit: cover;
 }
 
-.main-ourorigin__descrption p {
+.main-ourorigin__description p {
   text-align: right;
   color: #686868;
   font-size: 22px;
@@ -720,20 +722,20 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .main-ourorigin__descrption p {
+  .main-ourorigin__description p {
     font-size: 18px;
     font-weight: 500;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .main-ourorigin__descrption p {
+  .main-ourorigin__description p {
     font-size: 18px;
     font-weight: 500;
   }
 }
 
-.main-ourorigin__descrption.main-ourorigin__descrption--left p {
+.main-ourorigin__description.main-ourorigin__description--left p {
   text-align: left;
 }
 
@@ -1198,6 +1200,12 @@ label {
   font-family: "Raleway", sans-serif;
 }
 
+label.label--white {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 label.label-cap {
   color: #686868;
   font-size: 18px;
@@ -1280,6 +1288,12 @@ label.label-cap {
     font-size: 15px;
     font-weight: 400;
   }
+}
+
+.text-link.text-link--white {
+  color: #fff;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .text-link:hover {
@@ -1783,10 +1797,10 @@ button:focus {
 .nav-link {
   color: #fff;
   transition: 0.3s ease-in-out;
-  font-size: 17px;
+  font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ostrich Sans";
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1904,6 +1918,10 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.main-banner .mask .container {
+  height: 100%;
+}
+
 .main-banner .mask .main-banner__boxtext {
   width: 100%;
   height: 100%;
@@ -1920,7 +1938,6 @@ button:focus {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding-left: 160px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1960,8 +1977,8 @@ button:focus {
   }
 }
 
-.main-banner .mask .main-banner__text .main-banner__title p {
-  padding: 0 25px;
+.main-banner .mask .main-banner__text .main-banner__title h1 {
+  padding: 0px;
   color: #fff;
   font-size: 65px;
   font-weight: 900;
@@ -1971,13 +1988,13 @@ button:focus {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .main-banner .mask .main-banner__text .main-banner__title p {
+  .main-banner .mask .main-banner__text .main-banner__title h1 {
     font-size: 55px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .main-banner .mask .main-banner__text .main-banner__title p {
+  .main-banner .mask .main-banner__text .main-banner__title h1 {
     font-size: 30px;
     padding: 0;
   }
@@ -2082,6 +2099,36 @@ button:focus {
   .main-general__title.main-general__title--font h2 {
     letter-spacing: 0.25px;
     font-size: 50px;
+    font-weight: 700;
+  }
+}
+
+.main-general__title.main-general__title--event h2 {
+  letter-spacing: 5.25px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-general__title.main-general__title--event h2 {
+    letter-spacing: 0.25px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-general__title.main-general__title--event h2 {
+    letter-spacing: 0.25px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-general__title.main-general__title--event h2 {
+    letter-spacing: 0.25px;
+    font-size: 40px;
     font-weight: 700;
   }
 }

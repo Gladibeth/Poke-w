@@ -6,10 +6,10 @@ $(function () {
   })
 })
 
-$('.date').datepicker({
-  multidate: true,
-  format: 'dd-mm-yyyy'
-});
+// $('.date').datepicker({
+//   multidate: true,
+//   format: 'dd-mm-yyyy'
+// });
 
 $('input[type="file"]').each(function () {
   // get label text

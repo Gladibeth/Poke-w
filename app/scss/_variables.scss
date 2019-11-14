@@ -6,11 +6,23 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
   'xl': "(min-width: 1601px) and (max-width: 2048px)",
 ) !default;
 
+
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('../fonts/OstrichSans-Heavy.woff2') format('woff2'),
+    url('../fonts/OstrichSans-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 // Fonts
 $Raleway:'Raleway',
 sans-serif;
 $Roboto:'Roboto',
 sans-serif;
+$Ostrich:'Ostrich Sans';
 
 $light: 300;
 $regular: 400;
