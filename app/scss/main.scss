@@ -9,6 +9,7 @@
 @import "entries";
 @import "environmental";
 @import "work";
+@import "ubication";
 @import "modals";
 
 
@@ -51,6 +52,11 @@ button:focus {
   border: 1px solid $line;
   width: 78%;
   margin: 50px 0 0 150px;
+
+  &.line--white {
+    border: 1px solid $white;
+    margin: 10px 0 10px 0px;
+  }
 
   &.line-gray--entries {
     margin: 0;
@@ -679,6 +685,11 @@ button:focus {
     grid-gap: 50px;
   }
 
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
   @include respond-to(xs) {
     grid-template-columns: 1fr;
   }
@@ -687,6 +698,10 @@ button:focus {
 .main-why__item {
   &:nth-child(2) {
     padding: 100px 0;
+  }
+
+  &.main-why__item--event {
+    padding: 60px 0;
   }
 }
 
