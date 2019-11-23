@@ -59,7 +59,7 @@ $(window).scroll(function () {
     $('.nav-link').removeClass('fixed-color');
     $('.nav-top__header').removeClass('nav-top__header--detele');
     $('.hamburger-inner').removeClass('js-hamburger');
-    $("#iso").removeClass('img-size').attr('src', 'assets/img/Home/Logo poke.svg').removeClass('scroll-up');
+    $("#iso").removeClass('img-size').attr('src', 'assets/img/Create_Poke/Logo poke.svg').removeClass('scroll-up');
 
   }
 });

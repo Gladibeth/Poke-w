@@ -40,43 +40,96 @@
                       %img{ :src => "assets/img/Home/R Rappi.svg"}/
                       %span.line
                       Pide en línea
-    .about-banner{style:"background-image: url('assets/img/Menu_entradas/fondo chispiado + morado.png');"}
+    .about-banner{style:"background-image: url('assets/img/Poke_bowls/POKE_-249.png');"}
       .overlay
       .about-banner__text.about-banner__text--center
         .about-banner__title
-          %h3 ENTRADAS
+          %h3 ARMA TU BOWL
     .main-entries
       .container
         .main-entries__nav
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item.nav-item--tabs
-              %a#pills-home-tab.nav-link--tabs.active{ :href => "entries.html"} entradas
+              %a#pills-home-tab.nav-link--tabs{ :href => "entries.html"} entradas
             %li.nav-item.nav-item--tabs
-              %a#pills-profile-tab.nav-link--tabs{ :href => "poke-bowls.html"} poke bowls
+              %a#pills-profile-tab.nav-link--tabs{:href => "poke-bowls.html"} poke bowls
             %li.nav-item.nav-item--tabs
               %a#pills-contact-tab.nav-link--tabs{:href => "juice-bar.html"} juice bar
           .btn__tabs
-            %a.btn-btn_custom.btn--large.btn--filled.btn--filled-gray{:href => "createpokebolw.html"} 
+            %a.btn-btn_custom.btn--large.btn--filled.btn--filled-gray.active{:href => "createpokebolw.html"} 
               %img{ :src => "assets/img/Home/R Rappi.svg"}/
               %span.line
               ARMA TU BOWL
         %hr.line-gray.line-gray--entries
-        .tab-content
-          #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
-            .main-entries__content
-              %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
-                .main-entries__img
-                  %img{ :src => "assets/img/Menu_entradas/ceviche.png"}/
-                .main-entries__text
-                  .main-entries__title
-                    %h3 ceviche
-              %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
-                .main-entries__img
-                  %img{ :src => "assets/img/Menu_entradas/tartar.png"}/
-                .main-entries__text
-                  .main-entries__title
-                    %h3 tartar
-          
+          .main-createpoke
+            .main-pokedots__box
+              .main-general__description.main-general__description--create
+                %p Arma tu Poke Bowl y conoce toda la información nutritiva que que necesites.
+            .main-creategeneral__content
+              .main-creategeneral__item.main-creategeneral__item--grid
+                %a.main-creategeneral__subitem{:href=>"create-size.html"}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Tamaño
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Base
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Proteínas
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Mix-In 1
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p mIX-In 2
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Topping 1
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Topping 2
+                  .main-createpoke__boxbody
+                %a.main-creategeneral__subitem{:href=>""}
+                  .main-createpoke__header
+                    .main-createpoke__text
+                      %p Salsas
+                  .main-createpoke__boxbody
+              .main-creategeneral__item
+                .main-creategeneral__box  
+                  .main-creategeneral__img
+                    %img{ :src => "assets/img/Create_Poke/Logo poke.svg"}/
+                .main-create-boxdetails
+                  .main-create-details
+                    %span.badge.badge-secondary -
+                    %p Calorías
+                  .main-create-details
+                    %span.badge.badge-secondary -
+                    %p Alergénos
+                  .main-create-details
+                    %span.badge.badge-secondary -
+                    %p Superfoods
+                  .main-create-details
+                    %span.badge.badge-secondary -
+                    %p Grasas
+
+
+
+        
+
+        
         
         
     %footer.main-footer
@@ -143,10 +196,7 @@
         %p Poke colombia, 2019 - Todos los derechos Reservados
                   
                   
-    -# %button.btn.btn-primary{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
-    -#   Launch demo modal
-    -# / Modal
-    .entries-modals.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+    .pokebolws-modals.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
       .modal-dialog{:role => "document"}
         .modal-content
           .modal-body
@@ -155,19 +205,15 @@
             .main-modal__content
               .main-modal__item
                 .main-modal__img
-                  %img{ :src => "assets/img/Menu_entradas/tartar.png"}/
+                  %img{ :src => "assets/img/Poke_bowls/fondo amarillo pollo.png"}/
               .main-modal__item
                 .main-modal__text
-                  .main-modal__title.d-flex
-                    %p.mt-2 tartar
-                    %span.line.line-color
-                    .main-modals__icons.mt-2
-                      %img{ :src => "assets/img/Menu_entradas/noun_Flame_816755.svg"}/
-                      %img{ :src => "assets/img/Menu_entradas/noun_sesame_1048330.svg"}/
+                  .main-modal__title
+                    %p.mt-2 palenq'
                   %hr.line-gray.line-gray--entries
                   .main-modal__description  
                     %strong Ingredientes: 
-                    %p Tartar de atún, aguacate, maduritos, cebolla crunch, ajonjolí y sriracha mayo.
+                    %p Arroz con coco, pescado frito, aguacate, platanitos, maíz tierno cebollín.
                   .main-modal__boxdetails
                     .main-modal__details
                       %span.badge.badge-secondary 123
@@ -182,15 +228,17 @@
                       %span.badge.badge-secondary 123
                       %p Superfoods
                   .main-modal__price
-                    %p COP: 19.000
+                    .main-modal__smallprice
+                      %span M:
+                      %p COP 24.000
+                    .main-modal__smallprice
+                      %span G:
+                      %p COP 28.000
                   .btn-modal
                     %a.btn-btn_custom.btn--medium.btn--filled.btn--filled-gray{:href => ""} 
                       %img{ :src => "assets/img/Home/R Rappi.svg"}/
                       %span.line
                       Pide en línea
-
-                      
-
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}

@@ -1,9 +1,13 @@
 .about-banner {
   background-size: cover;
-  height: 100vh;
+  height: 60vh;
   position: relative;
   display: flex;
   align-items: center;
+
+  &.about-banner--full {
+    height: 100vh;
+  }
 
   .container {
     z-index: 999;

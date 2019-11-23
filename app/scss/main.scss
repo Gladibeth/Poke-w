@@ -10,6 +10,7 @@
 @import "environmental";
 @import "work";
 @import "ubication";
+@import "createpokebolw";
 @import "modals";
 
 
@@ -108,10 +109,19 @@ button:focus {
     transition: 0.3s ease-in-out;
     justify-content: center;
   }
+
+  &.fixed-bc {
+    height: 85px;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+  }
 }
 
 .nav-item {
-  padding: 0 12px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
 
   @include respond-to(md) {
     padding: 0;
@@ -142,6 +152,9 @@ button:focus {
   @include font(23px, $bold);
   text-transform: uppercase;
   font-family: $Ostrich;
+  border: 1px solid transparent;
+  padding: 0px 10px;
+  border-radius: 5px;
 
   @include respond-to(xs) {
     color: $black;
@@ -153,7 +166,32 @@ button:focus {
 
     &:hover {
       color: $black;
+      border: 1px solid $black;
+      border-radius: 5px;
     }
+
+    &.active {
+      border: 1px solid $black;
+      padding: 0px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &.nav-link-bc {
+    color: $black;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+      border: 1px solid $black;
+      border-radius: 5px;
+    }
+  }
+
+  &.active {
+    border: 1px solid $white;
+    padding: 0px 10px;
+    border-radius: 5px;
   }
 
   &:hover {
@@ -541,6 +579,17 @@ button:focus {
     }
   }
 
+  &.main-general__description--create {
+    margin-top: 40px;
+
+    p {
+      color: $text;
+      @include font(18px, $medium);
+      letter-spacing: 2.1px;
+      text-align: center;
+    }
+  }
+
   &.main-general__description--amb {
     p {
       color: $text;
@@ -660,6 +709,11 @@ button:focus {
       height: auto;
     }
   }
+
+}
+
+.main-about__mt {
+  margin-top: 85px;
 }
 
 .main-about__content {
@@ -810,9 +864,12 @@ button:focus {
         color: #686868;
         font-family: $Roboto;
         @include font(15px, $light);
+        transition: 0.3s ease-in-out;
 
         &:hover {
           text-decoration: none;
+          @include font(15px, $semibold);
+          transition: 0.3s ease-in-out;
         }
       }
     }
@@ -834,6 +891,12 @@ button:focus {
 
   a {
     margin-right: 22px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
   }
 }
 
@@ -841,10 +904,13 @@ button:focus {
 .main-footer__email {
   margin-top: 20px;
 
-  p {
+  a {
     color: $black;
-  }
 
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .main-footer__copy {

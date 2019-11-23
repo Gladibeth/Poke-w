@@ -11,28 +11,28 @@
     %link{rel: "stylesheet", href:"assets/css/datepicker.css"}/
   %body
     %header#home
-      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js.fixed-bc 
         .container
           .main-brand
             %a.navbar-brand{:href => "index.html"}
-              %img#iso{:src => "assets/img/Home/Logo poke.svg"}/
+              %img{:src => "assets/img/Home/Logo poke.svg"}/
             %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
               %span.hamburger-box
                 %span.hamburger-inner
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
               %li.nav-item.active
-                %a.nav-link.active{:href => "entries.html"} Menu
+                %a.nav-link.nav-link-bc{:href => "createpokebolw.html"} Menu
               %li.nav-item
-                %a.nav-link{:href => "about.html"} Nosotros
+                %a.nav-link.nav-link-bc{:href => "about.html"} Nosotros
               %li.nav-item
-                %a.nav-link{:href => "#"} Ubicaciones
+                %a.nav-link.nav-link-bc{:href => "ubications.html"} Ubicaciones
               %li.nav-item
-                %a.nav-link{:href => "poke-dots.html"} Poke puntos
+                %a.nav-link.nav-link-bc{:href => "poke-dots.html"} Poke puntos
               %li.nav-item
-                %a.nav-link{:href => "environmental.html"} Ambiental
+                %a.nav-link.nav-link-bc{:href => "environmental.html"} Ambiental
               %li.nav-item
-                %a.nav-link{:href => "#"} Eventos
+                %a.nav-link.nav-link-bc{:href => "event.html"} Eventos
               %li.nav-item
                 .main-nav__btn
                   .btn__buy
@@ -40,7 +40,7 @@
                       %img{ :src => "assets/img/Home/R Rappi.svg"}/
                       %span.line
                       Pide en línea
-    .main-work
+    .main-work.main-about__mt
       .container
         .main-ambiental
           .main-pokedots__box
