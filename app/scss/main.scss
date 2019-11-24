@@ -826,11 +826,19 @@ button:focus {
 }
 
 .main-footer__address {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   p {
     font-style: normal;
     @include font(15px, $light);
     font-family: $Roboto;
     color: #686868;
+
+
   }
 }
 

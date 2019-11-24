@@ -2842,6 +2842,10 @@ button:focus {
   }
 }
 
+.main-footer__address a:hover {
+  text-decoration: none;
+}
+
 .main-footer__address p {
   font-style: normal;
   font-size: 15px;

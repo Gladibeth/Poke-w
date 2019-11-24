@@ -50,11 +50,11 @@
         .main-entries__nav
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item.nav-item--tabs
-              %a#pills-home-tab.nav-link--tabs.active{ :href => "entries.html"} entradas
+              %a#pills-home-tab.nav-link--tabs.active{ :href => "#v-pills-home" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } entradas
             %li.nav-item.nav-item--tabs
-              %a#pills-profile-tab.nav-link--tabs{ :href => "poke-bowls.html"} poke bowls
+              %a#pills-profile-tab.nav-link--tabs{:href => "#v-pills-profile" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } poke bowls
             %li.nav-item.nav-item--tabs
-              %a#pills-contact-tab.nav-link--tabs{:href => "juice-bar.html"} juice bar
+              %a#pills-contact-tab.nav-link--tabs{:href => "#v-pills-contact" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-contact" ,'aria-selected'=>"true"} juice bar
           .btn__tabs
             %a.btn-btn_custom.btn--large.btn--filled.btn--filled-gray{:href => "createpokebolw.html"} 
               %img{ :src => "assets/img/Home/R Rappi.svg"}/
@@ -62,7 +62,7 @@
               ARMA TU BOWL
         %hr.line-gray.line-gray--entries
         .tab-content
-          #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+          #v-pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
             .main-entries__content
               %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
                 .main-entries__img
@@ -76,6 +76,85 @@
                 .main-entries__text
                   .main-entries__title
                     %h3 tartar
+          #v-pills-profile.tab-pane.fade
+            .main-pokebowls__content
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo amarillo.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 shaka
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo naranja 1.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 pulled pork
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo piel.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 alii
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo azul agua marina.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 luau
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo azul.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 mahalo
+              %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
+                .main-entries__img
+                  %img{ :src => "assets/img/Poke_bowls/fondo amarillo pollo.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 palenq
+          #v-pills-contact.tab-pane.fade
+            .main-pokebowls__content
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/limonada.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 limonada
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/jugo mandarina.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 mandarina
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/Carrott Blast.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 carrot blast
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/fresh beet.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 fresh beet
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/Green Fix.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 Green Fix
+              %a.main-entries__item{ 'data-target': ".juicebar-modals", 'data-toggle': 'modal', href: ""}
+                .main-entries__img
+                  %img{ :src => "assets/img/Juice_bar/Lulada.png"}/
+                .main-entries__text
+                  .main-entries__title
+                    %h3 Lulada
+        
+        
+        
           
         
         
