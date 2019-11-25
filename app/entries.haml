@@ -50,9 +50,9 @@
         .main-entries__nav
           %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
             %li.nav-item.nav-item--tabs
-              %a#pills-home-tab.nav-link--tabs.active{ :href => "#v-pills-home" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } entradas
+              %a#pills-home-tab.nav-link--tabs{ :href => "#v-pills-home" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } entradas
             %li.nav-item.nav-item--tabs
-              %a#pills-profile-tab.nav-link--tabs{:href => "#v-pills-profile" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } poke bowls
+              %a#pills-profile-tab.nav-link--tabs.active{:href => "#v-pills-profile" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-home" ,'aria-selected'=>"true" } poke bowls
             %li.nav-item.nav-item--tabs
               %a#pills-contact-tab.nav-link--tabs{:href => "#v-pills-contact" ,'data-toggle'=>"pill",:role=>"tab",'aria-controls'=>"v-pills-contact" ,'aria-selected'=>"true"} juice bar
           .btn__tabs
@@ -62,7 +62,7 @@
               ARMA TU BOWL
         %hr.line-gray.line-gray--entries
         .tab-content
-          #v-pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+          #v-pills-home.tab-pane.fade{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
             .main-entries__content
               %a.main-entries__item{ 'data-target': ".entries-modals", 'data-toggle': 'modal', href: "" }
                 .main-entries__img
@@ -76,7 +76,7 @@
                 .main-entries__text
                   .main-entries__title
                     %h3 tartar
-          #v-pills-profile.tab-pane.fade
+          #v-pills-profile.tab-pane.fade.show.active
             .main-pokebowls__content
               %a.main-entries__item{ 'data-target': ".pokebolws-modals", 'data-toggle': 'modal', href: "" }
                 .main-entries__img

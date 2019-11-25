@@ -406,21 +406,21 @@ button:focus {
     text-transform: uppercase;
     color: $white;
     letter-spacing: 6.86px;
-    @include font(90px, $semibold);
+    @include font(80px, $bold);
 
     @include respond-to(md) {
       letter-spacing: 0px;
-      @include font(60px, $semibold);
+      @include font(60px, $bold);
     }
 
     @include respond-to(sm) {
       letter-spacing: 0px;
-      @include font(60px, $semibold);
+      @include font(60px, $bold);
     }
 
     @include respond-to(xs) {
       letter-spacing: 0px;
-      @include font(45px, $semibold);
+      @include font(45px, $bold);
     }
   }
 
