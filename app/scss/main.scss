@@ -178,7 +178,7 @@ button:focus {
   @include font(23px, $bold);
   text-transform: uppercase;
   font-family: $Ostrich;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0px 10px;
   border-radius: 5px;
 
@@ -192,12 +192,12 @@ button:focus {
 
     &:hover {
       color: $black;
-      border: 1px solid $black;
+      border: 2px solid $black;
       border-radius: 5px;
     }
 
     &.active {
-      border: 1px solid $black;
+      border: 2px solid $black;
       padding: 0px 10px;
       border-radius: 5px;
     }
@@ -209,19 +209,19 @@ button:focus {
 
     &:hover {
       color: $black;
-      border: 1px solid $black;
+      border: 2px solid $black;
       border-radius: 5px;
     }
 
     &.active {
-      border: 1px solid $black;
+      border: 2px solid $black;
       padding: 0px 10px;
       border-radius: 5px;
     }
   }
 
   &.active {
-    border: 1px solid $white;
+    border: 2px solid $white;
     padding: 0px 10px;
     border-radius: 5px;
   }
@@ -321,7 +321,7 @@ button:focus {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
 
     .container {
@@ -857,7 +857,7 @@ button:focus {
     padding: 60px 0;
 
     @include respond-to(xs) {
-      padding: 110px 0;
+      padding: 110px 0 30px;
     }
   }
 }
@@ -900,6 +900,7 @@ button:focus {
 
   @include respond-to(xs) {
     grid-template-columns: 1fr;
+    padding: 50px 0 10px 0;
   }
 }
 

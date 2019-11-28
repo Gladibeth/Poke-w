@@ -29,6 +29,10 @@
       right: 33%;
     }
 
+    @include respond-to(xl) {
+      right: 45%;
+    }
+
 
     &:before {
       font-size: $arrow-size;
@@ -53,6 +57,11 @@
     transform: translateX(-44%);
     width: 0%;
     position: absolute;
+
+    @include respond-to(xl) {
+      bottom: 6%;
+    }
+
 
     // @include respond-to(md) {
     //   left: 45%;

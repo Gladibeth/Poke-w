@@ -12,6 +12,7 @@ label {
   &.label--white {
     color: $white;
     @include font(14px, $bold);
+    margin-bottom: 0;
   }
 
   &.label-cap {
