@@ -139,8 +139,32 @@
 .main-ourorigin__box {
   max-width: 80%;
 
+  @include respond-to(md) {
+    max-width: 90%;
+  }
+
+  @include respond-to(sm) {
+    max-width: 90%;
+  }
+
+  @include respond-to(xs) {
+    max-width: 100%;
+  }
+
   &.main-ourorigin__box--ml {
     margin-left: 17%;
+
+    @include respond-to(md) {
+      margin-left: 8%;
+    }
+
+    @include respond-to(sm) {
+      margin-left: 5%;
+    }
+
+    @include respond-to(xs) {
+      margin-left: 0%;
+    }
   }
 }
 

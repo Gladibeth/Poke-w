@@ -84,14 +84,14 @@ $(".hamburger").on("click", function () {
     $(this).addClass("is-active")
     $('.navbar-fixed-js').addClass('fixed');
     $('.hamburger-inner').addClass('js-hamburger');
-    $("#iso").addClass('img-size').attr('src', 'assets/img/Logo_CM.png').removeClass('scroll-up');
+    $("#iso").addClass('img-size').attr('src', 'assets/img/Home/Logo poke.svg').removeClass('scroll-up');
     $('.nav-link').addClass('fixed-color');
   } else {
     $(this).removeClass("is-active")
     if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
       $('.navbar-fixed-js').removeClass('fixed');
       $('.hamburger-inner').removeClass('js-hamburger');
-      $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-color.png').removeClass('scroll-up');
+      $("#iso").removeClass('img-size').attr('src', 'assets/img/Create_Poke/Logo poke.svg').removeClass('scroll-up');
       $('.nav-link').removeClass('fixed-color');
 
     }

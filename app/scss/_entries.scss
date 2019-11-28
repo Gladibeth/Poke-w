@@ -50,6 +50,10 @@
   justify-content: space-between;
   width: 100%;
   padding: 10px 0;
+
+  @include respond-to(xs) {
+    flex-direction: column;
+  }
 }
 
 .nav-item {
@@ -71,6 +75,15 @@
     border: 4px solid transparent;
     color: #B4B4B4;
     padding: 10px;
+
+    @include respond-to(sm) {
+      @include font(16px, $bold);
+    }
+
+    @include respond-to(xs) {
+      @include font(15px, $bold);
+      padding: 2px;
+    }
 
     &:hover {
       text-decoration: none;

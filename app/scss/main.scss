@@ -127,8 +127,12 @@ button:focus {
     padding: 0;
   }
 
+  @include respond-to(sm) {
+    padding: 5px 18px;
+  }
+
   @include respond-to(xs) {
-    padding: 0 15px;
+    padding: 5px 15px;
   }
 }
 
@@ -184,6 +188,12 @@ button:focus {
     &:hover {
       color: $black;
       border: 1px solid $black;
+      border-radius: 5px;
+    }
+
+    &.active {
+      border: 1px solid $black;
+      padding: 0px 10px;
       border-radius: 5px;
     }
   }
@@ -327,7 +337,7 @@ button:focus {
 
 
       .main-banner__title {
-        text-align: center;
+        // text-align: center;
         text-transform: uppercase;
         letter-spacing: 6.3px;
         text-shadow: 0px 4px 4px #00000029;
@@ -554,7 +564,7 @@ button:focus {
       @include font(22px, $medium);
 
       @include respond-to(sm) {
-        @include font(13px, $medium);
+        @include font(20px, $medium);
       }
     }
   }
@@ -667,7 +677,20 @@ button:focus {
     left: 0;
     top: 10px;
 
+    @include respond-to(md) {
+      width: 300px;
+    }
 
+    @include respond-to(sm) {
+      width: 150px;
+    }
+
+    @include respond-to(xs) {
+      width: 45px;
+      left: -35px;
+      top: 10px;
+      transform: translateX(0px);
+    }
   }
 
   &:after {
@@ -680,6 +703,21 @@ button:focus {
     position: absolute;
     right: 0;
     top: 10px;
+
+    @include respond-to(md) {
+      width: 300px;
+    }
+
+    @include respond-to(sm) {
+      width: 150px;
+    }
+
+    @include respond-to(xs) {
+      width: 45px;
+      right: -35px;
+      top: 10px;
+      transform: translateX(0px);
+    }
   }
 }
 
@@ -698,12 +736,18 @@ button:focus {
   background-size: cover;
   height: 1000px;
 
+  @include respond-to(sm) {
+    height: auto;
+  }
+
   @include respond-to(xs) {
     height: auto;
   }
 
   &.main-about__height {
     height: 900px;
+    position: relative;
+    z-index: -1;
 
     @include respond-to(xs) {
       height: auto;
@@ -714,11 +758,27 @@ button:focus {
 
 .main-about__mt {
   margin-top: 85px;
+
+  @include respond-to(sm) {
+    margin-top: 0;
+  }
+
+  @include respond-to(xs) {
+    margin-top: 0;
+  }
 }
 
 .main-about__content {
   width: 100%;
   height: 900px;
+
+  @include respond-to(sm) {
+    height: 500px;
+  }
+
+  @include respond-to(xs) {
+    height: 800px;
+  }
 }
 
 .main-about__item {
@@ -727,6 +787,14 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
 }
 
 
@@ -756,6 +824,10 @@ button:focus {
 
   &.main-why__item--event {
     padding: 60px 0;
+
+    @include respond-to(xs) {
+      padding: 110px 0;
+    }
   }
 }
 
@@ -937,5 +1009,27 @@ button:focus {
     @include respond-to(xs) {
       text-align: center;
     }
+  }
+}
+
+.mask {
+  @include respond-to(sm) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+  @include respond-to(xs) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
   }
 }

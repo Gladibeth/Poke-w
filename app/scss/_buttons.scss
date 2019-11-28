@@ -41,10 +41,14 @@
   min-width: 105px;
   font-size: 20px;
 
+  @include respond-to(sm) {
+    padding: 8px 8px;
+  }
+
   @include respond-to(xs) {
     padding: 12px 18px;
     min-width: 105px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -102,6 +106,10 @@ button {
   text-transform: uppercase;
   font-weight: $superBold;
 
+  img {
+    width: 30px;
+  }
+
   &:hover {
     text-decoration: none;
     background: #686868;
@@ -131,7 +139,7 @@ button {
   padding: 30px 0;
 
   @include respond-to(sm) {
-    padding: 30px;
+    // padding: 30px;
     margin-top: 30px;
   }
 
@@ -148,7 +156,7 @@ button {
     }
 
     @include respond-to(xs) {
-      width: 100%;
+      width: 50%;
       padding-left: 10px;
     }
   }
