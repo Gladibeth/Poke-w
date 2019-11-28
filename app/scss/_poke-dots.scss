@@ -73,6 +73,10 @@
 
 .main-pokedots__item {
   margin-bottom: 40px;
+
+  @include respond-to(xs) {
+    margin-bottom: 15px;
+  }
 }
 
 .main-pokedots__img {

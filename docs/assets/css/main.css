@@ -947,6 +947,12 @@ button {
   margin-bottom: 40px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-pokedots__item {
+    margin-bottom: 15px;
+  }
+}
+
 .main-pokedots__img {
   width: 100%;
   height: 100%;
