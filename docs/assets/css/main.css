@@ -241,17 +241,12 @@ body {
   position: absolute;
 }
 
-.main-banner__content .slick-dots .slick-active {
-  position: relative;
-}
-
 .main-banner__content .slick-dots .slick-active button:before {
-  content: url("../img/Menu_entradas/Bowl.svg");
-  color: #00b050;
-  opacity: 0.75;
-  width: 12px;
-  margin: 0;
   position: absolute;
+  content: '';
+  background-image: url(../img/Menu_entradas/Bowl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-banner__content .slick-dots li {
@@ -388,7 +383,7 @@ body {
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   -o-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
@@ -404,15 +399,14 @@ body {
 }
 
 .btn--medium {
-  padding: 10px 8px;
-  min-width: 85px;
+  padding: 5px 8px;
   font-size: 17px;
 }
 
 .btn--large {
-  padding: 12px 30px;
-  min-width: 105px;
-  font-size: 20px;
+  padding: 5px 15px;
+  /* min-width: 105px; */
+  font-size: 23px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -434,20 +428,16 @@ button {
 }
 
 .btn--filled {
-  color: #000;
+  color: #4A4A4A;
   background: #fff;
   transition: 0.3s ease-in-out;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 900;
 }
 
 .btn--filled:hover {
   text-decoration: none;
   background: #fff;
-  color: #000;
+  color: #4A4A4A;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -547,7 +537,8 @@ button {
 }
 
 .btn-box--about {
-  width: 150px;
+  width: 100px;
+  margin-top: 10px;
 }
 
 .btn-form__center {
@@ -593,6 +584,7 @@ button {
 
 .about-banner .container {
   z-index: 999;
+  margin-top: 130px;
 }
 
 .about-banner .overlay {
@@ -845,7 +837,7 @@ button {
 }
 
 .about-banner__imgs .about-banner__img--one img {
-  width: 100%;
+  width: 80%;
 }
 
 .about-banner__imgs .about-banner__img--two {
@@ -866,7 +858,7 @@ button {
 }
 
 .about-banner__imgs .about-banner__img--two img {
-  width: 100%;
+  width: 80%;
 }
 
 .main-pokedots {
@@ -2583,6 +2575,7 @@ button:focus {
   color: #fff;
   font-size: 25px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3072,9 +3065,7 @@ button:focus {
 }
 
 .main-footer__btn {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  margin-right: 7px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -3152,4 +3143,21 @@ button:focus {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
   }
+}
+
+.main-footer-grid {
+  display: flex;
+}
+
+.message p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.message p .text-link {
+  font-size: 15px;
 }

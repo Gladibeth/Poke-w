@@ -63,16 +63,19 @@
     // }
 
     .slick-active {
-      position: relative;
+      // position: relative;
 
       button {
         &:before {
-          content: url('../img/Menu_entradas/Bowl.svg');
-          color: $dots-color-active;
-          opacity: 0.75;
-          width: 12px;
-          margin: 0;
           position: absolute;
+          content: '';
+          background-image: url(../img/Menu_entradas/Bowl.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          // color: $dots-color-active;
+          // opacity: 0.75;
+          // width: 12px;
+          // margin: 0;
         }
       }
     }

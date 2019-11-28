@@ -537,6 +537,7 @@ button:focus {
     letter-spacing: 2.45px;
     color: $white;
     @include font(25px, $medium);
+    margin-bottom: 0;
 
     @include respond-to(md) {
       @include font(20px, $medium);
@@ -957,9 +958,10 @@ button:focus {
 }
 
 .main-footer__btn {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  // width: 100%;
+  // display: flex;
+  // justify-content: flex-start;
+  margin-right: 7px;
 
   @include respond-to(xs) {
     justify-content: center;
@@ -1031,5 +1033,24 @@ button:focus {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
+  }
+}
+
+.main-footer-grid {
+  display: flex;
+}
+
+.message {
+  p {
+    text-align: left;
+    letter-spacing: 0;
+    color: #000000;
+    font-size: 15px;
+    font-style: italic;
+    font-family: $Roboto;
+
+    .text-link {
+      font-size: 15px;
+    }
   }
 }

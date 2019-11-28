@@ -58,35 +58,38 @@
             %img{ :src => "assets/img/Home/POKE_-267-2.png"}/
         .main-banner__item
           .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %h1 new bowls
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
-                    PIDE AQUÍ
+            .container
+              .main-banner__boxtext
+                .main-banner__text
+                  .main-banner__title
+                    %h1 new bowls
+                  .btn-box
+                    %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
+                      PIDE AQUÍ
           .main-banner__img
             %img{ :src => "assets/img/Home/4.1.png"}/
         .main-banner__item
           .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %h1 cultivando el cambio
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"about.html"}
-                    nosotros
+            .container
+              .main-banner__boxtext
+                .main-banner__text
+                  .main-banner__title
+                    %h1 cultivando el cambio
+                  .btn-box
+                    %a.btn_custom.btn--large.btn--filled{ :href=>"about.html"}
+                      nosotros
           .main-banner__img
             %img{ :src => "assets/img/Home/boat-daytime-fisherman-1105386.png"}/
         .main-banner__item
           .mask
-            .main-banner__boxtext
-              .main-banner__text
-                .main-banner__title
-                  %p the poke generation
-                .btn-box
-                  %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
-                    ubicaciones
+            .container
+              .main-banner__boxtext
+                .main-banner__text
+                  .main-banner__title
+                    %p the poke generation
+                  .btn-box
+                    %a.btn_custom.btn--large.btn--filled{ :href=>"#"}
+                      ubicaciones
           .main-banner__img
             %img{ :src => "assets/img/Home/boat-daytime-fisherman-1105386.png"}/
     
@@ -202,9 +205,20 @@
                 %form
                   .form-group
                     %input#formGroupExampleInput.form-control{:placeholder => "Correo electronico", :type => "email"}/
-                  .main-footer__btn
-                    %button.btn_custom.btn--medium.btn--filled-gray
-                      Enviar
+                  .main-footer-grid
+                    .main-footer__btn
+                      %button.btn_custom.btn--medium.btn--filled-gray
+                        Enviar
+                    .message
+                      %p
+                        Acepto 
+                        %a.text-link{ :href=>"#"}
+                          %strong
+                            política de privacidad 
+                        y 
+                        %a.text-link{ :href=>"#"}
+                          %strong
+                            términos y condiciones
           .main-footer__item
             .main-footer__box
               .main-footer__redes
