@@ -926,7 +926,7 @@ button {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .main-pokedots.padd-top {
-    padding: 0px;
+    padding: 30px;
   }
 }
 
