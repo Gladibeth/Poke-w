@@ -501,6 +501,7 @@ button {
   justify-content: center;
   text-transform: uppercase;
   font-weight: 900;
+  font-family: "Ostrich Sans";
 }
 
 .btn--filled-gray img {
