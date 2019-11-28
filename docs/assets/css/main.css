@@ -548,7 +548,7 @@ button {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .btn-box.btn-box--resgister {
-    width: 50%;
+    width: 55%;
     padding-left: 10px;
   }
 }
@@ -606,6 +606,12 @@ button {
 .about-banner .container {
   z-index: 999;
   margin-top: 130px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-banner .container {
+    margin-top: 0;
+  }
 }
 
 .about-banner .overlay {
@@ -703,6 +709,14 @@ button {
   margin: 0;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-banner .about-banner__text .about-banner__title span {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
