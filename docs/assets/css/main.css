@@ -2939,7 +2939,7 @@ button:focus {
 }
 
 .main-about__mt {
-  margin-top: 85px;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
