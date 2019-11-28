@@ -2004,6 +2004,30 @@ body {
   background-color: #f3f3f3;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -2305,6 +2329,7 @@ button:focus {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .main-banner .mask .container {
@@ -3139,30 +3164,6 @@ button:focus {
 @media (min-width: 0px) and (max-width: 767px) {
   .main-footer__copy p {
     text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .mask {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .mask {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
   }
 }
 
