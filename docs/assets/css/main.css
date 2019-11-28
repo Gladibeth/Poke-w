@@ -259,6 +259,8 @@ body {
   background-image: url(../img/Menu_entradas/Bowl.svg);
   background-position: center;
   background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .main-banner__content .slick-dots li {
@@ -272,9 +274,13 @@ body {
   width: 12px;
   border-radius: 50%;
   display: inline-block;
-  background: #fff;
   cursor: pointer;
   transition: all 300ms ease;
+  background-image: url(../img/Menu_entradas/Bowl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .main-banner__content .slick-dots li button:hover:before, .main-banner__content .slick-dots li button:focus:before {
@@ -2011,7 +2017,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
 }
@@ -2023,7 +2029,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
 }

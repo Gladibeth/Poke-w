@@ -76,6 +76,8 @@
           background-image: url(../img/Menu_entradas/Bowl.svg);
           background-position: center;
           background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
           // color: $dots-color-active;
           // opacity: 0.75;
           // width: 12px;
@@ -96,9 +98,14 @@
           width: 12px;
           border-radius: 50%;
           display: inline-block;
-          background: $white;
+          // background: $white;
           cursor: pointer;
           transition: all 300ms ease;
+          background-image: url(../img/Menu_entradas/Bowl.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
         }
 
         &:hover:before,
