@@ -2284,6 +2284,7 @@ button:focus {
 
 .navbar-brand {
   width: 80px;
+  padding: 10px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
