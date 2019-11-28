@@ -739,6 +739,7 @@ button:focus {
 
   @include respond-to(sm) {
     height: auto;
+    padding: 20px;
   }
 
   @include respond-to(xs) {

@@ -146,6 +146,12 @@ body {
   transition-timing-function: ease;
 }
 
+.hamburger-inner.color-black,
+.hamburger-inner.color-black::before,
+.hamburger-inner.color-black::after {
+  background-color: #000;
+}
+
 .hamburger-inner::before,
 .hamburger-inner::after {
   content: "";
@@ -215,6 +221,12 @@ body {
   right: 42%;
   z-index: 2;
   top: 93%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner__content .slick-next {
+    right: 33%;
+  }
 }
 
 .main-banner__content .slick-next:before {
@@ -568,6 +580,10 @@ button {
   .btn-modal {
     width: 100%;
   }
+}
+
+.main-nav__btn {
+  margin-left: 5px;
 }
 
 .about-banner {
@@ -2823,6 +2839,7 @@ button:focus {
 @media (min-width: 768px) and (max-width: 991px) {
   .main-about {
     height: auto;
+    padding: 20px;
   }
 }
 

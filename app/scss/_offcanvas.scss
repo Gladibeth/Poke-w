@@ -129,6 +129,12 @@ body {
   transition-timing-function: ease;
 }
 
+.hamburger-inner.color-black,
+.hamburger-inner.color-black::before,
+.hamburger-inner.color-black::after {
+  background-color: $black;
+}
+
 .hamburger-inner::before,
 .hamburger-inner::after {
   content: "";

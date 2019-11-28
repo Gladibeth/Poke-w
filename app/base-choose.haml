@@ -138,7 +138,7 @@
           .main-footer__item
             .main-footer__box
               .main-footer__logo
-                %img{ :src => "assets/img/Home/Logo poke.svg"}/
+                %img{ :src => "assets/img/Home/poke bowls.svg"}/
               .main-footer__boxsmall
                 .main-footer__boxitem
                   %img{ :src => "assets/img/Home/Endeavor.svg"}/
@@ -146,7 +146,8 @@
                   .main-footer__text
                     %p Part of Foodie Group S.A.S & Endeavor company
               .main-footer__address
-                %p Cl. 69a #No.6-37 - Bogotá, Colombia
+                %a{:href=>"#"}
+                  %p Cl. 69a #No.6-37 - Bogotá, Colombia
           .main-footer__item
             .main-footer__box
               .main-footer__title
@@ -176,9 +177,20 @@
                 %form
                   .form-group
                     %input#formGroupExampleInput.form-control{:placeholder => "Correo electronico", :type => "email"}/
-                  .main-footer__btn
-                    %button.btn_custom.btn--medium.btn--filled-gray
-                      Enviar
+                  .main-footer-grid
+                    .main-footer__btn
+                      %button.btn_custom.btn--medium.btn--filled-gray
+                        Enviar
+                    .message
+                      %p
+                        Acepto 
+                        %a.text-link{ :href=>"#"}
+                          %strong
+                            política de privacidad 
+                        y 
+                        %a.text-link{ :href=>"#"}
+                          %strong
+                            términos y condiciones
           .main-footer__item
             .main-footer__box
               .main-footer__redes
@@ -191,7 +203,8 @@
                 %a{ :href=>""}
                   %img{ :src => "assets/img/Home/Twitter_Logo_WhiteOnImage.svg"}/
               .main-footer__email
-                %p servicios@pokecolombia.co
+                %a{:href=>"mailto:servicios@pokecolombia.co"}
+                  %p servicios@pokecolombia.co
       .main-footer__copy
         %p Poke colombia, 2019 - Todos los derechos Reservados
                   
