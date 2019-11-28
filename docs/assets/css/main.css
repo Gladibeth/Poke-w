@@ -2365,6 +2365,10 @@ button:focus {
   }
 }
 
+.main-banner .mask .main-banner__text .main-banner__title.title-color-gray h1 {
+  color: #4C4C4C;
+}
+
 .main-banner .mask .main-banner__text .main-banner__title h1 {
   padding: 0px;
   color: #fff;

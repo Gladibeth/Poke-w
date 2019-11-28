@@ -350,6 +350,12 @@ button:focus {
           text-align: left;
         }
 
+        &.title-color-gray {
+          h1 {
+            color: #4C4C4C;
+          }
+        }
+
         h1 {
           padding: 0px;
           color: $white;
