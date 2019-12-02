@@ -43,7 +43,33 @@ $('.input-file .btn').click(function () {
   $(this).siblings('input[type="file"]').trigger('click');
 });
 
-
+//active en el menu
+const page = window.location.pathname;
+const itemsNavbarMenu = $('.navbar-nav.mr-autos li');
+switch (page) {
+  case '/poke/':
+    console.log('index')
+    break;
+  case '/poke/menu/':
+      $(itemsNavbarMenu[0]).find('a').addClass('active');
+    break;
+  case '/poke/nosotros/':
+      $(itemsNavbarMenu[1]).find('a').addClass('active');
+    break;
+  case '/poke/ubicaciones/':
+      $(itemsNavbarMenu[2]).find('a').addClass('active');
+    break;
+  case '/poke/poke-puntos/':
+      $(itemsNavbarMenu[3]).find('a').addClass('active');
+    break;
+  case '/poke/ambiental/':
+      $(itemsNavbarMenu[4]).find('a').addClass('active');
+    break;
+  case '/poke/eventos':
+      $(itemsNavbarMenu[5]).find('a').addClass('active');
+    break;
+  
+}
 
 // Menú fixed
 const url = window.location.origin;
@@ -74,7 +100,6 @@ $(document).ready(function () {
   });
 });
 
-const pathname = window.location.pathname;
 
 
 
