@@ -1,0 +1,1068 @@
+@import "variables";
+@import "mixins";
+@import "body";
+@import "offcanvas";
+@import "setting-slick";
+@import "buttons";
+@import "about";
+@import "poke-dots";
+@import "entries";
+@import "environmental";
+@import "work";
+@import "ubication";
+@import "createpokebolw";
+@import "modals";
+
+
+body {
+  font-family: $Raleway;
+  overflow-x: hidden;
+  padding-top: 0;
+  background-color: #f3f3f3;
+
+}
+
+.mask {
+  @include respond-to(sm) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+
+  @include respond-to(xs) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 0 0 0;
+  position: relative;
+
+  @include respond-to(xs) {
+    padding: 50px 0 0 0;
+  }
+}
+
+button:focus {
+  outline: 5px auto transparent;
+}
+
+.line {
+  border-right: 1px solid $white;
+  margin: 0 10px;
+
+  &.line-color {
+    border-right: 1px solid $line;
+    margin: 20px 10px;
+  }
+}
+
+.line-gray {
+  border: 1px solid $line;
+  width: 78%;
+  margin: 50px 0 0 150px;
+
+  &.line--white {
+    border: 1px solid $white;
+    margin: 10px 0 10px 0px;
+  }
+
+  &.line-gray--entries {
+    margin: 0;
+    width: 100%;
+  }
+
+  @include respond-to(md) {
+    margin: 50px 0;
+    width: 100%;
+  }
+
+  @include respond-to(sm) {
+    margin: 50px 0;
+    width: 100%;
+  }
+
+  @include respond-to(xs) {
+    margin: 50px 0 0 15px;
+    width: 90%;
+  }
+
+}
+
+.img-round {
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+
+  @include respond-to(sm) {
+    height: 80px;
+    // background-color: $white;
+  }
+
+  @include respond-to(xs) {
+    height: 75px;
+    // background-color: $white;
+  }
+
+  &.fixed {
+    height: 85px;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+  }
+
+  &.fixed-bc {
+    height: 85px;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+  }
+}
+
+.nav-item {
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+
+  @include respond-to(md) {
+    padding: 0;
+  }
+
+  @include respond-to(sm) {
+    padding: 5px 18px;
+  }
+
+  @include respond-to(xs) {
+    padding: 5px 15px;
+  }
+}
+
+.main-brand {
+  @include respond-to(sm) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav-link {
+  color: $white;
+  transition: 0.3s ease-in-out;
+  @include font(23px, $bold);
+  text-transform: uppercase;
+  font-family: $Ostrich;
+  border: 2px solid transparent;
+  padding: 0px 10px;
+  border-radius: 5px;
+
+  @include respond-to(xs) {
+    color: $black;
+  }
+
+  &.fixed-color {
+    color: $black;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+      border: 2px solid $black;
+      border-radius: 5px;
+    }
+
+    &.active {
+      border: 2px solid $black;
+      padding: 0px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &.nav-link-bc {
+    color: $black;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+      border: 2px solid $black;
+      border-radius: 5px;
+    }
+
+    &.active {
+      border: 2px solid $black;
+      padding: 0px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &.active {
+    border: 2px solid $white;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+
+.navbar-brand {
+  width: 80px;
+  padding: 10px;
+
+  @include respond-to(md) {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  @include respond-to(sm) {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  @include respond-to(xs) {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-top__header {
+  width: 100%;
+  background-color: $black;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+
+  &.nav-top__header--detele {
+    display: none !important;
+    transition: 0.3s ease-in-out;
+  }
+
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.nav-top__content {
+  padding: 0 100px;
+}
+
+.main-nav__contact {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.main-nav__redes {
+  a {
+    color: $white;
+    margin-right: 5px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transition: 0.3s ease-in-out;
+      color: $orange;
+    }
+  }
+}
+
+/** Banner */
+.main-banner {
+  position: relative;
+  overflow: hidden;
+  // margin-top: -80px;
+
+  .main-banner__item {
+    position: relative;
+
+
+  }
+
+  .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    .container {
+      height: 100%;
+    }
+
+    .main-banner__boxtext {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .main-banner__text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      // padding-left: 160px;
+
+      @include respond-to(md) {
+        padding-left: 20px;
+      }
+
+      @include respond-to(sm) {
+        padding-left: 30px;
+      }
+
+      @include respond-to(xs) {
+        padding-left: 30px;
+      }
+
+
+      .main-banner__title {
+        // text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6.3px;
+        text-shadow: 0px 4px 4px #00000029;
+
+        @include respond-to(sm) {
+          text-align: left;
+        }
+
+        @include respond-to(xs) {
+          text-align: left;
+        }
+
+        &.title-color-gray {
+          h1 {
+            color: #4C4C4C;
+          }
+        }
+
+        h1 {
+          padding: 0px;
+          color: $white;
+          @include font(65px, $superBold);
+          line-height: 1;
+          margin: 0;
+          font-family: $Raleway;
+
+          @include respond-to(md) {
+            font-size: 55px;
+          }
+
+          @include respond-to(xs) {
+            font-size: 30px;
+            padding: 0;
+          }
+        }
+
+        span {
+          padding: 0 25px;
+          color: $white;
+          font-size: 60px;
+          font-weight: 500;
+          line-height: 1;
+          margin: 0;
+        }
+
+      }
+
+      .main-banner__description {
+        padding: 0 25px;
+        color: $white;
+        font-size: 20px;
+        line-height: 2rem;
+        margin: 50px 0 0 0;
+        // font-family: $CenturyGothic;
+
+        @include respond-to(md) {
+          font-size: 18px;
+        }
+
+        @include respond-to(xs) {
+          font-size: 18px;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .main-banner__img {
+    width: 100%;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.main-general__title {
+  h2 {
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 6.86px;
+    @include font(80px, $bold);
+
+    @include respond-to(md) {
+      letter-spacing: 0px;
+      @include font(60px, $bold);
+    }
+
+    @include respond-to(sm) {
+      letter-spacing: 0px;
+      @include font(60px, $bold);
+    }
+
+    @include respond-to(xs) {
+      letter-spacing: 0px;
+      @include font(45px, $bold);
+    }
+  }
+
+  &.main-general__title--font {
+    h2 {
+      letter-spacing: 5.25px;
+      @include font(75px, $bold);
+
+      @include respond-to(md) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+
+      @include respond-to(sm) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+
+      @include respond-to(xs) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+    }
+  }
+
+  &.main-general__title--event {
+    h2 {
+      letter-spacing: 5.25px;
+      @include font(45px, $bold);
+
+      @include respond-to(md) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
+      }
+
+      @include respond-to(sm) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
+      }
+
+      @include respond-to(xs) {
+        letter-spacing: 0.25px;
+        @include font(40px, $bold);
+      }
+    }
+  }
+
+  &.main-general__title--color {
+    h2 {
+      letter-spacing: 5.25px;
+      @include font(75px, $bold);
+      color: $text;
+      text-align: right;
+
+      @include respond-to(md) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+
+      @include respond-to(sm) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+
+      @include respond-to(xs) {
+        letter-spacing: 0.25px;
+        @include font(50px, $bold);
+      }
+    }
+
+
+
+    &.title--left {
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+
+  &.main-general__title--dots {
+    h2 {
+      letter-spacing: 5.25px;
+      @include font(75px, $bold);
+      color: $text;
+      text-align: left;
+
+      @include respond-to(md) {
+        @include font(65px, $bold);
+      }
+
+      @include respond-to(sm) {
+        @include font(55px, $bold);
+      }
+
+      @include respond-to(xs) {
+        @include font(45px, $bold);
+      }
+    }
+  }
+}
+
+.main-general__description {
+  p {
+    letter-spacing: 2.45px;
+    color: $white;
+    @include font(25px, $medium);
+    margin-bottom: 0;
+
+    @include respond-to(md) {
+      @include font(20px, $medium);
+    }
+
+    @include respond-to(sm) {
+      @include font(20px, $medium);
+    }
+
+    @include respond-to(xs) {
+      @include font(18px, $medium);
+    }
+
+  }
+
+  strong {
+    color: $white;
+    @include font(25px, $superBold);
+  }
+
+
+  &.main-general__description--font {
+    p {
+      letter-spacing: 1.54px;
+      @include font(22px, $medium);
+
+      @include respond-to(sm) {
+        @include font(20px, $medium);
+      }
+    }
+  }
+
+  &.main-general__description--dots {
+    p {
+      color: $text;
+      @include font(30px, $medium);
+      letter-spacing: 2.1px;
+
+      @include respond-to(md) {
+        @include font(20px, $medium);
+      }
+
+      @include respond-to(sm) {
+        @include font(20px, $medium);
+      }
+
+      @include respond-to(xs) {
+        @include font(18px, $medium);
+      }
+    }
+  }
+
+  &.main-general__description--create {
+    margin-top: 40px;
+
+    p {
+      color: $text;
+      @include font(18px, $medium);
+      letter-spacing: 2.1px;
+      text-align: center;
+    }
+  }
+
+  &.main-general__description--amb {
+    p {
+      color: $text;
+      @include font(25px, $medium);
+      letter-spacing: 2.1px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include respond-to(md) {
+        @include font(20px, $medium);
+      }
+
+      @include respond-to(sm) {
+        @include font(20px, $medium);
+      }
+
+      @include respond-to(xs) {
+        @include font(18px, $medium);
+      }
+    }
+
+    &.main-general__description--work {
+      p {
+        @include font(35px, $superBold);
+
+        @include respond-to(sm) {
+          @include font(30px, $superBold);
+        }
+
+        @include respond-to(xs) {
+          @include font(25px, $superBold);
+        }
+      }
+    }
+  }
+
+
+
+  &.main-general__description--requiere {
+    p {
+      color: $text;
+      @include font(17px, $medium);
+      letter-spacing: 0;
+      margin-top: 20px;
+
+      @include respond-to(xs) {
+        @include font(14px, $medium);
+        text-align: center;
+      }
+    }
+  }
+}
+
+.main-general__boxsubtitle {
+  padding: 30px;
+}
+
+.main-general__subtitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  h3 {
+    @include font(20px, $bold);
+    text-transform: uppercase;
+  }
+
+  &:before {
+    content: '';
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    background-color: $text;
+    left: 0;
+    top: 10px;
+
+    @include respond-to(md) {
+      width: 300px;
+    }
+
+    @include respond-to(sm) {
+      width: 150px;
+    }
+
+    @include respond-to(xs) {
+      width: 45px;
+      left: -35px;
+      top: 10px;
+      transform: translateX(0px);
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    background-color: $text;
+    // content: '----------------------------------------------------------';
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    @include respond-to(md) {
+      width: 300px;
+    }
+
+    @include respond-to(sm) {
+      width: 150px;
+    }
+
+    @include respond-to(xs) {
+      width: 45px;
+      right: -35px;
+      top: 10px;
+      transform: translateX(0px);
+    }
+  }
+}
+
+.main-general__subtitle--medium {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    @include font(25px, $superBold);
+    text-transform: uppercase;
+  }
+}
+
+.main-about {
+  background-size: cover;
+  height: 1000px;
+
+  @include respond-to(sm) {
+    height: auto;
+    padding: 20px;
+  }
+
+  @include respond-to(xs) {
+    height: auto;
+  }
+
+  &.main-about__height {
+    height: 900px;
+    position: relative;
+    z-index: -1;
+
+    @include respond-to(xs) {
+      height: auto;
+    }
+  }
+
+}
+
+.main-about__mt {
+  margin-top: 10px;
+
+  @include respond-to(sm) {
+    margin-top: 0;
+  }
+
+  @include respond-to(xs) {
+    margin-top: 0;
+  }
+}
+
+.main-about__content {
+  width: 100%;
+  height: 900px;
+
+  @include respond-to(sm) {
+    height: 500px;
+  }
+
+  @include respond-to(xs) {
+    height: 800px;
+  }
+}
+
+.main-about__item {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
+}
+
+
+.main-why__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include respond-to(md) {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+  }
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-why__item {
+  &:nth-child(2) {
+    padding: 100px 0;
+  }
+
+  &.main-why__item--event {
+    padding: 60px 0;
+
+    @include respond-to(xs) {
+      padding: 110px 0 30px;
+    }
+  }
+}
+
+.main-follow__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-follow__img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.main-footer {
+  background-color: $white;
+}
+
+.main-footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 50px 0;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 1fr;
+    padding: 50px 0 10px 0;
+  }
+}
+
+.main-footer__boxsmall {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 20px;
+
+  @include respond-to(xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-footer__text {
+  p {
+    font-style: italic;
+    @include font(15px, $light);
+    font-family: $Roboto;
+    color: #686868;
+
+    @include respond-to(xs) {
+      text-align: center;
+    }
+  }
+}
+
+.main-footer__address {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-style: normal;
+    @include font(15px, $light);
+    font-family: $Roboto;
+    color: #686868;
+
+
+  }
+}
+
+.main-footer__title {
+  p {
+    color: $black;
+    @include font(15px, $bold);
+    font-family: $Roboto;
+    text-transform: uppercase;
+
+  }
+}
+
+.main-footer__box {
+  @include respond-to(xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      @include respond-to(xs) {
+        text-align: center;
+      }
+
+      a {
+        color: #686868;
+        font-family: $Roboto;
+        @include font(15px, $light);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          text-decoration: none;
+          @include font(15px, $semibold);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.main-footer__btn {
+  // width: 100%;
+  // display: flex;
+  // justify-content: flex-start;
+  margin-right: 7px;
+
+  @include respond-to(xs) {
+    justify-content: center;
+  }
+}
+
+.main-footer__redes {
+  display: flex;
+
+  a {
+    margin-right: 22px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+
+.main-footer__email {
+  margin-top: 20px;
+
+  a {
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.main-footer__copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F3F3F3;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    color: $black;
+    margin-bottom: 0;
+    font-weight: 700;
+
+    @include respond-to(xs) {
+      text-align: center;
+    }
+  }
+}
+
+
+
+.main-footer-grid {
+  display: flex;
+}
+
+.message {
+  p {
+    text-align: left;
+    letter-spacing: 0;
+    color: #000000;
+    font-size: 15px;
+    font-style: italic;
+    font-family: $Roboto;
+
+    .text-link {
+      font-size: 15px;
+    }
+  }
+}

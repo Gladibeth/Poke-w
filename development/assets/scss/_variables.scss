@@ -1,0 +1,54 @@
+// Medias querys
+$breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
+  'sm': "(min-width: 768px) and (max-width: 991px)",
+  'md': "(min-width: 992px) and (max-width: 1199px)",
+  'lg': "(min-width: 1200px) and (max-width: 1600px)",
+  'xl': "(min-width: 1601px) and (max-width: 2048px)",
+) !default;
+
+
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url('../fonts/OstrichSans-Heavy.woff2') format('woff2'),
+    url('../fonts/OstrichSans-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+// Fonts
+$Raleway:'Raleway',
+sans-serif;
+$Roboto:'Roboto',
+sans-serif;
+$Ostrich:'Ostrich Sans';
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$superBold: 900;
+
+// General
+$white: #fff;
+$black: #000;
+$contact: #161743;
+$text:#686868;
+$bcMision: #4a23de;
+$bcVision:#692be6;
+$orange: #DF8239;
+$gradient: linear-gradient(45deg, #eb4a82 0%, #5225f8 100%);
+$recutex: #ebe5e2;
+$recutex2: #d9c8c0;
+$green:#94b99e;
+$line: rgba(112, 112, 112, 0.35);
+
+$past: #f75d63;
+// Slick
+$arrow-color: #f50000;
+$arrow-size: 25px;
+$dots-color: gray;
+$dots-color-active: #00b050;
+$dots-size: 12px;
