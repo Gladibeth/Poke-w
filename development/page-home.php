@@ -1,18 +1,28 @@
 <?php get_header(); ?>
 <div class="main-banner">
     <div class="main-banner__content">
+    <?php
+      $args = array(
+      'post_type' => 'slider',
+      'showposts'=> 5,
+      'post_status' => 'publish',
+      'order' => 'ASC'
+      );
+      $loop = new WP_Query( $args );
+    ?>
+    <?php while( $loop->have_posts() ) : $loop->the_post();?>
       <div class="main-banner__item">
         <div class="mask">
           <div class="container">
             <div class="main-banner__boxtext">
               <div class="main-banner__text">
                 <div class="main-banner__title">
-                  <h1>Pura</h1>
-                  <h1>Sabrosura</h1>
+                  <?php the_content();?>
                 </div>
                 <div class="btn-box">
-                  <a class="btn_custom btn--large btn--filled" href="entries.html">
-                      Menú
+                  <?php $page = get_field('pagina'); ?>
+                  <a class="btn_custom btn--large btn--filled" href="<?php echo($page['url']); ?>">
+                    <?php echo($page['title']); ?>
                     </a>
                 </div>
               </div>
@@ -20,99 +30,10 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/POKE_-267-2.png">
+          <img src="<?php echo the_post_thumbnail_url(); ?>">
         </div>
       </div>
-      <div class="main-banner__item">
-        <div class="mask">
-          <div class="container">
-            <div class="main-banner__boxtext">
-              <div class="main-banner__text">
-                <div class="main-banner__title">
-                  <h1>Keep it</h1>
-                  <h1>fresh</h1>
-                </div>
-                <div class="btn-box">
-                  <a class="btn_custom btn--large btn--filled" href="#">
-                      NUESTRA PROMESA
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/keep-it-fresh.jpg">
-        </div>
-      </div>
-
-      <div class="main-banner__item">
-        <div class="mask">
-          <div class="container">
-            <div class="main-banner__boxtext">
-              <div class="main-banner__text">
-                <div class="main-banner__title title-color-gray">
-                  <h1>new</h1>
-                  <h1>bowls</h1>
-                </div>
-                <div class="btn-box">
-                  <a class="btn_custom btn--large btn--filled" href="#">
-                      PIDE AQUÍ
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/4.1.png">
-        </div>
-      </div>
-
-      <div class="main-banner__item">
-        <div class="mask">
-          <div class="container">
-            <div class="main-banner__boxtext">
-              <div class="main-banner__text">
-                <div class="main-banner__title">
-                  <h1>cultivando</h1>
-                  <h1>el cambio</h1>
-                </div>
-                <div class="btn-box">
-                  <a class="btn_custom btn--large btn--filled" href="about.html">
-                      nosotros
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/image.jpg">
-        </div>
-      </div>
-      <div class="main-banner__item">
-        <div class="mask">
-          <div class="container">
-            <div class="main-banner__boxtext">
-              <div class="main-banner__text">
-                <div class="main-banner__title">
-                  <h1>the poke</h1>
-                  <h1>generation</h1>
-                </div>
-                <div class="btn-box">
-                  <a class="btn_custom btn--large btn--filled" href="#">
-                      ubicaciones
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/the-poke-generation.jpg">
-        </div>
-      </div>
+    <?php endwhile; wp_reset_query();?>
     </div>
   </div>
   <div class="container">
