@@ -1,4 +1,4 @@
-<?php get_header(); ?> 
+<?php get_header(); ?>
 <div class="main-banner">
     <div class="main-banner__content">
       <div class="main-banner__item">
@@ -28,6 +28,29 @@
           <div class="container">
             <div class="main-banner__boxtext">
               <div class="main-banner__text">
+                <div class="main-banner__title">
+                  <h1>Keep it</h1>
+                  <h1>fresh</h1>
+                </div>
+                <div class="btn-box">
+                  <a class="btn_custom btn--large btn--filled" href="#">
+                      NUESTRA PROMESA
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__img">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/keep-it-fresh.jpg">
+        </div>
+      </div>
+
+      <div class="main-banner__item">
+        <div class="mask">
+          <div class="container">
+            <div class="main-banner__boxtext">
+              <div class="main-banner__text">
                 <div class="main-banner__title title-color-gray">
                   <h1>new</h1>
                   <h1>bowls</h1>
@@ -45,6 +68,7 @@
           <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/4.1.png">
         </div>
       </div>
+
       <div class="main-banner__item">
         <div class="mask">
           <div class="container">
@@ -86,7 +110,7 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/boat-daytime-fisherman-1105386.png">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/the-poke-generation.jpg">
         </div>
       </div>
     </div>

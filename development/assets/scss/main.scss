@@ -14,6 +14,10 @@
 @import "modals";
 
 
+p{
+  line-height: 1.5;
+}
+
 body {
   font-family: $Raleway;
   overflow-x: hidden;
@@ -363,7 +367,7 @@ button:focus {
       .main-banner__title {
         // text-align: center;
         text-transform: uppercase;
-        letter-spacing: 6.3px;
+        letter-spacing: 3.3px;
         text-shadow: 0px 4px 4px #00000029;
 
         @include respond-to(sm) {
@@ -383,7 +387,7 @@ button:focus {
         h1 {
           padding: 0px;
           color: $white;
-          @include font(65px, $superBold);
+          @include font(65px, $bold);
           line-height: 1;
           margin: 0;
           font-family: $Raleway;
@@ -447,6 +451,7 @@ button:focus {
     color: $white;
     letter-spacing: 6.86px;
     @include font(80px, $bold);
+    line-height: 1;
 
     @include respond-to(md) {
       letter-spacing: 0px;
@@ -467,7 +472,7 @@ button:focus {
   &.main-general__title--font {
     h2 {
       letter-spacing: 5.25px;
-      @include font(75px, $bold);
+      @include font(67px, $bold);
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
@@ -511,7 +516,7 @@ button:focus {
   &.main-general__title--color {
     h2 {
       letter-spacing: 5.25px;
-      @include font(75px, $bold);
+      @include font(50px, $bold);
       color: $text;
       text-align: right;
 
@@ -543,7 +548,7 @@ button:focus {
   &.main-general__title--dots {
     h2 {
       letter-spacing: 5.25px;
-      @include font(75px, $bold);
+      @include font(40px, $bold);
       color: $text;
       text-align: left;
 
@@ -566,7 +571,7 @@ button:focus {
   p {
     letter-spacing: 2.45px;
     color: $white;
-    @include font(25px, $medium);
+    @include font(20px, $medium);
     margin-bottom: 0;
 
     @include respond-to(md) {
@@ -603,7 +608,7 @@ button:focus {
   &.main-general__description--dots {
     p {
       color: $text;
-      @include font(30px, $medium);
+      @include font(20px, $medium);
       letter-spacing: 2.1px;
 
       @include respond-to(md) {
@@ -765,7 +770,7 @@ button:focus {
 
 .main-about {
   background-size: cover;
-  height: 1000px;
+  // height: 1000px;
 
   @include respond-to(sm) {
     height: auto;
@@ -777,7 +782,7 @@ button:focus {
   }
 
   &.main-about__height {
-    height: 900px;
+    // height: 900px;
     position: relative;
     z-index: -1;
 
@@ -789,7 +794,7 @@ button:focus {
 }
 
 .main-about__mt {
-  margin-top: 10px;
+  margin-top: 30px;
 
   @include respond-to(sm) {
     margin-top: 0;
@@ -802,7 +807,7 @@ button:focus {
 
 .main-about__content {
   width: 100%;
-  height: 900px;
+  height: 700px;
 
   @include respond-to(sm) {
     height: 500px;

@@ -106,20 +106,20 @@ input[type="checkbox"] {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  padding: 1.3rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid #96B5CE;
+  border: 2px solid rgba(104, 104, 104, 0.24);
   border-radius: 0;
   transition: border-color .15s ease-in-out,
     box-shadow .15s ease-in-out;
   font-family: $Raleway;
 
   &:focus {
-    background: rgba(150, 181, 206, 0.48);
+    background: rgba(104, 104, 104, 0.24);
     border-color: transparent !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
@@ -135,20 +135,20 @@ input[type="checkbox"] {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  padding: 1.3rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid #96B5CE;
+  border: 2px solid rgba(104, 104, 104, 0.24);;
   border-radius: 0;
   transition: border-color .15s ease-in-out,
     box-shadow .15s ease-in-out;
   font-family: $Raleway;
 
   &:focus {
-    background: rgba(150, 181, 206, 0.48);
+    background:rgba(104, 104, 104, 0.24);
     border-color: transparent !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
@@ -167,13 +167,13 @@ textarea {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  padding: 1.3rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid #96B5CE;
+  border: 2px solid rgba(104, 104, 104, 0.24);;
   border-radius: 0;
   transition: border-color .15s ease-in-out,
     box-shadow .15s ease-in-out;
@@ -183,7 +183,7 @@ textarea {
 
 
   &:focus {
-    background: rgba(150, 181, 206, 0.48);
+    background: rgba(104, 104, 104, 0.24);
     border-color: transparent !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
