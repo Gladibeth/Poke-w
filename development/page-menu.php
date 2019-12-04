@@ -1,9 +1,25 @@
 <?php get_header(); ?>
-  <div class="about-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/fondo chispiado + morado.png');">
+<div id="banner-entradas" class="about-banner no" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/fondo chispiado + morado.png');">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
         <h3>ENTRADAS</h3>
+      </div>
+    </div>
+  </div>
+  <div  id="banner-pokeBowl" class="about-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/fondo chispiado + morado.png');">
+    <div class="overlay"></div>
+    <div class="about-banner__text about-banner__text--center">
+      <div class="about-banner__title">
+        <h3>Poke Bowl</h3>
+      </div>
+    </div>
+  </div>
+  <div  id="banner-juiceBar" class="about-banner no" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/fondo chispiado + morado.png');">
+    <div class="overlay"></div>
+    <div class="about-banner__text about-banner__text--center">
+      <div class="about-banner__title">
+        <h3>Juice Bar</h3>
       </div>
     </div>
   </div>
@@ -12,13 +28,13 @@
       <div class="main-entries__nav">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item nav-item--tabs">
-            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-home" id="pills-home-tab" role="tab">entradas</a>
+            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-home" id="entradas" role="tab" onclick="menu(this)">entradas</a>
           </li>
           <li class="nav-item nav-item--tabs">
-            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pills-profile-tab" role="tab">poke bowl</a>
+            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pokeBowl" role="tab" onclick="menu(this)">poke bowl</a>
           </li>
           <li class="nav-item nav-item--tabs">
-            <a aria-controls="v-pills-contact" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-contact" id="pills-contact-tab" role="tab">juice bar</a>
+            <a aria-controls="v-pills-contact" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-contact" id="juiceBar" role="tab" onclick="menu(this)">juice bar</a>
           </li>
         </ul>
         <div class="btn__tabs">
@@ -31,7 +47,7 @@
       </div>
       <hr class="line-gray line-gray--entries">
       <div class="tab-content">
-        <div aria-labelledby="pills-home-tab" class="tab-pane fade" id="v-pills-home" role="tabpanel">
+        <div aria-labelledby="entradas" class="tab-pane fade" id="v-pills-home" role="tabpanel">
           <div class="main-entries__content">
             <!--entradas-->
             <?php
@@ -110,4 +126,32 @@
       </div>
     </div>
   </div>
+  <script>
+  function menu(e){
+    if('banner-'+e.id == 'banner-entradas'){
+      $('#banner-pokeBowl').addClass( "no" );
+      $('#banner-juiceBar').addClass( "no" );
+      $('#banner-entradas').removeClass( "no" );
+    }
+     if('banner-'+e.id == 'banner-pokeBowl'){
+      $('#banner-entradas').addClass( "no" );
+      $('#banner-juiceBar').addClass( "no" );
+      $('#banner-pokeBowl').removeClass( "no" );
+    }
+    if('banner-'+e.id == 'banner-juiceBar'){
+      $('#banner-entradas').addClass( "no" );
+      $('#banner-pokeBowl').addClass( "no" );
+      $('#banner-juiceBar').removeClass( "no" );
+    }
+
+  }
+    document.getElementById("entradas").innerHTML = "Muchas gracias!"; 
+    $(document).ready(function() {
+      $('#banner-pokeBowl').removeClass( "no" );
+    });
+  </script>
+  <style>
+  .si{display:block;}
+  .no{display:none;}
+  </style>
 <?php get_footer(); ?> 
