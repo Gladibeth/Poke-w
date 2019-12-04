@@ -84,66 +84,27 @@
         </div>
         <div class="tab-pane fade" id="v-pills-contact">
           <div class="main-pokebowls__content">
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/limonada.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>limonada</h3>
+            <!--juice bar-->
+            <?php
+              $args = array(
+              'post_type' => 'juice_bar',
+              'post_status' => 'publish',
+              'order' => 'DESC'
+            );
+              $loop = new WP_Query( $args );
+            ?>
+            <?php while( $loop->have_posts() ) : $loop->the_post();?>
+              <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
+                <div class="main-entries__img">
+                <img src="<?php echo the_post_thumbnail_url(); ?>">
                 </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/jugo mandarina.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>mandarina</h3>
+                <div class="main-entries__text">
+                  <div class="main-entries__title">
+                    <h3><?php the_title();?></h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/Carrott Blast.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>carrot blast</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/fresh beet.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>fresh beet</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/Green Fix.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>Green Fix</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".juicebar-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Juice_bar/Lulada.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>Lulada</h3>
-                </div>
-              </div>
-            </a>
+              </a>
+            <?php endwhile; wp_reset_query();?>
           </div>
         </div>
       </div>
