@@ -33,26 +33,27 @@
       <div class="tab-content">
         <div aria-labelledby="pills-home-tab" class="tab-pane fade" id="v-pills-home" role="tabpanel">
           <div class="main-entries__content">
-            <a class="main-entries__item" data-target=".entries-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/ceviche.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>ceviche</h3>
+          <!--entradas-->
+            <?php
+              $args = array(
+              'post_type' => 'post',
+              'post_status' => 'publish',
+              'order' => 'DESC'
+            );
+              $loop = new WP_Query( $args );
+            ?>
+            <?php while( $loop->have_posts() ) : $loop->the_post();?>
+              <a class="main-entries__item" data-target=".entries-modals" data-toggle="modal" href="">
+                <div class="main-entries__img">
+                  <img src="<?php echo the_post_thumbnail_url(); ?>">
                 </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".entries-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/tartar.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>tartar</h3>
+                <div class="main-entries__text">
+                  <div class="main-entries__title">
+                    <h3><?php the_title();?></h3>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            <?php endwhile; wp_reset_query();?>
           </div>
         </div>
         <div class="tab-pane fade show active" id="v-pills-profile">
