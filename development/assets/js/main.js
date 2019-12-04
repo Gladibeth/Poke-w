@@ -63,9 +63,10 @@ switch (page) {
       $(itemsNavbarMenu[3]).find('a').addClass('active');
     break;
   case '/poke/ambiental/':
+      alert('4')
       $(itemsNavbarMenu[4]).find('a').addClass('active');
     break;
-  case '/poke/eventos':
+  case '/poke/eventos/':
       $(itemsNavbarMenu[5]).find('a').addClass('active');
     break;
   
