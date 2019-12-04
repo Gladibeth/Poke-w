@@ -15,7 +15,7 @@
             <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-home" id="pills-home-tab" role="tab">entradas</a>
           </li>
           <li class="nav-item nav-item--tabs">
-            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pills-profile-tab" role="tab">poke bowls</a>
+            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pills-profile-tab" role="tab">poke bowl</a>
           </li>
           <li class="nav-item nav-item--tabs">
             <a aria-controls="v-pills-contact" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-contact" id="pills-contact-tab" role="tab">juice bar</a>
@@ -33,7 +33,7 @@
       <div class="tab-content">
         <div aria-labelledby="pills-home-tab" class="tab-pane fade" id="v-pills-home" role="tabpanel">
           <div class="main-entries__content">
-          <!--entradas-->
+            <!--entradas-->
             <?php
               $args = array(
               'post_type' => 'post',
@@ -58,66 +58,28 @@
         </div>
         <div class="tab-pane fade show active" id="v-pills-profile">
           <div class="main-pokebowls__content">
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo amarillo.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>shaka</h3>
+            <!--poke bowl-->
+            <?php
+              $args = array(
+              'post_type' => 'poke_bowls',
+              'post_status' => 'publish',
+              'order' => 'DESC'
+            );
+              $loop = new WP_Query( $args );
+            ?>
+            <?php while( $loop->have_posts() ) : $loop->the_post();?>
+              <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
+                <div class="main-entries__img">
+                  <img src="<?php echo the_post_thumbnail_url(); ?>">
                 </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo naranja 1.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>pulled pork</h3>
+                <div class="main-entries__text">
+                  <div class="main-entries__title">
+                    <h3><?php the_title();?></h3>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo piel.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>alii</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo azul agua marina.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>luau</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo azul.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>mahalo</h3>
-                </div>
-              </div>
-            </a>
-            <a class="main-entries__item" data-target=".pokebolws-modals" data-toggle="modal" href="">
-              <div class="main-entries__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_bowls/fondo amarillo pollo.png">
-              </div>
-              <div class="main-entries__text">
-                <div class="main-entries__title">
-                  <h3>palenq</h3>
-                </div>
-              </div>
-            </a>
+              </a>
+            <?php endwhile; wp_reset_query();?>
+            
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-contact">
