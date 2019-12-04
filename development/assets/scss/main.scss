@@ -326,7 +326,7 @@ button:focus {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    // background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
 
     .container {
@@ -379,7 +379,7 @@ button:focus {
         }
 
         &.title-color-gray {
-          h1 {
+          h2 {
             color: #4C4C4C;
           }
         }
@@ -391,6 +391,30 @@ button:focus {
           line-height: 1;
           margin: 0;
           font-family: $Raleway;
+
+          @include respond-to(xl){
+            @include font(85px, $bold);
+          }
+
+          @include respond-to(md) {
+            font-size: 55px;
+          }
+
+          @include respond-to(xs) {
+            font-size: 30px;
+            padding: 0;
+          }
+        }
+        h2 {
+          padding: 0px;
+          color: $white;
+          @include font(65px, $bold);
+          line-height: 1;
+          margin: 0;
+          font-family: $Raleway;
+          @include respond-to(xl){
+            @include font(85px, $bold);
+          }
 
           @include respond-to(md) {
             font-size: 55px;
@@ -471,8 +495,9 @@ button:focus {
 
   &.main-general__title--font {
     h2 {
-      letter-spacing: 5.25px;
-      @include font(67px, $bold);
+      letter-spacing: 0px;
+      @include font(60px, $bold);
+      margin-bottom: 0;
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
@@ -515,19 +540,20 @@ button:focus {
 
   &.main-general__title--color {
     h2 {
-      letter-spacing: 5.25px;
-      @include font(50px, $bold);
+      letter-spacing: 3.25px;
+      @include font(50px, $superBold);
       color: $text;
       text-align: right;
+      margin-bottom: 0;
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
-        @include font(50px, $bold);
+        @include font(50px, $superBold);
       }
 
       @include respond-to(sm) {
         letter-spacing: 0.25px;
-        @include font(50px, $bold);
+        @include font(50px, $superBold);
       }
 
       @include respond-to(xs) {
@@ -548,9 +574,29 @@ button:focus {
   &.main-general__title--dots {
     h2 {
       letter-spacing: 5.25px;
-      @include font(40px, $bold);
+      @include font(50px, $bold);
       color: $text;
       text-align: left;
+      text-transform: uppercase;
+
+      @include respond-to(md) {
+        @include font(65px, $bold);
+      }
+
+      @include respond-to(sm) {
+        @include font(55px, $bold);
+      }
+
+      @include respond-to(xs) {
+        @include font(45px, $bold);
+      }
+    }
+    h1 {
+      letter-spacing: 5.25px;
+      @include font(50px, $bold);
+      color: $text;
+      text-align: left;
+      text-transform: uppercase;
 
       @include respond-to(md) {
         @include font(65px, $bold);
@@ -597,7 +643,8 @@ button:focus {
   &.main-general__description--font {
     p {
       letter-spacing: 1.54px;
-      @include font(22px, $medium);
+      @include font(15px, $medium);
+      line-height: 2.5;
 
       @include respond-to(sm) {
         @include font(20px, $medium);
@@ -702,6 +749,7 @@ button:focus {
   h3 {
     @include font(20px, $bold);
     text-transform: uppercase;
+    color:#686868;
   }
 
   &:before {
@@ -761,10 +809,13 @@ button:focus {
   width: 100%;
   display: flex;
   justify-content: center;
+  
 
   h4 {
     @include font(25px, $superBold);
     text-transform: uppercase;
+    color:#686868;
+    
   }
 }
 
@@ -794,7 +845,8 @@ button:focus {
 }
 
 .main-about__mt {
-  margin-top: 30px;
+  margin-top: 60px;
+  position: initial;
 
   @include respond-to(sm) {
     margin-top: 0;
@@ -1070,4 +1122,8 @@ button:focus {
       font-size: 15px;
     }
   }
+}
+
+.card-header{
+  padding: 0rem 1.25rem;
 }

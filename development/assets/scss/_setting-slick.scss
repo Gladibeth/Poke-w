@@ -3,7 +3,9 @@
     z-index: 2;
     top: 93%;
     left: 41%;
-
+    @include respond-to(sm) {
+      right: 38%;
+    }
 
     &:before {
       font-size: $arrow-size;
@@ -21,12 +23,12 @@
   }
 
   .slick-next {
-    right: 42%;
+    right: 39%;
     z-index: 2;
     top: 93%;
 
     @include respond-to(sm) {
-      right: 33%;
+      right: 28%;
     }
 
     @include respond-to(xl) {
@@ -67,9 +69,9 @@
     //   left: 45%;
     // }
 
-    // @include respond-to(sm) {
-    //   left: 45%;
-    // }
+    @include respond-to(sm) {
+      left: 43%;
+    }
 
     // @include respond-to(xs) {
     //   left: 35%;

@@ -11,7 +11,7 @@
 
   .container {
     z-index: 999;
-    margin-top: 130px;
+    margin-top: 60px;
 
     @include respond-to(xs) {
       margin-top: 0;
@@ -75,6 +75,30 @@
       }
 
 
+      h1 {
+        // padding: 0 25px;
+        color: $white;
+        @include font(65px, $bold);
+        line-height: 1;
+        margin: 0;
+        font-family: $Raleway;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 11px #000000AC;
+        @include respond-to(xl){
+          @include font(85px, $bold);
+        }
+
+
+        @include respond-to(md) {
+          font-size: 55px;
+        }
+
+        @include respond-to(xs) {
+          font-size: 30px;
+          padding: 0;
+        }
+
+      }
       h3 {
         // padding: 0 25px;
         color: $white;
@@ -83,6 +107,10 @@
         margin: 0;
         font-family: $Raleway;
         text-transform: uppercase;
+        // text-shadow: 0px 4px 11px #000000AC;
+        @include respond-to(xl){
+          @include font(85px, $bold);
+        }
 
 
         @include respond-to(md) {
@@ -192,7 +220,7 @@
   p {
     text-align: right;
     color: $text;
-    @include font(18px, $medium);
+    @include font(16px, $medium);
     letter-spacing: 1.54px;
 
     @include respond-to(sm) {
