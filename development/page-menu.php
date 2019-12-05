@@ -297,21 +297,9 @@
                                 <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
                                 <p>Grasas</p>
                               </div>
-                              <!-- <div class="main-modal__details">
-                                <span class="badge badge-secondary">123</span>
-                                <p>Superfoods</p>
-                              </div> -->
                             </div>
                             <div class="main-modal__price">
                               <p>COP: <?php the_field('precio_menu');?></p>
-                            </div>
-                            <div class="btn-modal">
-                              <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" target="_blank" href="<?php echo($urlRappi['url']); ?>">
-                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
-                                  <span class="line"></span>
-                                  Pide en línea
-                                </a>
                             </div>
                           </div>
                         </div>
