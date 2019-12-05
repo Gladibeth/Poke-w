@@ -1,8 +1,10 @@
 $('.main-banner__content').slick({
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplaySpeed: 3000,
+  
   dots: true,
   arrows: true,
   responsive: [{
@@ -29,7 +31,7 @@ $('.main-banner__content').slick({
         dots: false,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 1000
+        autoplaySpeed: 5000
       }
     }
   ]

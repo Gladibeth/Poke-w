@@ -1,9 +1,12 @@
 .about-banner {
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  display: flex;
-  align-items: center;
+  background-size: contain;
+    height: 67vh;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  
 
   &.about-banner--full {
     height: 100vh;
@@ -126,24 +129,6 @@
 
       span {
         padding: 0 25px;
-        color: $white;
-        @include font(30px, $semibold);
-        line-height: 1;
-        margin: 0;
-        font-family: $Raleway;
-        text-transform: uppercase;
-
-        @include respond-to(sm) {
-          @include font(30px, $semibold);
-          padding: 0;
-        }
-
-        @include respond-to(xs) {
-          @include font(18px, $semibold);
-          padding: 0;
-        }
-      }
-      p {
         color: $white;
         @include font(30px, $semibold);
         line-height: 1;

@@ -73,6 +73,12 @@ button:focus {
     border-right: 1px solid $line;
     margin: 20px 10px;
   }
+
+  &.line-color--entries{
+    border-right: 1px solid hsla(0,0%,44%,.35);
+    height: 45px;
+    margin-top: 28px;
+  }
 }
 
 .line-gray {
@@ -544,7 +550,7 @@ button:focus {
       @include font(50px, $superBold);
       color: $text;
       text-align: right;
-      margin-bottom: 0;
+      margin-bottom: 20px;
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
@@ -845,7 +851,7 @@ button:focus {
 }
 
 .main-about__mt {
-  margin-top: 60px;
+  margin-top: 50px;
   position: initial;
 
   @include respond-to(sm) {

@@ -24,8 +24,8 @@
   top: 20px;
 
   span {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3.0rem;
+    font-weight: 400;
     line-height: 1;
     color: #C5614F;
   }
@@ -53,8 +53,8 @@
 
 .main-modal__title {
   p {
-    @include font(55px, $bold);
-    letter-spacing: 3.2px;
+    @include font(50px, $bold);
+    letter-spacing: 0.2px;
     color: $text;
     text-transform: uppercase;
     font-family: $Raleway;
@@ -117,6 +117,11 @@
   span {
     margin-right: 10px;
     background-color: #B4B4B4;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
   }
 }
 
@@ -181,7 +186,7 @@
     letter-spacing: 3.2px;
     color: $text;
     text-transform: uppercase;
-    font-family: $Raleway;
+    // font-family: $Raleway;
     margin-bottom: 0px;
 
     @include respond-to(md) {
@@ -195,5 +200,20 @@
     @include respond-to(xs) {
       @include font(18px, $bold);
     }
+  }
+}
+
+.main-modals__icons{
+  height: 85px;
+    display: flex;
+  img{
+    width:25px;
+    margin-right: 5px;
+  }
+}
+
+.badge{
+  img{
+    width: 30px;
   }
 }

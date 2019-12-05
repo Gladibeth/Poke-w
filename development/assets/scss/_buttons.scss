@@ -116,14 +116,14 @@ button {
   font-family: $Ostrich;
 
   img {
-    width: 30px;
+    width: 20px;
   }
 
   &:hover {
     text-decoration: none;
-    background: transparent;
-    color: #686868;
-    border: 1px solid #686868;
+    background: rgba(104, 104, 104, 0.61);
+    color: #fff;
+    border: 1px solid rgba(104, 104, 104, 0.61);
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
