@@ -16,7 +16,7 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-<header id="home">
+  <header id="home">
     <?php $url = $_SERVER["REQUEST_URI"] ?>
     <?php if (($url == '/poke/eventos/') || ($url == '/poke/escribenos/') ||  ($url == '/poke/trabaja-con-nosotros/')):?>
       <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js fixed-bc">
