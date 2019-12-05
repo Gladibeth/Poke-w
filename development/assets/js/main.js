@@ -142,3 +142,22 @@ $(document).ready(function () {
     s.parentNode.insertBefore(wf, s);
   })();
 });
+
+//productos menu
+function menu(e){
+  if('banner-'+e.id == 'banner-entradas'){
+    $('#banner-pokeBowl').addClass( "js-hiddenMenu" );
+    $('#banner-juiceBar').addClass( "js-hiddenMenu" );
+    $('#banner-entradas').removeClass( "js-hiddenMenu" );
+  }
+   if('banner-'+e.id == 'banner-pokeBowl'){
+    $('#banner-entradas').addClass( "js-hiddenMenu" );
+    $('#banner-juiceBar').addClass( "js-hiddenMenu" );
+    $('#banner-pokeBowl').removeClass( "js-hiddenMenu" );
+  }
+  if('banner-'+e.id == 'banner-juiceBar'){
+    $('#banner-entradas').addClass( "js-hiddenMenu" );
+    $('#banner-pokeBowl').addClass( "js-hiddenMenu" );
+    $('#banner-juiceBar').removeClass( "js-hiddenMenu" );
+  }
+}
