@@ -119,8 +119,8 @@ input[type="checkbox"] {
   font-family: $Raleway;
 
   &:focus {
-    background: rgba(104, 104, 104, 0.24);
-    border-color: transparent !important;
+    // background: rgba(104, 104, 104, 0.24);
+    border-color: #686868 !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
 
@@ -128,9 +128,59 @@ input[type="checkbox"] {
 
   &::placeholder {
     color: #898989 !important;
+    font-weight: 500;
   }
 }
 
+.input-footer{
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 1.3rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #686868 !important;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  font-family: $Raleway;
+  border-radius: 5px !important;
+
+  &:focus {
+    background: transparent;
+    border-color: #686868 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+  }
+
+  &::placeholder {
+    color: #898989 !important;
+    font-weight: 500;
+  }
+}
+.select-ubication{
+  border-radius: 0;
+  background-color: #b4b4b4;
+  color: #fff;
+  text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    height:50px;
+    text-align-last: center;
+
+    &:focus{
+      border-color: transparent !important;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+      // background-color: #b4b4b4;
+      // color: #fff;
+    }
+  
+}
 #inputState {
   display: block;
   width: 100%;

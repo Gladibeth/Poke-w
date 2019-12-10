@@ -77,7 +77,9 @@ button {
     box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: 0.3s ease-in-out;
   }
-
+  &.btn-event{
+    border-radius: 0px !important;
+  }
   &.btn--filled--buy {
     background-color: $past;
     color: $white;
@@ -142,6 +144,36 @@ button {
     img {
       filter: brightness(0.4);
     }
+  }
+}
+
+
+.btn--filled-footer {
+  color: $white;
+  background: #686868;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: $superBold;
+  font-family: $Ostrich;
+  border-radius: 0px;
+
+  img {
+    width: 20px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background: rgba(104, 104, 104, 0.61);
+    color: #fff;
+    border: 1px solid rgba(104, 104, 104, 0.61);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: 0.3s ease-in-out;
   }
 }
 

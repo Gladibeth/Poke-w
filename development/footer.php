@@ -4,7 +4,7 @@
         <div class="main-footer__item">
           <div class="main-footer__box">
             <div class="main-footer__logo">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg">
+              <img width="89" height="85" src="<?php echo get_template_directory_uri();?>/assets/img/Footer/poke-bowls.png">
             </div>
             <div class="main-footer__boxsmall">
               <div class="main-footer__boxitem">
@@ -12,7 +12,7 @@
               </div>
               <div class="main-footer__boxitem">
                 <div class="main-footer__text">
-                  <p>Part of Foodie Group S.A.S & Endeavor company</p>
+                  <p>Part of Foodie Group S.A.S <br> & Endeavor company</p>
                 </div>
               </div>
             </div>
@@ -59,11 +59,11 @@
             <div class="main-footer__subscribe">
               <form>
                 <div class="form-group">
-                  <input class="form-control" id="formGroupExampleInput" placeholder="Correo electronico" type="email">
+                  <input class="input-footer form-control" id="formGroupExampleInput" placeholder="Correo electronico" type="email">
                 </div>
                 <div class="main-footer-grid">
                   <div class="main-footer__btn">
-                    <button class="btn_custom btn--medium btn--filled-gray">
+                    <button class="btn_custom btn--medium btn--filled-footer">
                         Enviar
                       </button>
                   </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="main-footer__email">
               <a href="mailto:servicios@pokecolombia.co">
-                <p>servicios@pokecolombia.co</p>
+                <p>servicio@pokecolombia.co</p>
               </a>
             </div>
           </div>

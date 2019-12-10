@@ -116,7 +116,7 @@
                 </label>
             </div>
             <div class="btn-form__center">
-              <a class="btn_custom btn--medium btn--filled btn--filled--border" href="#contact">
+              <a class="btn_custom btn--large btn--filled btn--filled--border" href="#contact">
                   Enviar
                 </a>
             </div>
