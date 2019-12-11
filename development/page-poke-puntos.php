@@ -47,70 +47,37 @@
         </div>
       </div>
       <div class="main-pokedots__content">
-        <div class="main-pokedots__item">
-          <div class="main-pokedots__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/bowl mediano.png">
-          </div>
-          <div class="main-pokedots__boxtext">
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>POKE Mediano</p>
-                <span>Puntos: 150</span>
-              </div>
+        <?php
+          $args = array(
+          'post_type' => 'tabla_premios',
+          'post_status' => 'publish',
+          'order' => 'DESC'
+          );
+          $loop = new WP_Query( $args );
+        ?>
+        <?php while( $loop->have_posts() ) : $loop->the_post();?>
+          <div class="main-pokedots__item">
+            <div class="main-pokedots__img">
+              <img src="<?php echo the_post_thumbnail_url(); ?>">
             </div>
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>50% POKE Mediano</p>
-                <span>Puntos: 80</span>
+            <div class="main-pokedots__boxtext">
+              <div class="main-pokedots__text">
+                <div class="main-pokedots__title">
+                  <p><?php the_title();?></p>
+                  <span>Puntos: <?php the_field('puntos_100_poke_puntos');?></span>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-pokedots__item">
-          <div class="main-pokedots__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/bowl grande.png">
-          </div>
-          <div class="main-pokedots__boxtext">
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>POKE GRANDE</p>
-                <span>Puntos: 173</span>
-              </div>
-            </div>
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>50% POKE GRANDE</p>
-                <span>Puntos: 90</span>
-              </div>
+              <?php if (get_field('opcion_2_poke_puntos')): ?>
+                <div class="main-pokedots__text">
+                  <div class="main-pokedots__title">
+                    <p><?php the_field('opcion_2_poke_puntos');?> % <?php the_title();?></p>
+                    <span>Puntos: <?php the_field('puntos_opcion_2_poke_puntos');?></span>
+                  </div>
+                </div>
+              <?php endif;?> 
             </div>
           </div>
-        </div>
-        <div class="main-pokedots__item">
-          <div class="main-pokedots__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/limonada.png">
-          </div>
-          <div class="main-pokedots__boxtext">
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>jugo</p>
-                <span>Puntos: 33</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-pokedots__item">
-          <div class="main-pokedots__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/brownie.png">
-          </div>
-          <div class="main-pokedots__boxtext">
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>POKE brownie</p>
-                <span>Puntos: 33</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php endwhile; wp_reset_query();?>
       </div>
     </div>
     <hr class="line-gray">
