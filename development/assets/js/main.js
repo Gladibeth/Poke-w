@@ -160,3 +160,32 @@ function menu(e){
     $('#banner-juiceBar').removeClass( "js-hiddenMenu" );
   }
 }
+
+//select
+var select = document.getElementById('ubications');
+select.addEventListener('change',
+  function(){
+
+    var selectedOption = this.options[select.selectedIndex];
+    console.log('#'+selectedOption.value);
+    $('.js-ubications').addClass( "js-displayNone" );
+    $('#'+selectedOption.value).removeClass( "js-displayNone" );
+    
+  });
+
+  function scroll_top(){
+    var posicion = $(".js-scroll").offset().top;
+    $("div").animate({
+      scrollTop: 0
+    }, 2000); 
+  }
+  
+  function scroll_bottom(){
+    var posicion = $(".js-scroll").offset().top;
+    console.log(posicion);
+    $("div").animate({
+        scrollTop: 660
+    }, 3000); 
+  }
+  
+  

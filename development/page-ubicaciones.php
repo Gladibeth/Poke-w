@@ -8,14 +8,11 @@
       </div>
     </div>
   </div>
-
-
   <div class="main-ubications">
     <div class="container">
       <div class="main-ubications__content">
-      
         <div class="main-ubications__item">
-          <select class="form-control select-ubication">
+          <select class="form-control select-ubication" name="ubications" id="ubications">
             <option value="bogota">Bogotá</option>
             <option value="chia">Chía</option>
             <option value="medellin">Medellín</option>
@@ -25,69 +22,76 @@
             <option value="pereira">Pereira</option>
             <option value="manizales">Manizales</option>
           </select>
-          <div class="main-content-fix">
-            <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordion" id="collapseOne">
-              <div class="card-body">
-                <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                <a class="first-icons link-ubication">
-                  <i class="fa fa-caret-up "></i>
-                </a>
-                  <a aria-controls="v-pills-home" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab" role="tab">Poke chia</a>
-                  <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g</a>
-                  <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen</a>
-                  <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81</a>
-                  <a class="last-icons link-ubication">
-                    <i class="fa fa-caret-down "></i>
-                </a>
+          <div class="div-padre js-ubications" id="bogota">
+            <div class="main-content-fix" >
+              <a class="first-icons link-ubication" onclick="scroll_top()">
+                <i class="fa fa-caret-up"></i>
+              </a>
+              <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
+                <div class="card-body">
+                  <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                    <a aria-controls="v-pills-home" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab" role="tab">Poke chia1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                  </div>
                 </div>
               </div>
+              <a class="last-icons link-ubication" onclick="scroll_bottom()">
+                <i class="fa fa-caret-down a-1"></i>
+              </a>
             </div>
           </div>
-          <!-- <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button aria-controls="collapseOne" aria-expanded="true" class="btn btn-link dropdown-toggle" data-target="#collapseOne" data-toggle="collapse">
-                      Bogotá
-                    </button>
-                </h5>
-              </div>
-              
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button aria-controls="collapseTwo" aria-expanded="false" class="btn btn-link collapsed dropdown-toggle" data-target="#collapseTwo" data-toggle="collapse">
-                      Cartagena
-                    </button>
-                </h5>
-              </div>
-              <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordion" id="collapseTwo">
+
+
+
+
+
+          <div class="div-padre js-ubications js-displayNone" id="chia">
+            <div class="main-content-fix" >
+              <a class="first-icons link-ubication" onclick="scroll_top()">
+                <i class="fa fa-caret-up"></i>
+              </a>
+              <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
                 <div class="card-body">
                   <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="v-pills-home1" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home1" id="v-pills-home-tab1" role="tab">Poke chia</a>
+                    <a aria-controls="v-pills-home" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab" role="tab">Poke chia1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
+                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
+                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
                   </div>
                 </div>
               </div>
+              <a class="last-icons link-ubication" onclick="scroll_bottom()">
+                <i class="fa fa-caret-down a-1"></i>
+              </a>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link collapsed dropdown-toggle" data-target="#collapseThree" data-toggle="collapse">
-                      Cali
-                    </button>
-                </h5>
-              </div>
-              <div aria-labelledby="headingThree" class="collapse" data-parent="#accordion" id="collapseThree">
-                <div class="card-body">
-                  <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="v-pills-home1" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home1" id="v-pills-home-tab1" role="tab">Poke chia</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+          </div>
+
+
+
+
+
+
+        </div>  
         <div class="main-ubications__item">
           <div class="tab-content" id="v-pills-tabContent">
             <div aria-labelledby="v-pills-home-tab" class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
@@ -97,7 +101,7 @@
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá</li>
+                    <li>Bogotá2</li>
                     <li>Chia KM7 vía cajica-Chia</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
@@ -122,7 +126,7 @@
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá</li>
+                    <li>Bogotá3</li>
                     <li>Poke Zona G, Calle 69a</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
@@ -147,7 +151,7 @@
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá</li>
+                    <li>Bogotá4</li>
                     <li>Poke Usaquen, Calle 120a</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
@@ -172,7 +176,7 @@
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá</li>
+                    <li>Bogotá5</li>
                     <li>Poke Calle 81, Calle 81</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
@@ -197,7 +201,7 @@
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá</li>
+                    <li>Bogotá6</li>
                     <li>Chia KM7 vía cajica-Chia</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
@@ -221,5 +225,10 @@
     </div>
   </div>
   <?php endwhile; endif; ?>
-  
+
+  <style>
+  .js-displayNone{
+    display:none;
+  }
+  </style>
 <?php get_footer(); ?> 
