@@ -49,25 +49,6 @@
       <div class="main-pokedots__content">
         <div class="main-pokedots__item">
           <div class="main-pokedots__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/bowl grande.png">
-          </div>
-          <div class="main-pokedots__boxtext">
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>POKE GRANDE</p>
-                <span>Puntos: 173</span>
-              </div>
-            </div>
-            <div class="main-pokedots__text">
-              <div class="main-pokedots__title">
-                <p>50% POKE GRANDE</p>
-                <span>Puntos: 90</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-pokedots__item">
-          <div class="main-pokedots__img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/bowl mediano.png">
           </div>
           <div class="main-pokedots__boxtext">
@@ -81,6 +62,25 @@
               <div class="main-pokedots__title">
                 <p>50% POKE Mediano</p>
                 <span>Puntos: 80</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-pokedots__item">
+          <div class="main-pokedots__img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/bowl grande.png">
+          </div>
+          <div class="main-pokedots__boxtext">
+            <div class="main-pokedots__text">
+              <div class="main-pokedots__title">
+                <p>POKE GRANDE</p>
+                <span>Puntos: 173</span>
+              </div>
+            </div>
+            <div class="main-pokedots__text">
+              <div class="main-pokedots__title">
+                <p>50% POKE GRANDE</p>
+                <span>Puntos: 90</span>
               </div>
             </div>
           </div>
