@@ -112,47 +112,5 @@
         </div>
       </div>
     </div>
-    <div class="main-follow__content">
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/1.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/2.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/3.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/4.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/5.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/6.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/7.png">
-        </div>
-      </div>
-      <div class="main-follow__item">
-        <div class="main-follow__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/8.png">
-        </div>
-      </div>
-    </div>
-  </div>
+    <?php echo do_shortcode('[instagram-feed showheader=false showbutton=false showfollow=false]'); ?>
 <?php get_footer(); ?> 

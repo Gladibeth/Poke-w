@@ -4,7 +4,7 @@
         <div class="main-footer__item">
           <div class="main-footer__box">
             <div class="main-footer__logo">
-              <img width="89" height="85" src="<?php echo get_template_directory_uri();?>/assets/img/Footer/poke-bowls.png">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Footer/logo-poke-footer.png">
             </div>
             <div class="main-footer__boxsmall">
               <div class="main-footer__boxitem">

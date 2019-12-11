@@ -23,7 +23,7 @@
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-            <img  src="<?php echo get_template_directory_uri();?>/assets/img/header/Logo-poke.svg">
+            <img  src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg">
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
               <span class="hamburger-box">
@@ -71,7 +71,7 @@
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-              <img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/header/Logo-poke-white.svg">
+              <img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke-white.svg">
             </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
               <span class="hamburger-box">
