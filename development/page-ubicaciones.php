@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-  <div class="about-banner" style="background-image: url('<?php the_post_thumbnail_url()?>');">
+  <div class="about-banner" >
+    <img src="<?php the_post_thumbnail_url()?>" alt="">
   <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -24,7 +25,7 @@
           </select>
           <div class="div-padre js-ubications" id="bogota">
             <div class="main-content-fix" >
-              <a class="first-icons link-ubication" onclick="scroll_top()">
+              <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
                 <i class="fa fa-caret-up"></i>
               </a>
               <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
@@ -46,7 +47,7 @@
                   </div>
                 </div>
               </div>
-              <a class="last-icons link-ubication" onclick="scroll_bottom()">
+              <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
                 <i class="fa fa-caret-down a-1"></i>
               </a>
             </div>
@@ -58,7 +59,7 @@
 
           <div class="div-padre js-ubications js-displayNone" id="chia">
             <div class="main-content-fix" >
-              <a class="first-icons link-ubication" onclick="scroll_top()">
+              <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
                 <i class="fa fa-caret-up"></i>
               </a>
               <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
@@ -80,7 +81,7 @@
                   </div>
                 </div>
               </div>
-              <a class="last-icons link-ubication" onclick="scroll_bottom()">
+              <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
                 <i class="fa fa-caret-down a-1"></i>
               </a>
             </div>

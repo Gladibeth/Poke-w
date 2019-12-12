@@ -27,6 +27,10 @@
     position: absolute;
     right: 0;
 
+    @include respond-to(xl){
+      right: -10%;
+    }
+
     @include respond-to(sm) {
       width: 100px;
     }

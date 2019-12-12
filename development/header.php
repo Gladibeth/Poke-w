@@ -14,6 +14,8 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/datepicker.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/bpf1deu.css">
+
 </head>
 <body>
   <header id="home">

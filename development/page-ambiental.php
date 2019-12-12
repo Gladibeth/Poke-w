@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-  <div class="about-banner" style="background-image: url('<?php the_post_thumbnail_url()?>');">
+  <div class="about-banner" >
+    <img src="<?php the_post_thumbnail_url()?>" alt="">
       <div class="overlay"></div>
       <div class="about-banner__text about-banner__text--center">
         <div class="about-banner__title">

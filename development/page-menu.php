@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div id="banner-entradas" class="about-banner js-hiddenMenu" style="background-image: url('<?php echo get_field('imagen_entrada_menu');?>">
+<div id="banner-entradas" class="about-banner js-hiddenMenu" >
+  <img src="<?php echo get_field('imagen_entrada_menu');?>" alt="">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -7,7 +8,8 @@
       </div>
     </div>
   </div>
-  <div  id="banner-pokeBowl" class="about-banner" style="background-image: url('<?php echo get_field('imagen_poke_bowl_menu');?>">
+  <div  id="banner-pokeBowl" class="about-banner" >
+    <img src="<?php echo get_field('imagen_poke_bowl_menu');?>" alt="">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -15,7 +17,8 @@
       </div>
     </div>
   </div>
-  <div  id="banner-juiceBar" class="about-banner js-hiddenMenu" style="background-image: url('<?php echo get_field('imagen_juice_bar_menu');?>">
+  <div  id="banner-juiceBar" class="about-banner js-hiddenMenu" >
+    <img src="<?php echo get_field('imagen_juice_bar_menu');?>" alt="">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">

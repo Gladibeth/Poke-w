@@ -374,7 +374,7 @@ button:focus {
         // text-align: center;
         text-transform: uppercase;
         letter-spacing: 3.3px;
-        text-shadow: 0px 4px 4px #00000029;
+        text-shadow: 0px 4px 4px #0000007a;
 
         @include respond-to(sm) {
           text-align: left;
@@ -387,6 +387,7 @@ button:focus {
         &.title-color-gray {
           h2 {
             color: #4C4C4C;
+            text-shadow: 0px 4px 4px #0000007a;
           }
         }
 
@@ -397,6 +398,7 @@ button:focus {
           line-height: 1;
           margin: 0;
           font-family: $Raleway;
+          text-shadow: 0px 4px 4px #0000007a;
 
           @include respond-to(xl){
             @include font(85px, $bold);
@@ -418,6 +420,7 @@ button:focus {
           line-height: 1;
           margin: 0;
           font-family: $Raleway;
+          text-shadow: 0px 4px 4px #0000007a;
           @include respond-to(xl){
             @include font(85px, $bold);
           }
@@ -480,8 +483,11 @@ button:focus {
     text-transform: uppercase;
     color: $white;
     letter-spacing: 5.86px;
-    @include font(55px, $bold);
+    @include font(60px, $bold);
     line-height: 0.9;
+    @include respond-to(xl){
+      @include font(80px, $bold);
+    }
 
     @include respond-to(md) {
       letter-spacing: 0px;
@@ -548,10 +554,11 @@ button:focus {
   &.main-general__title--color {
     h2 {
       letter-spacing: 3.25px;
-      @include font(50px, $superBold);
+      @include font(55px, $superBold);
       color: $text;
       text-align: right;
       margin-bottom: 20px;
+      line-height: 0.7;
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
@@ -657,6 +664,10 @@ button:focus {
 
       @include respond-to(sm) {
         @include font(20px, $medium);
+      }
+
+      @include respond-to(xl){
+        font-size: 20px;
       }
     }
   }
@@ -834,7 +845,7 @@ button:focus {
 
   @include respond-to(sm) {
     height: auto;
-    padding: 20px;
+    // padding: 20px;
   }
 
   @include respond-to(xs) {
@@ -860,9 +871,16 @@ button:focus {
   position: relative;
   background-position: 50% -140px;
   padding: 0!important;
+  @include respond-to(sm){
+    height: 880px;
+  }
+  @include respond-to(xs){
+    height: 800px;
+  }
+
 
   &.main-about__contentimg--why{
-    height: initial;
+    // height: initial;
   }
   img{
     width: 100%;
@@ -874,6 +892,15 @@ button:focus {
     position: absolute;
     top: 0;
     left: 9%;
+
+    @include respond-to(xl){
+      left: 21%;
+      transform: translateX(0%);
+    }
+
+    @include respond-to(xs){
+      left:0;
+    }
   }
 }
 
@@ -1148,13 +1175,14 @@ button:focus {
     text-align: left;
     letter-spacing: 0;
     color: #000000;
-    font-size: 15px;
-    font-style: italic;
+    font-size: 13px;
     font-family: $Roboto;
 
     .text-link {
-      font-size: 15px;
+      font-size: 13px;
       text-decoration: underline;
+      font-style: italic;
+    font-family: $Roboto;
     }
   }
 }

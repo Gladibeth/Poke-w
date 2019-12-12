@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <?php $link = get_field('registrate_menu'); ?>
-  <div class="about-banner about-banner--full" style="background-image: url('<?php the_post_thumbnail_url()?>">
+  <div class="about-banner about-banner--full">
+    <img src="<?php the_post_thumbnail_url()?>" alt="">
     <div class="overlay"></div>
     <div class="container">
       <div class="about-banner__text mt-4">

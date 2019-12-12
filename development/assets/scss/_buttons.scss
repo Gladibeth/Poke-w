@@ -38,7 +38,7 @@
 }
 
 .btn--large {
-  padding: 5px 15px;
+  padding: 0px 15px;
   /* min-width: 105px; */
   font-size: 23px;
 
@@ -79,6 +79,13 @@ button {
   }
   &.btn-event{
     border-radius: 0px !important;
+    width: 127px;
+    height: 40px;
+    text-align: center;
+    font-family: $Raleway;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
   }
   &.btn--filled--buy {
     background-color: $past;
@@ -94,8 +101,8 @@ button {
 
   &.btn--filled--border {
     background-color: transparent;
-    border: 1px solid $black;
-    border-radius: 5px;
+    border: 2px solid $black;
+    // border-radius: 5px;
     color: #000;
 
     &:hover{
@@ -160,6 +167,10 @@ button {
   font-weight: $superBold;
   font-family: $Ostrich;
   border-radius: 0px;
+  font-style: italic;
+  width: 85px;
+  height: 35px;
+  font-size: 18px;
 
   img {
     width: 20px;

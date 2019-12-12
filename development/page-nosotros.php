@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-<div class="about-banner" style="background-image: url('<?php the_post_thumbnail_url()?>');">
+<div class="about-banner" >
+  <img src="<?php the_post_thumbnail_url()?>" alt="">
     <div class="overlay"></div>
     <div class="container">
       <div class="about-banner__text about-banner__text--acenter">
@@ -29,7 +30,8 @@
         <div class="container">
           <div class="main-ourorigin__box">
             <div class="main-general__title main-general__title--color">
-              <h2>nuestro origen</h2>
+              <h2>nuestro </h2>
+              <h2>origen</h2>
             </div>
             <div class="main-ourorigin__description">
               <p>Poke nace como el proyecto de una pareja emprendedora, amantes de la gastronomía, y apasionados por generar experiencias memorables.</p>
@@ -55,7 +57,8 @@
         <div class="container">
           <div class="main-ourorigin__box">
             <div class="main-general__title main-general__title--color">
-              <h2>nuestra PROMESA</h2>
+              <h2>nuestra </h2>
+              <h2>PROMESA</h2>
             </div>
             <div class="main-ourorigin__description">
               <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más a alta calidad.</p>
@@ -80,7 +83,8 @@
         <div class="container">
           <div class="main-ourorigin__box main-ourorigin__box--ml">
             <div class="main-general__title main-general__title--color title--left">
-              <h2>nuestros valores</h2>
+              <h2>nuestros </h2>
+              <h2>valores</h2>
             </div>
             <div class="main-ourorigin__description main-ourorigin__description--left">
               <p>En Poke creemos en la Excelencia, en retar los estándares de la industria para lograr una oferta diferenciada y el mejor servicio. Aprendemos de nuestros errores, trabajamos en equipo y estamos comprometidos con la mejora continua.</p>
@@ -109,7 +113,8 @@
       <div class="main-about__content">
         <div class="main-about__item">
           <div class="main-general__title">
-            <h2>nuestro talento</h2>
+            <h2>nuestro </h2>
+            <h2>talento</h2>
           </div>
           <div class="main-general__description">
             <p>Nuestro talento es jovial,</p>
