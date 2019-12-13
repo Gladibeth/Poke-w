@@ -15,46 +15,34 @@
         <div class="main-ubications__item">
           <select class="form-control select-ubication" name="ubications" id="ubications">
             <option value="bogota">Bogotá</option>
-            <option value="chia">Chía</option>
             <option value="medellin">Medellín</option>
-            <option value="cali">Cali</option>
-            <option value="bucaramanga">Bucaramanga</option>
-            <option value="barranquilla">Barranquilla</option>
-            <option value="pereira">Pereira</option>
-            <option value="manizales">Manizales</option>
           </select>
-          <div class="div-padre js-ubications" id="bogota">
-            <div class="main-content-fix" >
-              <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
-                <i class="fa fa-caret-up"></i>
-              </a>
-              <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
-                <div class="card-body">
-                  <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="v-pills-home" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab" role="tab">Poke chia1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+          <!--bogota-->
+            <div class="div-padre js-ubications" id="bogota">
+              <div class="main-content-fix" >
+                <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
+                  <i class="fa fa-caret-up"></i>
+                </a>
+                <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
+                  <div class="card-body">
+                    <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                      <a aria-controls="poke-81" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#poke-81" id="poke-81-tab" role="tab">POKE 81</a>
+                      <a aria-controls="v-poke-zona-g" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-poke-zona-g" id="v-poke-zona-g-tab" role="tab">POKE  ZONA G</a>
+                      <a aria-controls="poke-usaquen" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-usaquen" id="poke-usaquen-tab" role="tab">POKE USAQUEN</a>
+                      <a aria-controls="poke-chia" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-chia" id="poke-chia-tab" role="tab">POKE CHÍA</a>
+                      <a aria-controls="poke-city-u" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-city-u" id="poke-city-u-tab" role="tab">POKE CITY U</a>
+                      <a aria-controls="poke-78" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-78" id="poke-78-tab" role="tab">POKE 78</a>
+                      <a aria-controls="poke-aeropuerto" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-aeropuerto" id="poke-aeropuerto-tab" role="tab">POKE AEROPUERTO </a>
+                      <a aria-controls="poke-centro-internacional" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-centro-internacional" id="poke-centro-internacional-tab" role="tab">POKE CENTRO INTERNACIONAL</a>
+                    </div>
                   </div>
                 </div>
+                <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
+                  <i class="fa fa-caret-down a-1"></i>
+                </a>
               </div>
-              <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
-                <i class="fa fa-caret-down a-1"></i>
-              </a>
             </div>
-          </div>
-
-
-
+          <!--End bogota-->
 
 
           <div class="div-padre js-ubications js-displayNone" id="chia">
@@ -65,19 +53,7 @@
               <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
                 <div class="card-body">
                   <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="v-pills-home" aria-selected="true" class="active link-ubication" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab" role="tab">Poke chia1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
-                    <a aria-controls="v-pills-profile" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab" role="tab">Poke zona g1</a>
-                    <a aria-controls="v-pills-messages" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-messages" id="v-pills-messages-tab" role="tab">poke usaquen1</a>
-                    <a aria-controls="v-pills-settings" aria-selected="false" class="link-ubication" data-toggle="pill" href="#v-pills-settings" id="v-pills-settings-tab" role="tab">Poke 81-1</a>
+                    aa
                   </div>
                 </div>
               </div>
@@ -87,139 +63,182 @@
             </div>
           </div>
 
-
-
-
-
-
         </div>  
         <div class="main-ubications__item">
           <div class="tab-content" id="v-pills-tabContent">
-            <div aria-labelledby="v-pills-home-tab" class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
+            <div aria-labelledby="poke-81-tab" class="tab-pane fade show active" id="poke-81" role="tabpanel">
               <div class="main-ubications__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
               </div>
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá2</li>
-                    <li>Chia KM7 vía cajica-Chia</li>
+                    <li>POKE 81</li>
+                    <li>CALLE 81 #  8-35</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
                     <li>Teléfono</li>
-                    <li>(031) 312 457 2974</li>
+                    <li>(031) 2665451</li>
                   </ul>
                 </div>
                 <div class="main-ubications__boxitem">
                   <div class="main-ubications__boxmap">
                     <div class="main-ubications__img">
-                      <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2812443427174!2d-74.03770798584152!3d4.892508096447704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4078269b61d48d%3A0xe508f2e4312d07c9!2zQ2FqaWPDoSAtIENow61hICM3LCBDYWppY8OhLCBFbCBUZWphciwgQ2FqaWPDoSwgQ3VuZGluYW1hcmNhLCBDb2xvbWJpYQ!5e0!3m2!1ses-419!2sve!4v1574083831902!5m2!1ses-419!2sve"
-                        style="border:0;"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.610234187451!2d-74.05323778457294!3d4.663380996612569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a60f925b217%3A0x7f95aea92dd37805!2sPoke%20Calle%2081!5e0!3m2!1ses!2sco!4v1576169077444!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div aria-labelledby="v-pills-profile-tab" class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+            <div aria-labelledby="v-poke-zona-g-tab" class="tab-pane fade" id="v-poke-zona-g" role="tabpanel">
               <div class="main-ubications__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
               </div>
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá3</li>
-                    <li>Poke Zona G, Calle 69a</li>
+                    <li>POKE  ZONA G</li>
+                    <li>CALLE  69 A #  6- 37</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
                     <li>Teléfono</li>
-                    <li>(031) 312 457 2974</li>
+                    <li>(031) 6019697</li>
                   </ul>
                 </div>
                 <div class="main-ubications__boxitem">
                   <div class="main-ubications__boxmap">
                     <div class="main-ubications__img">
-                      <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6753055978215!2d-74.05851678584267!3d4.651873096620845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a426ca84bc5%3A0x389ba1a2c993adea!2sPoke%20Zona%20G!5e0!3m2!1ses-419!2sve!4v1574084060904!5m2!1ses-419!2sve"
-                        style="border:0;"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6753055978215!2d-74.0585167845731!3d4.651873096620841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a426ca84bc5%3A0x389ba1a2c993adea!2sPoke%20Rosales!5e0!3m2!1ses!2sco!4v1576169464550!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div aria-labelledby="v-pills-messages-tab" class="tab-pane fade" id="v-pills-messages" role="tabpanel">
+            <div aria-labelledby="poke-usaquen-tab" class="tab-pane fade" id="poke-usaquen" role="tabpanel">
               <div class="main-ubications__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
               </div>
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá4</li>
-                    <li>Poke Usaquen, Calle 120a</li>
+                    <li>POKE USAQUEN</li>
+                    <li>CALLE  120 A # 5 - 61</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
                     <li>Teléfono</li>
-                    <li>(031) 312 457 2974</li>
+                    <li>(031) 7392278</li>
                   </ul>
                 </div>
                 <div class="main-ubications__boxitem">
                   <div class="main-ubications__boxmap">
                     <div class="main-ubications__img">
-                      <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.422381243184!2d-74.03174368584256!3d4.696444996588741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f91ac15d4e73f%3A0xf47574c92dc45476!2sPoke%20Usaquen!5e0!3m2!1ses-419!2sve!4v1574084219796!5m2!1ses-419!2sve"
-                        style="border:0;"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.422381243184!2d-74.031743684573!3d4.6964449965887445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f91ac15d4e73f%3A0xf47574c92dc45476!2sPoke%20Usaquen!5e0!3m2!1ses!2sco!4v1576169656357!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div aria-labelledby="v-pills-settings-tab" class="tab-pane fade" id="v-pills-settings" role="tabpanel">
+            <div aria-labelledby="poke-chia-tab" class="tab-pane fade" id="poke-chia" role="tabpanel">
               <div class="main-ubications__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
               </div>
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá5</li>
-                    <li>Poke Calle 81, Calle 81</li>
+                    <li>POKE CHÍA</li>
+                    <li>K  7 VIA CAJICA - CHIA SAN ROQUE - LOCAL 119</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
                     <li>Teléfono</li>
-                    <li>(031) 312 457 2974</li>
+                    <li>(031) 8337275</li>
                   </ul>
                 </div>
                 <div class="main-ubications__boxitem">
                   <div class="main-ubications__boxmap">
                     <div class="main-ubications__img">
-                      <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6102341874607!2d-74.05323778584265!3d4.66338099661255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a60f925b217%3A0x7f95aea92dd37805!2sPoke%20Calle%2081!5e0!3m2!1ses-419!2sve!4v1574084282706!5m2!1ses-419!2sve"
-                        style="border:0;"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44975.36590285985!2d-74.03947845199896!3d4.889639306399879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4077e10ec566a5%3A0xce2d33970537e9d9!2sPoke%20Cajic%C3%A1!5e0!3m2!1ses!2sco!4v1576169927142!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div aria-labelledby="v-pills-home-tab1" class="tab-pane fade show" id="v-pills-home1" role="tabpanel">
+            <div aria-labelledby="poke-city-u-tab1" class="tab-pane fade show" id="poke-city-u" role="tabpanel">
               <div class="main-ubications__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
               </div>
               <div class="main-ubications__box">
                 <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                    <li>Bogotá6</li>
-                    <li>Chia KM7 vía cajica-Chia</li>
+                    <li>POKE CITY U</li>
+                    <li>CALLE 19 # 2 A 10 CITY U - LOCAL 208</li>
                     <li>Horario</li>
                     <li>12:00 PM - 9:00 PM</li>
                     <li>Teléfono</li>
-                    <li>(031) 312 457 2974</li>
+                    <li>(031) 7447281</li>
                   </ul>
                 </div>
                 <div class="main-ubications__boxitem">
                   <div class="main-ubications__boxmap">
                     <div class="main-ubications__img">
-                      <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2812443427174!2d-74.03770798584152!3d4.892508096447704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4078269b61d48d%3A0xe508f2e4312d07c9!2zQ2FqaWPDoSAtIENow61hICM3LCBDYWppY8OhLCBFbCBUZWphciwgQ2FqaWPDoSwgQ3VuZGluYW1hcmNhLCBDb2xvbWJpYQ!5e0!3m2!1ses-419!2sve!4v1574083831902!5m2!1ses-419!2sve"
-                        style="border:0;"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div aria-labelledby="poke-78-tab1" class="tab-pane fade show" id="poke-78" role="tabpanel">
+              <div class="main-ubications__img">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+              </div>
+              <div class="main-ubications__box">
+                <div class="main-ubications__boxitem">
+                  <ul class="main-ubications__ul">
+                    <li>POKE 78</li>
+                    <li>CRA 12 A # 78 40 LOCAL  3</li>
+                    <li>Horario</li>
+                    <li>12:00 PM - 9:00 PM</li>
+                    <li>Teléfono</li>
+                    <li>(031) 7434304</li>
+                  </ul>
+                </div>
+                <div class="main-ubications__boxitem">
+                  <div class="main-ubications__boxmap">
+                    <div class="main-ubications__img">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.8850201657365!2d-74.05490492453251!3d4.664140955803561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b2b360f8399%3A0x4af482f5999219d3!2sPoke%20Calle%2078!5e0!3m2!1ses!2sco!4v1576170774820!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div aria-labelledby="poke-aeurpuerto-tab1" class="tab-pane fade show" id="poke-aeurpuerto" role="tabpanel">
+              <div class="main-ubications__img">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+              </div>
+              <div class="main-ubications__box">
+                <div class="main-ubications__boxitem">
+                  <ul class="main-ubications__ul">
+                    <li>POKE AEROPUERTO</li>
+                    <li>AC 24 # 124 A - 80</li>
+                    <li>Horario</li>
+                    <li>12:00 PM - 9:00 PM</li>
+                    <li>Teléfono</li>
+                    <li>(031)</li>
+                  </ul>
+                </div>
+                <div class="main-ubications__boxitem">
+                  <div class="main-ubications__boxmap">
+                    <div class="main-ubications__img">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
           </div>
         </div>
       </div>

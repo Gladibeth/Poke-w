@@ -49,6 +49,8 @@
     @include font(15px, $regular);
     letter-spacing: 1.47px;
     color: #707070;
+    font-family: $Segoe;
+    text-transform: lowercase;
 
     &:nth-child(odd) {
       @include font(18px, $bold);
@@ -94,7 +96,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #686868;
-  @include font(18px, $bold);
+  font-size: 18px;
+  font-weight: 800;
   transition: 0.3s ease-in-out;
   border-bottom: 2px solid #686868;
   padding: 10px;
