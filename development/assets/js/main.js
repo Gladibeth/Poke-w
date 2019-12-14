@@ -170,7 +170,7 @@ select.addEventListener('change',
     console.log('#'+selectedOption.value);
     $('.js-ubications').addClass( "js-displayNone" );
     $('#'+selectedOption.value).removeClass( "js-displayNone" );
-    $('#modal'+selectedOption.value).removeClass( "js-displayNone" );
+    $('#modal-'+selectedOption.value).removeClass( "js-displayNone" );
     
   });
 

@@ -60,7 +60,7 @@
                   </div>
                 </div>
                 <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
-                  <i class="fa fa-caret-down a-1"></i>
+                <!--   <i class="fa fa-caret-down a-1"></i> -->
                 </a>
               </div>
           <!--End Medellín-->
@@ -69,25 +69,25 @@
            <div class="div-padre js-ubications js-displayNone" id="barranquilla">
               <div class="main-content-fix" >
                 <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
-                  <i class="fa fa-caret-up"></i>
+                  <!-- <i class="fa fa-caret-up"></i> -->
                 </a>
                 <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne">
                 <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="poke-mall-plaza" aria-selected="true" class=" link-ubication" data-toggle="pill" href="#poke-mall-plaza" id="poke-mall-plaza-tab" role="tab">POKE MALL PLAZA</a>
+                    <a aria-controls="poke-mall-plaza" aria-selected="true" class=" link-ubication active " data-toggle="pill" href="#poke-mall-plaza" id="poke-mall-plaza-tab" role="tab">POKE MALL PLAZA</a>
                     </div>
                   </div>
                   </div>
                 </div>
                 <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
-                  <i class="fa fa-caret-down a-1"></i>
+                 <!--  <i class="fa fa-caret-down a-1"></i> -->
                 </a>
               </div>
           <!--End barranquilla-->
 
         </div>  
         <!--modal bogotá-->
-          <div class="main-ubications__item">
+          <div class="main-ubications__item js-ubications" id="modal-bogota">
             <div class="tab-content" id="v-pills-tabContent">
               <div aria-labelledby="poke-81-tab" class="tab-pane fade show active" id="poke-81" role="tabpanel">
                 <div class="main-ubications__img">
@@ -284,69 +284,14 @@
                   </div>
                 </div>
               </div>
-              <!--Modal medellín-->
-              <div aria-labelledby="poke-viva-emvigado-tab1" class="tab-pane fade show" id="poke-viva-emvigado" role="tabpanel">
-                <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
-                </div>
-                <div class="main-ubications__box">
-                  <div class="main-ubications__boxitem">
-                    <ul class="main-ubications__ul">
-                      <li>POKE VIVA EMVIGADO</li>
-                      <li>CRA 48 # 32 B SUR - 132 C.C VIVA LOCAL 333</li>
-                      <li>Horario</li>
-                      <li>12:00 PM - 9:00 PM</li>
-                      <li>Teléfono</li>
-                      <li>(031)</li>
-                    </ul>
-                  </div>
-                  <div class="main-ubications__boxitem">
-                    <div class="main-ubications__boxmap">
-                      <div class="main-ubications__img">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <!--end Modal medellín-->
-
-               <!--Modal barranquilla-->
-               <div aria-labelledby="poke-mall-plaza-tab1" class="tab-pane fade show" id="poke-mall-plaza" role="tabpanel">
-                <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
-                </div>
-                <div class="main-ubications__box">
-                  <div class="main-ubications__boxitem">
-                    <ul class="main-ubications__ul">
-                      <li>POKE MALL PLAZA</li>
-                      <li>CARRERA  55 # 999 - 51 C.C. MALL PLAZA LOCAL A - 4003 - 01</li>
-                      <li>Horario</li>
-                      <li>12:00 PM - 9:00 PM</li>
-                      <li>Teléfono</li>
-                      <li>(031)</li>
-                    </ul>
-                  </div>
-                  <div class="main-ubications__boxitem">
-                    <div class="main-ubications__boxmap">
-                      <div class="main-ubications__img">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-               <!--end Modal barranquilla-->
-
-
             </div>
           </div>
          <!--end modal bogotá-->
 
          <!--modal medellin-->
-         <div class="main-ubications__item">
+         <div class="main-ubications__item js-ubications js-displayNone" id="modal-medellin">
             <div class="tab-content" id="v-pills-tabContent">
-              <div aria-labelledby="poke-viva-emvigado-tab1" class="tab-pane fade show" id="poke-viva-emvigado" role="tabpanel">
+              <div aria-labelledby="poke-viva-emvigado-tab1" class="tab-pane fade show active" id="poke-viva-emvigado" role="tabpanel">
                 <div class="main-ubications__img">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
                 </div>
@@ -373,6 +318,37 @@
             </div>
           </div>
          <!--end modal medellin-->
+
+        <!--Modal barranquilla-->
+        <div class="main-ubications__item js-ubications js-displayNone" id="modal-barranquilla">
+          <div class="main-ubications__img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+          </div>
+          <div class="main-ubications__box">
+            <div class="main-ubications__boxitem">
+              <ul class="main-ubications__ul">
+                <li>POKE MALL PLAZA</li>
+                <li>CARRERA  55 # 999 - 51 C.C. MALL PLAZA LOCAL A - 4003 - 01</li>
+                <li>Horario</li>
+                <li>12:00 PM - 9:00 PM</li>
+                <li>Teléfono</li>
+                <li>(031)</li>
+              </ul>
+            </div>
+          <div class="main-ubications__boxitem">
+            <div class="main-ubications__boxmap">
+              <div class="main-ubications__img">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end Modal barranquilla-->
+
+         
+
+         
          
       </div>
     </div>
