@@ -125,7 +125,7 @@
                             </div>
                             <div class="btn-modal">
                               <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled-gray" style="width:140px;" target="_blank" href="<?php echo($urlRappi['url']); ?>">
+                              <a class="btn-btn_custom btn--medium btn--filled-gray" style="width:140px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
                                   <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
@@ -220,7 +220,7 @@
                             </div>
                             <div class="btn-modal">
                               <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled-gray" style="width:140px;text-transform:lowercase !important; " target="_blank" href="<?php echo($urlRappi['url']); ?>">
+                              <a class="btn-btn_custom btn--medium btn--filled-gray" style="width:140px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
                                   <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
@@ -310,7 +310,7 @@
                             </div>
                             <!-- <div class="btn-modal">
                               <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" target="_blank" href="<?php echo($urlRappi['url']); ?>">
+                              <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
                                   <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
