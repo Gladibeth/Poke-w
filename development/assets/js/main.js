@@ -170,6 +170,7 @@ select.addEventListener('change',
     console.log('#'+selectedOption.value);
     $('.js-ubications').addClass( "js-displayNone" );
     $('#'+selectedOption.value).removeClass( "js-displayNone" );
+    $('#modal'+selectedOption.value).removeClass( "js-displayNone" );
     
   });
 
@@ -185,7 +186,7 @@ select.addEventListener('change',
     console.log(posicion);
     $("div").animate({
         scrollTop: 660
-    }, 3000); 
+    }, 2000); 
   }
   
   

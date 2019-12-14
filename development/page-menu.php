@@ -13,7 +13,7 @@
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
-        <h1>Poke Bowl</h1>
+        <h1>Poke Bowls</h1>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
             <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-home" id="entradas" role="tab" onclick="menu(this)">entradas</a>
           </li>
           <li class="nav-item nav-item--tabs">
-            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pokeBowl" role="tab" onclick="menu(this)">poke bowl</a>
+            <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs active" data-toggle="pill" href="#v-pills-profile" id="pokeBowl" role="tab" onclick="menu(this)">poke bowls</a>
           </li>
           <li class="nav-item nav-item--tabs">
             <a aria-controls="v-pills-contact" aria-selected="true" class="nav-link--tabs" data-toggle="pill" href="#v-pills-contact" id="juiceBar" role="tab" onclick="menu(this)">juice bar</a>

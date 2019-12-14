@@ -39,6 +39,21 @@
                     TRABAJA CON NOSOTROS
                   </a>
               </li>
+              <li>
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                  CUÉNTANOS TU EXPERIENCIA
+                  </a>
+              </li>
+              <li>
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                  TERMINOS Y CONDICIONES
+                  </a>
+              </li>
+              <li>
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                  POLITICA DE PRIVACIDAD
+                  </a>
+              </li>
               <!-- / %li -->
               <!-- /   %a{ :href=>"#"} -->
               <!-- /     CUÉNTANOS TU EXPERIENCIA -->

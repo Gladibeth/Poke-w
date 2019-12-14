@@ -116,17 +116,17 @@
                     Deseo recibir más información sobre nuestros establecimientos.
                   </label>
               </div>
+              <div class="logo-experience">
+                <div class="main-experience__img" style="text-align: end;">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Experiencia/logo-poke-experiencia.png" alt="">
+                </div>
+              </div>
               <div class="btn-form__center">
                 <a class="btn_custom btn--large btn--filled btn--filled--border" href="#contact">
                     Enviar
                   </a>
               </div>
             </form>
-            <div class="logo-experience">
-              <div class="main-experience__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Experiencia/V_Black on white.png" alt="">
-              </div>
-            </div>
           </div>
         </div>
       </div>

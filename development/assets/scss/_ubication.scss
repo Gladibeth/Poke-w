@@ -31,7 +31,7 @@
   
 .main-ubications__box {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   margin-top: 50px;
 
   @include respond-to(xs) {
@@ -53,10 +53,15 @@
     text-transform: lowercase;
 
     &:nth-child(odd) {
-      @include font(18px, $bold);
-      background-color: #B4B4B4;
-      color: $white;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: transparent;
+      color: #707070;
       text-transform: uppercase;
+      border-bottom: 1px solid #707070;
+      width: 80%;
+      margin: auto;
+  
 
     }
   }
@@ -95,14 +100,14 @@
 .link-ubication {
   text-align: center;
   text-transform: uppercase;
-  color: #686868;
+  color: #b4b4b4;
   font-size: 18px;
   font-weight: 800;
   transition: 0.3s ease-in-out;
-  border-bottom: 2px solid #686868;
+  border-bottom: 1px solid #686868;
   padding: 10px;
   &.link-ubication--border{
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     display: flex;
     justify-content: center;
 
@@ -111,13 +116,13 @@
     }
   }
   &.active {
-    color: $white;
-    background-color: #B4B4B4;
+    color: #707070;
+    /* background-color: #B4B4B4; */
     transition: 0.3s ease-in-out;
     text-decoration: none;
 
     &:nth-child(1) {
-      border-top: 2px solid #686868;
+      border-top: 1px solid #686868;
     }
   }
 

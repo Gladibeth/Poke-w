@@ -36,7 +36,7 @@
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
             <li class="nav-item active">
-              <a class="nav-link nav-link-bc" href="<?php echo bloginfo('url').'/menu';?>">Menu</a>
+              <a class="nav-link nav-link-bc" href="<?php echo bloginfo('url').'/menu';?>">Menú</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-bc" href="<?php echo bloginfo('url').'/nosotros';?>">Nosotros</a>
@@ -84,7 +84,7 @@
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
             <li class="nav-item active">
-              <a class="nav-link" href="<?php echo bloginfo('url').'/menu';?>">Menu</a>
+              <a class="nav-link" href="<?php echo bloginfo('url').'/menu';?>">Menú</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo bloginfo('url').'/nosotros';?>">Nosotros</a>
