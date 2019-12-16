@@ -52,7 +52,14 @@ label {
 .custom-checkbox .custom-control-label:before{
   border-radius: 0;
 }
-
+.custom-checkbox{
+  & label{
+    padding-left: 5px;
+  }
+  & a{
+    text-decoration: underline;
+  }
+}
 .label {
   color: $text;
   @include font(20px, $bold);
@@ -337,12 +344,13 @@ textarea {
   background-color: #686868;
 }
 
-.checkbox-eventos .custom-control-label:after, .custom-control-label:before{
+.checkbox-eventos .custom-control-label:after, .custom-control-label:before, #aceptCheckbox:before{
   width: 1.3rem;
   height: 1.3rem;
-  border: #686868;
+  border: 1px solid #686868 !important;
+
 }
-.checkbox-eventos .custom-control-label:after, .custom-control-label:after{
+.checkbox-eventos .custom-control-label:after, .custom-control-label:after, #aceptCheckbox:after{
   width: 1.3rem;
   height: 1.3rem;
 }
