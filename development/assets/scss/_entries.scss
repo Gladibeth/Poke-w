@@ -50,9 +50,11 @@
   justify-content: space-between;
   width: 100%;
   padding: 10px 0;
+  height: 75px;
 
   @include respond-to(xs) {
     flex-direction: column;
+    height: auto;
   }
 }
 
@@ -114,7 +116,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin-top: 50px;
+  margin-top: 25px;
 
   @include respond-to(sm) {
     grid-template-columns: 1fr 1fr;

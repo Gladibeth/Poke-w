@@ -1,7 +1,7 @@
 .main-ubications__content {
   display: grid;
   grid-template-columns: 25% 75%;
-  margin-top: 50px;
+  margin-top: 15px;
   grid-gap: 20px;
 
   @include respond-to(xs) {
@@ -121,9 +121,13 @@
     transition: 0.3s ease-in-out;
     text-decoration: none;
 
-    &:nth-child(1) {
-      border-top: 1px solid #686868;
-    }
+  }
+
+  #poke-aeropuerto-tab{
+    border-bottom: 1px solid transparent;
+  }
+  &:nth-last-child(-n+2){
+    border-bottom: 1px solid transparent;
   }
 
 
@@ -143,13 +147,80 @@
     }
   }
   &.last-icons{
+    
+    &:hover{
+      cursor: pointer;
+    }
     i{
-      font-size: 35px;
-      color:#686868;
+  
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 14px;
+      border-bottom-width: 0px;
+      border-color: #686868 transparent transparent transparent;
     }
   }
 }
 
 .card-body {
   padding: 0;
+}
+
+
+
+
+
+body {
+  background: grey;
+}
+
+#box {
+  width: 150px;
+  position: relative;
+  top: 35px;
+  margin: auto;
+  opacity: 0;
+}
+
+#open, .bar {
+  width: 25px;
+  position: absolute;
+  right: 0;
+}
+
+#open {
+  background: url(//www.anony.ws/i/2015/09/15/arrow.png) center;
+  box-shadow: inset 0 0 3px black;
+  z-index: 1;
+}
+
+select {
+  border-radius: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  /* height: 50px; */
+  text-align-last: center;
+  padding: 10px 0;
+}
+
+option:hover {
+  color: black;
+  background: #edece6;
+}
+
+#mark {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.bar {
+  height: 100%;
+  top: 0;
+  background: grey;
+  box-shadow: -2px 0 0 -1px grey, 0 0 0 1px grey;
 }

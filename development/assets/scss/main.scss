@@ -13,6 +13,26 @@
 @import "createpokebolw";
 @import "modals";
 
+.form-control{
+  border-radius:0 !important;
+  color: #898989 !important;
+}
+select{
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 1.3rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid hsla(0,0%,41%,.24);
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-family: Raleway,sans-serif;
+}
 
 p{
   line-height: 1.5;
@@ -244,7 +264,7 @@ button:focus {
 
 .navbar-brand {
   width: 80px;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 
   @include respond-to(md) {
     width: 60px;
@@ -253,12 +273,12 @@ button:focus {
 
   @include respond-to(sm) {
     width: 60px;
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   @include respond-to(xs) {
     width: 60px;
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   img {
@@ -362,11 +382,11 @@ button:focus {
       }
 
       @include respond-to(sm) {
-        padding-left: 30px;
+        // padding-left: 30px;
       }
 
       @include respond-to(xs) {
-        padding-left: 30px;
+        // padding-left: 30px;
       }
 
 
@@ -375,6 +395,7 @@ button:focus {
         text-transform: uppercase;
         letter-spacing: 3.3px;
         text-shadow: 0px 4px 4px #0000007a;
+        margin-left: -5px;
 
         @include respond-to(sm) {
           text-align: left;
@@ -531,8 +552,9 @@ button:focus {
 
   &.main-general__title--event {
     h2 {
-      letter-spacing: 5.25px;
+      letter-spacing: 0px;
       @include font(45px, $bold);
+      line-height: 1;
 
       @include respond-to(md) {
         letter-spacing: 0.25px;
@@ -757,7 +779,7 @@ button:focus {
 }
 
 .main-general__boxsubtitle {
-  padding: 30px;
+  padding: 40px 15px 0px;
 }
 
 .main-general__subtitle {
@@ -767,69 +789,128 @@ button:focus {
   position: relative;
 
   h3 {
-    @include font(20px, $bold);
+    @include font(18px, $bold);
     text-transform: uppercase;
     color:#686868;
+    margin-bottom: 0;
+    text-align: center;
   }
 
-  &:before {
-    content: '';
-    width: 390px;
-    height: 1px;
-    position: absolute;
-    background-color: $text;
-    left: 0;
-    top: 10px;
+  // &:before {
+  //   content: '';
+  //   width: 500px;
+  //   height: 1px;
+  //   position: absolute;
+  //   background-color: #686868;
+  //   top: 10px;
+  //   left: -110px;
 
-    @include respond-to(md) {
-      width: 300px;
-    }
+  //   @include respond-to(xl){
+  //     width: 700px;
+  //     left: -350px;
+  //   }
 
-    @include respond-to(sm) {
-      width: 150px;
-    }
+  //   @include respond-to(md) {
+  //     width: 300px;
+  //   }
 
-    @include respond-to(xs) {
-      width: 45px;
-      left: -35px;
-      top: 10px;
-      transform: translateX(0px);
-    }
+  //   @include respond-to(sm) {
+  //     width: 150px;
+  //   }
+
+  //   @include respond-to(xs) {
+  //     width: 45px;
+  //     left: -35px;
+  //     top: 10px;
+  //     transform: translateX(0px);
+  //   }
+  // }
+
+  // &:after {
+  //   content: "";
+  //   width: 500px;
+  //   height: 1px;
+  //   position: absolute;
+  //   background-color: #686868;
+  //   top: 10px;
+  //   right: -110px;
+  //   @include respond-to(xl){
+  //     width: 700px;
+  //     right: -350px;
+  //   }
+  //   @include respond-to(md) {
+  //     width: 300px;
+  //   }
+
+  //   @include respond-to(sm) {
+  //     width: 150px;
+  //   }
+
+  //   @include respond-to(xs) {
+  //     width: 45px;
+  //     right: -35px;
+  //     top: 10px;
+  //     transform: translateX(0px);
+  //   }
+  // }
+}
+
+.main-home__contentline{
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  padding: 10px 0;
+  @include respond-to(sm){
+    grid-template-columns: 40% 20% 40%;
+
   }
-
-  &:after {
-    content: '';
-    width: 390px;
-    height: 1px;
-    position: absolute;
-    background-color: $text;
-    // content: '----------------------------------------------------------';
-    position: absolute;
-    right: 0;
-    top: 10px;
-
-    @include respond-to(md) {
-      width: 300px;
-    }
-
-    @include respond-to(sm) {
-      width: 150px;
-    }
-
-    @include respond-to(xs) {
-      width: 45px;
-      right: -35px;
-      top: 10px;
-      transform: translateX(0px);
-    }
+  @include respond-to(xs){
+    grid-template-columns: 20% 60% 20%;
   }
 }
+
+.main-home__contentline.main-home__contentline--about{
+  grid-template-columns: 42% 15% 42%;
+  @include respond-to(sm){
+    grid-template-columns: 35% 30% 35%;
+
+  }
+  @include respond-to(xs){
+    grid-template-columns: 20% 60% 20%;
+  }
+}
+.main-home__item{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-home__line{
+  width: 100%;
+  height: 1px;
+  background-color: #686868;
+}
+
+.main-home__line.main-home__line--first{
+  margin-left: 60px;
+
+  @include respond-to(xs){
+    margin-left: 20px;
+  }
+}
+.main-home__line.main-home__line--last{
+  margin-right: 60px;
+  @include respond-to(xs){
+    margin-right: 20px;
+  }
+}
+
 
 .main-general__subtitle--medium {
   width: 100%;
   display: flex;
   justify-content: center;
-  
+  margin: 5px 0 -10px 0;
 
   h4 {
     @include font(25px, $superBold);
@@ -871,6 +952,8 @@ button:focus {
   position: relative;
   background-position: 50% -140px;
   padding: 0!important;
+
+  
   @include respond-to(sm){
     height: 880px;
   }
@@ -891,11 +974,17 @@ button:focus {
   .container{
     position: absolute;
     top: 0;
-    left: 9%;
+    left: 8%;
 
     @include respond-to(xl){
-      left: 21%;
+      left: 20%;
       transform: translateX(0%);
+    }
+    @include respond-to(md){
+      left: 4%
+    }
+    @include respond-to(sm){
+      left: 2%
     }
 
     @include respond-to(xs){
@@ -904,6 +993,11 @@ button:focus {
   }
 }
 
+// @media (max-width: 1600px){
+//   .main-about__contentimg .container{
+//     left: 14%;
+//   }
+// }
 .main-about__mt {
   margin-top: 50px;
   position: initial;
@@ -1095,6 +1189,8 @@ button:focus {
         font-family: $Roboto;
         @include font(15px, $light);
         transition: 0.3s ease-in-out;
+        font-style: italic;
+        line-height: 2;
 
         &:hover {
           text-decoration: none;
@@ -1110,7 +1206,7 @@ button:focus {
   // width: 100%;
   // display: flex;
   // justify-content: flex-start;
-  margin-right: 7px;
+  margin-right: 3px;
 
   @include respond-to(xs) {
     justify-content: center;
@@ -1124,6 +1220,9 @@ button:focus {
     margin-right: 22px;
     transition: 0.3s ease-in-out;
 
+    img{
+      width: 25px;
+    }
     &:hover {
       transform: translateY(-5px);
       transition: 0.3s ease-in-out;
@@ -1172,6 +1271,7 @@ button:focus {
 
 .message {
   p {
+    line-height: 1;
     text-align: left;
     letter-spacing: 0;
     color: #000000;
@@ -1179,7 +1279,7 @@ button:focus {
     font-family: $Roboto;
 
     .text-link {
-      font-size: 13px;
+      font-size: 12px;
       text-decoration: underline;
       font-style: italic;
     font-family: $Roboto;
@@ -1189,4 +1289,25 @@ button:focus {
 
 .card-header{
   padding: 0rem 1.25rem;
+}
+
+#sb_instagram{
+  margin-top: 50px;
+}
+
+.ambiental__description p{
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .message{
+    width: 50%;
+  }
+  .main-footer-grid {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+  }
+  .label-acept{
+    font-size: 15px !important;
+  }
 }

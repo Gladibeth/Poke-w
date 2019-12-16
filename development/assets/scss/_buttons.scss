@@ -47,9 +47,9 @@
   }
 
   @include respond-to(xs) {
-    padding: 12px 18px;
+    padding: 5px 8px;
     // min-width: 105px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -135,6 +135,9 @@ button {
   text-transform: lowercase;
   font-weight: $superBold;
   font-family: $Ostrich;
+  @include respond-to(xs){
+    width: 180px;
+  }
 
   img {
     width: 20px;
@@ -167,6 +170,30 @@ button {
 }
 
 
+.btn--filled-modalgray{
+  color: $white;
+  background: #686868;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-transform: inherit;
+  font-weight: $medium;
+  font-family: $Roboto;
+  &:hover {
+    text-decoration: none;
+    background: rgba(104, 104, 104, 0.61);
+    color: #fff;
+    border: 1px solid rgba(104, 104, 104, 0.61);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+
 .btn--filled-footer {
   color: $white;
   background: #686868;
@@ -177,12 +204,15 @@ button {
   justify-content: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-family: Ostrich Sans;
   border-radius: 0;
+  font-family: $Roboto;
   font-style: italic;
-  height: 40px;
-  font-size: 24px;
-  padding: 0px 10px;
+  font-size: 15px;
+  padding: 0;
+  width: 85px;
+  margin: 0 10px 0 0;
+  height: 28px;
+  line-height: 1.1;
 
   img {
     width: 20px;
@@ -241,9 +271,6 @@ button {
 
 .btn-modal {
   width: 40%;
-  a{
-    text-transform: lowercase;
-  }
 
   @include respond-to(md) {
     width: 45%;
@@ -260,4 +287,11 @@ button {
 
 .main-nav__btn {
   margin-left: 5px;
+}
+
+.btn__tabs{
+  @include respond-to(xs){
+    display: flex;
+    justify-content: center;
+  }
 }

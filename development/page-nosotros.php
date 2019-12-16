@@ -12,13 +12,22 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="main-general__boxsubtitle">
-      <div class="main-general__subtitle">
-        <h3>keep it fresh</h3>
+  <div class="">
+    <div class="main-home__contentline main-home__contentline--about">
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--first"></div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-general__subtitle">
+          <h3>keep it fresh</h3>
+        </div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--last"></div>
       </div>
     </div>
   </div>
+
   <div class="main-ourorigin">
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
@@ -70,10 +79,18 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="main-general__boxsubtitle">
-      <div class="main-general__subtitle">
+  <div class="">
+    <div class="main-home__contentline main-home__contentline--about">
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--first"></div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-general__subtitle">
         <h3>food evolution</h3>
+        </div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--last"></div>
       </div>
     </div>
   </div>
@@ -101,13 +118,22 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="main-general__boxsubtitle">
-      <div class="main-general__subtitle">
+  <div class="">
+    <div class="main-home__contentline main-home__contentline--about">
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--first"></div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-general__subtitle">
         <h3>keep it fresh!</h3>
+        </div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--last"></div>
       </div>
     </div>
   </div>
+
   <div class="main-about" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/About/--7.png');">
     <div class="container">
       <div class="main-about__content">

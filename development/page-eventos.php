@@ -14,13 +14,13 @@
           <form>
             <label class="label--white">Datos personales</label>
             <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido" type="text">
+              <input class="form-control" placeholder="Nombre y apellido" type="text">
             </div>
             <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="tel">
+              <input class="form-control" placeholder="Teléfono" type="tel">
             </div>
             <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
+              <input class="form-control" placeholder="Correo" type="text">
             </div>
             <div class="row">
               <div class="form-group col-md-4">
@@ -34,14 +34,14 @@
             <div class="row">
               <div class="form-group col-md-4">
                 <label class="label--white" for="inputState">invitados</label>
-                <select class="form-control" id="inputState">
+                <select class="form-control">
                     <option selected="selected">Adultos</option>
                     <option>...</option>
                   </select>
               </div>
               <div class="form-group col-md-4">
                 <label class="label--white" for="inputState"></label>
-                <select class="form-control" id="inputState">
+                <select class="form-control">
                     <option selected="selected">Niños</option>
                     <option>...</option>
                   </select>
@@ -49,15 +49,15 @@
             </div>
             <div class="row">
               <div class="form-group col-md-4">
-                <label class="label--white" for="inputState">ubicacion</label>
-                <select class="form-control" id="inputState">
+                <label class="label--white" for="inputState">ubicación</label>
+                <select class="form-control">
                     <option selected="selected">Ciudad</option>
                     <option>...</option>
                   </select>
               </div>
               <div class="form-group col-md-4">
                 <label class="label--white" for="inputState"></label>
-                <select class="form-control" id="inputState">
+                <select class="form-control">
                     <option selected="selected">Dirección</option>
                     <option>...</option>
                   </select>
@@ -66,9 +66,9 @@
             <div class="form-group">
               <textarea placeholder="Mensaje  (opcional)" rows="8"></textarea>
             </div>
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+            <div class="custom-control custom-checkbox my-1 mr-sm-2 checkbox-eventos">
               <input class="custom-control-input" id="customControlInline" type="checkbox">
-              <label class="custom-control-label label--white" for="customControlInline">
+              <label class="custom-control-label label--white label-acept" for="customControlInline">
                   Acepto
                 </label>
               <a class="text-link text-link--white" href="#">

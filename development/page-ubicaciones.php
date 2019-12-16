@@ -13,6 +13,13 @@
     <div class="container">
       <div class="main-ubications__content">
         <div class="main-ubications__item">
+        <div class="control">
+          <select id="limiter" class="limiter-options select-ubication " data-role="limiter">
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="barranquilla">Barranquilla</option>
+          </select>
+          </div>
           <select class="form-control select-ubication" name="ubications" id="ubications">
             <option value="bogota">Bogotá</option>
             <option value="medellin">Medellín</option>
@@ -39,7 +46,7 @@
                   </div>
                 </div>
                 <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
-                  <i class="fa fa-caret-down a-1"></i>
+                  <i class=""></i>
                 </a>
               </div>
             </div>

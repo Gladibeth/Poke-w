@@ -53,7 +53,7 @@
 
 .main-modal__title {
   p {
-    @include font(50px, $bold);
+    @include font(45px, 800);
     letter-spacing: 0.2px;
     color: $text;
     text-transform: uppercase;
@@ -84,12 +84,14 @@
     letter-spacing: 1.82px;
     color: $text;
     font-family: $Raleway;
+    font-style: italic;
   }
 
   p {
     letter-spacing: 1.82px;
     color: $text;
     font-family: $Raleway;
+    font-style: italic;
 
     @include respond-to(xs) {
       @include font(15px, $light);
@@ -100,7 +102,7 @@
 .main-modal__details {
   p {
     @include font(15px, $light);
-    letter-spacing: 3.2px;
+    letter-spacing: 0px;
     color: $text;
     font-style: italic;
     font-family: $Raleway;
@@ -125,12 +127,15 @@
     border-radius: 0;
     min-width: 45px;
     font-family: $Acumin;
+    font-size: 15px;
+ 
   }
 }
 
 .main-modal__boxdetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 15px 0;
 
   @include respond-to(xs) {
     grid-template-columns: 1fr;

@@ -1,10 +1,17 @@
 .main-work {
   padding: 130px 0 50px 0;
+  & .main__form{
+    margin-bottom: 40px;
+  }
+  & .politica strong {
+    text-decoration: underline;
+  }
 }
+
 
 label {
   color: $text;
-  @include font(20px, $bold);
+  @include font(19px, $bold);
   text-transform: uppercase;
   letter-spacing: 0;
   font-family: $Raleway;
@@ -13,6 +20,11 @@ label {
     color: $white;
     @include font(14px, $bold);
     margin-bottom: 0;
+  }
+  &.label-acept{
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 10px;
   }
 
   &.label-cap {
@@ -30,6 +42,15 @@ label {
   @include respond-to(xs) {
     @include font(15px, $bold);
   }
+}
+
+.custom-control-input{
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox .custom-control-label:before{
+  border-radius: 0;
 }
 
 .label {
@@ -194,7 +215,8 @@ input[type="checkbox"] {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    height:50px;
+    width: 100%;
+    // height:50px;
     text-align-last: center;
     &:active{
       background-color: #b4b4b4;
@@ -243,7 +265,7 @@ textarea {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: 1.3rem .75rem;
+  padding: 0.6rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
@@ -294,4 +316,33 @@ textarea {
     display: block;
     margin-top: 5px;
   }
+}
+
+
+.main-experience{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.logo-experience{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.main-experience__img img{
+  width: 35px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before {
+  background-color: #686868;
+}
+
+.checkbox-eventos .custom-control-label:after, .custom-control-label:before{
+  width: 1.3rem;
+  height: 1.3rem;
+  border: #686868;
+}
+.checkbox-eventos .custom-control-label:after, .custom-control-label:after{
+  width: 1.3rem;
+  height: 1.3rem;
 }

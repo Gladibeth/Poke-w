@@ -190,3 +190,27 @@ select.addEventListener('change',
   }
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  $("#limiter").mouseover(function(){
+    $(this)[0].size=$(this).find("option").length;
+  });
+  $("#limiter").click(function(){
+     $(this)[0].size=0;
+  });

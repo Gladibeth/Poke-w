@@ -131,6 +131,16 @@
       <p>Poke colombia, 2019 - Todos los derechos Reservados</p>
     </div>
   </footer>
+  
+  <style>
+  .js-displayNone{
+    display:none;
+  }
+  .Fecha_nacimiento > input{
+    text-transform: uppercase;
+  }
+
+  </style>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>

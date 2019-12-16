@@ -3,7 +3,7 @@
   position: relative;
 
   @include respond-to(xs) {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .about-banner__img--one {
@@ -19,28 +19,44 @@
     }
 
     img {
-      width: 80%;
+      width: 70%;
+
+      @include respond-to(xs){
+        width: 60%;
+      }
     }
   }
 
   .about-banner__img--two {
     position: absolute;
-    right: 0;
+    right: -4%;
+
+    
 
     @include respond-to(xl){
-      right: -10%;
+      right: -15%;
     }
 
     @include respond-to(sm) {
       width: 100px;
+      left: 20%;
+      top: -20%
     }
 
     @include respond-to(xs) {
       width: 100px;
+      left: 25%;
+      top: -10%
     }
 
     img {
-      width: 80%;
+      width: 70%;
+      @include respond-to(sm){
+        width: 90%;
+      }
+      @include respond-to(xs){
+        width: 85%;
+      }
     }
   }
 }

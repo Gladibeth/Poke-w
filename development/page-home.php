@@ -36,10 +36,18 @@
     <?php endwhile; wp_reset_query();?>
     </div>
   </div>
-  <div class="container">
-    <div class="main-general__boxsubtitle">
-      <div class="main-general__subtitle">
-        <h3>eat better, feel better</h3>
+  <div class="">
+    <div class="main-home__contentline">
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--first"></div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-general__subtitle">
+          <h3>eat better, feel better</h3>
+        </div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--last"></div>
       </div>
     </div>
   </div>
@@ -69,10 +77,18 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="main-general__boxsubtitle">
-      <div class="main-general__subtitle">
-        <h3>eat better, feel better</h3>
+  <div class="">
+    <div class="main-home__contentline">
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--first"></div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-general__subtitle">
+          <h3>eat better, feel better</h3>
+        </div>
+      </div>
+      <div class="main-home__item">
+        <div class="main-home__line main-home__line--last"></div>
       </div>
     </div>
   </div>
@@ -101,14 +117,25 @@
       </div>
     </div>
   </div>
+  
   <div class="main-follow">
-    <div class="container">
-      <div class="main-general__boxsubtitle">
-        <div class="main-general__subtitle">
-          <h3>if you dig us, like us</h3>
+    <div class="">
+      <div class="main-home__contentline">
+        <div class="main-home__item">
+          <div class="main-home__line main-home__line--first"></div>
         </div>
-        <div class="main-general__subtitle--medium">
-          <h4>Follow us</h4>
+        <div class="main-home__item">
+          <div class="main-general__boxsubtitle">
+            <div class="main-general__subtitle">
+              <h3>if you dig us, like us</h3>
+            </div>
+            <div class="main-general__subtitle--medium">
+              <h4>Follow us</h4>
+            </div>
+          </div>
+        </div>
+        <div class="main-home__item">
+          <div class="main-home__line main-home__line--last"></div>
         </div>
       </div>
     </div>

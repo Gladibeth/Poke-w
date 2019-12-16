@@ -10,3 +10,11 @@
 
 //insertar imagen destacada en el post
   add_theme_support( 'post-thumbnails' );
+
+//redimencionando las imágenes
+add_image_size( '480', 480, false);
+add_image_size( '768', 480, false);
+add_image_size( '1024', 480, false);
+add_image_size( '1280', 480, false);
+add_image_size( '1600', 480, false);
+//end redimención de imágenes

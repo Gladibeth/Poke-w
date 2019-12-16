@@ -13,7 +13,7 @@
       <div class="container">
         <div class="main-ambiental">
           <div class="main-pokedots__box">
-            <div class="main-general__description main-general__description--amb">
+            <div class="main-general__description main-general__description--amb ambiental__description">
               <?php the_content();?>
             </div>
           </div>
@@ -152,8 +152,9 @@
         </div>
         <div class="main-ambiental">
           <div class="main-pokedots__box">
-            <div class="main-general__description main-general__description--amb">
-              <p>Continuamos trabajando en disminuir el uso de plástico, queremos contribuir con el cuidado del medio ambiente...</p>
+            <div class="main-general__description main-general__description--amb ambiental__description">
+              <p>Continuamos trabajando en disminuir el uso de plástico,</p> 
+              <p>queremos contribuir con el cuidado del medio ambiente...</p>
             </div>
           </div>
         </div>
