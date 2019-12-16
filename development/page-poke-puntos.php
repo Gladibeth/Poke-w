@@ -5,7 +5,7 @@
     <img src="<?php the_post_thumbnail_url()?>" alt="">
     <div class="overlay"></div>
     <div class="container">
-      <div class="about-banner__text mt-4">
+      <div class="about-banner__text about-banner__text--top mt-4">
         <div class="about-banner__title">
           <?php the_content();?>
         </div>

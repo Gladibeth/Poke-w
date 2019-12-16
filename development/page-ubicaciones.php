@@ -4,7 +4,7 @@
     <img src="<?php the_post_thumbnail_url()?>" alt="">
   <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
-      <div class="about-banner__title">
+      <div class="about-banner__title about-banner__title__space">
         <h3>Ubicaciones</h3>
       </div>
     </div>
@@ -13,19 +13,13 @@
     <div class="container">
       <div class="main-ubications__content">
         <div class="main-ubications__item">
-        <div class="control">
-          <!-- <select id="limiter" class="limiter-options select-ubication " data-role="limiter">
-            <option value="bogota">Bogotá</option>
-            <option value="medellin">Medellín</option>
-            <option value="barranquilla">Barranquilla</option>
-          </select> -->
-          </div>
           <select class="form-control select-ubication" name="ubications" id="ubications">
             <option value="bogota">Bogotá</option>
             <option value="medellin">Medellín</option>
             <option value="barranquilla">Barranquilla</option>
           </select>
           <!--bogota-->
+          
             <div class="div-padre js-ubications" id="bogota">
               <div class="main-content-fix" >
                 <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
@@ -61,7 +55,7 @@
                 <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne">
                 <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="poke-viva-emvigado" aria-selected="true" class=" active link-ubication" data-toggle="pill" href="#poke-viva-emvigado" id="poke-viva-emvigado-tab" role="tab">POKE VIVA EMVIGADO</a>
+                    <a aria-controls="poke-viva-emvigado" aria-selected="true" class=" active link-ubication" data-toggle="pill" href="#poke-viva-emvigado" id="poke-viva-emvigado-tab" role="tab">POKE VIVA ENVIGADO</a>
                     </div>
                   </div>
                   </div>
@@ -106,12 +100,7 @@
                       <li>POKE 81</li>
                       <li>CALLE 81 #  8-35</li>
                       <li>Horario</li>
-                      <li>
-                        D: 12:00 pm - 5:00 pm <br>
-                        L-J: 12:00 pm - 9:00 pm <br>
-                        V: 12:00 pm - 10:00 pm <br>
-                        S: 12:00 pm - 9:00 pm
-                      </li>
+                      <li>12:00 PM - 9:00 PM</li>
                       <li>Teléfono</li>
                       <li>(031) 2665451</li>
                     </ul>
@@ -373,11 +362,3 @@
   }
   </style>
 <?php get_footer(); ?> 
-<style>
-@media (max-width: 767px) and (min-width: 0px){
-  .about-banner .about-banner__text {
-    padding-top: 0;
-    margin: auto !important;
-  }
-}
-</style>

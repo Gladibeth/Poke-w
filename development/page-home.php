@@ -94,7 +94,7 @@
   </div>
   <div class="main-about main-about__height" >
     <div class="mask"></div>
-    <div class="main-about__contentimg main-about__contentimg--why" id="que_es_poke">
+    <div class="main-about__contentimg main-about__contentimg--why">
       <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/POKE_-245.png" alt="">
       <div class="container">
         <div class="main-why__content">

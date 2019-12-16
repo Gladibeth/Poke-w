@@ -4,13 +4,14 @@
       <div class="main-ambiental">
         <div class="main-pokedots__box">
           <div class="main-experience">
-            <div class="main-general__description main-general__description--amb main-general__description--work">
-              <p>¡trabaja con nosotros!</p>
+            <div class="form__experience">
+
+              <div class="main-general__description main-general__description--amb main-general__description--work">
+                <p>¡trabaja con nosotros!</p>
+              </div>
+
+              <?php echo do_shortcode('[contact-form-7 id="209" title="Trabaja con nosotros"]'); ?>
             </div>
-            <div class="null"></div>
-          </div>
-          <div class="main-experience">
-          <?php echo do_shortcode('[contact-form-7 id="209" title="Trabaja con nosotros"]'); ?>
             <div class="logo-experience">
               <div class="main-experience__img">
               <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Experiencia/logo-poke-experiencia.png" alt="">

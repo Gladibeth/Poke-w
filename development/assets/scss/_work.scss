@@ -22,9 +22,10 @@ label {
     margin-bottom: 0;
   }
   &.label-acept{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     padding-left: 10px;
+    line-height: 2;
   }
 
   &.label-cap {
@@ -117,6 +118,7 @@ label {
     text-decoration: underline;
     // font-style: italic;
     font-family: $Raleway;
+    font-size: 16px;
     strong{
       font-style: italic;
     font-family: $Raleway;
@@ -328,19 +330,31 @@ textarea {
 
 .main-experience{
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 70% 30%;
+  @include respond-to(sm){
+    grid-template-columns: 100%;  
+  }
+  @include respond-to(xs){
+    grid-template-columns: 100%;  
+  }
 }
 
 .logo-experience{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  @include respond-to(sm){
+    display: none;
+  }
+  @include respond-to(xs){
+    display: none;
+  }
 }
 .main-experience__img img{
   width: 35px;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label:before, .custom-radio .custom-control-input:checked~.custom-control-label:before{
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before {
   background-color: #686868;
 }
 
@@ -355,3 +369,11 @@ textarea {
   height: 1.3rem;
 }
 
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #686868;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}

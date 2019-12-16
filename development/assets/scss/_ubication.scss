@@ -3,7 +3,9 @@
   grid-template-columns: 25% 75%;
   margin-top: 15px;
   grid-gap: 20px;
-
+  @include respond-to(sm) {
+    grid-template-columns: 35% 65%;
+  }
   @include respond-to(xs) {
     grid-template-columns: 100%;
   }
@@ -31,9 +33,11 @@
   
 .main-ubications__box {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   margin-top: 50px;
-
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
   @include respond-to(xs) {
     grid-template-columns: 100%;
   }
@@ -50,6 +54,7 @@
     letter-spacing: 1.47px;
     color: #707070;
     font-family: $Segoe;
+    text-transform: lowercase;
 
     &:nth-child(odd) {
       font-size: 18px;
@@ -60,6 +65,7 @@
       border-bottom: 1px solid #707070;
       width: 80%;
       margin: auto;
+      margin-bottom: 15px;
   
 
     }
@@ -104,7 +110,7 @@
   font-weight: 800;
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid #686868;
-  padding: 10px;
+  padding: 15px 10px;
   &.link-ubication--border{
     border-bottom: 1px solid transparent;
     display: flex;
@@ -223,3 +229,5 @@ option:hover {
   background: grey;
   box-shadow: -2px 0 0 -1px grey, 0 0 0 1px grey;
 }
+
+

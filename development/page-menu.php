@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="main-entries">
-    <div class="container" id="container__platillos">
+    <div class="container">
       <div class="main-entries__nav">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item nav-item--tabs">
@@ -44,14 +44,14 @@
           <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" href="createpokebolw.html">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/Bowl.svg">
               <span class="line"></span>
-              ARMA TU BOWL
+              Ármalo a tu gusto
             </a>
         </div>
       </div>
       <hr class="line-gray line-gray--entries">
       <div class="tab-content">
         <div aria-labelledby="entradas" class="tab-pane fade" id="v-pills-home" role="tabpanel">
-          <div class="main-entries__content">
+          <div class="main-pokebowls__content">
             <!--1 entradas-->
             <?php
               $args = array(
@@ -143,7 +143,7 @@
         </div>
         <div class="tab-pane fade show active" id="v-pills-profile">
           <div class="main-pokebowls__content">
-            <!--2 poke bowls-->
+            <!--2 poke bowl-->
             <?php
               $args = array(
               'post_type' => 'poke_bowls',
@@ -176,13 +176,7 @@
                       <div class="main-modal__content">
                         <div class="main-modal__item">
                           <div class="main-modal__img">
-                          <?php if (get_field('imagen_en_el_modal')): ?>
-                            <img src="<?php echo get_field('imagen_en_el_modal');?>" alt="">
-                            
-                          <?php else:?>
                             <img src="<?php echo the_post_thumbnail_url(); ?>">
-                          <?php endif;?>
-                           
                           </div>
                         </div>
                         <div class="main-modal__item">
@@ -336,11 +330,3 @@
     </div>
   </div>
 <?php get_footer(); ?> 
-<style>
-@media (max-width: 767px) and (min-width: 0px){
-  .about-banner .about-banner__text {
-    padding-top: 0;
-    margin: auto !important;
-  }
-}
-</style>

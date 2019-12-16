@@ -12,7 +12,7 @@
               </div>
               <div class="main-footer__boxitem">
                 <div class="main-footer__text">
-                  <p>Part of Foodie Group S.A.S <br> & Endeavor company</p>
+                  <p>Part of Foodie S.A.S <br> & Endeavor company</p>
                 </div>
               </div>
             </div>
@@ -40,20 +40,29 @@
                   </a>
               </li>
               <li>
-                <a href="<?php echo bloginfo('url').'/cuentanos-tu-experiencia';?>">
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
                   CUÉNTANOS TU EXPERIENCIA
                   </a>
               </li>
               <li>
-                <a href="<?php echo bloginfo('url').'/';?>">
-                  TERMINOS Y CONDICIONES
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                términos Y CONDICIONES
                   </a>
               </li>
               <li>
-                <a href="<?php echo bloginfo('url').'/';?>">
-                  POLITICA DE PRIVACIDAD
+                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                política DE PRIVACIDAD
                   </a>
               </li>
+              <!-- / %li -->
+              <!-- /   %a{ :href=>"#"} -->
+              <!-- /     CUÉNTANOS TU EXPERIENCIA -->
+              <!-- / %li -->
+              <!-- /   %a{ :href=>"#"} -->
+              <!-- /     TERMINOS Y CONDICIONES -->
+              <!-- / %li -->
+              <!-- /   %a{ :href=>"#"} -->
+              <!-- /     POLITICA DE PRIVACIDAD -->
             </ul>
           </div>
         </div>
@@ -130,14 +139,7 @@
   .Fecha_nacimiento > input{
     text-transform: uppercase;
   }
-  @media (min-width: 1300px) and (max-width:1600px) {
-    #que_es_poke{
-    height: 120vh;
-    }
-    #container__platillos{
-      padding-right: 32px;
-    }
-  }
+
   </style>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
