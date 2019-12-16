@@ -14,11 +14,11 @@
       <div class="main-ubications__content">
         <div class="main-ubications__item">
         <div class="control">
-          <select id="limiter" class="limiter-options select-ubication " data-role="limiter">
+          <!-- <select id="limiter" class="limiter-options select-ubication " data-role="limiter">
             <option value="bogota">Bogotá</option>
             <option value="medellin">Medellín</option>
             <option value="barranquilla">Barranquilla</option>
-          </select>
+          </select> -->
           </div>
           <select class="form-control select-ubication" name="ubications" id="ubications">
             <option value="bogota">Bogotá</option>
@@ -106,7 +106,12 @@
                       <li>POKE 81</li>
                       <li>CALLE 81 #  8-35</li>
                       <li>Horario</li>
-                      <li>12:00 PM - 9:00 PM</li>
+                      <li>
+                        D: 12:00 pm - 5:00 pm <br>
+                        L-J: 12:00 pm - 9:00 pm <br>
+                        V: 12:00 pm - 10:00 pm <br>
+                        S: 12:00 pm - 9:00 pm
+                      </li>
                       <li>Teléfono</li>
                       <li>(031) 2665451</li>
                     </ul>
@@ -368,3 +373,11 @@
   }
   </style>
 <?php get_footer(); ?> 
+<style>
+@media (max-width: 767px) and (min-width: 0px){
+  .about-banner .about-banner__text {
+    padding-top: 0;
+    margin: auto !important;
+  }
+}
+</style>

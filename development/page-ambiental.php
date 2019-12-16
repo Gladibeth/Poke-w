@@ -162,3 +162,11 @@
     </div>
   <?php endwhile; endif; ?> 
 <?php get_footer(); ?> 
+<style>
+@media (max-width: 767px) and (min-width: 0px){
+  .about-banner .about-banner__text {
+    padding-top: 0;
+    margin: auto !important;
+  }
+}
+</style>

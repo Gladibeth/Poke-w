@@ -328,7 +328,7 @@ textarea {
 
 .main-experience{
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 90% 10%;
 }
 
 .logo-experience{
@@ -340,7 +340,7 @@ textarea {
   width: 35px;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label:before {
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before, .custom-radio .custom-control-input:checked~.custom-control-label:before{
   background-color: #686868;
 }
 
@@ -354,3 +354,4 @@ textarea {
   width: 1.3rem;
   height: 1.3rem;
 }
+

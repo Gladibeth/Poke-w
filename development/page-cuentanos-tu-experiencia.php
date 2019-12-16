@@ -3,8 +3,11 @@
     <div class="container">
       <div class="main-ambiental ">
         <div class="main-pokedots__box">
-          <div class="main-general__description main-general__description--amb main-general__description--work">
-            <p>¡CUÉNTANOS TU EXPERIENCIA!</p>
+          <div class="main-experience">
+            <div class="main-general__description main-general__description--amb main-general__description--work">
+              <p>¡CUÉNTANOS TU EXPERIENCIA!</p>
+            </div>
+            <div class="null"></div>
           </div>
           <div class="main-experience">
             <form>
