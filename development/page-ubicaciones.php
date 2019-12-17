@@ -22,9 +22,9 @@
           
             <div class="div-padre js-ubications" id="bogota">
               <div class="main-content-fix" >
-                <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
-                  <!--<i class="fa fa-caret-up"></i>-->
-                </a>
+                <!-- <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
+                  <i class="fa fa-caret-up"></i>
+                </a> -->
                 <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne" style="height: 300px;overflow-y: scroll;">
                   <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">

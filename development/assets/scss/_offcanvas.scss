@@ -8,6 +8,12 @@ body {
   padding-top: 56px;
 }
 
+.navbar-toggler{
+  @include respond-to(sm){
+    padding: 0 !important;
+  }
+}
+
 @media (max-width: 991px) {
   .offcanvas-collapse {
     position: fixed;

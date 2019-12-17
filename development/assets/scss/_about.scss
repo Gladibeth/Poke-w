@@ -21,16 +21,19 @@
     z-index: 999;
     margin-top: 40px;
     position: absolute;
-    left: 10%;
+    left: 8%;
     transform: translate(0%);
 
     @include respond-to(xl){
       left: 20%;
       top: 15%;
     }
+    @include respond-to(md){
+      left:0%;
+    }
 
     @include respond-to(sm){
-      left:4%;
+      left:0%;
     }
 
     @include respond-to(xs){
@@ -103,7 +106,7 @@
       }
 
       @include respond-to(xs) {
-        padding-left: 10px;
+        // padding-left: 10px;
       }
       &.about-banner__title__space{
         h3{
@@ -125,7 +128,7 @@
 
 
         @include respond-to(md) {
-          font-size: 55px;
+          font-size: 45px;
         }
 
         @include respond-to(xs) {
@@ -153,7 +156,7 @@
         }
 
         @include respond-to(xs) {
-          font-size: 30px;
+          font-size: 35px;
           padding: 0;
         }
 
@@ -206,6 +209,12 @@
 
 .about-banner__boximg{
   margin-top: 100px;
+  @include respond-to(md){
+    margin-left: 30px;
+  }
+  @include respond-to(sm){
+    margin-left: 0px;
+  }
   @include respond-to(xs){
     margin-top: 0px;
   }
@@ -222,6 +231,11 @@
 }
 
 .main-ourorigin__item {
+  .container{
+    @include respond-to(md){
+      padding: 0;
+    }
+  }
 
   &.main-ourorigin__item--top {
     margin-top: 80px;
@@ -245,7 +259,7 @@
   }
 
   @include respond-to(sm) {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   @include respond-to(xs) {
@@ -289,6 +303,7 @@
 
     @include respond-to(sm) {
       @include font(18px, $medium);
+      line-height: 1.5;
     }
 
     @include respond-to(xs) {

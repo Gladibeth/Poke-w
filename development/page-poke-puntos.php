@@ -58,6 +58,11 @@
         ?>
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div class="main-pokedots__item">
+            <div class="main-entries__text">
+              <div class="main-entries__title">
+                <h3><?php the_title();?></h3>
+              </div>
+            </div>
             <div class="main-pokedots__img">
               <img src="<?php echo the_post_thumbnail_url(); ?>">
             </div>

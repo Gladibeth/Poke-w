@@ -1,3 +1,14 @@
+.main-ubications{
+  .container{
+    @include respond-to(sm){
+      padding: 0;
+    }
+    @include respond-to(xs){
+      padding: 0;
+    }
+  }
+}
+
 .main-ubications__content {
   display: grid;
   grid-template-columns: 25% 75%;
@@ -13,6 +24,14 @@
 
 .main-ubications__item {
   padding: 20px;
+
+  @include respond-to(md){
+    padding: 20px 20px 20px 0;
+  }
+
+  @include respond-to(sm){
+    padding: 20px 20px 20px 0;
+  }
 }
 
 .main-ubications__img {
@@ -109,8 +128,33 @@
   font-size: 18px;
   font-weight: 800;
   transition: 0.3s ease-in-out;
-  border-bottom: 1px solid #686868;
+  // border-bottom: 1px solid #686868;
   padding: 15px 10px;
+  position: relative;
+
+  
+  &:after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: #686868;
+    bottom: 0;
+    left: 20px;
+    transform: translate(0px);
+  }
+
+  // &:nth-child(1){
+  //   &:after{
+  //     display: none;
+  //   }
+  // }
+
+  &:last-child{
+    &:after{
+      display: none;
+    }
+  }
   &.link-ubication--border{
     border-bottom: 1px solid transparent;
     display: flex;
@@ -131,7 +175,7 @@
   #poke-aeropuerto-tab{
     border-bottom: 1px solid transparent;
   }
-  &:nth-last-child(-n+2){
+  &:last-child{
     border-bottom: 1px solid transparent;
   }
 

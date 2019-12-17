@@ -3,8 +3,12 @@
     z-index: 2;
     top: 93%;
     left: 41.8%;
+
+    @include respond-to(md) {
+      right: 37%;
+    }
     @include respond-to(sm) {
-      right: 38%;
+      left: 34%;
     }
 
     &:before {
@@ -26,9 +30,11 @@
     right: 39%;
     z-index: 2;
     top: 93%;
-
+    @include respond-to(md) {
+      right: 34%;
+    }
     @include respond-to(sm) {
-      right: 28%;
+      right: 32%;
     }
 
     @include respond-to(xl) {
@@ -70,7 +76,7 @@
     // }
 
     @include respond-to(sm) {
-      left: 43%;
+      left: 38%;
     }
 
     // @include respond-to(xs) {

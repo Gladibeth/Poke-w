@@ -44,7 +44,7 @@
           <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" href="createpokebolw.html">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/Bowl.svg">
               <span class="line"></span>
-              Ármalo a tu gusto
+              ARMA TU BOWL
             </a>
         </div>
       </div>

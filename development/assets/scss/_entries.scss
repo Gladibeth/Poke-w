@@ -2,6 +2,13 @@
 .js-hiddenMenu{display:none;}
 .main-entries {
   padding: 5px 0;
+
+
+  .container{
+    @include respond-to(sm){
+      padding: 0;
+    }
+  }
 }
 
 .main-entries__content {
@@ -17,6 +24,7 @@
 
 .main-entries__item {
   position: relative;
+  height: 355px;
 }
 
 .main-entries__img {

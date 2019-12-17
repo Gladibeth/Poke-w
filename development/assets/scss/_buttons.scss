@@ -245,9 +245,13 @@ button {
 
   &.btn-box--resgister {
     width: 18%;
-
+    @include respond-to(md) {
+      width: 25%;
+      padding-left: 30px;
+    }
     @include respond-to(sm) {
       width: 43%;
+      padding-left: 15px;
     }
 
     @include respond-to(xs) {

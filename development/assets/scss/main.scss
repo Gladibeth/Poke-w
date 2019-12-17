@@ -13,6 +13,10 @@
 @import "createpokebolw";
 @import "modals";
 
+
+
+
+
 .form-control{
   border-radius:0 !important;
   color: #898989 !important;
@@ -211,6 +215,7 @@ button:focus {
   border: 2px solid transparent;
   padding: 0px 10px;
   border-radius: 5px;
+  text-shadow: 0 4px 4px #0000007a;
   
 
   @include respond-to(xs) {
@@ -220,12 +225,14 @@ button:focus {
   &.fixed-color {
     color: $black;
     transition: 0.3s ease-in-out;
-    text-shadow: 0 4px 4px #0000007a;
+    text-shadow: 0 0px 0px #00000000;
+    
 
     &:hover {
       color: $black;
       border: 2px solid $black;
       border-radius: 5px;
+      padding: 0 5px;
     }
 
     &.active {
@@ -238,11 +245,13 @@ button:focus {
   &.nav-link-bc {
     color: $black;
     transition: 0.3s ease-in-out;
+    
 
     &:hover {
       color: $black;
       border: 2px solid $black;
       border-radius: 5px;
+      
     }
 
     &.active {
@@ -260,6 +269,7 @@ button:focus {
 
   &:hover {
     color: $white;
+    padding: 0 5px;
   }
 }
 
@@ -270,12 +280,12 @@ button:focus {
 
   @include respond-to(md) {
     width: 60px;
-    margin-left: 10px;
+    // margin-left: 10px;
   }
 
   @include respond-to(sm) {
     width: 60px;
-    margin-left: 16px;
+    // margin-left: 16px;
   }
 
   @include respond-to(xs) {
@@ -344,7 +354,11 @@ button:focus {
 
   .main-banner__item {
     position: relative;
-
+    .container{
+      @include respond-to(sm){
+        padding: 0
+      }
+    }
 
   }
 
@@ -380,7 +394,7 @@ button:focus {
       // padding-left: 160px;
 
       @include respond-to(md) {
-        padding-left: 20px;
+        // padding-left: 20px;
       }
 
       @include respond-to(sm) {
@@ -862,7 +876,7 @@ button:focus {
   grid-template-columns: 40% 20% 40%;
   padding: 30px 0;
   @include respond-to(sm){
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 35% 30% 35%;
 
   }
   @include respond-to(xs){
@@ -954,7 +968,9 @@ button:focus {
   position: relative;
   background-position: 50% -140px;
   padding: 0!important;
-
+  @include respond-to(md){
+    height: 700px;
+  }
   
   @include respond-to(sm){
     height: 880px;
@@ -966,6 +982,13 @@ button:focus {
 
   &.main-about__contentimg--why{
     // height: initial;
+
+    .container{
+      @include respond-to(sm){
+        left: .6%;
+        top: 0%;
+      }
+    }
   }
   img{
     width: 100%;
@@ -983,10 +1006,11 @@ button:focus {
       transform: translateX(0%);
     }
     @include respond-to(md){
-      left: 4%
+      left: 3%
     }
     @include respond-to(sm){
-      left: 2%
+      left: 0.6%;
+      top:15%;
     }
 
     @include respond-to(xs){
@@ -1003,6 +1027,12 @@ button:focus {
 .main-about__mt {
   margin-top: 50px;
   position: initial;
+  .container{
+
+    @include respond-to(sm){
+      padding: 0;
+    }
+  }
 
   @include respond-to(sm) {
     margin-top: 0;
@@ -1100,6 +1130,12 @@ button:focus {
 
 .main-footer {
   background-color: $white;
+  .container{
+
+    @include respond-to(sm){
+     padding: 0; 
+    }
+  }
 }
 
 .main-footer__content {
@@ -1266,9 +1302,6 @@ button:focus {
   }
 }
 
-#nuestra-promesa{
-  height:100px;
-}
 
 
 .main-footer-grid {
@@ -1307,6 +1340,9 @@ button:focus {
 #ubications:focus{
   color: white !important;
   background-color: #898989!important;
+}
+#nuestra-promesa{
+  height: 90px;
 }
 
 .ambiental__description p{
