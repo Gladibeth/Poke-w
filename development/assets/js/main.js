@@ -1,3 +1,4 @@
+const url = window.location.origin;
 $(function () {
   'use strict'
 
@@ -67,12 +68,79 @@ switch (page) {
     break;
   case '/poke/eventos/':
       $(itemsNavbarMenu[5]).find('a').addClass('active');
+      $('.nav-link-bc').css('text-shadow','none');
+  case '/poke/escribenos/':
+    $('.nav-link-bc').css('text-shadow','none');
+    //aceptar
+      var truecheck = document.getElementById('aceptCheckbox');
+      truecheck.addEventListener("change", validatruecheck, false);
+      function validatruecheck(){
+        let politicaTermino = truecheck.checked;
+        if(politicaTermino){
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', true);
+        }else{
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
+        }
+      }
+  case '/poke/trabaja-con-nosotros/':
+    $('.nav-link-bc').css('text-shadow','none');
+    //aceptar
+      var truecheck = document.getElementById('aceptCheckbox');
+      truecheck.addEventListener("change", validatruecheck, false);
+      function validatruecheck(){
+        let politicaTermino = truecheck.checked;
+        if(politicaTermino){
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', true);
+        }else{
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
+        }
+      }
+  case '/poke/cuentanos-tu-experiencia/':
+      $('.navbar-fixed-js').addClass('fixed');
+      /* let selectCiudad = $('#js-ciudad-form');
+        selectCiudad[0][0].text = 'Ciudad'; */
+      //aceptar
+
+      var truecheck = document.getElementById('aceptCheckbox');
+      truecheck.addEventListener("change", validatruecheck, false);
+      function validatruecheck(){
+        let politicaTermino = truecheck.checked;
+        if(politicaTermino){
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', true);
+        }else{
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
+        }
+      }
+
+      var information = document.getElementById('aceptInformation');
+      information.addEventListener("change", validainformation, false);
+      function validainformation(){
+        let politicaTermino = information.checked;
+        if(politicaTermino){
+          $("input[value='Deseo_recibir_mas_informacion_sobre_nuestros_establecimientos']").prop('checked', true);
+        }else{
+          $("input[value='Deseo_recibir_mas_informacion_sobre_nuestros_establecimientos']").prop('checked', false);
+        }
+      }
+
+
+
+
+
+
+
+
+
+    $('.nav-link').addClass('fixed-color');
+    $('.nav-top__header').addClass('nav-top__header--detele');
+    $('.hamburger-inner').addClass('js-hamburger');
+    $("#iso").addClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
+
     break;
   
 }
 
 // Menú fixed
-const url = window.location.origin;
 $(window).scroll(function () {
   if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
     $('.navbar-fixed-js').addClass('fixed');

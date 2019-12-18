@@ -40,7 +40,7 @@
                   </a>
               </li>
               <li>
-                <a href="<?php echo bloginfo('url').'/trabaja-con-nosotros';?>">
+                <a href="<?php echo bloginfo('url').'/cuentanos-tu-experiencia';?>">
                   CUÉNTANOS TU EXPERIENCIA
                   </a>
               </li>
@@ -54,15 +54,6 @@
                 política DE PRIVACIDAD
                   </a>
               </li>
-              <!-- / %li -->
-              <!-- /   %a{ :href=>"#"} -->
-              <!-- /     CUÉNTANOS TU EXPERIENCIA -->
-              <!-- / %li -->
-              <!-- /   %a{ :href=>"#"} -->
-              <!-- /     TERMINOS Y CONDICIONES -->
-              <!-- / %li -->
-              <!-- /   %a{ :href=>"#"} -->
-              <!-- /     POLITICA DE PRIVACIDAD -->
             </ul>
           </div>
         </div>
@@ -72,33 +63,7 @@
               <p>NEWSLETTER</p>
             </div>
             <div class="main-footer__subscribe">
-              <form>
-                <div class="form-group">
-                  <input class="input-footer form-control" id="formGroupExampleInput" placeholder="Correo electronico" type="email">
-                </div>
-                <div class="main-footer-grid">
-                  <div class="main-footer__btn">
-                    <button class="btn_custom btn--medium btn--filled-footer">
-                        Enviar
-                      </button>
-                  </div>
-                  <div class="message">
-                    <p>
-                      Acepto
-                      <a class="text-link" href="#">
-                          <strong>
-                            política de privacidad
-                          </strong>
-                        </a> y
-                      <a class="text-link" href="#">
-                          <strong>
-                            términos y condiciones
-                          </strong>
-                        </a>
-                    </p>
-                  </div>
-                </div>
-              </form>
+              <?php echo do_shortcode('[contact-form-7 id="248" title="NEWSLETTER"]'); ?>
             </div>
           </div>
         </div>

@@ -1361,3 +1361,37 @@ button:focus {
     font-size: 15px !important;
   }
 }
+
+div.wpcf7 .screen-reader-response {
+  position: inherit !important;
+  overflow: initial !important;
+  height: 100% !important;
+  width: auto !important;
+  top: 0px !important;
+  font-weight: 400 !important;
+  color: #686868 !important;
+  & ul{
+    display: none;
+  }
+}
+div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+  display: none !important;
+}
+div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
+  display: none !important;
+}
+
+.input-file .file-selected {
+  font-size: 14px !important;
+  display: inline !important;;
+  padding: 0 20px !important;;
+  font-family: Raleway,sans-serif !important;;
+  font-weight: 400 !important;
+  color: #686868 !important;
+}
+#wpcf7-f245-o1 > form > div:nth-child(7) > div:nth-child(5) > div > div{
+  padding-left: 0 !important;
+}
+#wpcf7-f247-p27-o1 > div{
+  color: white !important;
+}

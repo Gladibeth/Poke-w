@@ -20,18 +20,4 @@
       </div>
     </div>
   </div>
-<?php get_footer(); ?> 
-
-<script>
-//recibir-Catalogo
-var truecheck = document.getElementById('aceptCheckbox');
-truecheck.addEventListener("change", validatruecheck, false);
-function validatruecheck(){
-  let recibirCatalogo = truecheck.checked;
-  if(recibirCatalogo){
-    $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', true);
-  }else{
-    $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
-  }
-}
-</script>
+<?php get_footer(); ?>

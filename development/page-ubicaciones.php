@@ -49,13 +49,13 @@
           <!--Medellín-->
             <div class="div-padre js-ubications js-displayNone" id="medellin">
               <div class="main-content-fix" >
-                <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
-                  <!--<i class="fa fa-caret-up"></i>-->
-                </a>
+                <!-- <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
+                  <i class="fa fa-caret-up"></i>
+                </a> -->
                 <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne">
                 <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                    <a aria-controls="poke-viva-emvigado" aria-selected="true" class=" active link-ubication" data-toggle="pill" href="#poke-viva-emvigado" id="poke-viva-emvigado-tab" role="tab">POKE VIVA ENVIGADO</a>
+                    <a aria-controls="poke-viva-envigado" aria-selected="true" class=" active link-ubication" data-toggle="pill" href="#poke-viva-envigado" id="poke-viva-envigado-tab" role="tab">POKE VIVA ENVIGADO</a>
                     </div>
                   </div>
                   </div>
@@ -69,9 +69,9 @@
            <!--barranquilla-->
            <div class="div-padre js-ubications js-displayNone" id="barranquilla">
               <div class="main-content-fix" >
-                <a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
-                  <!-- <i class="fa fa-caret-up"></i> -->
-                </a>
+                <!--<a class="first-icons link-ubication link-ubication--border" onclick="scroll_top()">
+                   <i class="fa fa-caret-up"></i> 
+                </a>-->
                 <div aria-labelledby="headingOne" class="js-scroll collapse show" data-parent="#accordion" id="collapseOne">
                 <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
@@ -292,14 +292,14 @@
          <!--modal medellin-->
          <div class="main-ubications__item js-ubications js-displayNone" id="modal-medellin">
             <div class="tab-content" id="v-pills-tabContent">
-              <div aria-labelledby="poke-viva-emvigado-tab1" class="tab-pane fade show active" id="poke-viva-emvigado" role="tabpanel">
+              <div aria-labelledby="poke-viva-envigado-tab1" class="tab-pane fade show active" id="poke-viva-envigado" role="tabpanel">
                 <div class="main-ubications__img">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
                     <ul class="main-ubications__ul">
-                      <li>POKE VIVA EMVIGADO</li>
+                      <li>POKE VIVA ENVIGADO</li>
                       <li>CRA 48 # 32 B SUR - 132 C.C VIVA LOCAL 333</li>
                       <li>Horario</li>
                       <li>12:00 PM - 9:00 PM</li>
