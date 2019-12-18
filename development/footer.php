@@ -63,7 +63,7 @@
               <p>NEWSLETTER</p>
             </div>
             <div class="main-footer__subscribe">
-              <?php echo do_shortcode('[contact-form-7 id="248" title="NEWSLETTER"]'); ?>
+              <?php echo do_shortcode('[contact-form-7 id="260" title="NEWSLETTER"]'); ?>
             </div>
           </div>
         </div>

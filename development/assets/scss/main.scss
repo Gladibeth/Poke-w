@@ -100,8 +100,8 @@ button:focus {
 
   &.line-color--entries{
     border-right: 1px solid hsla(0,0%,44%,.35);
-    height: 45px;
-    margin-top: 28px;
+    height: 35px;
+    margin-top: 5px;
   }
 }
 
@@ -178,9 +178,13 @@ button:focus {
   padding: 0 18px;
   display: flex;
   align-items: center;
-
+  &:last-child{
+    @include respond-to(md){
+      padding: 0px;
+    }
+  }
   @include respond-to(md) {
-    padding: 0;
+    padding: 0 8px;
   }
 
   @include respond-to(sm) {
@@ -467,7 +471,7 @@ button:focus {
           }
 
           @include respond-to(xs) {
-            font-size: 45px;
+            font-size: 50px;
             padding: 0;
           }
         }
@@ -632,7 +636,7 @@ button:focus {
       text-transform: uppercase;
 
       @include respond-to(md) {
-        @include font(65px, $bold);
+        @include font(45px, $bold);
       }
 
       @include respond-to(sm) {
@@ -651,7 +655,7 @@ button:focus {
       text-transform: uppercase;
 
       @include respond-to(md) {
-        @include font(65px, $bold);
+        @include font(45px, $bold);
       }
 
       @include respond-to(sm) {
@@ -1231,6 +1235,10 @@ button:focus {
         line-height: 2;
         text-transform: uppercase;
 
+        @include respond-to(md){
+          @include font(14px, $light);
+        }
+
         &:hover {
           text-decoration: none;
           @include font(15px, $semibold);
@@ -1331,7 +1339,7 @@ button:focus {
 }
 
 #sb_instagram{
-  margin-top: 50px;
+  margin-top: 25px;
 }
 #ubications{
   color: white !important;

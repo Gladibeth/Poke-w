@@ -9,14 +9,14 @@
               <div class="main-general__description main-general__description--amb main-general__description--work">
                 <p>¡CUÉNTANOS TU EXPERIENCIA!</p>
               </div>
-              <?php echo do_shortcode('[contact-form-7 id="245" title="Cuentanos tu experiencia"]'); ?>
-            </div>
-            <div class="logo-experience">
-              <div class="main-experience__img">
-              <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Experiencia/logo-poke-experiencia.png" alt="">
-              </div>
+              <?php echo do_shortcode('[contact-form-7 id="259" title="Cuéntanos tu experiencia"]'); ?>
             </div>
           </div>
+            <div class="logo-experience">
+              <div class="main-experience__img">
+                <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Experiencia/logo-poke-experiencia.png" alt="">
+              </div>
+            </div>
         </div>
       </div>
     </div>

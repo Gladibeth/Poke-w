@@ -44,7 +44,7 @@
           <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" href="createpokebolw.html">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/Bowl.svg">
               <span class="line"></span>
-              ARMA TU BOWL
+              ARMA TU BOWLS
             </a>
         </div>
       </div>
@@ -75,61 +75,86 @@
               </a>
                <!--- MODAL 1-->
               <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" role="dialog" tabindex="-1" id="<?php echo $post->post_name;?>">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                          <span aria-hidden="true">×</span>
-                        </button>
-                      <div class="main-modal__content">
-                        <div class="main-modal__item">
-                          <div class="main-modal__img">
-                            <img src="<?php echo the_post_thumbnail_url(); ?>">
+                <div class="modal__flex">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        <div class="main-modal__content">
+                          <div class="main-modal__item">
+                            <div class="main-modal__img">
+                              <img src="<?php echo the_post_thumbnail_url(); ?>">
+                            </div>
                           </div>
-                        </div>
-                        <div class="main-modal__item">
-                          <div class="main-modal__text">
-                            <div class="main-modal__title d-flex">
-                              <p class="mt-2"><?php the_title();?></p>
-                              <span class="line line-color  line-color--entries"></span>
-                              <div class="main-modals__icons mt-2">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/noun_Flame_816755.svg">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/noun_sesame_1048330.svg">
+                          <div class="main-modal__item">
+                            <div class="main-modal__text">
+                              <div class="main-modal__title d-flex">
+                                <p class=""><?php the_title();?></p>
+                                <span class="line line-color  line-color--entries"></span>
+                                <div class="main-modals__icons mt-2">
+                                  <?php if(get_field('mariscos_menu')):?>
+                                    <img title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('pescados_menu')):?>
+                                    <img title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('semillas')):?>
+                                    <img title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('picantes_menu')):?>
+                                    <img title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('soya_menu')):?>
+                                    <img title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('nueces_menu')):?>
+                                    <img title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('lacteos_menu')):?>
+                                    <img title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg">
+                                  <?php endif;?>              
+                                </div>
                               </div>
-                            </div>
-                            <hr class="line-gray line-gray--entries">
-                            <div class="main-modal__description">
-                              <strong>Ingredientes:</strong>
-                              <p><?php the_field('ingredientes_menu');?></p>
-                            </div>
-                            <div class="main-modal__boxdetails">
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
-                                <p>Calorías</p>
+                              <hr class="line-gray line-gray--entries">
+                              <div class="main-modal__description">
+                                <strong>Ingredientes:</strong>
+                                <p><?php the_field('ingredientes_menu');?></p>
                               </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
-                                <p>Carbohidratos</p>
+                              <div class="main-modal__boxdetails">
+                                <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
+                                  <p>Calorías</p>
+                                </div>
+                                <!-- <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
+                                  <p>Carbohidratos</p>
+                                </div>
+                                <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
+                                  <p>Grasas</p>
+                                </div> -->
+                                <!-- <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
+                                  <p>Superfoods</p>
+                                </div> -->
                               </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
-                                <p>Grasas</p>
+                              <div class="main-modal__description">
+                                <strong>Superfoods:</strong>
+                                <p><?php the_field('superfoods_menu');?></p>
                               </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
-                                <p>Superfoods</p>
+                              <div class="main-modal__price">
+                                <p>COP: <?php the_field('precio_menu');?></p>
                               </div>
-                            </div>
-                            <div class="main-modal__price">
-                              <p>COP: <?php the_field('precio_menu');?></p>
-                            </div>
-                            <div class="btn-modal">
-                              <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
-                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
-                                  <span class="line"></span>
-                                  Pide en línea
-                                </a>
+                              <div class="btn-modal">
+                                <?php $urlRappi= get_field('link_rappi_menu'); ?>
+                                <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                                    <span class="line"></span>
+                                    Pide en línea
+                                  </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -137,6 +162,7 @@
                     </div>
                   </div>
                 </div>
+                
               </div>
             <?php endwhile; wp_reset_query();?>
           </div>
@@ -181,9 +207,33 @@
                         </div>
                         <div class="main-modal__item">
                           <div class="main-modal__text">
-                            <div class="main-modal__title">
-                              <p class="mt-2"><?php the_title();?></p>
-                            </div>
+                          <div class="main-modal__title d-flex">
+                                <p class=""><?php the_title();?></p>
+                                <span class="line line-color  line-color--entries"></span>
+                                <div class="main-modals__icons mt-2">
+                                  <?php if(get_field('mariscos_menu')):?>
+                                    <img title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('pescados_menu')):?>
+                                    <img title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('semillas_menu')):?>
+                                    <img title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('picantes_menu')):?>
+                                    <img title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('soya_menu')):?>
+                                    <img title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('nueces_menu')):?>
+                                    <img title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg">
+                                  <?php endif;?>
+                                  <?php if(get_field('lacteos_menu')):?>
+                                    <img title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg">
+                                  <?php endif;?>              
+                                </div>
+                              </div>
                             <hr class="line-gray line-gray--entries">
                             <div class="main-modal__description">
                               <strong>Ingredientes:</strong>
@@ -191,23 +241,27 @@
                               
                             </div>
                             <div class="main-modal__boxdetails">
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
-                                <p>Calorías</p>
+                                <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
+                                  <p>Calorías</p>
+                                </div>
+                                <!-- <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
+                                  <p>Carbohidratos</p>
+                                </div>
+                                <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
+                                  <p>Grasas</p>
+                                </div> -->
+                                <!-- <div class="main-modal__details">
+                                  <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
+                                  <p>Superfoods</p>
+                                </div> -->
                               </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
-                                <p>Carbohidratos</p>
+                              <div class="main-modal__description">
+                                <strong>Superfoods:</strong>
+                                <p><?php the_field('superfoods_menu');?></p>
                               </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
-                                <p>Grasas</p>
-                              </div>
-                              <div class="main-modal__details">
-                                <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"></span>
-                                <p>Superfoods</p>
-                              </div>
-                            </div>
                             <div class="main-modal__price">
                               <div class="main-modal__smallprice">
                                 <span>M:</span>
@@ -287,7 +341,7 @@
                               <strong>Beneficios:</strong>
                               <p><?php the_field('beneficios_menu');?></p>
                             </div>
-                            <div class="main-modal__boxdetails">
+                            <!-- <<div class="main-modal__boxdetails">
                               <div class="main-modal__details">
                                 <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
                                 <p>Calorías</p>
@@ -300,11 +354,11 @@
                                 <span class="badge badge-secondary"><?php the_field('cantidad_de_grasas_menu');?>g</span>
                                 <p>Grasas</p>
                               </div>
-                              <!-- <div class="main-modal__details">
+                              div class="main-modal__details">
                                 <span class="badge badge-secondary">123</span>
                                 <p>Superfoods</p>
-                              </div> -->
-                            </div>
+                              </div> 
+                            </div>-->
                             <div class="main-modal__price">
                               <p>COP: <?php the_field('precio_menu');?></p>
                             </div>

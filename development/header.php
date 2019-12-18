@@ -20,7 +20,7 @@
 <body>
   <header id="home">
     <?php $url = $_SERVER["REQUEST_URI"] ?>
-    <?php if (($url == '/poke/eventos/') || ($url == '/poke/escribenos/') ||  ($url == '/poke/trabaja-con-nosotros/')):?>
+    <?php if (($url == '/poke/eventos/') || ($url == '/poke/escribenos/') ||  ($url == '/poke/trabaja-con-nosotros/') ||  ($url == '/poke/cuentanos-tu-experiencia/')):?>
       <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js fixed-bc">
       <div class="container">
         <div class="main-brand">

@@ -84,7 +84,7 @@
       </div>
       <div class="main-home__item">
         <div class="main-general__subtitle">
-          <h3>eat better, feel better</h3>
+          <h3>Look Good Naked</h3>
         </div>
       </div>
       <div class="main-home__item">

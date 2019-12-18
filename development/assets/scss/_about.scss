@@ -34,6 +34,7 @@
 
     @include respond-to(sm){
       left:0%;
+      margin-top: 0;
     }
 
     @include respond-to(xs){
@@ -155,6 +156,10 @@
           font-size: 55px;
         }
 
+        @include respond-to(sm) {
+          font-size: 50px;
+        }
+
         @include respond-to(xs) {
           font-size: 35px;
           padding: 0;
@@ -172,7 +177,7 @@
         text-transform: uppercase;
 
         @include respond-to(sm) {
-          @include font(30px, $semibold);
+          @include font(25px, $semibold);
           padding: 0;
         }
 
@@ -285,6 +290,9 @@
 
 .main-ourorigin__img {
   height: 660px;
+  @include respond-to(sm){
+    height: 850px;
+  }
 
   img {
     width: 100%;
@@ -322,6 +330,27 @@
   width: 100%;
   height: 100%;
   margin: 40px 0;
+  &.main-img__desktop{
+    @include respond-to(xs){
+      display: none;
+    }
+  }
+
+  &.main-img__mobile{
+    display: none;
+    @include respond-to(xl){
+      display: none;
+    }
+    @include respond-to(md){
+      display: none;
+    }
+    @include respond-to(sm){
+      display: none;
+    }
+    @include respond-to(xs){
+      display: block;
+    }
+  }
 
   img {
     width: 100%;

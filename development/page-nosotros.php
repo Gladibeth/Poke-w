@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="main-content__img">
+  <div class="main-content__img main-img__desktop">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/About/--36.png">
   </div>
   <div class="main-ourorigin">
@@ -80,6 +80,10 @@
       </div>
     </div>
   </div>
+
+  <div class="main-content__img main-img__mobile">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/About/--36.png">
+  </div>
   <div class="">
     <div class="main-home__contentline main-home__contentline--about">
       <div class="main-home__item">
@@ -87,7 +91,7 @@
       </div>
       <div class="main-home__item">
         <div class="main-general__subtitle">
-        <h3>food evolution</h3>
+        <h3>Pokenvironmentally</h3>
         </div>
       </div>
       <div class="main-home__item">
@@ -126,7 +130,7 @@
       </div>
       <div class="main-home__item">
         <div class="main-general__subtitle">
-        <h3>keep it fresh!</h3>
+        <h3>food evolution</h3>
         </div>
       </div>
       <div class="main-home__item">

@@ -31,12 +31,12 @@
     position: absolute;
     right: -4%;
 
-    
-
     @include respond-to(xl){
       right: -15%;
     }
-
+    @include respond-to(md){
+      right: -13%;
+    }
     @include respond-to(sm) {
       width: 100px;
       left: 20%;
@@ -74,6 +74,9 @@
   }
 
   &.padd-top {
+    @include respond-to(md) {
+      padding: 0px;
+    }
     @include respond-to(sm) {
       padding: 0 20px;
     }

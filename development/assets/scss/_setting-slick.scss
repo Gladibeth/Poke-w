@@ -5,7 +5,7 @@
     left: 41.8%;
 
     @include respond-to(md) {
-      right: 37%;
+      left: 41.5%;
     }
     @include respond-to(sm) {
       left: 34%;
@@ -71,11 +71,12 @@
     }
 
 
-    // @include respond-to(md) {
-    //   left: 45%;
-    // }
+    @include respond-to(md) {
+      bottom: 5.5%;
+    }
 
     @include respond-to(sm) {
+      bottom: 5.5%;
       left: 38%;
     }
 

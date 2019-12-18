@@ -11,7 +11,7 @@
              <!--  <p class="format format--white">Déjanos tus datos, te llamaremos.</p> -->
              </div>
           <hr class="line-gray line--white">
-            <?php echo do_shortcode('[contact-form-7 id="247" title="Eventos"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
         </div>
       </div>
     </div>
