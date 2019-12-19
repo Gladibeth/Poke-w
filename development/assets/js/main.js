@@ -97,6 +97,7 @@ switch (page) {
       }
   case '/poke/cuentanos-tu-experiencia/':
       $('.navbar-fixed-js').addClass('fixed');
+      $('.nav-link-bc').css('text-shadow','none');
       /* let selectCiudad = $('#js-ciudad-form');
         selectCiudad[0][0].text = 'Ciudad'; */
       //aceptar

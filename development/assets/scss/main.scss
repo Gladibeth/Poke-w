@@ -1403,3 +1403,9 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 #wpcf7-f247-p27-o1 > div{
   color: white !important;
 }
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+  body > div.main-about.main-about__height > div.main-about__contentimg.main-about__contentimg--why {
+    height: 120vh;
+  }
+}

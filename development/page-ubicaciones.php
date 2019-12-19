@@ -92,15 +92,20 @@
             <div class="tab-content" id="v-pills-tabContent">
               <div aria-labelledby="poke-81-tab" class="tab-pane fade show active" id="poke-81" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-81.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
                     <ul class="main-ubications__ul">
                       <li>POKE 81</li>
-                      <li>CALLE 81 #  8-35</li>
+                      <li>Calle 81 # 8 - 35</li>
                       <li>Horario</li>
-                      <li>12:00 PM - 9:00 PM</li>
+                      <li>
+                        L-J: 12pm - 9 pm
+                        V: viernes 12 a 10pm
+                        S: 12pm - 9 pm
+                        D: 12pm - 5 pm
+                      </li>
                       <li>Teléfono</li>
                       <li>(031) 2665451</li>
                     </ul>
@@ -116,7 +121,7 @@
               </div>
               <div aria-labelledby="v-poke-zona-g-tab" class="tab-pane fade" id="v-poke-zona-g" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-zona-g.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
@@ -140,7 +145,7 @@
               </div>
               <div aria-labelledby="poke-usaquen-tab" class="tab-pane fade" id="poke-usaquen" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-usaquen.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
@@ -164,7 +169,7 @@
               </div>
               <div aria-labelledby="poke-chia-tab" class="tab-pane fade" id="poke-chia" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-chia.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
@@ -188,7 +193,7 @@
               </div>
               <div aria-labelledby="poke-city-u-tab1" class="tab-pane fade show" id="poke-city-u" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-city-u.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
@@ -213,7 +218,7 @@
 
               <div aria-labelledby="poke-78-tab1" class="tab-pane fade show" id="poke-78" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/_DSC0583.png">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-78.jpeg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
