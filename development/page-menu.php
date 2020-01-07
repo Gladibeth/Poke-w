@@ -1,6 +1,10 @@
 <?php get_header(); ?>
-<div id="banner-entradas" class="about-banner js-hiddenMenu" >
-  <img src="<?php echo get_field('imagen_entrada_menu');?>" alt="">
+<div id="banner-entradas" class="about-banner about-banner__imgmobile js-hiddenMenu" >
+  <?php 
+    $image = get_field('imagen_entrada_menu');
+    $image_sizes = $image['sizes'];
+  ?>
+  <img itemprop = "img" srcset="<?php echo get_field('imagen_entrada_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -8,8 +12,12 @@
       </div>
     </div>
   </div>
-  <div  id="banner-pokeBowl" class="about-banner" >
-    <img src="<?php echo get_field('imagen_poke_bowl_menu');?>" alt="">
+  <div  id="banner-pokeBowl" class="about-banner about-banner__imgmobile" >
+    <?php 
+    $image = get_field('imagen_poke_bowl_menu');
+    $image_sizes = $image['sizes'];
+  ?>
+    <img itemprop = "img" srcset="<?php echo get_field('imagen_poke_bowl_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -18,7 +26,11 @@
     </div>
   </div>
   <div  id="banner-juiceBar" class="about-banner js-hiddenMenu" >
-    <img src="<?php echo get_field('imagen_juice_bar_menu');?>" alt="">
+  <?php 
+    $image = get_field('imagen_juice_bar_menu');
+    $image_sizes = $image['sizes'];
+  ?>
+    <img itemprop = "img" srcset="<?php echo get_field('imagen_juice_bar_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -41,17 +53,17 @@
           </li>
         </ul>
         <div class="btn__tabs">
-          <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" href="createpokebolw.html">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/Bowl.svg">
+          <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" href="<?php echo bloginfo('url').'/arma-tu-bowl';?>">
+              <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu_entradas/Bowl.svg">
               <span class="line"></span>
-              ARMA TU BOWLS
+              ARMA TU BOWL
             </a>
         </div>
       </div>
       <hr class="line-gray line-gray--entries">
       <div class="tab-content">
         <div aria-labelledby="entradas" class="tab-pane fade" id="v-pills-home" role="tabpanel">
-          <div class="main-pokebowls__content">
+          <div class="main-pokebowls__content" itemscope itemtype = "http://schema.org/Menu">
             <!--1 entradas-->
             <?php
               $args = array(
@@ -61,15 +73,22 @@
             );
               $loop = new WP_Query( $args );
               global $post;
+
             ?>
             <?php while( $loop->have_posts() ) : $loop->the_post();?>
               <a class="main-entries__item" data-target="<?php echo '#'.$post->post_name;?>" data-toggle="modal" href="">
                 <div class="main-entries__img">
-                  <img src="<?php echo the_post_thumbnail_url(); ?>">
+                  <?php 
+                    $img_id = get_post_thumbnail_id(get_the_ID());
+                    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                  ?>
+                  
+                    <img itemprop = "image"  src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>">
+                  
                 </div>
                 <div class="main-entries__text">
                   <div class="main-entries__title">
-                    <h3><?php the_title();?></h3>
+                    <h3 itemprop = "name"><?php the_title();?></h3>
                   </div>
                 </div>
               </a>
@@ -85,47 +104,53 @@
                         <div class="main-modal__content">
                           <div class="main-modal__item">
                             <div class="main-modal__img">
-                              <img src="<?php echo the_post_thumbnail_url(); ?>">
+                              <?php 
+                                $image = get_field('imagen_en_el_modal');
+                                $image_sizes = $image['sizes'];
+                              ?>
+                              <img itemprop = "image" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                             </div>
                           </div>
                           <div class="main-modal__item">
                             <div class="main-modal__text">
                               <div class="main-modal__title d-flex">
-                                <p class=""><?php the_title();?></p>
+                                <p class="" itemprop = "name"><?php the_title();?></p>
                                 <span class="line line-color  line-color--entries"></span>
                                 <div class="main-modals__icons mt-2">
                                   <?php if(get_field('mariscos_menu')):?>
-                                    <img title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg">
+                                    <img itemprop = "logo" title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg" alt="Icono Mariscos">
                                   <?php endif;?>
                                   <?php if(get_field('pescados_menu')):?>
-                                    <img title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg">
+                                    <img itemprop = "logo" title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg" alt="Icono Pescados">
                                   <?php endif;?>
-                                  <?php if(get_field('semillas')):?>
-                                    <img title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg">
+                                  <?php if(get_field('semillas_menu')):?>
+                                    <img itemprop = "logo" title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg" alt="Icono Semillas">
                                   <?php endif;?>
                                   <?php if(get_field('picantes_menu')):?>
-                                    <img title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg">
+                                    <img itemprop = "logo" title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg" alt="Icono Picantes">
                                   <?php endif;?>
                                   <?php if(get_field('soya_menu')):?>
-                                    <img title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg">
+                                    <img itemprop = "logo" title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg" alt="Icono Soya">
                                   <?php endif;?>
                                   <?php if(get_field('nueces_menu')):?>
-                                    <img title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg">
+                                    <img itemprop = "logo" title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg" alt="Icono Nueces">
                                   <?php endif;?>
                                   <?php if(get_field('lacteos_menu')):?>
-                                    <img title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg">
-                                  <?php endif;?>              
+                                    <img itemprop = "logo" title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg" alt="Icono Lacteos">
+                                  <?php endif;?>             
                                 </div>
                               </div>
                               <hr class="line-gray line-gray--entries">
                               <div class="main-modal__description">
                                 <strong>Ingredientes:</strong>
-                                <p><?php the_field('ingredientes_menu');?></p>
+                                <p itemprop = "description"><?php the_field('ingredientes_menu');?></p>
                               </div>
                               <div class="main-modal__boxdetails">
                                 <div class="main-modal__details">
-                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
+                                  <?php if(get_field('cantidad_de_calorias_menu') != 0):?>
+                                    <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
                                   <p>Calorías</p>
+                                  <?php endif;?>
                                 </div>
                                 <!-- <div class="main-modal__details">
                                   <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
@@ -136,7 +161,7 @@
                                   <p>Grasas</p>
                                 </div> -->
                                 <!-- <div class="main-modal__details">
-                                  <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
+                                  <span class="badge badge-secondary"><img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
                                   <p>Superfoods</p>
                                 </div> -->
                               </div>
@@ -145,12 +170,12 @@
                                 <p><?php the_field('superfoods_menu');?></p>
                               </div>
                               <div class="main-modal__price">
-                                <p>COP: <?php the_field('precio_menu');?></p>
+                                <p itemprop = "price">COP: <?php the_field('precio_menu');?></p>
                               </div>
                               <div class="btn-modal">
                                 <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                                <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
+                                    <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                     <span class="line"></span>
                                     Pide en línea
                                   </a>
@@ -164,11 +189,13 @@
                 </div>
                 
               </div>
-            <?php endwhile; wp_reset_query();?>
+            <?php
+            
+             endwhile; wp_reset_query();?>
           </div>
         </div>
         <div class="tab-pane fade show active" id="v-pills-profile">
-          <div class="main-pokebowls__content">
+          <div class="main-pokebowls__content" itemscope itemtype = "http://schema.org/Menu">
             <!--2 poke bowl-->
             <?php
               $args = array(
@@ -182,17 +209,24 @@
             <?php while( $loop->have_posts() ) : $loop->the_post();?>
               <a class="main-entries__item" data-target="<?php echo '#'.$post->post_name;?>" data-toggle="modal" href="">
                 <div class="main-entries__img">
-                  <img src="<?php echo the_post_thumbnail_url(); ?>">
+                  <?php 
+                    $img_id = get_post_thumbnail_id(get_the_ID());
+                    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                  ?>
+                  
+                    <img itemprop = "image"  src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>">
+                  
                 </div>
                 <div class="main-entries__text">
                   <div class="main-entries__title">
-                    <h3><?php the_title();?></h3>
+                    <h3 itemprop = "name"><?php the_title();?></h3>
                   </div>
                 </div>
               </a>
 
                <!--- MODAL 2-->
               <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" role="dialog" tabindex="-1" id="<?php echo $post->post_name;?>">
+                <div class="modal__flex">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -202,48 +236,54 @@
                       <div class="main-modal__content">
                         <div class="main-modal__item">
                           <div class="main-modal__img">
-                            <img src="<?php echo the_post_thumbnail_url(); ?>">
+                             <?php 
+                                $image = get_field('imagen_en_el_modal');
+                                $image_sizes = $image['sizes'];
+                              ?>
+                              <img itemprop = "image" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                           </div>
                         </div>
                         <div class="main-modal__item">
                           <div class="main-modal__text">
                           <div class="main-modal__title d-flex">
-                                <p class=""><?php the_title();?></p>
+                                <p class="" itemprop = "name"><?php the_title();?></p>
                                 <span class="line line-color  line-color--entries"></span>
                                 <div class="main-modals__icons mt-2">
                                   <?php if(get_field('mariscos_menu')):?>
-                                    <img title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg">
+                                    <img itemprop = "logo" title="Mariscos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Mariscos.svg" alt="Icono Mariscos">
                                   <?php endif;?>
                                   <?php if(get_field('pescados_menu')):?>
-                                    <img title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg">
+                                    <img itemprop = "logo" title="Pescados" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Pescados.svg" alt="Icono Pescados">
                                   <?php endif;?>
                                   <?php if(get_field('semillas_menu')):?>
-                                    <img title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg">
+                                    <img itemprop = "logo" title="Semillas" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Semillas.svg" alt="Icono Semillas">
                                   <?php endif;?>
                                   <?php if(get_field('picantes_menu')):?>
-                                    <img title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg">
+                                    <img itemprop = "logo" title="Picantes" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Picantes.svg" alt="Icono Picantes">
                                   <?php endif;?>
                                   <?php if(get_field('soya_menu')):?>
-                                    <img title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg">
+                                    <img itemprop = "logo" title="Soya" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Soya.svg" alt="Icono Soya">
                                   <?php endif;?>
                                   <?php if(get_field('nueces_menu')):?>
-                                    <img title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg">
+                                    <img itemprop = "logo" title="Nueces" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Nueces.svg" alt="Icono Nueces">
                                   <?php endif;?>
                                   <?php if(get_field('lacteos_menu')):?>
-                                    <img title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg">
+                                    <img itemprop = "logo" title="Lacteos" src="<?php echo get_template_directory_uri();?>/assets/img/Alergenos/Lacteos.svg" alt="Icono Lacteos">
                                   <?php endif;?>              
                                 </div>
                               </div>
                             <hr class="line-gray line-gray--entries">
                             <div class="main-modal__description">
                               <strong>Ingredientes:</strong>
-                              <p><?php the_field('ingredientes_menu');?></p>
+                              <p itemprop = "description"><?php the_field('ingredientes_menu');?></p>
                               
                             </div>
                             <div class="main-modal__boxdetails">
                                 <div class="main-modal__details">
-                                  <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
+                                  <?php if(get_field('cantidad_de_calorias_menu') != 0):?>
+                                    <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
                                   <p>Calorías</p>
+                                  <?php endif;?>
                                 </div>
                                 <!-- <div class="main-modal__details">
                                   <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
@@ -254,7 +294,7 @@
                                   <p>Grasas</p>
                                 </div> -->
                                 <!-- <div class="main-modal__details">
-                                  <span class="badge badge-secondary"><img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
+                                  <span class="badge badge-secondary"><img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
                                   <p>Superfoods</p>
                                 </div> -->
                               </div>
@@ -265,17 +305,17 @@
                             <div class="main-modal__price">
                               <div class="main-modal__smallprice">
                                 <span>M:</span>
-                                <p>COP <?php the_field('precio_mediano_menu');?></p>
+                                <p itemprop = "price">COP <?php the_field('precio_mediano_menu');?></p>
                               </div>
                               <div class="main-modal__smallprice">
                                 <span>G:</span>
-                                <p>COP <?php the_field('precio_grande_menu');?></p>
+                                <p itemprop = "price">COP <?php the_field('precio_grande_menu');?></p>
                               </div>
                             </div>
                             <div class="btn-modal">
                               <?php $urlRappi= get_field('link_rappi_menu'); ?>
                               <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
-                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                                  <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
                               </a>
@@ -286,14 +326,18 @@
                     </div>
                   </div>
                 </div>
+                </div>
+                
               </div>
 
-            <?php endwhile; wp_reset_query();?>
+            <?php 
+           
+            endwhile; wp_reset_query();?>
             
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-contact">
-          <div class="main-pokebowls__content">
+          <div class="main-pokebowls__content" itemscope itemtype = "http://schema.org/Menu">
             <!--3 juice bar-->
             <?php
               $args = array(
@@ -307,16 +351,23 @@
             <?php while( $loop->have_posts() ) : $loop->the_post();?>
               <a class="main-entries__item" data-target="<?php echo '#'.$post->post_name;?>" data-toggle="modal" href="">
                 <div class="main-entries__img">
-                <img src="<?php echo the_post_thumbnail_url(); ?>">
+                <?php 
+                    $img_id = get_post_thumbnail_id(get_the_ID());
+                    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                  ?>
+                  
+                    <img itemprop = "image"  src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>">
+                 
                 </div>
                 <div class="main-entries__text">
                   <div class="main-entries__title">
-                    <h3><?php the_title();?></h3>
+                    <h3 itemprop = "name"><?php the_title();?></h3>
                   </div>
                 </div>
               </a>
               <!--- MODAL 3-->
               <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" role="dialog" tabindex="-1" id="<?php echo $post->post_name;?>">
+                <div class="modal__flex"> 
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -326,18 +377,22 @@
                       <div class="main-modal__content">
                         <div class="main-modal__item">
                           <div class="main-modal__img">
-                            <img src="<?php echo the_post_thumbnail_url(); ?>">
+                            <?php 
+                                $image = get_field('imagen_en_el_modal');
+                                $image_sizes = $image['sizes'];
+                              ?>
+                              <img itemprop = "image" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                           </div>
                         </div>
                         <div class="main-modal__item">
                           <div class="main-modal__text">
                             <div class="main-modal__title">
-                              <p class="mt-2"><?php the_title();?></p>
+                              <p class="mt-2" itemprop = "name"><?php the_title();?></p>
                             </div>
                             <hr class="line-gray line-gray--entries">
                             <div class="main-modal__description">
                               <strong>Ingredientes:</strong>
-                              <p><?php the_field('ingredientes_menu');?></p>
+                              <p itemprop = "description"><?php the_field('ingredientes_menu');?></p>
                               <strong>Beneficios:</strong>
                               <p><?php the_field('beneficios_menu');?></p>
                             </div>
@@ -365,7 +420,7 @@
                             <!-- <div class="btn-modal">
                               <?php $urlRappi= get_field('link_rappi_menu'); ?>
                               <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
-                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                                  <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
                                 </a>
@@ -376,8 +431,13 @@
                     </div>
                   </div>
                 </div>
+                
+                </div>
+                
               </div>
-            <?php endwhile; wp_reset_query();?>
+            <?php 
+           
+            endwhile; wp_reset_query();?>
           </div>
         </div>
       </div>

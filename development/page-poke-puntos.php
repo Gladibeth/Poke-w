@@ -1,8 +1,13 @@
 <?php get_header(); ?>
+<div itemscope itemtype = "http://schema.org/Restaurant" >
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <?php $link = get_field('registrate_menu'); ?>
   <div class="about-banner about-banner--full">
-    <img src="<?php the_post_thumbnail_url()?>" alt="">
+    <?php 
+      $img_id = get_post_thumbnail_id(get_the_ID());
+      $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+    ?>
+    <img src="<?php the_post_thumbnail_url()?>" alt="<?php echo $alt; ?>">
     <div class="overlay"></div>
     <div class="container">
       <div class="about-banner__text about-banner__text--top mt-4">
@@ -17,10 +22,10 @@
         <div class="about-banner__boximg">
           <div class="about-banner__imgs">
             <div class="about-banner__img--one">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/Logo poke puntos.png">
+              <img alt="logo poke puntos" src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/Logo poke puntos.png">
             </div>
             <div class="about-banner__img--two">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/Logo leal.png">
+              <img alt="logo leal" src="<?php echo get_template_directory_uri();?>/assets/img/Poke_puntos/Logo leal.png">
             </div>
           </div>
         </div>
@@ -47,7 +52,7 @@
           <h2>tabla de premios</h2>
         </div>
       </div>
-      <div class="main-pokedots__content">
+      <div class="main-pokedots__content" itemscope itemtype = "http://schema.org/Menu">
         <?php
           $args = array(
           'post_type' => 'tabla_premios',
@@ -60,11 +65,15 @@
           <div class="main-pokedots__item">
             <div class="main-entries__text">
               <div class="main-entries__title">
-                <h3><?php the_title();?></h3>
+                <h3 itemprop = "name"><?php the_title();?></h3>
               </div>
             </div>
             <div class="main-pokedots__img">
-              <img src="<?php echo the_post_thumbnail_url(); ?>">
+              <?php 
+                $img_id = get_post_thumbnail_id(get_the_ID());
+                $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+              ?>
+              <img itemprop = "image" src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>">
             </div>
             <div class="main-pokedots__boxtext">
               <div class="main-pokedots__text">
@@ -94,4 +103,5 @@
     </div>
   </div>
   <?php endwhile; endif; ?> 
+  </div>
 <?php get_footer(); ?> 

@@ -48,29 +48,29 @@ $('.input-file .btn').click(function () {
 const page = window.location.pathname;
 const itemsNavbarMenu = $('.navbar-nav.mr-autos li');
 switch (page) {
-  case '/poke/':
+  case '/':
     console.log('index')
     break;
-  case '/poke/menu/':
+  case '/menu/':
       $(itemsNavbarMenu[0]).find('a').addClass('active');
     break;
-  case '/poke/nosotros/':
+  case '/nosotros/':
       $(itemsNavbarMenu[1]).find('a').addClass('active');
     break;
-  case '/poke/ubicaciones/':
+  case '/ubicaciones/':
       $(itemsNavbarMenu[2]).find('a').addClass('active');
     break;
-  case '/poke/poke-puntos/':
+  case '/poke-puntos/':
       $(itemsNavbarMenu[3]).find('a').addClass('active');
     break;
-  case '/poke/ambiental/':
+  case '/ambiental/':
       $(itemsNavbarMenu[4]).find('a').addClass('active');
     break;
-  case '/poke/eventos/':
+  case '/eventos/':
       $(itemsNavbarMenu[5]).find('a').addClass('active');
-      $('.nav-link-bc').css('text-shadow','none');
-  case '/poke/escribenos/':
-    $('.nav-link-bc').css('text-shadow','none');
+      $('.nav-link-bc').css('text-shadow','none !important');
+  case '/escribenos/':
+    $('.nav-link-bc').css('text-shadow','none !important');
     //aceptar
       var truecheck = document.getElementById('aceptCheckbox');
       truecheck.addEventListener("change", validatruecheck, false);
@@ -82,8 +82,8 @@ switch (page) {
           $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
         }
       }
-  case '/poke/trabaja-con-nosotros/':
-    $('.nav-link-bc').css('text-shadow','none');
+  case '/trabaja-con-nosotros/':
+    $('.nav-link-bc').css('text-shadow','none !important');
     //aceptar
       var truecheck = document.getElementById('aceptCheckbox');
       truecheck.addEventListener("change", validatruecheck, false);
@@ -95,9 +95,9 @@ switch (page) {
           $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
         }
       }
-  case '/poke/cuentanos-tu-experiencia/':
+  case '/cuentanos-tu-experiencia/':
+      $('.nav-link-bc').css('text-shadow','none !important');
       $('.navbar-fixed-js').addClass('fixed');
-      $('.nav-link-bc').css('text-shadow','none');
       /* let selectCiudad = $('#js-ciudad-form');
         selectCiudad[0][0].text = 'Ciudad'; */
       //aceptar
@@ -135,7 +135,7 @@ switch (page) {
     $('.nav-link').addClass('fixed-color');
     $('.nav-top__header').addClass('nav-top__header--detele');
     $('.hamburger-inner').addClass('js-hamburger');
-    $("#iso").addClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
+    // $("#iso").addClass('img-size').attr('src', url + '/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
 
     break;
   
@@ -148,14 +148,18 @@ $(window).scroll(function () {
     $('.nav-link').addClass('fixed-color');
     $('.nav-top__header').addClass('nav-top__header--detele');
     $('.hamburger-inner').addClass('js-hamburger');
-    $("#iso").addClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
+    // $("#iso").addClass('img-size').attr('src', url + '/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
+    $("#iso").addClass('display_none');
+    $("#iso_green").addClass('display_block');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
     $('.nav-link').removeClass('fixed-color');
     $('.nav-top__header').removeClass('nav-top__header--detele');
     $('.hamburger-inner').removeClass('js-hamburger');
-    $("#iso").removeClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke-white.svg').removeClass('scroll-up');
+    $("#iso").removeClass('display_none');
+    $("#iso_green").removeClass('display_block');
+    // $("#iso").removeClass('img-size').attr('src', url + '/wp-content/themes/theme/assets/img/Header/Logo-poke-white.svg').removeClass('scroll-up');
 
   }
 });
@@ -180,14 +184,14 @@ $(".hamburger").on("click", function () {
     $(this).addClass("is-active")
     $('.navbar-fixed-js').addClass('fixed');
     $('.hamburger-inner').addClass('js-hamburger');
-    $("#iso").addClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
+    // $("#iso").addClass('img-size').attr('src', url + '/wp-content/themes/theme/assets/img/Header/Logo-poke.svg').removeClass('scroll-up');
     $('.nav-link').addClass('fixed-color');
   } else {
     $(this).removeClass("is-active")
     if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
       $('.navbar-fixed-js').removeClass('fixed');
       $('.hamburger-inner').removeClass('js-hamburger');
-      $("#iso").removeClass('img-size').attr('src', url + '/poke/wp-content/themes/theme/assets/img/Header/Logo-poke-white.svg').removeClass('scroll-up');
+      // $("#iso").removeClass('img-size').attr('src', url + '/wp-content/themes/theme/assets/img/Header/Logo-poke-white.svg').removeClass('scroll-up');
       $('.nav-link').removeClass('fixed-color');
 
     }

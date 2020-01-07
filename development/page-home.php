@@ -11,17 +11,17 @@
       $loop = new WP_Query( $args );
     ?>
     <?php while( $loop->have_posts() ) : $loop->the_post();?>
-      <div class="main-banner__item">
+      <div class="main-banner__item" itemscope itemtype = "http://schema.org/Restaurant">
         <div class="mask2">
           <div class="container">
             <div class="main-banner__boxtext">
               <div class="main-banner__text">
-                <div class="main-banner__title">
+                <div class="main-banner__title" itemprop = "description">
                   <?php the_content();?>
                 </div>
                 <div class="btn-box">
                   <?php $page = get_field('pagina'); ?>
-                  <a class="btn_custom btn--large btn--filled" href="<?php echo($page['url']); ?>">
+                  <a itemprop = "url" class="btn_custom btn--large btn--filled" href="<?php echo($page['url']); ?>">
                     <?php echo($page['title']); ?>
                     </a>
                 </div>
@@ -30,7 +30,12 @@
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="<?php echo the_post_thumbnail_url(); ?>">
+          <?php 
+            $img_id = get_post_thumbnail_id(get_the_ID());
+            $alt_banner_principal = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+          ?>
+          <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
+          
         </div>
       </div>
     <?php endwhile; wp_reset_query();?>
@@ -53,7 +58,7 @@
   </div>
   <div class="main-about">
     <div class="main-about__contentimg">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/--75.png" alt="">
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestro compromiso">
       <div class="container">
         <div class="main-about__content">
           <div class="main-about__item">
@@ -68,7 +73,7 @@
               <p>Porque queremos disrumpir, reinventar y ser agentes de cambio.</p>
             </div>
             <div class="btn-box--about float-left">
-              <a class="btn_custom btn--large btn--filled" href="about.html">
+              <a class="btn_custom btn--large btn--filled" href="<?php echo bloginfo('url').'/nosotros';?>">
                   Nosotros
                 </a>
             </div>
@@ -92,10 +97,10 @@
       </div>
     </div>
   </div>
-  <div class="main-about main-about__height" >
+  <div class="main-about main-about__height" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--why">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg" alt="Que es poke">
+    <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg 1920w," alt="que es poke">
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>

@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-  <div class="about-banner" >
-    <img src="<?php the_post_thumbnail_url()?>" alt="">
+  <div class="about-banner div-ambiental" >
+    <?php 
+    $img_id = get_post_thumbnail_id(get_the_ID());
+    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+  ?>
+  <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
       <div class="overlay"></div>
       <div class="about-banner__text about-banner__text--center">
         <div class="about-banner__title">
@@ -26,7 +30,7 @@
                 </div>
                 <div class="main-ambiental__smallbox">
                   <div class="main-ambiental__smallimg">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/1.png">
+                    <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/1.png">
                   </div>
                   <div class="main-ambiental__description">
                     <p>
@@ -38,7 +42,7 @@
               </div>
               <div class="main-ambiental__boxitem main-ambiental__boxitem--top">
                 <div class="main-ambiental__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/arrow1.png">
+                  <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/arrow1.png">
                 </div>
               </div>
             </div>
@@ -60,7 +64,7 @@
                     </p>
                   </div>
                   <div class="main-ambiental__smallimg order">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/2.png">
+                    <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/2.png">
                   </div>
                 </div>
               </div>
@@ -73,7 +77,7 @@
                 </div>
                 <div class="main-ambiental__smallbox">
                   <div class="main-ambiental__smallimg">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/3.png">
+                    <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/3.png">
                   </div>
                   <div class="main-ambiental__description">
                     <p>
@@ -89,7 +93,7 @@
               </div>
               <div class="main-ambiental__boxitem main-ambiental__boxitem--top">
                 <div class="main-ambiental__img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/arrow1.png">
+                  <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/arrow1.png">
                 </div>
               </div>
             </div>
@@ -122,7 +126,7 @@
                     </p>
                   </div>
                   <div class="main-ambiental__smallimg order order--four">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/5.png">
+                    <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/5.png">
                   </div>
                   <div class="main-ambiental__description main-ambiental__description--left order order--five">
                     <div class="main-ambiental__title main-ambiental__mintitle">
@@ -134,7 +138,7 @@
                     </p>
                   </div>
                   <div class="main-ambiental__smallimg order order--six">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/6.png">
+                    <img alt="imagen ambiental" src="<?php echo get_template_directory_uri();?>/assets/img/Ambiental/6.png">
                   </div>
                   <div class="main-ambiental__description main-ambiental__description--left order order--seven">
                     <div class="main-ambiental__title main-ambiental__mintitle">

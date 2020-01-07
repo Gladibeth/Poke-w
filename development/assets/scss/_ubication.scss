@@ -82,7 +82,7 @@
       color: #707070;
       text-transform: uppercase;
       border-bottom: 1px solid #707070;
-      width: 80%;
+      width: 70%;
       margin: auto;
       margin-bottom: 15px;
   
@@ -136,11 +136,11 @@
   &:after{
     content: "";
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 1px;
     background-color: #686868;
     bottom: 0;
-    left: 20px;
+    left: 30px;
     transform: translate(0px);
   }
 
@@ -275,3 +275,35 @@ option:hover {
 }
 
 
+.main-ubications__ul li:nth-child(4){
+  text-transform: uppercase;
+  
+  width: 80%;
+  margin:auto;
+}
+div.main-ubications__box  > ul > li:nth-child(2){
+  width: 70%;
+  margin:auto;
+}
+.js-displayNone{
+    display:none;
+  }
+
+.horario{
+  list-style:none;
+  padding:0;
+
+  li {
+    text-align: center !important; 
+    padding: 0px !important; 
+    font-size: 14px !important; 
+    font-weight: 400 !important; 
+    letter-spacing: 1px !important; 
+    color: #707070 !important; 
+    font-family: Segoe UI !important; 
+    text-transform: uppercase !important; 
+    border: navajowhite !important; 
+    margin: 0 !important; 
+    width: 100% !important; 
+  }
+}

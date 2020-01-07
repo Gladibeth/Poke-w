@@ -1,13 +1,18 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-<div class="about-banner" >
-  <img src="<?php the_post_thumbnail_url()?>" alt="">
+<div itemscope itemtype = "http://schema.org/Restaurant" >  
+<div class="about-banner">
+  <?php 
+    $img_id = get_post_thumbnail_id(get_the_ID());
+    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+  ?>
+  <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
+  
     <div class="overlay"></div>
     <div class="container">
       <div class="about-banner__text about-banner__text--acenter">
         <div class="about-banner__title">
-          <h3>Noble food.</h3>
-          <h3>Noble people.</h3>
+          <?php the_content();?>
         </div>
       </div>
     </div>
@@ -32,7 +37,7 @@
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/_DSC0704.png">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen.jpg" alt="Nuestro origen">
         </div>
       </div>
       <div class="main-ourorigin__item main-ourorigin__item--top">
@@ -53,13 +58,13 @@
     </div>
   </div>
   <div class="main-content__img main-img__desktop">
-    <img src="<?php echo get_template_directory_uri();?>/assets/img/About/--36.png">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande.jpg" alt="Nosotros">
   </div>
   <div class="main-ourorigin">
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/POKE_-30.png">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestra-promesa.jpg" alt="Nuestra promesa">
         </div>
       </div>
       <div class="main-ourorigin__item main-ourorigin__item--top">
@@ -71,7 +76,7 @@
               <h2>PROMESA</h2>
             </div>
             <div class="main-ourorigin__description">
-              <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más a alta calidad.</p>
+              <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más alta calidad.</p>
               <p>Las recetas y preparaciones se realizan todos los días en nuestras cocinas. Los cortes y procesos se hacen de manera artesanal por nuestro equipo. Ningún producto contiene aditivos, preservantes, o colorantes.</p>
               <p>En Poke trabajamos de la mano de nuestros aliados y proveedores locales, en busca de ofrecer los mejores ingredientes para cada preparación.</p>
             </div>
@@ -82,7 +87,7 @@
   </div>
 
   <div class="main-content__img main-img__mobile">
-    <img src="<?php echo get_template_directory_uri();?>/assets/img/About/--36.png">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestros-valores.jpg" alt="Nuestros valores">
   </div>
   <div class="">
     <div class="main-home__contentline main-home__contentline--about">
@@ -118,7 +123,7 @@
       </div>
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/--26.png">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestros-valores.jpg" alt="Nuestros valores">
         </div>
       </div>
     </div>
@@ -139,7 +144,7 @@
     </div>
   </div>
 
-  <div class="main-about" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/About/--7.png');">
+  <div class="main-about" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-talento.jpg');" alt="Nuestro talento">
     <div class="container">
       <div class="main-about__content">
         <div class="main-about__item">
@@ -161,4 +166,5 @@
     </div>
   </div>
   <?php endwhile; endif; ?>
+</div>
 <?php get_footer(); ?> 

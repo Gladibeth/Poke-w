@@ -15,7 +15,13 @@
 
 
 
+.display_none{
+  display: none;
+}
 
+.display_block{
+  display: block;
+}
 
 .form-control{
   border-radius:0 !important;
@@ -100,8 +106,8 @@ button:focus {
 
   &.line-color--entries{
     border-right: 1px solid hsla(0,0%,44%,.35);
-    height: 35px;
-    margin-top: 5px;
+    height: 45px;
+    margin-top: 20px;
   }
 }
 
@@ -471,7 +477,7 @@ button:focus {
           }
 
           @include respond-to(xs) {
-            font-size: 50px;
+            font-size: 40px;
             padding: 0;
           }
         }
@@ -912,14 +918,14 @@ button:focus {
 }
 
 .main-home__line.main-home__line--first{
-  margin-left: 60px;
+  margin-left: 100px;
 
   @include respond-to(xs){
     margin-left: 20px;
   }
 }
 .main-home__line.main-home__line--last{
-  margin-right: 60px;
+  margin-right: 100px;
   @include respond-to(xs){
     margin-right: 20px;
   }
@@ -999,6 +1005,12 @@ button:focus {
     height: 100%;
     object-fit: cover;
     object-position: top;
+    @include respond-to(sm){
+      object-position: top left;
+    }
+    @include respond-to(xs){
+      object-position: top left;
+    }
   }
   .container{
     position: absolute;
@@ -1368,6 +1380,12 @@ button:focus {
   .label-acept{
     font-size: 15px !important;
   }
+  #text-3{
+  text-align:center;
+  margin:auto;
+  list-style:none;
+  }
+  body > div:nth-child(2) > div:nth-child(8) > div > div:nth-child(2) {display:none;}
 }
 
 div.wpcf7 .screen-reader-response {
@@ -1403,9 +1421,82 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 #wpcf7-f247-p27-o1 > div{
   color: white !important;
 }
-
 @media (min-width: 1300px) and (max-width: 1400px) {
   body > div.main-about.main-about__height > div.main-about__contentimg.main-about__contentimg--why {
     height: 120vh;
   }
+}
+#wpcf7-f261-p27-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
+  display: block;
+  margin-top: 80px;
+  color: white;
+  border: none;
+  padding-left: 0;
+
+}
+#wpcf7-f261-p27-o1 > div{
+  color: white;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* Safari and Chrome */
+  body > div.main-entries > div > div.main-entries__nav > div > a{
+      height:42px;
+  }
+}
+
+.main-footer__address li{
+  list-style:none;
+}
+ #text-3,.main-footer__box,div.main-footer__copy{
+  list-style:none;
+  }
+  #text-4 > div.main-footer__title,#text-5 > h2,#text-6 > h2{
+  display:none;
+  }
+
+  
+
+  .sombra .nav-link-bc{
+    text-shadow:none !important;
+  }
+#que-es-poke{
+  .main-about__contentimg {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+ #que-es-poke{
+  .main-about__contentimg img {
+    object-position: center;
+  }
+  .main-about__contentimg {
+    height: auto;
+    min-height: 960px;
+    background: white;
+    position: relative;
+  }
+  .main-about__contentimg--why{
+    .container{
+      position: relative;
+    }
+    img{
+      height: auto;
+      position: relative;    
+    }
+    h2{
+      font-size: 35px !important;
+      color: #686868;
+    }
+    p{
+      color: #686868;
+    }
+  }
+  .main-general__description{
+    margin: 0;
+  }
+  .main-why__item:nth-child(2) {
+      padding: 25px 0;
+    }
+ }
 }
