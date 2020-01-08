@@ -368,7 +368,7 @@
                       <li>Horario</li>
                       <li>
                         <ul class="horario">
-                          <li itemprop="openingHours">L-J: 12:00pm - 9:00pmm</li>
+                          <li itemprop="openingHours">L-J: 12:00pm - 9:00pm</li>
                           <li itemprop="openingHours">V-S: 12:00pm - 10:00pm</li>
                           <li itemprop="openingHours">D: 12:00pm - 8:00pm</li>
                         </ul>

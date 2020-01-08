@@ -6,7 +6,7 @@
           <div class="main-experience">
             <div class="form__experience">
           
-              <div class="main-general__description main-general__description--amb main-general__description--work">
+              <div class="main-general__description main-general__description--amb main-general__description--work main__form">
                 <p>¡CUÉNTANOS TU EXPERIENCIA!</p>
               </div>
               <?php echo do_shortcode('[contact-form-7 id="259" title="Cuéntanos tu experiencia"]'); ?>

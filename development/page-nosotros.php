@@ -114,9 +114,9 @@
               <h2>valores</h2>
             </div>
             <div class="main-ourorigin__description main-ourorigin__description--left">
-              <p>En Poke creemos en la Excelencia, en retar los estándares de la industria para lograr una oferta diferenciada y el mejor servicio. Aprendemos de nuestros errores, trabajamos en equipo y estamos comprometidos con la mejora continua.</p>
-              <p>Tenemos pasión por lo que hacemos, esto se refleja en el entusiasmo y energía de todo el equipo. Estamos comprometidos en pensar en grande, dar la mejor actitud y trabajar hacia un objetivo común.</p>
-              <p>En Poke empoderamos a nuestro talento para que sean creativos. Todas las ideas son bienvenidos y valoradas. Creemos en formar equipos diversos basados en una cultura de puertas abiertas y respeto.</p>
+              <p>En Poke creemos en la <strong>Excelencia</strong>, en retar los estándares de la industria para lograr una oferta diferenciada y el mejor servicio. Aprendemos de nuestros errores, trabajamos en equipo y estamos comprometidos con la mejora continua.</p>
+              <p>Tenemos <strong>pasión</strong> por lo que hacemos, esto se refleja en el entusiasmo y energía de todo el equipo. Estamos <strong>comprometidos</strong> en pensar en grande, dar la mejor actitud y trabajar hacia un objetivo común.</p>
+              <p>En Poke empoderamos a nuestro talento para que sean <strong>creativos</strong>. Todas las ideas son bienvenidos y valoradas. Creemos en formar equipos diversos basados en una cultura de puertas abiertas y respeto.</p>
             </div>
           </div>
         </div>

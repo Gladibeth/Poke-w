@@ -1,4 +1,68 @@
 <?php get_header(); ?>
+<?php
+
+$desktop = false;
+$mobile = false;
+$tablet_browser = 0;
+$mobile_browser = 0;
+$body_class = 'desktop';
+ 
+if (preg_match('/(tablet|ipad|playbook)|(android(?!.*(mobi|opera mini)))/i', strtolower($_SERVER['HTTP_USER_AGENT']))) {
+    $tablet_browser++;
+    $body_class = "tablet";
+}
+ 
+if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|android|iemobile)/i', strtolower($_SERVER['HTTP_USER_AGENT']))) {
+    $mobile_browser++;
+    $body_class = "mobile";
+}
+ 
+if ((strpos(strtolower($_SERVER['HTTP_ACCEPT']),'application/vnd.wap.xhtml+xml') > 0) or ((isset($_SERVER['HTTP_X_WAP_PROFILE']) or isset($_SERVER['HTTP_PROFILE'])))) {
+    $mobile_browser++;
+    $body_class = "mobile";
+}
+ 
+$mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'], 0, 4));
+$mobile_agents = array(
+    'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
+    'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
+    'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
+    'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
+    'newt','noki','palm','pana','pant','phil','play','port','prox',
+    'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
+    'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
+    'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
+    'wapr','webc','winw','winw','xda ','xda-');
+ 
+if (in_array($mobile_ua,$mobile_agents)) {
+    $mobile_browser++;
+}
+ 
+if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'opera mini') > 0) {
+    $mobile_browser++;
+    //Check for tablets on opera mini alternative headers
+    $stock_ua = strtolower(isset($_SERVER['HTTP_X_OPERAMINI_PHONE_UA'])?$_SERVER['HTTP_X_OPERAMINI_PHONE_UA']:(isset($_SERVER['HTTP_DEVICE_STOCK_UA'])?$_SERVER['HTTP_DEVICE_STOCK_UA']:''));
+    if (preg_match('/(tablet|ipad|playbook)|(android(?!.*mobile))/i', $stock_ua)) {
+      $tablet_browser++;
+    }
+}
+if ($tablet_browser > 0) {
+  $mobile = true;
+}
+else if ($mobile_browser > 0) {
+$mobile = true;
+}
+else {
+  $desktop = true;
+}  
+?>
+<?php 
+  if ($mobile){
+    $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
+  }else{
+    $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
+  }
+?>
 <div id="banner-entradas" class="about-banner about-banner__imgmobile js-hiddenMenu" >
   <?php 
     $image = get_field('imagen_entrada_menu');
@@ -173,8 +237,8 @@
                                 <p itemprop = "price">COP: <?php the_field('precio_menu');?></p>
                               </div>
                               <div class="btn-modal">
-                                <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
+                                
+                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
                                     <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                     <span class="line"></span>
                                     Pide en línea
@@ -313,8 +377,8 @@
                               </div>
                             </div>
                             <div class="btn-modal">
-                              <?php $urlRappi= get_field('link_rappi_menu'); ?>
-                              <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
+                              
+                              <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
                                   <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea
@@ -418,7 +482,7 @@
                               <p>COP: <?php the_field('precio_menu');?></p>
                             </div>
                             <!-- <div class="btn-modal">
-                              <?php $urlRappi= get_field('link_rappi_menu'); ?>
+                              
                               <a class="btn-btn_custom btn--medium btn--filled btn--filled-gray" target="_blank" href="https://bnc.lt/scMl/pMH3RUMe61">
                                   <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
