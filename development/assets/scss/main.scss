@@ -15,6 +15,12 @@
 
 
 
+#iso{
+  filter: brightness(0) invert(1);
+}
+#iso.active{
+  filter: brightness(0);
+}
 .display_none{
   display: none;
 }
@@ -620,7 +626,7 @@ button:focus {
 
       @include respond-to(xs) {
         letter-spacing: 0.25px;
-        @include font(50px, $bold);
+        @include font(45px, $bold);
       }
     }
 
@@ -709,9 +715,12 @@ button:focus {
       letter-spacing: 1.54px;
       @include font(15px, $medium);
       line-height: 2.5;
-
+      @include respond-to(md) {
+        line-height: 2;
+      }
       @include respond-to(sm) {
         @include font(20px, $medium);
+        line-height: 2;
       }
 
       @include respond-to(xl){
@@ -988,6 +997,25 @@ button:focus {
   @include respond-to(xs){
     height: 800px;
   }
+  &.main-about__contentimg--about {
+    @include respond-to(xs){
+      min-height: 400px !important;
+    }
+    .container{
+      left: -450px;
+      @include respond-to(xl){
+        left: -175px !important;
+      }
+      @include respond-to(md){
+        left: -310px;
+      }
+
+      @include respond-to(xs){
+        left: 0px;
+      }
+     
+    }
+  }
 
 
   &.main-about__contentimg--why{
@@ -995,7 +1023,7 @@ button:focus {
 
     .container{
       @include respond-to(sm){
-        left: .6%;
+        left: -10px;
         top: 0%;
       }
     }
@@ -1362,7 +1390,8 @@ button:focus {
   background-color: #898989!important;
 }
 #nuestra-promesa{
-  height: 90px;
+  padding-top: 90px;
+  margin-top: -90px;
 }
 
 .ambiental__description p{
@@ -1459,14 +1488,14 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   .sombra .nav-link-bc{
     text-shadow:none !important;
   }
-#que-es-poke{
+.que-es-poke{
   .main-about__contentimg {
     height: auto;
   }
 }
 
-@media (max-width: 767px) {
- #que-es-poke{
+@media (min-width: 0px) and (max-width: 767px) {
+ .que-es-poke{
   .main-about__contentimg img {
     object-position: center;
   }
@@ -1499,4 +1528,48 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
       padding: 25px 0;
     }
  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .que-es-poke{
+    .main-about__contentimg img {
+      object-position: center;
+    }
+    .main-about__contentimg {
+      height: auto;
+      min-height: 960px;
+      background: white;
+      position: relative;
+    }
+    .main-about__contentimg--why{
+      .container{
+        position: relative;
+      }
+      img{
+        height: auto;
+        position: relative;    
+      }
+      h2{
+        font-size: 35px !important;
+        color: #686868;
+      }
+      p{
+        color: #686868;
+        line-height: 2 !important;
+      }
+    }
+    .main-general__description{
+      margin: 0;
+    }
+    .main-why__item:nth-child(2) {
+        padding: 25px 0;
+      }
+   }
+}
+
+@media (max-width: 768px){
+  .main-ourorigin__img {
+    height: auto;
+  }
 }

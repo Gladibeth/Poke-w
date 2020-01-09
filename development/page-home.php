@@ -167,7 +167,7 @@ else {
       </div>
     </div>
   </div>
-  <div class="main-about main-about__height" id="que-es-poke">
+  <div class="main-about main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--why">
     <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg 1920w," alt="que es poke">

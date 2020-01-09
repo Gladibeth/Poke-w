@@ -399,7 +399,7 @@
             <div class="main-ubications__boxitem">
               <ul class="main-ubications__ul">
                 <li itemprop = "name">POKE MALL PLAZA</li>
-                <li itemprop = "streetAddress">CARRERA  55 # 999 - 51 C.C. MALL PLAZA LOCAL A - 4003 - 01</li>
+                <li itemprop = "streetAddress">CARRERA  55 # 99 - 51 C.C. MALL PLAZA LOCAL A - 4003 - 01</li>
                 <li>Horario</li>
                 <li>
                   <ul class="horario">

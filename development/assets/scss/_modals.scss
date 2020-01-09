@@ -91,12 +91,12 @@
 
     @include respond-to(sm) {
       @include font(35px, $bold);
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     @include respond-to(xs) {
       @include font(30px, $bold);
-      margin-top: 0;
+      margin-top: 20px;
     }
   }
 }
