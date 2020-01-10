@@ -1,4 +1,66 @@
 <?php get_header(); ?>
+<?php
+$desktop = false;
+$mobile = false;
+$tablet_browser = 0;
+$mobile_browser = 0;
+$body_class = 'desktop';
+ 
+if (preg_match('/(tablet|ipad|playbook)|(android(?!.*(mobi|opera mini)))/i', strtolower($_SERVER['HTTP_USER_AGENT']))) {
+    $tablet_browser++;
+    $body_class = "tablet";
+}
+ 
+if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|android|iemobile)/i', strtolower($_SERVER['HTTP_USER_AGENT']))) {
+    $mobile_browser++;
+    $body_class = "mobile";
+}
+ 
+if ((strpos(strtolower($_SERVER['HTTP_ACCEPT']),'application/vnd.wap.xhtml+xml') > 0) or ((isset($_SERVER['HTTP_X_WAP_PROFILE']) or isset($_SERVER['HTTP_PROFILE'])))) {
+    $mobile_browser++;
+    $body_class = "mobile";
+}
+ 
+$mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'], 0, 4));
+$mobile_agents = array(
+    'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
+    'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
+    'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
+    'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
+    'newt','noki','palm','pana','pant','phil','play','port','prox',
+    'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
+    'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
+    'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
+    'wapr','webc','winw','winw','xda ','xda-');
+ 
+if (in_array($mobile_ua,$mobile_agents)) {
+    $mobile_browser++;
+}
+ 
+if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'opera mini') > 0) {
+    $mobile_browser++;
+    //Check for tablets on opera mini alternative headers
+    $stock_ua = strtolower(isset($_SERVER['HTTP_X_OPERAMINI_PHONE_UA'])?$_SERVER['HTTP_X_OPERAMINI_PHONE_UA']:(isset($_SERVER['HTTP_DEVICE_STOCK_UA'])?$_SERVER['HTTP_DEVICE_STOCK_UA']:''));
+    if (preg_match('/(tablet|ipad|playbook)|(android(?!.*mobile))/i', $stock_ua)) {
+      $tablet_browser++;
+    }
+}
+if ($tablet_browser > 0) {
+  $mobile = true;
+}
+else if ($mobile_browser > 0) {
+$mobile = true;
+}
+else {
+  $desktop = true;
+}  
+
+  if ($mobile){
+    $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
+  }else{
+    $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
+  }
+?> 
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
 <div id="nosotros" itemscope itemtype = "http://schema.org/Restaurant" >  
 <div class="about-banner">
@@ -6,8 +68,11 @@
     $img_id = get_post_thumbnail_id(get_the_ID());
     $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
   ?>
-  <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
-  
+  <?php if($mobile):?>
+    <img itemprop = "img" src="<?php echo get_field('banner_mobile'); ?>" alt="<?php echo $alt; ?>">
+  <?php else:?>
+    <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
+  <?php endif;?>  
     <div class="overlay"></div>
     <div class="container">
       <div class="about-banner__text about-banner__text--acenter">
@@ -37,7 +102,11 @@
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
+        <?php if($mobile):?>
+          <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg" alt="Nuestro origen">
+        <?php else:?>
           <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen.jpg 1920w," alt="Nuestro origen">
+        <?php endif;?>  
         </div>
       </div>
       <div class="main-ourorigin__item main-ourorigin__item--top">
@@ -58,7 +127,11 @@
     </div>
   </div>
   <div class="main-content__img main-img__desktop">
-    <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande.jpg 1920w," alt="Nosotros">
+  <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg" alt="Nosotros">
+    <?php else:?>
+      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande.jpg 1920w," alt="Nosotros">
+    <?php endif;?>
   </div>
   <div class="main-ourorigin">
     <div class="main-ourorigin__content">
@@ -128,7 +201,7 @@
     </div>
   </div>
   <div class="">
-    <div class="main-home__contentline main-home__contentline--about">
+    <div class="main-home__contentline main-home__contentline--about main-home__contentline--aboutp">
       <div class="main-home__item">
         <div class="main-home__line main-home__line--first"></div>
       </div>
@@ -142,13 +215,14 @@
       </div>
     </div>
   </div>
-
-
-
-  <div class="main-about main-about__height que-es-poke" id="que-es-poke">
+  <div class="main-about main-about--mobile main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
-    <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>//assets/img/About/nuestro-talento.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-talento.jpg 1920w," alt="Nuestro talento">
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>//assets/img/About/nuestro-talento.jpg" alt="Nuestro talento">
+    <?php else:?>
+      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>//assets/img/About/nuestro-talento.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-talento.jpg 1920w," alt="Nuestro talento">
+    <?php endif;?>  
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>
@@ -158,13 +232,13 @@
               <h2>talento</h2>
             </div>
             <div class="main-general__description main-general__description--font">
-              <p>Nuestro talento es jovial,</p>
-              <p>Nuestro talento es diverso,</p>
-              <p>Nuestro talento es determinado,</p>
-              <p>Nuestro talento es responsable,</p>
-              <p>Nuestro talento es empoderado,</p>
-              <p>Nuestro talento es apasionado.</p>
-              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
+              <p>Nuestro talento más valioso es jovial,</p>
+              <p>Nuestro talento más valioso es diverso,</p>
+              <p>Nuestro talento más valioso es determinado,</p>
+              <p>Nuestro talento más valioso es responsable,</p>
+              <p>Nuestro talento más valioso es empoderado,</p>
+              <p>Nuestro talento más valioso es apasionado.</p>
+              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
             </div>
           </div>
         </div>

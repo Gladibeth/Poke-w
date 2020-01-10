@@ -2,7 +2,7 @@
 <div itemscope itemtype = "http://schema.org/Restaurant" >
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <?php $link = get_field('registrate_menu'); ?>
-  <div class="about-banner about-banner--full">
+  <div class="about-banner about-banner--full" id="poke-puntos">
     <?php 
       $img_id = get_post_thumbnail_id(get_the_ID());
       $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <?php
-
 $desktop = false;
 $mobile = false;
 $tablet_browser = 0;
@@ -55,8 +54,7 @@ $mobile = true;
 else {
   $desktop = true;
 }  
-?>
-<?php 
+
   if ($mobile){
     $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
   }else{
@@ -104,8 +102,11 @@ else {
             $img_id = get_post_thumbnail_id(get_the_ID());
             $alt_banner_principal = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
           ?>
-          <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
-          
+          <?php if($mobile):?>
+            <img itemprop = "img" src="<?php echo get_field('banner_mobile'); ?>" alt="<?php echo $alt_banner_principal; ?>">
+          <?php else:?>
+            <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
+          <?php endif;?>    
         </div>
       </div>
     <?php endwhile; wp_reset_query();?>
@@ -170,7 +171,11 @@ else {
   <div class="main-about main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--why">
-    <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg 1920w," alt="que es poke">
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg" alt="que es poke">
+    <?php else:?>
+      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg 1920w," alt="que es poke">
+    <?php endif;?>
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>
@@ -192,7 +197,6 @@ else {
       </div>
     </div>
   </div>
-  
   <div class="main-follow">
     <div class="">
       <div class="main-home__contentline">
@@ -215,4 +219,5 @@ else {
       </div>
     </div>
     <?php echo do_shortcode('[instagram-feed showheader=false showbutton=false showfollow=false]'); ?>
-<?php get_footer(); ?> 
+  <?php get_footer(); ?> 
+  <script> var variableJS = "contenido de la variable javascript"; </script>

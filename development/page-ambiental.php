@@ -1,11 +1,16 @@
 <?php get_header(); ?>
+<?php require_once('dispositivo.php');?>
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <div class="about-banner div-ambiental" >
     <?php 
     $img_id = get_post_thumbnail_id(get_the_ID());
     $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
   ?>
-  <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
+  <?php if($mobile):?>
+    <img itemprop = "img" src="<?php echo get_field('banner_mobile'); ?>" alt="<?php echo $alt; ?>">
+  <?php else:?>
+    <img itemprop = "img" srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>">
+  <?php endif;?>  
       <div class="overlay"></div>
       <div class="about-banner__text about-banner__text--center">
         <div class="about-banner__title">

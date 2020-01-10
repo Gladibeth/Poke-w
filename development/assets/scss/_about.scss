@@ -10,7 +10,7 @@
         height: auto;
       }
       @media (max-width: 768px) {
-        height: 300px !important;
+        height: 250px !important;
       }
 
     &.about-banner__imgmobile{
@@ -262,9 +262,10 @@
     @include respond-to(sm) {
       margin-top: 30px;
     }
-
+    
     @include respond-to(xs) {
       margin-top: 30px;
+      margin-bottom: 50px;
     }
 
   }
@@ -345,6 +346,10 @@
   width: 100%;
   height: 100%;
   margin: 40px 0;
+
+  @include respond-to(xs){
+    margin: 0px;
+  }
   &.main-img__desktop{
     @include respond-to(xs){
       display: none;
@@ -370,5 +375,11 @@
   img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #poke-puntos{
+    height: 100vh !important;
   }
 }

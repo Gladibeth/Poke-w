@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <?php
-
 $desktop = false;
 $mobile = false;
 $tablet_browser = 0;
@@ -55,20 +54,23 @@ $mobile = true;
 else {
   $desktop = true;
 }  
-?>
-<?php 
+
   if ($mobile){
     $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
   }else{
     $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
   }
-?>
+?>  
 <div id="banner-entradas" class="about-banner about-banner__imgmobile js-hiddenMenu" >
   <?php 
     $image = get_field('imagen_entrada_menu');
     $image_sizes = $image['sizes'];
   ?>
-  <img itemprop = "img" srcset="<?php echo get_field('imagen_entrada_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+  <?php if($mobile):?>
+    <img itemprop = "img" src="<?php echo get_field('imagen_entrada_menu_mobile'); ?>" alt="<?php echo $alt; ?>">
+  <?php else:?>
+    <img itemprop = "img" srcset="<?php echo get_field('imagen_entrada_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+  <?php endif;?>  
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -81,7 +83,11 @@ else {
     $image = get_field('imagen_poke_bowl_menu');
     $image_sizes = $image['sizes'];
   ?>
-    <img itemprop = "img" srcset="<?php echo get_field('imagen_poke_bowl_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_field('imagen_poke_bowl_menu_mobile'); ?>" alt="<?php echo $alt; ?>">
+    <?php else:?>
+      <img itemprop = "img" srcset="<?php echo get_field('imagen_poke_bowl_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+    <?php endif;?>  
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">
@@ -94,7 +100,11 @@ else {
     $image = get_field('imagen_juice_bar_menu');
     $image_sizes = $image['sizes'];
   ?>
-    <img itemprop = "img" srcset="<?php echo get_field('imagen_juice_bar_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_field('imagen_juice_bar_menu_mobile'); ?>" alt="<?php echo $alt; ?>">
+    <?php else:?>
+      <img itemprop = "img" srcset="<?php echo get_field('imagen_juice_bar_menu_mobile'); ?> 1024w, <?php echo $image['url'];?> 1920w," alt="<?php echo $alt; ?>">
+    <?php endif;?>  
     <div class="overlay"></div>
     <div class="about-banner__text about-banner__text--center">
       <div class="about-banner__title">

@@ -633,6 +633,9 @@ button:focus {
 
 
     &.title--left {
+      @include respond-to(xs){
+        margin-top: -30px;
+      }
       h2 {
         text-align: left;
       }
@@ -707,6 +710,12 @@ button:focus {
   strong {
     color: $white;
     @include font(25px, $superBold);
+    @include respond-to(sm){
+      color: $black;
+    }
+    @include respond-to(xs){
+      color: #686868;
+    }
   }
 
 
@@ -725,6 +734,7 @@ button:focus {
 
       @include respond-to(xl){
         font-size: 20px;
+        line-height: 2;
       }
     }
   }
@@ -913,6 +923,13 @@ button:focus {
     grid-template-columns: 20% 60% 20%;
   }
 }
+
+.main-home__contentline.main-home__contentline--about.main-home__contentline--aboutp{
+  @include respond-to(xs){
+    padding: 0px 0 30px 0;
+    margin-top: -40px;
+  }
+}
 .main-home__item{
   height: 30px;
   display: flex;
@@ -999,7 +1016,8 @@ button:focus {
   }
   &.main-about__contentimg--about {
     @include respond-to(xs){
-      min-height: 400px !important;
+      min-height: 300px !important;
+      margin-bottom: -35px;
     }
     .container{
       left: -450px;
@@ -1012,6 +1030,7 @@ button:focus {
 
       @include respond-to(xs){
         left: 0px;
+        // margin-top: 50px;
       }
      
     }
@@ -1571,5 +1590,10 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 @media (max-width: 768px){
   .main-ourorigin__img {
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #poke-puntos{
+    height: 100vh !important;
   }
 }
