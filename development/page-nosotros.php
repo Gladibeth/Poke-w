@@ -238,7 +238,7 @@ else {
               <p>Nuestro talento más valioso es responsable,</p>
               <p>Nuestro talento más valioso es empoderado,</p>
               <p>Nuestro talento más valioso es apasionado.</p>
-              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
+              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
             </div>
           </div>
         </div>

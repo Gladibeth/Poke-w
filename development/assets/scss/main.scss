@@ -659,7 +659,7 @@ button:focus {
       }
 
       @include respond-to(xs) {
-        @include font(45px, $bold);
+        @include font(35px, $bold);
       }
     }
     h1 {
@@ -678,7 +678,7 @@ button:focus {
       }
 
       @include respond-to(xs) {
-        @include font(45px, $bold);
+        @include font(35px, $bold);
       }
     }
   }
@@ -711,10 +711,18 @@ button:focus {
     color: $white;
     @include font(25px, $superBold);
     @include respond-to(sm){
-      color: $black;
+      color: #686868;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.7;
+      letter-spacing: 1.54px;
     }
     @include respond-to(xs){
       color: #686868;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.7;
+      letter-spacing: 1.54px;
     }
   }
 
@@ -731,6 +739,11 @@ button:focus {
         @include font(20px, $medium);
         line-height: 2;
       }
+      @include respond-to(xs) {
+        @include font(15px, $medium);
+        line-height: 2;
+      }
+
 
       @include respond-to(xl){
         font-size: 20px;
@@ -910,6 +923,12 @@ button:focus {
   }
   @include respond-to(xs){
     grid-template-columns: 20% 60% 20%;
+    
+  }
+  &.contentline__margint{
+    @include respond-to(xs){
+      margin-top: -40px;
+    }
   }
 }
 
@@ -988,12 +1007,13 @@ button:focus {
   &.main-about__height {
     // height: 900px;
     position: relative;
-    z-index: -1;
+    // z-index: -1;
 
     @include respond-to(xs) {
       height: auto;
     }
   }
+
 
 }
 
@@ -1017,7 +1037,7 @@ button:focus {
   &.main-about__contentimg--about {
     @include respond-to(xs){
       min-height: 300px !important;
-      margin-bottom: -35px;
+      margin-bottom: 0px;
     }
     .container{
       left: -450px;
@@ -1520,11 +1540,13 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   }
   .main-about__contentimg {
     height: auto;
-    min-height: 960px;
-    background: white;
+    background: #f3f3f3;
     position: relative;
   }
   .main-about__contentimg--why{
+    &.main-about__contentimg--why--mobile{
+      margin-bottom: -30px;
+    }
     .container{
       position: relative;
     }
@@ -1545,6 +1567,10 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   }
   .main-why__item:nth-child(2) {
       padding: 25px 0;
+
+      @include respond-to(xs){
+        padding: 40px 0;
+      }
     }
  }
 }
@@ -1558,7 +1584,7 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     .main-about__contentimg {
       height: auto;
       min-height: 960px;
-      background: white;
+      background: #f3f3f3;
       position: relative;
     }
     .main-about__contentimg--why{
@@ -1591,8 +1617,6 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   .main-ourorigin__img {
     height: auto;
   }
-}
-@media (max-width: 768px) {
   #poke-puntos{
     height: 100vh !important;
   }

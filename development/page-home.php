@@ -127,34 +127,41 @@ else {
       </div>
     </div>
   </div>
-  <div class="main-about">
-    <div class="main-about__contentimg">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestro compromiso">
+  <div class="main-about main-about--mobile main-about__height que-es-poke" id="que-es-poke">
+    <div class="mask"></div>
+    <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestro compromiso">
+          <?php else:?>
+            <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg 1920w," alt="Nuestro compromiso">
+          <?php endif;?>    
       <div class="container">
-        <div class="main-about__content">
-          <div class="main-about__item">
+        <div class="main-why__content">
+          <div class="main-why__item"></div>
+          <div class="main-why__item">
             <div class="main-general__title">
               <h2>nuestro </h2>
               <h2>compromiso</h2>
             </div>
-            <div class="main-general__description">
+            <div class="main-general__description main-general__description--font">
               <p>Alimentar el cambio para una generación sostenible.</p>
               <p>¿Por qué?</p>
               <p>Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipo, nuestros clientes y el medio ambiente.</p>
               <p>Porque queremos disrumpir, reinventar y ser agentes de cambio.</p>
             </div>
             <div class="btn-box--about float-left">
-              <a class="btn_custom btn--large btn--filled" href="<?php echo bloginfo('url').'/nosotros';?>">
-                  Nosotros
-                </a>
-            </div>
+            <a class="btn_custom btn--large btn--filled btn--filled--mobile" href="<?php echo bloginfo('url').'/nosotros';?>">
+                Nosotros
+              </a>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="">
-    <div class="main-home__contentline">
+    <div class="main-home__contentline contentline__margint">
       <div class="main-home__item">
         <div class="main-home__line main-home__line--first"></div>
       </div>
@@ -170,7 +177,7 @@ else {
   </div>
   <div class="main-about main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
-    <div class="main-about__contentimg main-about__contentimg--why">
+    <div class="main-about__contentimg main-about__contentimg--why main-about__contentimg--why--mobile">
     <?php if($mobile):?>
       <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg" alt="que es poke">
     <?php else:?>
@@ -199,7 +206,7 @@ else {
   </div>
   <div class="main-follow">
     <div class="">
-      <div class="main-home__contentline">
+      <div class="main-home__contentline contentline__margint">
         <div class="main-home__item">
           <div class="main-home__line main-home__line--first"></div>
         </div>
