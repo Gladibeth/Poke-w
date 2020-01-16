@@ -10,7 +10,7 @@
         height: auto;
       }
       @media (max-width: 768px) {
-        height: 300px !important;
+        height: 300px;
       }
 
     &.about-banner__imgmobile{
@@ -83,7 +83,7 @@
     &.about-banner__text--top{
       @include respond-to(xs){
         padding-top: 0px;
-        margin: 300px 0;
+        margin: 350px 0;
       }
 
     }
@@ -335,8 +335,8 @@
     }
 
     @include respond-to(xs) {
-      line-height: 1.7; 
-      @include font(18px, $medium);
+      line-height: 2; 
+      @include font(15px, $medium);
     }
   }
 
@@ -385,5 +385,11 @@
 @media (max-width: 768px) {
   #poke-puntos{
     height: 100vh !important;
+  }
+  .page-eventos{
+    height: 60vh !important;
+    text-align: end;
+    text-shadow: 0 4px 4px #0000007a;
+
   }
 }

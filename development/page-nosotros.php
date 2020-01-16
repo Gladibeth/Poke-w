@@ -102,7 +102,7 @@ else {
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-        <?php if($mobile):?>
+           <?php if($mobile):?>
           <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg" alt="Nuestro origen">
         <?php else:?>
           <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen.jpg 1920w," alt="Nuestro origen">
@@ -127,7 +127,7 @@ else {
     </div>
   </div>
   <div class="main-content__img main-img__desktop">
-  <?php if($mobile):?>
+     <?php if($mobile):?>
       <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg" alt="Nosotros">
     <?php else:?>
       <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande.jpg 1920w," alt="Nosotros">
@@ -215,6 +215,9 @@ else {
       </div>
     </div>
   </div>
+
+
+
   <div class="main-about main-about--mobile main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
@@ -231,14 +234,19 @@ else {
               <h2>nuestro </h2>
               <h2>talento</h2>
             </div>
-            <div class="main-general__description main-general__description--font">
+            <div class="main-general__description main-general__description--font d-none d-lg-block d-md-none">
               <p>Nuestro talento más valioso es jovial,</p>
               <p>Nuestro talento más valioso es diverso,</p>
               <p>Nuestro talento más valioso es determinado,</p>
               <p>Nuestro talento más valioso es responsable,</p>
               <p>Nuestro talento más valioso es empoderado,</p>
               <p>Nuestro talento más valioso es apasionado.</p>
-              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
+              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
+              
+            </div>
+            <div class="main-general__description main-general__description--font text-about--mobile d-lg-none d-md-block d-block">
+              <p>Nuestro talento más valioso es jovial,Nuestro talento más valioso es diverso,Nuestro talento más valioso es determinado,Nuestro talento más valioso es responsable,Nuestro talento más valioso es empoderado,Nuestro talento más valioso es apasionado.</p>
+              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
             </div>
           </div>
         </div>

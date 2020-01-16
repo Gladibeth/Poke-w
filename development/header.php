@@ -81,7 +81,7 @@ else {
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-            <img  itemprop = "logo" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg" alt="logo poke">
+            <img  itemprop = "logo" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg" alt="logo poke" class="active"> 
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
               <span class="hamburger-box">

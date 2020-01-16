@@ -583,6 +583,12 @@ button:focus {
   }
 
   &.main-general__title--event {
+    @include respond-to(sm){
+      width: 70%;
+    }
+    @include respond-to(xs){
+      width: 70%;
+    }
     h2 {
       letter-spacing: 0px;
       @include font(45px, $bold);
@@ -596,11 +602,21 @@ button:focus {
       @include respond-to(sm) {
         letter-spacing: 0.25px;
         @include font(40px, $bold);
+        text-align: right;
       }
 
       @include respond-to(xs) {
         letter-spacing: 0.25px;
-        @include font(40px, $bold);
+        @include font(30px, $bold);
+        text-align: right;
+      }
+    }
+    p{
+      @include respond-to(sm){
+        text-align: right;
+      }
+      @include respond-to(xs){
+        text-align: right;
       }
     }
   }
@@ -1532,6 +1548,11 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     height: auto;
   }
 }
+.main-about__mt {
+  .main-about__contentimg {
+    height: auto;
+  }
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
  .que-es-poke{
@@ -1621,3 +1642,45 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     height: 100vh !important;
   }
 }
+
+.main-event__banner--mobile{
+  #wpcf7-f261-p27-o1{
+    @include respond-to(sm){
+      padding: 20px;
+    }
+    @include respond-to(xs){
+      padding: 20px;
+    }
+
+  }
+  .main-why__item{
+    @include respond-to(sm){
+      padding-top: 20px;
+    }
+    @include respond-to(xs){
+      padding-top: 0;
+    }
+  }
+  .about-banner{
+    @include respond-to(sm){
+      height: 80vh;
+    }
+    @include respond-to(xs){
+      height: 80vh;
+    }
+    .about-banner__text{
+      @include respond-to(sm){
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      @include respond-to(xs){
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+  }
+}
+

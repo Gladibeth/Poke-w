@@ -25,6 +25,12 @@ label {
     color: $white;
     @include font(14px, $bold);
     margin-bottom: 0;
+    @include respond-to(sm){
+      color: #686868;
+    }
+    @include respond-to(xs){
+      color: #686868;
+    }
   }
   &.label-acept{
     font-size: 16px;
@@ -127,6 +133,12 @@ label {
     strong{
       font-style: italic;
     font-family: $Raleway;
+    }
+    @include respond-to(sm){
+      color: #686868;
+    }
+    @include respond-to(xs){
+      color: #686868;
     }
 
   }

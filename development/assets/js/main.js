@@ -45,6 +45,7 @@ $('.input-file .btn').click(function () {
 });
 
 //active en el menu
+const resolution = screen.width;
 const page = window.location.pathname;
 const itemsNavbarMenu = $('.navbar-nav.mr-autos li');
 switch (page) {
@@ -66,7 +67,7 @@ switch (page) {
   case '/ambiental/':
       $(itemsNavbarMenu[4]).find('a').addClass('active');
     break;
-  case '/eventos/':
+  case ('/eventos/' && resolution > 768):
       $(itemsNavbarMenu[5]).find('a').addClass('active');
       $('.nav-link-bc').css('text-shadow','none !important');
   case '/escribenos/':

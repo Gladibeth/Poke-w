@@ -193,10 +193,10 @@ else {
             </div>
             <div class="main-general__description main-general__description--font">
               <br>
-              <p>Poke significa “cortar” en hawaiano.</p>
-              <p>Su significado le da vida a un plato típico de la gastronomía de Hawaii.</p>
-              <p>El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.</p>
-              <p>Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico y sabores asiáticos
+              <p>Poke significa “cortar” en hawaiano.
+              Su significado le da vida a un plato típico de la gastronomía de Hawaii.
+              El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.
+              Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico y sabores asiáticos
                 que provienen de Japón.</p>
             </div>
           </div>

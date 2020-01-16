@@ -355,7 +355,7 @@ function openTabs(evt, seccionName) {
 
 
 function tamano(event){
-    console.log(event);
+    console.log(event.id);
 }
 
 
