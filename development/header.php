@@ -76,7 +76,57 @@ else {
 ?>
   <header id="home" itemscope itemtype = "http://schema.org/Restaurant">
     <?php $url = $_SERVER["REQUEST_URI"] ?>
-    <?php if (($url == '/eventos/') || ($url == '/escribenos/') ||  ($url == '/trabaja-con-nosotros/') ||  ($url == '/cuentanos-tu-experiencia/')):?>
+    <?php if (($url == '/eventos/') && ($mobile)):?>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
+      <div class="container">
+        <div class="main-brand">
+          <a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
+            <img itemprop = "logo"  id="iso" alt="logo Poke" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg">
+            <!-- <img  itemprop = "logo"  id="iso" src="< ?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke-white.svg" alt="logo poke blanco">
+            <img itemprop = "logo"  id="iso_green" alt="logo Poke" class="display_none" src="< ?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg"> -->
+            </a>
+          <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        </div>
+        <div class="navbar-collapse offcanvas-collapse">
+          <ul class="navbar-nav mr-autos">
+            <li class="nav-item active">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/menu';?>">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/nosotros';?>">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/ubicaciones';?>">Ubicaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/poke-puntos';?>">Poke puntos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/ambiental';?>">Ambiental</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo bloginfo('url').'/poke/eventos';?>">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <div class="main-nav__btn">
+                <div class="btn__buy">
+                  <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy" href="<?php echo $link_rappi;?>" target="_blank">
+                      <img itemprop = "logo"  src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg" alt="logo rappi">
+                      <span class="line"></span>
+                      Pide en línea
+                    </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <?php elseif (($url == '/eventos/') || ($url == '/escribenos/') ||  ($url == '/trabaja-con-nosotros/') ||  ($url == '/cuentanos-tu-experiencia/')):?>
       <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js fixed-bc sombra">
       <div class="container">
         <div class="main-brand">

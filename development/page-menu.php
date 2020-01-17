@@ -377,14 +377,18 @@ else {
                                 <p><?php the_field('superfoods_menu');?></p>
                               </div>
                             <div class="main-modal__price">
-                              <div class="main-modal__smallprice">
-                                <span>M:</span>
-                                <p itemprop = "price">COP <?php the_field('precio_mediano_menu');?></p>
-                              </div>
-                              <div class="main-modal__smallprice">
-                                <span>G:</span>
-                                <p itemprop = "price">COP <?php the_field('precio_grande_menu');?></p>
-                              </div>
+                              <?php if (get_field('precio_mediano_menu') != 0):?>
+                                <div class="main-modal__smallprice">
+                                  <span>M:</span>
+                                  <p itemprop = "price">COP <?php the_field('precio_mediano_menu');?></p>
+                                </div>
+                              <?php endif;?>
+                              <?php if (get_field('precio_grande_menu') != 0):?>
+                                <div class="main-modal__smallprice">
+                                  <span>G:</span>
+                                  <p itemprop = "price">COP <?php the_field('precio_grande_menu');?></p>
+                                </div>
+                              <?php endif;?>
                             </div>
                             <div class="btn-modal">
                               

@@ -191,6 +191,9 @@ button:focus {
   display: flex;
   align-items: center;
   &:last-child{
+    @include respond-to(xl){
+      padding: 0px;
+    }
     @include respond-to(md){
       padding: 0px;
     }
@@ -607,6 +610,7 @@ button:focus {
 
       @include respond-to(xs) {
         letter-spacing: 0.25px;
+        
         @include font(30px, $bold);
         text-align: right;
       }
@@ -1050,6 +1054,9 @@ button:focus {
   @include respond-to(xs){
     height: 800px;
   }
+  @include respond-to(xl){
+    height: 100vh !important;
+  }
   &.main-about__contentimg--about {
     @include respond-to(xs){
       min-height: 300px !important;
@@ -1058,7 +1065,7 @@ button:focus {
     .container{
       left: -450px;
       @include respond-to(xl){
-        left: -175px !important;
+        left: -120px !important;
       }
       @include respond-to(md){
         left: -310px;
@@ -1639,7 +1646,39 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     height: auto;
   }
   #poke-puntos{
-    height: 100vh !important;
+    height: 85vh !important;
+    .about-banner__text.about-banner__text--top {
+      padding-top: 0;
+      margin: 290px 0;
+      font-size: -7px;
+      h3{
+        font-size: 30px;
+      }
+      p{
+        font-size: 15px;
+      }
+      .btn-box {
+        margin-top: 15px;
+      }
+    }
+  }
+  #poke-puntos-content{
+    h1{
+      font-size: 25px;
+    }
+    p{
+      line-height: 1.2;
+      font-size: 15px;
+      margin-bottom: -20px;
+    }
+  }
+  #poke-puntos-premios{
+    h2{
+      font-size: 25px;
+    }
+  }
+  .main-pokedots__content {
+    margin-top: 20px;
   }
 }
 

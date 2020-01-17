@@ -98,7 +98,7 @@ else {
       </div>
     </div>
   </div>
-  <div class="main-pokedots">
+  <div class="main-pokedots"  id="poke-puntos-content">
     <div class="container">
       <div class="main-pokedots__box">
         <div class="main-general__title main-general__title--dots">
@@ -111,7 +111,7 @@ else {
     </div>
     <hr class="line-gray">
   </div>
-  <div class="main-pokedots padd-top">
+  <div class="main-pokedots padd-top" id="poke-puntos-premios">
     <div class="container">
       <div class="main-pokedots__box">
         <div class="main-general__title main-general__title--dots">
