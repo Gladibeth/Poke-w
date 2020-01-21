@@ -45,7 +45,6 @@ $('.input-file .btn').click(function () {
 });
 
 //active en el menu
-const resolution = screen.width;
 const page = window.location.pathname;
 const itemsNavbarMenu = $('.navbar-nav.mr-autos li');
 switch (page) {

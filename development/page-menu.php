@@ -474,12 +474,12 @@ else {
                               <strong>Beneficios:</strong>
                               <p><?php the_field('beneficios_menu');?></p>
                             </div>
-                            <!-- <<div class="main-modal__boxdetails">
+                             <div class="main-modal__boxdetails">
                               <div class="main-modal__details">
                                 <span class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu');?></span>
                                 <p>Calorías</p>
                               </div>
-                              <div class="main-modal__details">
+                              <!-- <div class="main-modal__details">
                                 <span class="badge badge-secondary"><?php the_field('cantidad_de_carbohidratos');?></span>
                                 <p>Carbohidratos</p>
                               </div>
@@ -490,8 +490,8 @@ else {
                               div class="main-modal__details">
                                 <span class="badge badge-secondary">123</span>
                                 <p>Superfoods</p>
-                              </div> 
-                            </div>-->
+                              </div>  -->
+                            </div>
                             <div class="main-modal__price">
                               <p>COP: <?php the_field('precio_menu');?></p>
                             </div>

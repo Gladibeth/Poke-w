@@ -384,11 +384,21 @@
 }
 @media (max-width: 768px) {
   .page-eventos{
-    height: 50vh !important;
+    height: 275px !important;
     text-align: end;
     text-shadow: 0 4px 4px #0000007a;
+    .main-general__title--event{
+      width: 65% !important;
+    }
     h2{
-      width: 95%;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .page-eventos{
+    .main-general__title--event{
+      width: 60% !important;
     }
   }
 }
