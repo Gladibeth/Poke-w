@@ -12,6 +12,10 @@ $(function () {
 //   format: 'dd-mm-yyyy'
 // });
 
+$('input.wpcf7-form-control').click(function(){
+  $('.main-event__img-bg').addClass('main-event__img-height')
+})
+
 $('input[type="file"]').each(function () {
   // get label text
   var label = $(this).parents('.form-group').find('label').text();
@@ -66,9 +70,7 @@ switch (page) {
   case '/ambiental/':
       $(itemsNavbarMenu[4]).find('a').addClass('active');
     break;
-  case ('/eventos/' && resolution > 768):
-      $(itemsNavbarMenu[5]).find('a').addClass('active');
-      $('.nav-link-bc').css('text-shadow','none !important');
+  
   case '/escribenos/':
     $('.nav-link-bc').css('text-shadow','none !important');
     //aceptar
@@ -123,12 +125,19 @@ switch (page) {
           $("input[value='Deseo_recibir_mas_informacion_sobre_nuestros_establecimientos']").prop('checked', false);
         }
       }
-
-
-
-
-
-
+    case '/eventos/':
+      $('.nav-link-bc').css('text-shadow','none !important');
+      $('.navbar-fixed-js').addClass('fixed');
+      let $countevent = 0;
+      function formEvent(){
+        if($countevent == 0){
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', true);
+          $countevent +=1;
+        }else{
+          $countevent = 0;
+          $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
+        }
+      }
 
 
 
@@ -163,8 +172,9 @@ $(".hamburger").on("click", function () {
     $('.hamburger-inner').addClass('js-hamburger');
     $('.nav-link').addClass('fixed-color');
     $("#iso").addClass('active');
+    $('html').css('overflow', 'hidden ');
   } else {
-
+    $('html').css('overflow', 'hidden auto');
     $("#iso").removeClass('active');
     $(this).removeClass("is-active")
     if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
@@ -188,12 +198,14 @@ $(window).scroll(function () {
     $('.nav-top__header').addClass('nav-top__header--detele');
     $('.hamburger-inner').addClass('js-hamburger');
     $("#iso").addClass('active');
+    
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
     $('.nav-link').removeClass('fixed-color');
     $('.nav-top__header').removeClass('nav-top__header--detele');
     $('.hamburger-inner').removeClass('js-hamburger');
     $("#iso").removeClass('active');
+   
   }
 });
 

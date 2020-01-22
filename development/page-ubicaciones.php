@@ -178,6 +178,8 @@ else {
                         <li itemprop="openingHours"> S: 12:00pm - 9:00pm</li>
                         <li itemprop="openingHours"> D: 12:00pm - 5:00pm</li>
                       </ul></li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 2665451</li>
                       <li>Celular</li>
                       <li itemprop="telephone">31964554305</li>
                     </ul>
@@ -206,6 +208,8 @@ else {
                         <li itemprop="openingHours"> V-S: 1200:pm - 10:00pm</li>
                         <li itemprop="openingHours"> D: 12:00pm - 5:00pm</li>
                       </ul></li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 6019697</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3196454299</li>
                     </ul>
@@ -234,6 +238,8 @@ else {
                         <li itemprop="openingHours">V-S: 12:00pm - 10:00pm</li>
                         <li itemprop="openingHours">D: 12:00pm - 8:00pm</li>
                       </ul></li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7392278</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3197785780</li>
                     </ul>
@@ -264,6 +270,8 @@ else {
                           <li itemprop="openingHours">D: 12:00pm - 8:00pm</li>
                         </ul>
                       </li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 8837275</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3196368166</li>
                     </ul>
@@ -291,6 +299,8 @@ else {
                         <li itemprop="openingHours">L-S: 11:00am - 7:00pm</li>
                         <li itemprop="openingHours">D-F: 12:00pm - 5:00pm</li>
                       </ul></li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7447281</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3196368190</li>
                     </ul>
@@ -322,6 +332,8 @@ else {
                           <li itemprop="openingHours">D: 11:30am - 8:00pm</li>
                         </ul>
                       </li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7457584</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3197384586</li>
                     </ul>
@@ -353,6 +365,8 @@ else {
                           <li itemprop="openingHours">D: No abrimos</li>
                         </ul>
                       </li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7434304</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3024228669</li>
                     </ul>
@@ -440,6 +454,8 @@ else {
                           <li itemprop="openingHours">D: 12:00pm - 8:00pm</li>
                         </ul>
                       </li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(034) 4799067</li>
                       <li>Celular</li>
                       <li itemprop="telephone">3007015735</li>
                     </ul>
@@ -475,8 +491,10 @@ else {
                     <li itemprop="openingHours">D: 12:00pm - 8:00pm</li>
                   </ul>
                 </li>
+                <li>Teléfono</li>
+                <li itemprop="telephone">(035) 3117639</li>
                 <li>Celular</li>
-                <li></li>
+                <li itemprop="telephone">3045668029</li>
               </ul>
             </div>
           <div class="main-ubications__boxitem">
@@ -488,11 +506,7 @@ else {
           </div>
         </div>
       </div>
-      <!--end Modal barranquilla-->
-
-         
-
-         
+      <!--end Modal barranquilla--> 
          
       </div>
     </div>

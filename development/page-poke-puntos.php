@@ -81,7 +81,7 @@ else {
           <?php the_content();?>
         </div>
         <div class="btn-box btn-box--resgister">
-          <a class="btn_custom btn--large btn--filled" href="<?php echo($link['url']); ?>">
+          <a class="btn_custom btn--large btn--filled" target="_blank" href="<?php echo($link['url']); ?>">
             <?php echo($link['title']); ?>
           </a>
         </div>
@@ -105,7 +105,7 @@ else {
           <h1>poke puntos</h1>
         </div>
         <div class="main-general__description main-general__description--dots">
-          <p>Acumula y redime visitando nuestros puntos presenciales, por cada $ 1.500 recibes 1 punto. No válido en domicilios</p>
+          <p>Acumula y redime visitando nuestros puntos presenciales. Por cada $ 1.500 recibes 1 punto. No válido en domicilios.</p>
         </div>
       </div>
     </div>
@@ -144,15 +144,15 @@ else {
             <div class="main-pokedots__boxtext">
               <div class="main-pokedots__text">
                 <div class="main-pokedots__title">
-                  <p><?php the_title();?></p>
-                  <span>Puntos: <?php the_field('puntos_100_poke_puntos');?></span>
+                  <p>Con <?php the_field('puntos_100_poke_puntos');?> Puntos:</p>
+                  <span>Redimes un <?php the_title();?></span>
                 </div>
               </div>
               <?php if (get_field('opcion_2_poke_puntos')): ?>
                 <div class="main-pokedots__text">
                   <div class="main-pokedots__title">
-                    <p><?php the_field('opcion_2_poke_puntos');?> % <?php the_title();?></p>
-                    <span>Puntos: <?php the_field('puntos_opcion_2_poke_puntos');?></span>
+                    <p>Con <?php the_field('puntos_opcion_2_poke_puntos');?> Puntos:</p>
+                    <span>Recibe el <?php the_field('opcion_2_poke_puntos');?> % de descuento en un <?php the_title();?></span>
                   </div>
                 </div>
               <?php endif;?> 

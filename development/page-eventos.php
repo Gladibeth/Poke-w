@@ -74,12 +74,13 @@ else {
         <div class="about-banner__text about-banner__text--acenter">
         <div class="main-general__title main-general__title--event">
           <?php the_content();?>
-          <!--  <p class="format format--white">Déjanos tus datos, te llamaremos.</p> -->
+           
         </div>
         </div>
       </div>
     </div>
     <div class="main-why__item">
+      <p class="format format--gray d-lg-none  d-block">¿Estás pensando celebrar tu grado, hacer una fiesta de cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a celebrar contigo! Poke es una opción de catering ideal para cualquier evento por la gran variedad de opciones para tus invitados y la simplicidad de ejecución. ¡Déjanos tus datos y te contactaremos muy pronto!</p>
         <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
     </div>
   </div>
@@ -97,6 +98,9 @@ else {
                 <!--  <p class="format format--white">Déjanos tus datos, te llamaremos.</p> -->
                 </div>
               <hr class="line-gray line--white">
+                <div class="main-event__text-mobile">
+                <p class="format format--white">¿Estás pensando celebrar tu grado, hacer una fiesta de cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a celebrar contigo! Poke es una opción de catering ideal para cualquier evento por la gran variedad de opciones para tus invitados y la simplicidad de ejecución. ¡Déjanos tus datos y te contactaremos muy pronto!</p>
+                </div>
                 <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
             </div>
           </div>

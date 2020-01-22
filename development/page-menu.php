@@ -248,7 +248,7 @@ else {
                               </div>
                               <div class="btn-modal">
                                 
-                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
+                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
                                     <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                     <span class="line"></span>
                                     Pide en línea
@@ -392,7 +392,7 @@ else {
                             </div>
                             <div class="btn-modal">
                               
-                              <a class="btn-btn_custom btn--medium btn--filled-modalgray" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
+                              <a class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
                                   <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
                                   <span class="line"></span>
                                   Pide en línea

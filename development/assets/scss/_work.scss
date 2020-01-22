@@ -59,6 +59,12 @@ label {
 .custom-control-input{
   display: flex;
   align-items: center;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  left: 0px;
+  width: 40px !important;
+  top: -4px;
 }
 
 .custom-checkbox .custom-control-label:before{
@@ -100,6 +106,16 @@ label {
   &.format--white {
     color: $white;
     text-transform: none;
+    // @include respond-to(xs){
+    //   padding: 20px;
+    //   color: #686879;
+    // }
+  }
+  &.format--gray{
+    @include respond-to(xs){
+      padding: 20px;
+      color: #686879;
+    }
   }
 }
 

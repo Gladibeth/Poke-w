@@ -12,11 +12,11 @@
 
               <?php echo do_shortcode('[contact-form-7 id="258" title="Trabaja con nosotros"]'); ?>
             </div>
-            <div class="logo-experience">
+            <!-- <div class="logo-experience">
               <div class="main-experience__img">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Experiencia/logo-poke-experiencia.png" alt="icono poke">
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

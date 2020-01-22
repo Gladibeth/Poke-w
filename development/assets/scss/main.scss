@@ -977,7 +977,7 @@ button:focus {
 }
 
 .main-home__line{
-  width: 80%;
+  width: 70%;
   height: 1px;
   background-color: #686868;
 }
@@ -1056,6 +1056,12 @@ button:focus {
   }
   @include respond-to(xl){
     height: 100vh !important;
+  }
+  &.main-event__img-bg{
+    height: 1100px !important;
+    &.main-event__img-height{
+      height: 1300px !important;
+    }
   }
   &.main-about__contentimg--about {
     @include respond-to(xs){
@@ -1697,7 +1703,7 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
       padding-top: 20px;
     }
     @include respond-to(xs){
-      padding-top: 0;
+      padding-top: 30px;
     }
   }
   .about-banner{
@@ -1723,3 +1729,14 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   }
 }
 
+#wpcf7-f261-p27-o2 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
+  margin-top: 80px;
+  margin-left: 0;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+#wpcf7-f261-p27-o2 > div{
+  display: none;
+}

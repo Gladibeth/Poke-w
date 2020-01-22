@@ -119,7 +119,7 @@ else {
             <div class="main-ourorigin__description">
               <p>Poke nace como el proyecto de una pareja emprendedora, amantes de la gastronomía, y apasionados por generar experiencias memorables.</p>
               <p>En Agosto de 2016 abren las puertas de su primer restaurante. Con esfuerzo y perseverancia pronto se posicionó como la primera cadena de restaurantes "healthy, fast-casual" en Colombia.</p>
-              <p>Con un anhelo de ser la generación del cambio, Poke busca promover una cultura de alimentación consciente, siendo sostenibles con el medio ambiente y generando impacto social.</p>
+              <p>anhelando ser la generación del cambio, Poke busca promover una cultura de alimentación consciente, siendo sostenibles con el medio ambiente y generando impacto social.</p>
             </div>
           </div>
         </div>
@@ -148,9 +148,9 @@ else {
               <h2>PROMESA</h2>
             </div>
             <div class="main-ourorigin__description">
-              <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes, para asegurar la más alta calidad.</p>
+              <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes para asegurar la más alta calidad.</p>
               <p>Las recetas y preparaciones se realizan todos los días en nuestras cocinas. Los cortes y procesos se hacen de manera artesanal por nuestro equipo. Ningún producto contiene aditivos, preservantes, o colorantes.</p>
-              <p>En Poke trabajamos de la mano de nuestros aliados y proveedores locales, en busca de ofrecer los mejores ingredientes para cada preparación.</p>
+              <p>En Poke trabajamos de la mano de nuestros aliados y proveedores locales en busca de ofrecer los mejores ingredientes para cada preparación.</p>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ else {
       </div>
       <div class="main-home__item">
         <div class="main-general__subtitle">
-        <h3>Pokenvironmentally</h3>
+        <h3>#Pokenvironmentally</h3>
         </div>
       </div>
       <div class="main-home__item">
@@ -182,13 +182,14 @@ else {
         <div class="container">
           <div class="main-ourorigin__box main-ourorigin__box--ml">
             <div class="main-general__title main-general__title--color title--left">
-              <h2>nuestros </h2>
-              <h2>valores</h2>
+            <h2>nuestros </h2>
+            <h2>valores</h2>
+              
             </div>
             <div class="main-ourorigin__description main-ourorigin__description--left">
               <p>En Poke creemos en la <strong>Excelencia</strong>, en retar los estándares de la industria para lograr una oferta diferenciada y el mejor servicio. Aprendemos de nuestros errores, trabajamos en equipo y estamos comprometidos con la mejora continua.</p>
               <p>Tenemos <strong>pasión</strong> por lo que hacemos, esto se refleja en el entusiasmo y energía de todo el equipo. Estamos <strong>comprometidos</strong> en pensar en grande, dar la mejor actitud y trabajar hacia un objetivo común.</p>
-              <p>En Poke empoderamos a nuestro talento para que sean <strong>creativos</strong>. Todas las ideas son bienvenidos y valoradas. Creemos en formar equipos diversos basados en una cultura de puertas abiertas y respeto.</p>
+              <p>En Poke empoderamos a nuestro talento para que sean <strong>creativos</strong>. Todas las ideas son bienvenidas y valoradas. Creemos en formar equipos diversos basados en una cultura de puertas abiertas y respeto.</p>
             </div>
           </div>
         </div>
@@ -241,12 +242,12 @@ else {
               <p>Nuestro talento más valioso es responsable,</p>
               <p>Nuestro talento más valioso es empoderado,</p>
               <p>Nuestro talento más valioso es apasionado.</p>
-              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
+              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
               
             </div>
             <div class="main-general__description main-general__description--font text-about--mobile d-lg-none d-md-block d-block">
               <p>Nuestro talento más valioso es jovial,Nuestro talento más valioso es diverso,Nuestro talento más valioso es determinado,Nuestro talento más valioso es responsable,Nuestro talento más valioso es empoderado,Nuestro talento más valioso es apasionado.</p>
-              <strong>Nuestro recurso más valioso es nuestro recurso más valioso.</strong>
+              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
             </div>
           </div>
         </div>

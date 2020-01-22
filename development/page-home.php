@@ -131,9 +131,9 @@ else {
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
     <?php if($mobile):?>
-      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestro compromiso">
+      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestros compromiso">
           <?php else:?>
-            <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg 1920w," alt="Nuestro compromiso">
+            <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg 1920w," alt="Nuestros compromiso">
           <?php endif;?>    
       <div class="container">
         <div class="main-why__content">
@@ -146,7 +146,7 @@ else {
             <div class="main-general__description main-general__description--font">
               <p>Alimentar el cambio para una generación sostenible.</p>
               <p>¿Por qué?</p>
-              <p>Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipo, nuestros clientes y el medio ambiente.</p>
+              <p>Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipos, nuestros clientes y el medio ambiente.</p>
               <p>Porque queremos disrumpir, reinventar y ser agentes de cambio.</p>
             </div>
             <div class="btn-box--about float-left">
@@ -196,8 +196,7 @@ else {
               <p>Poke significa “cortar” en hawaiano.
               Su significado le da vida a un plato típico de la gastronomía de Hawaii.
               El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.
-              Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico y sabores asiáticos
-                que provienen de Japón.</p>
+              Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico.</p>
             </div>
           </div>
         </div>

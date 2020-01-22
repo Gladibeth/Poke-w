@@ -114,7 +114,7 @@ else {
             <li class="nav-item">
               <div class="main-nav__btn">
                 <div class="btn__buy">
-                  <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy" href="<?php echo $link_rappi;?>" target="_blank">
+                  <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi" href="<?php echo $link_rappi;?>" target="_blank" id="menu-rappi">
                       <img itemprop = "logo"  src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg" alt="logo rappi">
                       <span class="line"></span>
                       Pide en línea
@@ -131,7 +131,7 @@ else {
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php echo bloginfo('url').'/';?>">
-            <img  itemprop = "logo" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg" alt="logo poke" class="active"> 
+            <img  itemprop = "logo" src="<?php echo get_template_directory_uri();?>/assets/img/Header/Logo-poke.svg" alt="logo poke" class="active"> 
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
               <span class="hamburger-box">
@@ -162,7 +162,7 @@ else {
             <li class="nav-item">
               <div class="main-nav__btn">
                 <div class="btn__buy">
-                 <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled btn--filled--buy" href="<?php echo $link_rappi;?>" target="_blank">
+                 <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi" href="<?php echo $link_rappi;?>" target="_blank" id="menu-rappi">
                       <img itemprop = "logo" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg" alt="logo Rappi">
                       <span class="line"></span>
                       Pide en línea
@@ -212,7 +212,7 @@ else {
             <li class="nav-item">
               <div class="main-nav__btn">
                 <div class="btn__buy">
-                  <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy" href="<?php echo $link_rappi;?>" target="_blank">
+                  <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi" href="<?php echo $link_rappi;?>" target="_blank" id="menu-rappi">
                       <img itemprop = "logo"  src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg" alt="logo rappi">
                       <span class="line"></span>
                       Pide en línea
