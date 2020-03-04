@@ -793,7 +793,11 @@ button:focus {
   }
 
   &.main-general__description--create {
-    margin-top: 40px;
+    margin: 40px;
+
+    @include respond-to(xs){
+      margin: 0 0 20px 0;
+    }
 
     p {
       color: $text;
@@ -1740,3 +1744,4 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 #wpcf7-f261-p27-o2 > div{
   display: none;
 }
+

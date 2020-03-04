@@ -1,4 +1,18 @@
 const url = window.location.origin;
+const URLactual = window.location;
+//página menu
+if (URLactual == 'http://localhost/poke/menu/#entradas'){
+  document.getElementById("entradas").click();
+  alert('1')
+}else if (URLactual == 'http://localhost/poke/menu/#pokeBowl'){
+  document.getElementById("pokeBowl").click();
+  alert('2')
+}else if (URLactual == 'http://localhost/poke/menu/#juiceBar'){
+  document.getElementById("juiceBar").click();
+  alert('3')
+}
+
+
 $(function () {
   'use strict'
 
@@ -63,6 +77,34 @@ switch (page) {
     break;
   case '/ubicaciones/':
       $(itemsNavbarMenu[2]).find('a').addClass('active');
+      //select
+var select = document.getElementById('ubications');
+select.addEventListener('change',
+  function(){
+
+  var selectedOption = this.options[select.selectedIndex];
+  console.log('#'+selectedOption.value);
+  $('.js-ubications').addClass( "js-displayNone" );
+  $('#'+selectedOption.value).removeClass( "js-displayNone" );
+  $('#modal-'+selectedOption.value).removeClass( "js-displayNone" );
+  
+});
+
+function scroll_top(){
+  var posicion = $(".js-scroll").offset().top;
+  $("div").animate({
+    scrollTop: 0
+  }, 2000); 
+}
+
+function scroll_bottom(){
+  var posicion = $(".js-scroll").offset().top;
+  console.log(posicion);
+  $("div").animate({
+      scrollTop: 660
+  }, 2000); 
+}
+
     break;
   case '/poke-puntos/':
       $(itemsNavbarMenu[3]).find('a').addClass('active');
@@ -245,34 +287,199 @@ function menu(e){
   }
 }
 
-//select
-var select = document.getElementById('ubications');
-select.addEventListener('change',
-  function(){
 
-  var selectedOption = this.options[select.selectedIndex];
-  console.log('#'+selectedOption.value);
-  $('.js-ubications').addClass( "js-displayNone" );
-  $('#'+selectedOption.value).removeClass( "js-displayNone" );
-  $('#modal-'+selectedOption.value).removeClass( "js-displayNone" );
   
-});
+  
 
-function scroll_top(){
-  var posicion = $(".js-scroll").offset().top;
-  $("div").animate({
-    scrollTop: 0
-  }, 2000); 
+const urlBowl = url + '/poke/wp-content/themes/theme/assets/img/Arma-tu-bowl/container';
+
+
+var auxBases = '';
+var auxTamano = '';
+var auxProteinas = '';
+var auxToppingsA = '';
+var auxToppingsB = '';
+var auxMixinsA = '';
+var auxMixinsB = '';
+var auxSalsas = '';
+var calorias = 0;
+var alergenos =  0;
+var superFoods =  0;
+var grasas =  0;
+
+
+function tamano(event){   
+    if(auxTamano == ''){
+        $('.bases.bowl').attr('onclick', "openTabs(event, 'Arma')");
+        $('.bases .bases').attr('onclick', "bases(this)");
+        $('.bases .bases').css('cursor','pointer')
+        $('.bases').css('opacity','1')
+        $('.bases').css('cursor','pointer')
+        $('.bases').css('pointer-events','inherit')
+        
+    }else{
+        minInformation(auxTamano.className);
+        if(auxBases != ''){
+            $('#container__tamano').css('display','none')
+        }
+    }
+    $('#container__logo--poke').css('display','none');
+    $(event).css('display','none');
+    $(auxTamano).css('display','block');
+    auxTamano = event;   
+    img(event,'1');
 }
 
-function scroll_bottom(){
-  var posicion = $(".js-scroll").offset().top;
-  console.log(posicion);
-  $("div").animate({
-      scrollTop: 660
-  }, 2000); 
+function bases(event){
+    $('#container__tamano').find('img').remove();
+    if(auxBases == ''){
+      $('.proteinas.bowl').attr('onclick', "openTabs(event, 'Arma')");
+      $('.proteinas .proteinas').attr('onclick', "proteina(this)");
+      $('.proteinas .proteinas').css('cursor','pointer')
+      $('.proteinas').css('opacity','1')
+      $('.proteinas').css('cursor','pointer')
+      $('.proteinas').css('pointer-events','inherit')
+    }else{
+        minInformation(auxBases.className);
+    }
+    $(event).css('display','none');
+    $(auxBases).css('display','flex');
+    auxBases = event;
+    img(event,'2');
 }
 
-  
-  
+function proteina(event){
+    if(auxProteinas == ''){
+      $('.mixins-a.bowl').attr('onclick', "openTabs(event, 'Arma')");
+      $('.mixins-a .mixins-a').attr('onclick', "mixinsA(this)");
+      $('.mixins-a .mixins-a').css('cursor','pointer')
+      $('.mixins-a').css('opacity','1')
+      $('.mixins-a').css('cursor','pointer')
+      $('.mixins-a').css('pointer-events','inherit')
 
+    }else{
+        minInformation(auxProteinas.className);
+    }
+    $(event).css('display','none');
+    $(auxProteinas).css('display','flex');
+    auxProteinas = event;
+    img(event,'9');
+}
+
+function mixinsA(event){
+    if(auxMixinsA == ''){
+        $('.mixins-b.bowl').attr('onclick', "openTabs(event, 'Arma')");
+        $('.mixins-b .mixins-b').attr('onclick', "mixinsB(this)");
+        $('.mixins-b .mixins-b').css('cursor','pointer')
+        $('.mixins-b').css('opacity','1')
+        $('.mixins-b').css('cursor','pointer')
+        $('.mixins-b').css('pointer-events','inherit')
+    }else{
+        minInformation(auxMixinsA.className);
+    }
+    $(event).css('display','none');
+    $(auxMixinsA).css('display','flex');
+    auxMixinsA = event;
+    img(event,'4');
+}
+
+function mixinsB(event){
+    if(auxMixinsB == ''){
+        $('.toppings-a.bowl').attr('onclick', "openTabs(event, 'Arma')");
+        $('.toppings-a .toppings-a').attr('onclick', "toppingsA(this)");
+        $('.toppings-a .toppings-a').css('cursor','pointer')
+        $('.toppings-a').css('opacity','1')
+        $('.toppings-a ').css('cursor','pointer')
+        $('.toppings-a').css('pointer-events','inherit')
+        
+    }else{
+        minInformation(auxMixinsA.className);
+    }
+    $(event).css('display','none');
+    $(auxMixinsA).css('display','flex');
+    auxMixinsA = event;
+    img(event,'5');
+}
+
+function toppingsA(event){
+    if(auxToppingsA == ''){
+        $('.toppings-b.bowl').attr('onclick', "openTabs(event, 'Arma')");
+        $('.toppings-b .toppings-b').attr('onclick', "toppingsB(this)");
+        $('.toppings-b .toppings-b').css('cursor','pointer')
+        $('.toppings-b').css('opacity','1')
+        $('.toppings-b ').css('cursor','pointer')
+        $('.toppings-b').css('pointer-events','inherit')
+    }else{
+        minInformation(auxToppingsA.className);
+    }
+    $(event).css('display','none');
+    $(auxToppingsA).css('display','flex');
+    auxToppingsA = event;
+    img(event,'6');
+}
+
+
+function toppingsB(event){
+    if(auxToppingsB == ''){
+        $('.salsas.bowl').attr('onclick', "openTabs(event, 'Arma')");
+        $('.salsas .salsas').attr('onclick', "salsas(this)");
+        $('.salsas .salsas').css('cursor','pointer')
+        $('.salsas').css('opacity','1')
+        $('.salsas').css('cursor','pointer')
+        $('.salsas').css('pointer-events','inherit')
+    }else{
+        minInformation(auxToppingsA.className);
+    }
+    $(event).css('display','none');
+    $(auxToppingsB).css('display','flex');
+    auxToppingsB = event;
+    img(event,'7');
+}
+
+function salsas(event){
+    if(auxSalsas != ''){
+        minInformation(auxToppingsA.className);   
+    }
+    $(event).css('display','none');
+    $(auxSalsas).css('display','flex');
+    auxSalsas = event;
+    img(event,'8');
+}
+
+
+function minInformation(classInformation){
+    dataInformation = classInformation.split(" ");
+    calorias -=  parseInt(dataInformation[0],10)
+    alergenos -=  parseInt(dataInformation[1],10)
+    superFoods -=  parseInt(dataInformation[2],10)
+    grasas -=  parseInt(dataInformation[3],10)
+}
+function sumInformation(classInformation,id){
+    dataInformation = classInformation.split(" ");
+    calorias +=  parseInt(dataInformation[0],10)
+    alergenos +=  parseInt(dataInformation[1],10)
+    superFoods +=  parseInt(dataInformation[2],10)
+    grasas +=  parseInt(dataInformation[3],10)
+    nameClase = dataInformation[4];
+
+    $('#container__information--calorias').text('-');
+    $('#container__information--alergenos').text('-');
+    $('#container__information--superFoods').text('-');
+    $('#container__information--grasas').text('-');
+    let name = $('#'+id+' .items__title').text();
+    $('.title__card--'+nameClase).text(name);
+}
+
+
+
+function img (event,zIndex){
+    sumInformation(event.className,event.id);
+    $('#container__'+nameClase).find('img').remove();
+    var image = new Image();
+    var src = urlBowl+'/'+nameClase+'/' + event.id + '.png';
+    image.src = src;
+    image.id =  event.id;
+    image.alt =  event.id;
+    image.style = 'z-index:'+zIndex+';';
+    document.getElementById('container__'+nameClase).append(image);
+}

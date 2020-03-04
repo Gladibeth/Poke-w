@@ -239,6 +239,9 @@ else {
                                   <p>Superfoods</p>
                                 </div> -->
                               </div>
+                              <div class="main-modal__text--calorias">
+                                <p>'Basadas en la porción de un plato mediano'</p>
+                              </div>
                               <div class="main-modal__description">
                                 <strong>Superfoods:</strong>
                                 <p><?php the_field('superfoods_menu');?></p>
@@ -371,6 +374,9 @@ else {
                                   <span class="badge badge-secondary"><img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-carne.svg"> / <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Menu/icono-pescado.svg"></span>
                                   <p>Superfoods</p>
                                 </div> -->
+                              </div>
+                              <div class="main-modal__text--calorias">
+                                <p>'Basadas en la porción de un plato mediano'</p>
                               </div>
                               <div class="main-modal__description">
                                 <strong>Superfoods:</strong>
