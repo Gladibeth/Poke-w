@@ -228,7 +228,7 @@ else {
       <div class="main-createpoke">
         <div class="main-pokedots__box">
           <div class="main-general__description main-general__description--create">
-            <p>Arma tu Poke Bowl y conoce toda la información nutritiva que que necesites.</p>
+            <p>Arma tu Poke Bowl y conoce toda la información nutritiva que necesites.</p>
           </div>
         </div>
         <div class="main-createpoke__content">

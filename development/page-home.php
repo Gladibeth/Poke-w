@@ -112,6 +112,7 @@ else {
     <?php endwhile; wp_reset_query();?>
     </div>
   </div>
+<?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <div class="">
     <div class="main-home__contentline">
       <div class="main-home__item">
@@ -140,18 +141,15 @@ else {
           <div class="main-why__item"></div>
           <div class="main-why__item">
             <div class="main-general__title">
-              <h2>nuestro </h2>
-              <h2>compromiso</h2>
+              <h2><?php the_field('titulo_seccion_1_home')?></h2>
             </div>
             <div class="main-general__description main-general__description--font">
-              <p>Alimentar el cambio para una generación sostenible.</p>
-              <p>¿Por qué?</p>
-              <p>Porque queremos generar consciencia, porque el cambio está en nuestras manos, porque creemos en el bienestar de nuestros equipos, nuestros clientes y el medio ambiente.</p>
-              <p>Porque queremos disrumpir, reinventar y ser agentes de cambio.</p>
+              <?php the_field('descripcion_seccion_1_home')?>
             </div>
             <div class="btn-box--about float-left">
-            <a class="btn_custom btn--large btn--filled btn--filled--mobile" href="<?php echo bloginfo('url').'/nosotros';?>">
-                Nosotros
+            <?php $link_two = get_field('boton_seccion_1_home'); ?>
+            <a class="btn_custom btn--large btn--filled btn--filled--mobile" href="<?php echo($link_two['url']); ?>">
+              <?php echo($link_two['title']); ?>
               </a>
           </div>
           </div>
@@ -188,15 +186,10 @@ else {
           <div class="main-why__item"></div>
           <div class="main-why__item">
             <div class="main-general__title main-general__title--font">
-              <h2>¿Qué es</h2>
-              <h2>poke?</h2>
+              <h2 class="w-75"><?php the_field('titulo_seccion_2_home')?></h2>
             </div>
             <div class="main-general__description main-general__description--font">
-              <br>
-              <p>Poke significa “cortar” en hawaiano.
-              Su significado le da vida a un plato típico de la gastronomía de Hawaii.
-              El poke es una combinación saludable de pescado fresco, sobre arroz de sushi, y una enorme variedad de toppings y salsas de autor.
-              Nuestra filosofía culinaria se centra en utilizar productos locales, siempre frescos y pescado sostenible de la más alta calidad. Combinamos de forma novedosa ingredientes nutritivos con lo mejor de la pesca del Pacífico.</p>
+              <?php the_field('descripcion_seccion_2_home')?>
             </div>
           </div>
         </div>
@@ -224,6 +217,7 @@ else {
         </div>
       </div>
     </div>
+    <?php endwhile; endif; ?>
     <?php echo do_shortcode('[instagram-feed showheader=false showbutton=false showfollow=false]'); ?>
   <?php get_footer(); ?> 
   <script> var variableJS = "contenido de la variable javascript"; </script>
