@@ -106,7 +106,7 @@ else {
                       <a itemprop="name" aria-controls="poke-city-u" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-city-u" id="poke-city-u-tab" role="tab">POKE CITY U</a>
                       <a itemprop="name" aria-controls="poke-parque-93" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-parque-93" id="poke-parque-93-tab" role="tab">PARQUE 93</a>
                       <a itemprop="name" aria-controls="poke-78" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-78" id="poke-78-tab" role="tab">POKE 78</a>
-                      <a itemprop="name" aria-controls="poke-aeropuerto" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-aeropuerto" id="poke-aeropuerto-tab" role="tab">POKE AEROPUERTO </a>
+                      <a itemprop="name" aria-controls="poke-aeropuerto" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-aeropuerto" id="poke-aeropuerto-tab" role="tab">AEROPUERTO </a>
                       <!-- <a itemprop="name" aria-controls="poke-centro-internacional" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-centro-internacional" id="poke-centro-internacional-tab" role="tab">POKE CENTRO INTERNACIONAL</a> -->
                     </div>
                   </div>
@@ -388,7 +388,7 @@ else {
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
                   <ul class="main-ubications__ul">
-                      <li itemprop = "name">POKE AEROPUERTO</li>
+                      <li itemprop = "name">AEROPUERTO</li>
                       <li itemprop = "streetAddress">Muelle Nacional puertas de embarque 71 - 89 </li>
                       <li>Horario</li>
                       <li>
@@ -398,8 +398,8 @@ else {
                           <li itemprop="openingHours">D: 07:00am - 9:00pm</li>
                         </ul>
                       </li>
-                      <li>Teléfono</li>
-                      <li itemprop="telephone">(031) 7434304</li>
+                      <!-- <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7434304</li> -->
                       <li>Celular</li>
                       <li itemprop="telephone">3024228669</li>
                     </ul>
@@ -407,7 +407,7 @@ else {
                   <div class="main-ubications__boxitem">
                     <div class="main-ubications__boxmap">
                       <div class="main-ubications__img">
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.948280608498!2d-74.0690700845733!3d4.603284596655847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99785d6b068b%3A0x8dd39a9866995e35!2sPoke%20City%20U!5e0!3m2!1ses!2sco!4v1576170576669!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7952.830112340708!2d-74.14643822367891!3d4.697729579166199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb6430f8607%3A0x8eea5954ef14af30!2sAeropuerto%20Internacional%20El%20Dorado!5e0!3m2!1ses!2sco!4v1583438728100!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                       </div>
                     </div>
                   </div>
