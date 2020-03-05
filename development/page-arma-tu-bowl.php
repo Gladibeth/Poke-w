@@ -200,7 +200,7 @@ else {
                   
               </div>
             </div>
-            <div id="container__information">
+            <!-- <div id="container__information">
               <div>
                 <span id="container__information--calorias" class="badge badge-secondary">-</span>
                 <p>Calorías</p>
@@ -217,7 +217,7 @@ else {
                 <span id="container__information--grasas" class="badge badge-secondary">-</span>
                 <p>Grasas</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -341,7 +341,7 @@ else {
               </div> 
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -358,7 +358,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -514,7 +514,7 @@ else {
 
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -531,7 +531,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -595,7 +595,7 @@ else {
           
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -612,7 +612,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -717,7 +717,7 @@ else {
               
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -734,7 +734,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -840,7 +840,7 @@ else {
             
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -857,7 +857,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -916,7 +916,7 @@ else {
             
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -933,7 +933,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
