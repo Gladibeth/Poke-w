@@ -106,8 +106,8 @@ else {
                       <a itemprop="name" aria-controls="poke-city-u" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-city-u" id="poke-city-u-tab" role="tab">POKE CITY U</a>
                       <a itemprop="name" aria-controls="poke-parque-93" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-parque-93" id="poke-parque-93-tab" role="tab">PARQUE 93</a>
                       <a itemprop="name" aria-controls="poke-78" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-78" id="poke-78-tab" role="tab">POKE 78</a>
-                      <!-- <a itemprop="name" aria-controls="poke-aeropuerto" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-aeropuerto" id="poke-aeropuerto-tab" role="tab">POKE AEROPUERTO </a>
-                      <a itemprop="name" aria-controls="poke-centro-internacional" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-centro-internacional" id="poke-centro-internacional-tab" role="tab">POKE CENTRO INTERNACIONAL</a> -->
+                      <a itemprop="name" aria-controls="poke-aeropuerto" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-aeropuerto" id="poke-aeropuerto-tab" role="tab">POKE AEROPUERTO </a>
+                      <!-- <a itemprop="name" aria-controls="poke-centro-internacional" aria-selected="false" class="link-ubication" data-toggle="pill" href="#poke-centro-internacional" id="poke-centro-internacional-tab" role="tab">POKE CENTRO INTERNACIONAL</a> -->
                     </div>
                   </div>
                 </div>
@@ -383,17 +383,25 @@ else {
 
               <div aria-labelledby="poke-aeropuerto-tab1" class="tab-pane fade show" id="poke-aeropuerto" role="tabpanel">
                 <div class="main-ubications__img">
-                  <img itemprop="image" alt="Poke comming soon" src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/coming-soon.png">
+                  <img itemprop="image" alt="Poke comming soon" src="<?php echo get_template_directory_uri();?>/assets/img/Ubication/poke-aeropuerto.jpg">
                 </div>
                 <div class="main-ubications__box">
                   <div class="main-ubications__boxitem">
-                    <ul class="main-ubications__ul">
+                  <ul class="main-ubications__ul">
                       <li itemprop = "name">POKE AEROPUERTO</li>
-                      <li itemprop = "streetAddress">AC 24 # 124 A - 80</li>
+                      <li itemprop = "streetAddress">Muelle Nacional puertas de embarque 71 - 89 </li>
                       <li>Horario</li>
-                      <li itemprop="openingHours">-</li>
+                      <li>
+                        <ul class="horario">
+                          <li itemprop="openingHours">L-J: 07:00am - 9:00pm</li>
+                          <li itemprop="openingHours">V-S: 07:00am - 10:00pm</li>
+                          <li itemprop="openingHours">D: 07:00am - 9:00pm</li>
+                        </ul>
+                      </li>
+                      <li>Teléfono</li>
+                      <li itemprop="telephone">(031) 7434304</li>
                       <li>Celular</li>
-                      <li>-</li>
+                      <li itemprop="telephone">3024228669</li>
                     </ul>
                   </div>
                   <div class="main-ubications__boxitem">

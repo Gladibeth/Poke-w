@@ -236,12 +236,12 @@ else {
               <h2>talento</h2>
             </div>
             <div class="main-general__description main-general__description--font d-none d-lg-block d-md-none">
-              <p>Nuestro talento más valioso es jovial,</p>
-              <p>Nuestro talento más valioso es diverso,</p>
-              <p>Nuestro talento más valioso es determinado,</p>
-              <p>Nuestro talento más valioso es responsable,</p>
-              <p>Nuestro talento más valioso es empoderado,</p>
-              <p>Nuestro talento más valioso es apasionado.</p>
+              <p>Nuestro talento es jovial,</p>
+              <p>Nuestro talento es diverso,</p>
+              <p>Nuestro talento es determinado,</p>
+              <p>Nuestro talento es responsable,</p>
+              <p>Nuestro talento es empoderado,</p>
+              <p>Nuestro talento es apasionado.</p>
               <strong>Nuestro talento es nuestro recurso más valioso.</strong>
               
             </div>

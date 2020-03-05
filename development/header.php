@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html  <?php language_attributes(); ?>>
-<head>
-	<meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
 	<title><?php echo bloginfo('name'); ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+	<meta name="ahrefs-site-verification" content="aeb656135caf0e11df0b22e648b54ba4b46d58c455d6fbe8ed5a3ce4e712cf24">
     <?php wp_head(); ?>
     <title>Poke</title>
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">

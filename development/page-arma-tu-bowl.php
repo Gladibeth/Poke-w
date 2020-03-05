@@ -249,7 +249,7 @@ else {
                 <div class="1.6 1 1 1 tamano " id="pequeno" onclick="tamano(this),openTabs(event, 'Arma')" style="z-index:1;">
                   <div class="tamano-flex">
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/tamano/pequeno.png" alt="">
-                    <p class="items__title">Pequeño</p>
+                    <p class="items__title">Mediano</p>
                   </div>
                 </div> 
                 <div class="2 2 2 2 tamano " id="grande" onclick="tamano(this),openTabs(event, 'Arma')" style="z-index:1;">

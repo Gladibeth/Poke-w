@@ -3,13 +3,10 @@ const URLactual = window.location;
 //página menu
 if (URLactual == 'http://localhost/poke/menu/#entradas'){
   document.getElementById("entradas").click();
-  alert('1')
 }else if (URLactual == 'http://localhost/poke/menu/#pokeBowl'){
   document.getElementById("pokeBowl").click();
-  alert('2')
 }else if (URLactual == 'http://localhost/poke/menu/#juiceBar'){
   document.getElementById("juiceBar").click();
-  alert('3')
 }
 
 
@@ -66,16 +63,16 @@ $('.input-file .btn').click(function () {
 const page = window.location.pathname;
 const itemsNavbarMenu = $('.navbar-nav.mr-autos li');
 switch (page) {
-  case '/':
+  case '/poke/':
     console.log('index')
     break;
-  case '/menu/':
+  case '/poke/menu/':
       $(itemsNavbarMenu[0]).find('a').addClass('active');
     break;
-  case '/nosotros/':
+  case '/poke/nosotros/':
       $(itemsNavbarMenu[1]).find('a').addClass('active');
     break;
-  case '/ubicaciones/':
+  case '/poke/ubicaciones/':
       $(itemsNavbarMenu[2]).find('a').addClass('active');
       //select
 var select = document.getElementById('ubications');
@@ -106,14 +103,14 @@ function scroll_bottom(){
 }
 
     break;
-  case '/poke-puntos/':
+  case '/poke/poke-puntos/':
       $(itemsNavbarMenu[3]).find('a').addClass('active');
     break;
-  case '/ambiental/':
+  case '/poke/ambiental/':
       $(itemsNavbarMenu[4]).find('a').addClass('active');
     break;
   
-  case '/escribenos/':
+  case '/poke/escribenos/':
     $('.nav-link-bc').css('text-shadow','none !important');
     //aceptar
       var truecheck = document.getElementById('aceptCheckbox');
@@ -126,7 +123,7 @@ function scroll_bottom(){
           $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
         }
       }
-  case '/trabaja-con-nosotros/':
+  case '/poke/trabaja-con-nosotros/':
     $('.nav-link-bc').css('text-shadow','none !important');
     //aceptar
       var truecheck = document.getElementById('aceptCheckbox');
@@ -139,7 +136,7 @@ function scroll_bottom(){
           $("input[value='Acepto_politica_de_privacidad_y_terminos_y_condiciones']").prop('checked', false);
         }
       }
-  case '/cuentanos-tu-experiencia/':
+  case '/poke/cuentanos-tu-experiencia/':
       $('.nav-link-bc').css('text-shadow','none !important');
       $('.navbar-fixed-js').addClass('fixed');
       /* let selectCiudad = $('#js-ciudad-form');
@@ -167,7 +164,7 @@ function scroll_bottom(){
           $("input[value='Deseo_recibir_mas_informacion_sobre_nuestros_establecimientos']").prop('checked', false);
         }
       }
-    case '/eventos/':
+    case '/poke/eventos/':
       $('.nav-link-bc').css('text-shadow','none !important');
       $('.navbar-fixed-js').addClass('fixed');
       let $countevent = 0;
@@ -291,7 +288,7 @@ function menu(e){
   
   
 
-const urlBowl = url + '/poke/wp-content/themes/theme/assets/img/Arma-tu-bowl/container';
+const urlBowl = url + '/wp-content/themes/theme/assets/img/Arma-tu-bowl/container';
 
 
 var auxBases = '';
