@@ -262,7 +262,7 @@ else {
         
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -279,7 +279,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
