@@ -382,6 +382,41 @@
     height: 100%;
   }
 }
+
+#nosotros{
+  .main-general__title.right{
+    width: 60%;
+    margin: auto;
+    margin-right: 0;
+    @include respond-to(sm){
+      width: 100%;
+    }
+    @media (max-width: 430px) {
+      width: 100%;
+    }
+    h2{
+      line-height: 1;
+    }
+  }
+  .main-general__title.left{
+    width: 60%;
+    margin: auto;
+    margin-left: 0;
+    @include respond-to(sm){
+      width: 100%;
+    }
+    @media (max-width: 430px) {
+      width: 100%;
+    }
+    h2{
+      line-height: 1;
+    }
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   .page-eventos{
     height: 275px !important;

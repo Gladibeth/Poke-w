@@ -96,24 +96,25 @@ else {
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
+          <?php
+            $image_desktop = get_field('imagen_seccion_1_nosotros');
+            $image_mobile = get_field('imagen_seccion_1_nosotros__mobile');
+          ?>
            <?php if($mobile):?>
-          <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg" alt="Nuestro origen">
+          <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
         <?php else:?>
-          <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-origen.jpg 1920w," alt="Nuestro origen">
+          <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
         <?php endif;?>  
         </div>
       </div>
       <div class="main-ourorigin__item main-ourorigin__item--top">
         <div class="container">
           <div class="main-ourorigin__box">
-            <div class="main-general__title main-general__title--color">
-              <h2>nuestro </h2>
-              <h2>origen</h2>
+            <div class="main-general__title main-general__title--color right">
+              <h2><?php the_field('titulo_seccion_1_nosotros');?></h2>
             </div>
             <div class="main-ourorigin__description">
-              <p>Poke nace como el proyecto de una pareja emprendedora, amantes de la gastronomía, y apasionados por generar experiencias memorables.</p>
-              <p>En Agosto de 2016 abren las puertas de su primer restaurante. Con esfuerzo y perseverancia pronto se posicionó como la primera cadena de restaurantes "healthy, fast-casual" en Colombia.</p>
-              <p>anhelando ser la generación del cambio, Poke busca promover una cultura de alimentación consciente, siendo sostenibles con el medio ambiente y generando impacto social.</p>
+              <?php the_field('descripcion_seccion_1_nosotros');?>
             </div>
           </div>
         </div>
@@ -121,30 +122,39 @@ else {
     </div>
   </div>
   <div class="main-content__img main-img__desktop">
-     <?php if($mobile):?>
-      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg" alt="Nosotros">
+    <?php
+      $image_desktop = get_field('imagen_seccion_1_nosotros_container');
+      $image_mobile = get_field('imagen_seccion_1_nosotros_container_movil');
+    ?>
+    <?php if($mobile):?>
+      <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['url'];?>">
     <?php else:?>
-      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nosotros-grande.jpg 1920w," alt="Nosotros">
-    <?php endif;?>
+      <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+    <?php endif;?>  
   </div>
   <div class="main-ourorigin">
     <div class="main-ourorigin__content">
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestra-promesa.jpg" alt="Nuestra promesa">
+        <?php
+            $image_desktop = get_field('imagen_seccion_2_nosotros');
+            $image_mobile = get_field('imagen_seccion_2_nosotros__mobile');
+          ?>
+           <?php if($mobile):?>
+          <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
+        <?php else:?>
+          <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+        <?php endif;?>  
         </div>
       </div>
       <div class="main-ourorigin__item main-ourorigin__item--top">
         <div class="container">
           <div class="main-ourorigin__box">
-            <div class="main-general__title main-general__title--color" id="nuestra-promesa">
-              <h2>nuestra </h2>
-              <h2>PROMESA</h2>
+            <div class="main-general__title main-general__title--color right" id="nuestra-promesa">
+            <h2><?php the_field('titulo_seccion_2_nosotros');?></h2>
             </div>
             <div class="main-ourorigin__description">
-              <p>Nuestros ingredientes son frescos, toda nuestra materia prima llega a diario a nuestros restaurantes para asegurar la más alta calidad.</p>
-              <p>Las recetas y preparaciones se realizan todos los días en nuestras cocinas. Los cortes y procesos se hacen de manera artesanal por nuestro equipo. Ningún producto contiene aditivos, preservantes, o colorantes.</p>
-              <p>En Poke trabajamos de la mano de nuestros aliados y proveedores locales en busca de ofrecer los mejores ingredientes para cada preparación.</p>
+              <?php the_field('descripcion_seccion_2_nosotros');?>
             </div>
           </div>
         </div>
@@ -175,22 +185,27 @@ else {
       <div class="main-ourorigin__item main-ourorigin__item--top">
         <div class="container">
           <div class="main-ourorigin__box main-ourorigin__box--ml">
-            <div class="main-general__title main-general__title--color title--left">
-            <h2>nuestros </h2>
-            <h2>valores</h2>
+            <div class="main-general__title main-general__title--color title--left left">
+            <h2><?php the_field('titulo_seccion_3_nosotros');?></h2>
               
             </div>
             <div class="main-ourorigin__description main-ourorigin__description--left">
-              <p>En Poke creemos en la <strong>Excelencia</strong>, en retar los estándares de la industria para lograr una oferta diferenciada y el mejor servicio. Aprendemos de nuestros errores, trabajamos en equipo y estamos comprometidos con la mejora continua.</p>
-              <p>Tenemos <strong>pasión</strong> por lo que hacemos, esto se refleja en el entusiasmo y energía de todo el equipo. Estamos <strong>comprometidos</strong> en pensar en grande, dar la mejor actitud y trabajar hacia un objetivo común.</p>
-              <p>En Poke empoderamos a nuestro talento para que sean <strong>creativos</strong>. Todas las ideas son bienvenidas y valoradas. Creemos en formar equipos diversos basados en una cultura de puertas abiertas y respeto.</p>
+              <?php the_field('descripcion_seccion_3_nosotros');?>
             </div>
           </div>
         </div>
       </div>
       <div class="main-ourorigin__item">
         <div class="main-ourorigin__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/About/nuestros-valores.jpg" alt="Nuestros valores">
+        <?php
+            $image_desktop = get_field('imagen_seccion_3_nosotros');
+            $image_mobile = get_field('imagen_seccion_3_nosotros__mobile');
+          ?>
+           <?php if($mobile):?>
+          <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
+        <?php else:?>
+          <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+        <?php endif;?>  
         </div>
       </div>
     </div>
@@ -216,32 +231,27 @@ else {
   <div class="main-about main-about--mobile main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
-    <?php if($mobile):?>
-      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>//assets/img/About/nuestro-talento.jpg" alt="Nuestro talento">
-    <?php else:?>
-      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>//assets/img/About/nuestro-talento.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/About/nuestro-talento.jpg 1920w," alt="Nuestro talento">
-    <?php endif;?>  
+      <?php
+        $image_desktop = get_field('imagen_seccion_4_nosotros');
+        $image_mobile = get_field('imagen_seccion_4_nosotros__mobile');
+      ?>
+      <?php if($mobile):?>
+        <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
+      <?php else:?>
+        <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+      <?php endif;?>  
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>
           <div class="main-why__item">
             <div class="main-general__title">
-              <h2>nuestro </h2>
-              <h2>talento</h2>
+              <h2><?php the_field('titulo_seccion_4_nosotros');?></h2>
             </div>
             <div class="main-general__description main-general__description--font d-none d-lg-block d-md-none">
-              <p>Nuestro talento es jovial,</p>
-              <p>Nuestro talento es diverso,</p>
-              <p>Nuestro talento es determinado,</p>
-              <p>Nuestro talento es responsable,</p>
-              <p>Nuestro talento es empoderado,</p>
-              <p>Nuestro talento es apasionado.</p>
-              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
-              
+              <?php the_field('descripcion_seccion_4_nosotros');?>
             </div>
             <div class="main-general__description main-general__description--font text-about--mobile d-lg-none d-md-block d-block">
-              <p>Nuestro talento más valioso es jovial,Nuestro talento más valioso es diverso,Nuestro talento más valioso es determinado,Nuestro talento más valioso es responsable,Nuestro talento más valioso es empoderado,Nuestro talento más valioso es apasionado.</p>
-              <strong>Nuestro talento es nuestro recurso más valioso.</strong>
+              <?php the_field('descripcion_seccion_4_movil');?>
             </div>
           </div>
         </div>
