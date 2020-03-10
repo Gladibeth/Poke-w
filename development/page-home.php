@@ -220,4 +220,3 @@ else {
     <?php endwhile; endif; ?>
     <?php echo do_shortcode('[instagram-feed showheader=false showbutton=false showfollow=false]'); ?>
   <?php get_footer(); ?> 
-  <script> var variableJS = "contenido de la variable javascript"; </script>

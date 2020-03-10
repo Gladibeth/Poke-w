@@ -164,6 +164,8 @@ function scroll_bottom(){
           $("input[value='Deseo_recibir_mas_informacion_sobre_nuestros_establecimientos']").prop('checked', false);
         }
       }
+    case '/poke/fep/':
+      $('.nav-link-bc').css('text-shadow','none !important');
     case '/poke/eventos/':
       $('.nav-link-bc').css('text-shadow','none !important');
       $('.navbar-fixed-js').addClass('fixed');

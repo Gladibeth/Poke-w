@@ -7,6 +7,34 @@
   }
 }
 
+.main-ambiental--fep {
+  background-color: $fep;
+
+  @include respond-to(xs) {
+    padding: 25px 25px 0;
+  }
+  @include respond-to(xxs) {
+    padding: 0;
+  }
+}
+.container__img--fep{
+  .row{
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .img__fep{
+    padding: 0 4%;
+    &:nth-child(3){
+      align-self: flex-start;
+    }
+  }
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .main-ambiental__content {
   margin-top: 30px;
 }

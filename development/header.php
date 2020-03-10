@@ -9,6 +9,7 @@
 	<meta name="ahrefs-site-verification" content="aeb656135caf0e11df0b22e648b54ba4b46d58c455d6fbe8ed5a3ce4e712cf24">
     <?php wp_head(); ?>
     <title>Poke</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bpf1deu.css">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet">
 </head>
@@ -127,7 +128,7 @@ else {
         </div>
       </div>
     </nav>
-    <?php elseif (($url == '/eventos/') || ($url == '/escribenos/') ||  ($url == '/trabaja-con-nosotros/') ||  ($url == '/cuentanos-tu-experiencia/')):?>
+    <?php elseif (($url == '/eventos/') || ($url == '/escribenos/') || ($url == '/concurso-fep/')  ||  ($url == '/trabaja-con-nosotros/') ||  ($url == '/cuentanos-tu-experiencia/')):?>
       <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js fixed-bc sombra">
       <div class="container">
         <div class="main-brand">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main-work main-about__mt">
+<div class="main-work">
     <div class="container">
       <div class="main-ambiental">
         <div class="main-pokedots__box">

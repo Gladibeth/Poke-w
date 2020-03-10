@@ -363,12 +363,97 @@ textarea {
 
 .main-experience{
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 100%;
   @include respond-to(sm){
     grid-template-columns: 100%;  
   }
   @include respond-to(xs){
     grid-template-columns: 100%;  
+  }
+}
+
+
+.main-pokedots__box--fep{
+  padding: 50px 10%;
+}
+.fep{
+  font-family: titling-gothic-fb;
+  h1{
+    color: white;
+    font-family: titling-gothic-fb;
+    @include respond-to(sm) {
+      font-size: 30px !important;
+    }
+    @include respond-to(xs) {
+      font-size: 25px !important;
+    }
+  }
+  .main-general__description--fep{
+    color: white;
+    font-family: titling-gothic-fb;
+    p{
+      color: inherit !important;
+      @include respond-to(sm) {
+        font-size: 16px !important;
+      }
+      @include respond-to(xs) {
+        font-size: 14px !important;
+      }
+    }
+    h2{
+      @include respond-to(sm) {
+        font-size: 16px !important;
+      }
+      @include respond-to(xs) {
+        font-size: 14px !important;
+      }
+    }
+    h3{
+      @include respond-to(sm) {
+        font-size: 20px !important;
+      }
+      @include respond-to(xs) {
+        font-size: 20px !important;
+        text-align: center;
+      }
+    }
+    ol{
+      font-family: Raleway;
+      width: 80%;
+      margin: auto;
+      @include respond-to(xs) {
+        width: 100% !important;
+      }
+      li{
+        line-height: 2.6;
+        letter-spacing: 0.66px;
+          @include respond-to(xs) {
+            line-height: 2!important;
+          }
+      }
+    }
+    .ganador{
+      color: inherit !important;
+      @include respond-to(xs) {
+        width: 100%!important;
+      }
+    }
+    .ganador__h2{
+      @include respond-to(sm) {
+        font-size: 14px!important;
+      }
+      @include respond-to(xs) {
+        font-size: 14px!important;
+        text-align: initial!important;
+      }
+    }
+    .ganador__terminos-condiciones{
+      font-size: 12px;
+      text-align: initial;
+      a{
+        color: white;
+      }
+    }
   }
 }
 

@@ -54,12 +54,6 @@ $mobile = true;
 else {
   $desktop = true;
 }  
-
-  if ($mobile){
-    $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
-  }else{
-    $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
-  }
 ?> 
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
 <div id="nosotros" itemscope itemtype = "http://schema.org/Restaurant" >  
