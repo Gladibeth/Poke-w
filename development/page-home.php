@@ -131,11 +131,15 @@ else {
   <div class="main-about main-about--mobile main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--about main-about__contentimg--why">
-    <?php if($mobile):?>
-      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg" alt="Nuestros compromiso">
-          <?php else:?>
-            <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/nuestro-compromiso.jpg 1920w," alt="Nuestros compromiso">
-          <?php endif;?>    
+    <?php
+        $image_desktop = get_field('imagen_seccion_1_home');
+        $image_mobile = get_field('imagen_seccion_1_home__mobile');
+      ?>
+      <?php if($mobile):?>
+        <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
+      <?php else:?>
+        <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+      <?php endif;?>  
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>
@@ -176,11 +180,15 @@ else {
   <div class="main-about main-about__height que-es-poke" id="que-es-poke">
     <div class="mask"></div>
     <div class="main-about__contentimg main-about__contentimg--why main-about__contentimg--why--mobile">
-    <?php if($mobile):?>
-      <img itemprop = "img" src="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg" alt="que es poke">
-    <?php else:?>
-      <img itemprop = "img" srcset="<?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke-mobile.jpg 1024w, <?php echo get_template_directory_uri();?>/assets/img/Home/que-es-poke.jpg 1920w," alt="que es poke">
-    <?php endif;?>
+      <?php
+        $image_desktop = get_field('imagen_seccion_2_home_');
+        $image_mobile = get_field('imagen_seccion_2_home__mobile');
+      ?>
+      <?php if($mobile):?>
+        <img itemprop = "img" src="<?php echo $image_mobile['url']?>" alt="<?php echo $image_mobile['alt'];?>">
+      <?php else:?>
+        <img itemprop = "img" srcset="<?php echo $image_mobile['url'];?> 1024w, <?php echo $image_desktop['url'];?> 1920w," alt="<?php echo $image_desktop['alt'];?>">
+      <?php endif;?>  
       <div class="container">
         <div class="main-why__content">
           <div class="main-why__item"></div>
@@ -218,5 +226,5 @@ else {
       </div>
     </div>
     <?php endwhile; endif; ?>
-    <?php echo do_shortcode('[instagram-feed showheader=false showbutton=false showfollow=false]'); ?>
+    <?php the_content();?>
   <?php get_footer(); ?> 
