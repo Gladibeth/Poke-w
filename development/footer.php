@@ -4,11 +4,11 @@
         <div class="main-footer__item">
           <div class="main-footer__box">
             <div class="main-footer__logo">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Footer/logo-poke-footer.png">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Footer/logo-poke-footer.png" alt="logo poke">
             </div>
             <div class="main-footer__boxsmall">
               <div class="main-footer__boxitem">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/Endeavor.svg">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/Endeavor.svg" alt="logo endeavor">
               </div>
               <div class="main-footer__boxitem">
                 <div class="main-footer__text">
