@@ -98,9 +98,16 @@ else {
   <?php else:?>
     <a itemprop="name" aria-controls="<?php global $post; echo $post_slug = $post->post_name;?>" aria-selected="true" class="link-ubication" data-toggle="pill" href="<?php global $post; echo '#'.$post_slug = $post->post_name;?>" id="<?php global $post; echo $post_slug = $post->post_name.'-tab';?>" role="tab"><?php the_title();?></a>
   <?php endif; $count++;?>
-<?php     
-    endwhile;
-  }
+<?php endwhile; ?>
+    </div>
+  </div>
+  </div>     
+  <?php if($count >= 5):?>    
+    <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
+      <i class=""></i>
+    </a>
+  <?php endif;?> 
+  <?php }
 ?>
 
 <?php 
@@ -184,12 +191,7 @@ $count=0;
                   <div class="card-body">
                     <div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
                       <?php city($category->term_taxonomy_id);?>
-                    </div>
-                  </div>
-                </div>         
-                  <a class="last-icons link-ubication link-ubication--border" onclick="scroll_bottom()">
-                  <i class=""></i>
-                  </a>
+                    
               </div>
             </div>
             <?php $count +=1;?>
