@@ -9,6 +9,15 @@ if (URLactual == 'http://localhost/poke/menu/#entradas'){
   document.getElementById("juiceBar").click();
 }
 
+$( document ).ready(function() {
+  if( !localStorage.getItem('session') ){
+    $('#modalCoockie').modal('toggle');
+    // estableces el localstorage en 1 para que no se vuelva a cumplir la condicion
+    localStorage.setItem('session',1);
+  }
+});
+ 
+
 
 $(function () {
   'use strict'

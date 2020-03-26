@@ -1243,6 +1243,43 @@ button:focus {
   }
 }
 
+#modalCoockie{
+  color: #686868;
+  font-family: Roboto,sans-serif;
+  .btn{
+    background: #686868;
+    color: white;
+  }
+  a{
+    color: #686868;
+    font-family: Roboto,sans-serif;
+    text-decoration: underline;
+  }
+  h5{
+    font-size: 25px;
+  }
+
+  & .modal-header{
+    justify-content: center !important;
+  }
+  .modal-content{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    @include respond-to(sm){
+      width: 80%;
+    }
+     @include respond-to(xs){
+      width: 100%;
+    }
+  }
+  .modal-footer{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+}
 
 .main-footer {
   background-color: $white;
