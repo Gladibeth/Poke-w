@@ -1415,7 +1415,10 @@ button:focus {
 
 .main-footer__redes {
   display: flex;
-
+  p{
+    display: flex;
+    margin: 0;
+  }
   a {
     margin-right: 22px;
     transition: 0.3s ease-in-out;

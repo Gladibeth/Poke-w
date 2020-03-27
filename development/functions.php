@@ -26,13 +26,20 @@ if(function_exists('register_sidebar')) {
   register_sidebar(array(
     'name'          => 'Footer columna 1',
     'id'            => 'footer-1',
-    'description' => 'Dirección',
+    'description' => 'Columna 1',
 
   ));
+
   register_sidebar(array(
     'name'          => 'Footer columna 2',
     'id'            => 'footer-2',
-    'description' => 'Listado footer 2',
+    'description' => 'Columna 2',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Footer columna 3',
+    'id'            => 'footer-3',
+    'description' => 'Listado footer 3',
     'before_title'  => "<div class='main-footer__title'><p>",
     'after_title'   => '</p></div>',
 
@@ -45,12 +52,13 @@ if(function_exists('register_sidebar')) {
     'after_title'   => '</p></div>',
 
   ));
-  // register_sidebar(array(
-  //   'name'          => 'Footer email',
-  //   'id'            => 'footer-email',
-  //   'description' => 'Footer email',
 
-  // ));
+  register_sidebar(array(
+    'name'          => 'Footer email',
+    'id'            => 'footer-email',
+    'description' => 'email',
+
+  ));
 
   register_sidebar(array(
     'name'          => 'Footer copyright',

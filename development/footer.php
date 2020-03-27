@@ -23,60 +23,26 @@
       <div class="main-footer__content">
         <div class="main-footer__item">
           <div class="main-footer__box">
-            <div class="main-footer__logo">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Footer/logo-poke-footer.png" alt="logo poke">
-            </div>
-            <div class="main-footer__boxsmall">
-              <div class="main-footer__boxitem">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Home/Endeavor.svg" alt="logo endeavor">
-              </div>
-              <div class="main-footer__boxitem">
-                <div class="main-footer__text">
-                  <p>Part of Foodie S.A.S <br> & Endeavor company</p>
-                </div>
-              </div>
-            </div>
-            <div class="main-footer__address">
-              <?php if (!dynamic_sidebar('Footer columna 1')); ?>
-            </div>
+            <?php if (!dynamic_sidebar('Footer columna 1')); ?>
           </div>
         </div>
         <div class="main-footer__item">
           <div class="main-footer__box">
-            
             <?php if (!dynamic_sidebar('Footer columna 2')); ?>
           </div>
         </div>
         <div class="main-footer__item">
           <div class="main-footer__box">
-            <div class="main-footer__title">
-              <p>NEWSLETTER</p>
-            </div>
-            <div class="main-footer__subscribe">
-              <?php echo do_shortcode('[contact-form-7 id="260" title="NEWSLETTER"]'); ?>
-            </div>
+              <?php if (!dynamic_sidebar('Footer columna 3')); ?>
           </div>
         </div>
         <div class="main-footer__item">
           <div class="main-footer__box">
             <div class="main-footer__redes">
-              <a href="https://www.facebook.com/pokecolombia.co" target="_blank">
-                <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Home/f_logo_RGB-White_1024_1024.svg" alt="logo facebook">
-                </a>
-              <a href="https://www.instagram.com/poke.colombia/?hl=es-la" target="_blank">
-                <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Home/glyph-logo_IG-01.svg" alt="logo instagram">
-                </a>
-              <a href="https://co.linkedin.com/company/poke-colombia" target="_blank">
-                <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Home/linked in logo circulo.svg" alt="logo Linkedin">
-                </a>
-              <a href="https://twitter.com/ColombiaPoke" target="_blank">
-                <img src="https://sisenoragencia.com/poke/wp-content/themes/theme/assets/img/Home/Twitter_Logo_WhiteOnImage.svg" alt="logo twitter">
-              </a>
+              <?php if (!dynamic_sidebar('Footer Redes sociales')); ?>
             </div>
             <div class="main-footer__email">
-              <a href="mailto:servicio@pokecolombia.co">
-                <p>servicio@pokecolombia.co</p>
-              </a>
+                <?php if (!dynamic_sidebar('Footer email')); ?>
             </div>
           </div>
         </div>
