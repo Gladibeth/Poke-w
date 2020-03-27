@@ -187,7 +187,7 @@ else {
             <div class="main-creategeneral__box">
               <div class="main-creategeneral__img">
                 <div id="container__logo--poke">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/container/logo-poke.png" alt=""> 
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/container/logo-poke.png" alt="logo poke"> 
                 </div>
                 <div id="container__tamano"></div>
                   <div id="container__bases"></div>
@@ -240,7 +240,7 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
@@ -248,13 +248,13 @@ else {
               <div class="main-grid__content tamano bowl">
                 <div class="1.6 1 1 1 tamano " id="pequeno" onclick="tamano(this),openTabs(event, 'Arma')" style="z-index:1;">
                   <div class="tamano-flex">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/tamano/pequeno.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/tamano/pequeno.png" alt="Tamano Mediano">
                     <p class="items__title">Mediano</p>
                   </div>
                 </div> 
                 <div class="2 2 2 2 tamano " id="grande" onclick="tamano(this),openTabs(event, 'Arma')" style="z-index:1;">
                   <div class="tamano-flex">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/tamano/grande.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/tamano/grande.png" alt="Tamano Grande">
                     <p class="items__title">Grande</p>
                   </div>
                 </div> 
@@ -301,44 +301,47 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bases bowl">
-              <div class="1.6 1 1 1 bases" id="arroz-de-coco" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-coco.png" alt="">  
-                <p class="items__title">Arroz de coco</p>
-              </div> 
-              <div class="2 2 2 2 bases" id="arroz-de-coliflor" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-coliflor.png" alt=""> 
-                <p class="items__title">Arroz de coliflor</p>
-              
-              </div> 
               <div class="3 3 3 3 bases" id="arroz-de-sushi" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-sushi.png" alt=""> 
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-sushi.png" alt="Arroz de sushi"> 
                 <p class="items__title">Arroz de sushi</p>
-              </div> 
+              </div>
 
+              <div class="1.6 1 1 1 bases" id="arroz-de-coco" style="z-index:1;" >
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-coco.png" alt="Arroz de coco">  
+                <p class="items__title">Arroz de coco</p>
+              </div>
+
+              
               <div class="4 4 4 4 bases" id="arroz-integral" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-integral.png" alt=""> 
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-integral.png" alt="Arroz integral"> 
                 <p class="items__title">Arroz integral</p>
               </div> 
-
+              
               <div class="5 5 5 5 bases" id="mix-greens" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/mix-greens.png" alt=""> 
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/mix-greens.png" alt="Mix greens"> 
                 <p class="items__title">Mix greens</p>
+              </div> 
+              
+              <div class="7 7 7 7 bases" id="quinoa" style="z-index:1;" >
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/quinoa.png" alt="Quinoa"> 
+                <p class="items__title">Quinoa</p>
+              </div> 
+              
+              <div class="2 2 2 2 bases" id="arroz-de-coliflor" style="z-index:1;" >
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/arroz-de-coliflor.png" alt="Arroz de coliflor"> 
+                <p class="items__title">Arroz de coliflor</p>
               </div> 
 
               <div class="6 6 6 6 bases" id="noodles" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/noodles.png" alt=""> 
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/noodles.png" alt="Noodles"> 
                 <p class="items__title">Noodles</p>
               </div> 
 
-              <div class="7 7 7 7 bases" id="quinoa" style="z-index:1;" >
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/bases/quinoa.png" alt=""> 
-                <p class="items__title">Quinoa</p>
-              </div> 
             </div>
           </div>
           <!-- <div class="main-create-boxdetails">
@@ -379,59 +382,63 @@ else {
               </div>
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl proteinas">
               <div class="1 1 1 1 proteinas" id="atun">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/atun.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/atun.png" alt="Atún">  
                 <p class="items__title">Atún</p>
               </div> 
-              <div class="2 2 2 2 proteinas" id="camarones">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/camarones.png" alt="">  
-                <p class="items__title">Camarones</p>
-            
+
+              <div class="9 9 9 9 proteinas" id="salmon">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/salmon.png" alt="Salmón">  
+                  <p class="items__title">Salmón</p>
               </div> 
+
+              <div class="7 7 7 7 proteinas" id="pescado-blanco">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pescado-blanco.png" alt="Pescado blanco">  
+                  <p class="items__title">Pescado blanco</p>
+              </div> 
+
+              <div class="5 5 5 5 proteinas" id="palmito-de-cangrejo">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/palmito-de-cangrejo.png" alt="almito de cangrejo">  
+                <p class="items__title">Palmito de cangrejo</p>
+              </div> 
+
+              <div class="10 10 10 10 proteinas" id="tofu">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/tofu.png" alt="Tofu">  
+                  <p class="items__title">Tofu</p>
+              </div> 
+
+              <div class="6 6 6 6 proteinas" id="pescado-apanado">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pescado-apanado.png" alt="Pescado apanado">  
+                <p class="items__title">Pescado apanado</p>
+              </div> 
+
+              <div class="8 8 8 8 proteinas" id="pollo-a-la-plancha">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pollo-a-la-plancha.png" alt="Pollo a la plancha">  
+                  <p class="items__title">Pollo a la plancha</p>
+              </div> 
+
+              <div class="2 2 2 2 proteinas" id="camarones">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/camarones.png" alt="Camarones Salteados">  
+                <p class="items__title">Camarones salteados</p>
+              </div> 
+
               <div class="3 3 3 3 proteinas" id="camarones-crispy">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/camarones-crispy.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/camarones-crispy.png" alt="Camarones crispy">  
                 <p class="items__title">Camarones crispy</p>
               
               </div> 
               <div class="4 4 4 4 proteinas" id="cerdo-desmechado">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/cerdo-desmechado.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/cerdo-desmechado.png" alt="Cerdo desmechado">  
                 <p class="items__title">Cerdo desmechado</p>
               </div> 
-              <div class="5 5 5 5 proteinas" id="palmito-de-cangrejo">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/palmito-de-cangrejo.png" alt="">  
-                <p class="items__title">Palmito de cangrejo</p>
-              </div> 
-              <div class="6 6 6 6 proteinas" id="pescado-apanado">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pescado-apanado.png" alt="">  
-                <p class="items__title">Pescado apanado</p>
-            
-              </div> 
-              <div class="7 7 7 7 proteinas" id="pescado-blanco">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pescado-blanco.png" alt="">  
-                  <p class="items__title">Pescado blanco</p>
-              </div> 
-              <div class="8 8 8 8 proteinas" id="pollo-a-la-plancha">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/pollo-a-la-plancha.png" alt="">  
-                  <p class="items__title">Pollo a la plancha</p>
-              </div> 
-              <div class="9 9 9 9 proteinas" id="salmon">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/salmon.png" alt="">  
-                  <p class="items__title">Salmón</p>
-              </div> 
-              <div class="10 10 10 10 proteinas" id="tofu">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/proteinas/tofu.png" alt="">  
-                  <p class="items__title">Tofu</p>
-              </div> 
-
-          
             </div>
           </div>
-          <div class="main-create-boxdetails">
+          <!-- <div class="main-create-boxdetails">
             <div class="main-create-details">
               <span class="badge badge-secondary">-</span>
               <p>Calorías</p>
@@ -448,7 +455,7 @@ else {
               <span class="badge badge-secondary">-</span>
               <p>Superfoods</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -470,48 +477,51 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl mixins-a">
 
-
             <div class="1 1 1 1 mixins-a" id="aguacate-a" style="z-index:1;"> 
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/aguacate.png" alt="">  
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/aguacate.png" alt="Aguacate">  
               <p class="items__title">Aguacate</p>         
-          </div> 
-            <div class="2 2 2 2 mixins-a" id="cascos-de-naranja-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/cascos-de-naranja.png" alt="">  
-              <p class="items__title">Cascos de naranja</p>
-            </div> 
-            <div class="3 3 3 3 mixins-a" id="maiz-tierno-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/maiz-tierno.png" alt="">  
-              <p class="items__title">Maiz tierno</p>
-              </div> 
-            <div class="4 4 4 4 mixins-a" id="mango-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/mango.png" alt="">  
-              <p class="items__title">Mango</p>
-            </div> 
+            </div>
+            
             <div class="5 5 5 5 mixins-a" id="pepino-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/pepino.png" alt="">  
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/pepino.png" alt="Pepino">  
               <p class="items__title">Pepino</p>
             </div> 
-            <div class="6 6 5 6 mixins-a" id="repollo-morado-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt="">  
-              <p class="items__title">Repollo morado</p>
-            </div>
-            <div class="7 7 7 7 mixins-a" id="zanahoria-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zanahoria.png" alt="">  
-              <p class="items__title">Zanahoria</p>
+
+            <div class="4 4 4 4 mixins-a" id="mango-a" style="z-index:1;">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/mango.png" alt="Mango">  
+              <p class="items__title">Mango</p>
             </div> 
             
             <div class="8 8 8 8 mixins-a" id="zucchini-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zucchini.png" alt="">  
-              <p class="items__title">Zucchini</p>
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zucchini.png" alt="Zucchini">  
+              <p class="items__title">Zucchini noodles</p>
             </div> 
 
+            <div class="7 7 7 7 mixins-a" id="zanahoria-a" style="z-index:1;">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zanahoria.png" alt="Zanahoria">  
+              <p class="items__title">Zanahoria</p>
+            </div>
 
+            <div class="6 6 5 6 mixins-a" id="repollo-morado-a" style="z-index:1;">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt=">Repollo morado">  
+              <p class="items__title">Repollo morado</p>
+            </div>
+
+            <div class="2 2 2 2 mixins-a" id="cascos-de-naranja-a" style="z-index:1;">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/cascos-de-naranja.png" alt="Cascos de naranja">  
+              <p class="items__title">Cascos de naranja</p>
+            </div> 
+            <div class="3 3 3 3 mixins-a" id="maiz-tierno-a" style="z-index:1;">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/maiz-tierno.png" alt="Maiz tierno">  
+              <p class="items__title">Maiz tierno</p>
+              </div> 
+          
             </div>
           </div>
           <!-- <div class="main-create-boxdetails">
@@ -553,46 +563,51 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl mixins-b">
               <div class="1 1 5 7 mixins-b" id="aguacate-b" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/aguacate.png" alt="">  
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/aguacate.png" alt="Aguacate">  
               <p class="items__title">Aguacate</p>   
               </div> 
-              <div class="1 1 5 7 mixins-b" id="cascos-de-naranja-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/cascos-de-naranja.png" alt="">  
-                <p class="items__title">Cascos de naranja</p>   
-              </div> 
-              <div class="1 1 5 7 mixins-b" id="maiz-tierno-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/maiz-tierno.png" alt="">  
-                <p class="items__title">Maiz tierno</p>
-              </div> 
-              <div class="1 1 5 7 mixins-b" id="mango-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/mango.png" alt="">  
-                <p class="items__title">Mango</p>
-              </div> 
+
               <div class="1 1 5 7 mixins-b" id="pepino-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/pepino.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/pepino.png" alt="pepino">  
                 <p class="items__title">pepino</p>
               </div> 
-              <div class="1 1 5 7 mixins-b" id="repollo-morado-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt="">  
-                <p class="items__title">Repollo morado</p>
-              </div>
+
+              <div class="1 1 5 7 mixins-b" id="mango-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/mango.png" alt="Mango">  
+                <p class="items__title">Mango</p>
+              </div> 
+
+              <div class="1 1 5 7 mixins-b" id="zucchini-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zucchini.png" alt="Zucchini">  
+                <p class="items__title">Zucchini noodles</p>
+              </div> 
+
               <div class="1 1 5 7 mixins-b" id="zanahoria-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zanahoria.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zanahoria.png" alt="Zanahoria">  
                 <p class="items__title">Zanahoria</p>
               </div> 
-              <div class="1 1 5 7 mixins-b" id="zucchini-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/zucchini.png" alt="">  
-                <p class="items__title">Zucchini</p>
+              
+              <div class="1 1 5 7 mixins-b" id="repollo-morado-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt="Repollo morado">  
+                <p class="items__title">Repollo morado</p>
+              </div>
+
+              <div class="1 1 5 7 mixins-b" id="cascos-de-naranja-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/cascos-de-naranja.png" alt="Cascos de naranja">  
+                <p class="items__title">Cascos de naranja</p>   
               </div> 
 
-
-          
+              <div class="1 1 5 7 mixins-b" id="maiz-tierno-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/maiz-tierno.png" alt="Maiz tierno">  
+                <p class="items__title">Maiz tierno</p>
+              </div> 
+                        
             </div>
           </div>
           <!-- <div class="main-create-boxdetails">
@@ -634,87 +649,105 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl toppings-a">
-              <div class="1 1 1 1 toppings-a" id="cebolla-crunch-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-crunch.png" alt="">  
-                <p class="items__title">Cebolla crunch</p>   
-              
-              </div> 
-              <div class="2 2 2 2 toppings-a" id="cebolla-morada-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-morada.png" alt="">  
-                <p class="items__title">Cebolla morada</p>   
-              </div> 
-              <div class="3 3 3 3 toppings-a" id="cebollin-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebollin.png" alt="">  
-                <p class="items__title">Cebollín</p>   
-              </div> 
-              <div class="4 4 4 4 toppings-a" id="cilantro-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cilantro.png" alt="">  
-                <p class="items__title">Cilantro</p>   
-              </div> 
-              <div class="5 5 5 5 toppings-a" id="edamame-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/edamame.png" alt="">  
-                <p class="items__title">Edamame</p>   
-              </div> 
-              <div class="6 6 6 6 toppings-a" id="gari-rosado-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/gari-rosado.png" alt="">  
-                <p class="items__title">Gari rosado</p>   
-              </div>
-              <div class="7 7 7 7 toppings-a" id="jalapeno-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/jalapeno.png" alt="">  
-                <p class="items__title">Jalapeño</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="maiz-tostado-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/maiz-tostado.png" alt="">  
-                <p class="items__title">Maíz tostado</p>   
-              </div> 
               <div class="8 8 8 8 toppings-a" id="mani-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/mani.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/mani.png" alt="Maní">  
                 <p class="items__title">Maní</p>   
               </div> 
-              <div class="8 8 8 8 toppings-a" id="masago-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/masago.png" alt="">  
-                <p class="items__title">Masago</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="pimenton-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/pimenton.png" alt="">  
-                <p class="items__title">Pimentón</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="queso-crema-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/queso-crema.png" alt="">  
-                <p class="items__title">Queso crema</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="rabano-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/rabano.png" alt="">  
-                <p class="items__title">Rabano</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="seaweed-salad-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/seaweed-salad.png" alt="">  
-                <p class="items__title">Seaweed salad</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="veggie-chips-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-chips.png" alt="">  
-                <p class="items__title">Veggie chips</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="veggie-tempura-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-tempura.png" alt="">  
-                <p class="items__title">Veggie tempura</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="wasabi-ball-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-ball.png" alt="">  
-                <p class="items__title">Wasabi ball</p>   
-              </div> 
-              <div class="8 8 8 8 toppings-a" id="wasabi-crunch-a" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-crunch.png" alt="">  
-                <p class="items__title">Wasabi crunch</p>   
+
+              <div class="8 8 8 8 toppings-a" id="ajonjoli-a" style="z-index:1;">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/ajonjoli.png" alt="Ajonjolí">  
+                  <p class="items__title">Ajonjolí</p>   
               </div> 
 
-        
-              
+              <div class="3 3 3 3 toppings-a" id="cebollin-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebollin.png" alt="Cebollín">  
+                <p class="items__title">Cebollín</p>   
+              </div>
+
+              <div class="7 7 7 7 toppings-a" id="jalapeno-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/jalapeno.png" alt="Jalapeño">  
+                <p class="items__title">Jalapeño</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="masago-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/masago.png" alt="Masago">  
+                <p class="items__title">Masago</p>   
+              </div> 
+
+              <div class="4 4 4 4 toppings-b" id="cilantro-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cilantro.png" alt="Cilantro">  
+                <p class="items__title">Cilantro</p>   
+              </div> 
+
+              <div class="5 5 5 5 toppings-b" id="edamame-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/edamame.png" alt="Edamame">  
+                <p class="items__title">Edamame</p>  
+              </div> 
+
+              <div class="2 2 2 2 toppings-a" id="cebolla-morada-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-morada.png" alt="Cebolla morada">  
+                <p class="items__title">Cebolla morada</p>   
+              </div> 
+
+              <div class="6 6 6 6 toppings-a" id="gari-rosado-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/gari-rosado.png" alt="Gari rosado">  
+                <p class="items__title">Gari rosado</p>   
+              </div>
+
+              <div class="1 1 1 1 toppings-a" id="cebolla-crunch-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-crunch.png" alt="Cebolla crunch">  
+                <p class="items__title">Cebolla crunch</p>        
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="veggie-tempura-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-tempura.png" alt="Veggie tempura">  
+                <p class="items__title">Veggie tempura</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="maiz-tostado-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/maiz-tostado.png" alt="Maíz tostado">  
+                <p class="items__title">Maíz tostado</p>   
+              </div> 
+                  
+              <div class="8 8 8 8 toppings-a" id="pimenton-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/pimenton.png" alt="Pimentón">  
+                <p class="items__title">Pimentón</p>   
+              </div>
+
+              <div class="8 8 8 8 toppings-a" id="rabano-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/rabano.png" alt="Rabano">  
+                <p class="items__title">Rábano</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="seaweed-salad-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/seaweed-salad.png" alt="Seaweed salad">  
+                <p class="items__title">Seaweed salad</p>   
+              </div>
+
+              <div class="8 8 8 8 toppings-a" id="queso-crema-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/queso-crema.png" alt="Queso crema">  
+                <p class="items__title">Queso crema</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="veggie-chips-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-chips.png" alt="Veggie chips">  
+                <p class="items__title">Veggie chips</p>   
+              </div> 
+                  
+              <div class="8 8 8 8 toppings-a" id="wasabi-ball-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-ball.png" alt="Wasabi ball">  
+                <p class="items__title">Wasabi ball</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-a" id="wasabi-crunch-a" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-crunch.png" alt="Wasabi crunch">  
+                <p class="items__title">Wasabi crunch</p>   
+              </div> 
             </div>
           </div>
           <!-- <div class="main-create-boxdetails">
@@ -756,88 +789,106 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl toppings-b">
 
-              <div class="1 1 1 1 toppings-b" id="cebolla-crunch-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-crunch.png" alt="">  
-                <p class="items__title">Cebolla crunch</p>   
+              <div class="8 8 8 8 toppings-b" id="mani-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/mani.png" alt="Maní">  
+                <p class="items__title">Maní</p>   
               </div> 
-              <div class="2 2 2 2 toppings-b" id="cebolla-morada-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-morada.png" alt="">  
-                <p class="items__title">Cebolla morada</p>   
+
+              <div class="8 8 8 8 toppings-b" id="ajonjoli-b" style="z-index:1;">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/ajonjoli.png" alt="Ajonjolí">  
+                  <p class="items__title">Ajonjolí</p>   
               </div> 
+
               <div class="3 3 3 3 toppings-b" id="cebollin-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebollin.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebollin.png" alt="Cebollín">  
                 <p class="items__title">Cebollín</p>   
+              </div>
+
+              <div class="7 7 7 7 toppings-b" id="jalapeno-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/jalapeno.png" alt="Jalapeño">  
+                <p class="items__title">Jalapeño</p>   
               </div> 
+
+              <div class="8 8 8 8 toppings-b" id="masago-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/masago.png" alt="Masago">  
+                <p class="items__title">Masago</p>   
+              </div> 
+
               <div class="4 4 4 4 toppings-b" id="cilantro-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cilantro.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cilantro.png" alt="Cilantro">  
                 <p class="items__title">Cilantro</p>   
               </div> 
+
               <div class="5 5 5 5 toppings-b" id="edamame-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/edamame.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/edamame.png" alt="Edamame">  
                 <p class="items__title">Edamame</p>  
               </div> 
+
+              <div class="2 2 2 2 toppings-b" id="cebolla-morada-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-morada.png" alt="Cebolla morada">  
+                <p class="items__title">Cebolla morada</p>   
+              </div> 
+
               <div class="6 6 6 6 toppings-b" id="gari-rosado-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/gari-rosado.png" alt="">  
-                <p class="items__title">Gari rosado</p>  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/gari-rosado.png" alt="Gari rosado">  
+                <p class="items__title">Gari rosado</p>   
               </div>
-              <div class="7 7 7 7 toppings-b" id="jalapeno-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/jalapeno.png" alt="">  
-                <p class="items__title">Jalapeño</p>  
+
+              <div class="1 1 1 1 toppings-b" id="cebolla-crunch-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cebolla-crunch.png" alt="Cebolla crunch">  
+                <p class="items__title">Cebolla crunch</p>        
               </div> 
-              <div class="8 8 8 8 toppings-b" id="maiz-tostado-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/maiz-tostado.png" alt="">  
-                <p class="items__title">Maíz tostado</p>  
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="mani-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/mani.png" alt="">  
-                <p class="items__title">Maní</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="masago-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/masago.png" alt="">  
-                <p class="items__title">Masago</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="pimenton-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/pimenton.png" alt="">  
-                <p class="items__title">Pimentón</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="queso-crema-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/queso-crema.png" alt="">  
-                <p class="items__title">Queso crema</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="rabano-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/rabano.png" alt="">  
-                <p class="items__title">Rabano</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="seaweed-salad-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/seaweed-salad.png" alt="">  
-                <p class="items__title">Seaweed salad</p>
-              </div> 
-              <div class="8 8 8 8 toppings-b" id="veggie-chips-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-chips.png" alt="">  
-                <p class="items__title">Veggie chips</p>
-              </div> 
+
               <div class="8 8 8 8 toppings-b" id="veggie-tempura-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-tempura.png" alt="">  
-                <p class="items__title">Veggie tempura</p>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-tempura.png" alt="Veggie tempura">  
+                <p class="items__title">Veggie tempura</p>   
               </div> 
+
+              <div class="8 8 8 8 toppings-b" id="maiz-tostado-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/maiz-tostado.png" alt="Maíz tostado">  
+                <p class="items__title">Maíz tostado</p>   
+              </div> 
+                  
+              <div class="8 8 8 8 toppings-b" id="pimenton-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/pimenton.png" alt="Pimentón">  
+                <p class="items__title">Pimentón</p>   
+              </div>
+
+              <div class="8 8 8 8 toppings-b" id="rabano-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/rabano.png" alt="Rabano">  
+                <p class="items__title">Rábano</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-b" id="seaweed-salad-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/seaweed-salad.png" alt="Seaweed salad">  
+                <p class="items__title">Seaweed salad</p>   
+              </div>
+
+              <div class="8 8 8 8 toppings-b" id="queso-crema-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/queso-crema.png" alt="Queso crema">  
+                <p class="items__title">Queso crema</p>   
+              </div> 
+
+              <div class="8 8 8 8 toppings-b" id="veggie-chips-b" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/veggie-chips.png" alt="Veggie chips">  
+                <p class="items__title">Veggie chips</p>   
+              </div> 
+                  
               <div class="8 8 8 8 toppings-b" id="wasabi-ball-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-ball.png" alt="">  
-                <p class="items__title">Wasabi ball</p>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-ball.png" alt="Wasabi ball">  
+                <p class="items__title">Wasabi ball</p>   
               </div> 
+
               <div class="8 8 8 8 toppings-b" id="wasabi-crunch-b" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-crunch.png" alt="">  
-                <p class="items__title">Wasabi crunch</p>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/wasabi-crunch.png" alt="Wasabi crunch">  
+                <p class="items__title">Wasabi crunch</p>   
               </div> 
-
-
-
-            
             </div>
           </div>
           <!-- <div class="main-create-boxdetails">
@@ -879,38 +930,41 @@ else {
               <div class="container__icons">
                 <div class="main-createpoke__icon" onclick="openTabs(event, 'Arma')">
                 
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/Create_Poke/exit.png" alt="exit">
                 </div>
               </div>
             </div>
             <div class="main-createpoke__boxgrid bowl salsas">
+              <div class="5 5 5 5 salsas" id="teriyaki" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/teriyaki.png" alt="Teriyaki">  
+                <p class="items__title">Teriyaki</p>  
+              </div> 
 
+              <div class="6 6 6 6 salsas" id="wasabi-cream" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/wasabi-cream.png" alt="Wasabi cream">  
+                <p class="items__title">Wasabi cream</p>  
+              </div>
+              
+              <div class="3 3 3 3 salsas" id="sriracha-mayo" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/sriracha-mayo.png" alt="Sriracha mayo">  
+                <p class="items__title">Sriracha mayo</p>  
+              </div> 
+
+              <div class="2 2 2 2 salsas" id="leche-de-tigre" style="z-index:1;">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/leche-de-tigre.png" alt="Leche de tigre">  
+                <p class="items__title">Leche de tigre</p>  
+              </div> 
+              
               <div class="1 1 1 1 salsas" id="chipotle-mayo" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/chipotle-mayo.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/chipotle-mayo.png" alt="Chipotle mayo">  
                 <p class="items__title">Chipotle mayo</p>  
               
               
               </div> 
-              <div class="2 2 2 2 salsas" id="leche-de-tigre" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/leche-de-tigre.png" alt="">  
-                <p class="items__title">Leche de tigre</p>  
-              </div> 
-              <div class="3 3 3 3 salsas" id="sriracha-mayo" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/sriracha-mayo.png" alt="">  
-                <p class="items__title">Sriracha mayo</p>  
-              </div> 
               <div class="4 4 4 4 salsas" id="suero-costeño" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/suero-costeño.png" alt="">  
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/suero-costeño.png" alt="Suero costeño">  
                 <p class="items__title">Suero costeño</p>  
               </div> 
-              <div class="5 5 5 5 salsas" id="teriyaki" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/teriyaki.png" alt="">  
-                <p class="items__title">Teriyaki</p>  
-              </div> 
-              <div class="6 6 6 6 salsas" id="wasabi-cream" style="z-index:1;">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/salsas/wasabi-cream.png" alt="">  
-                <p class="items__title">Wasabi cream</p>  
-              </div>
           
 
             

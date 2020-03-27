@@ -299,7 +299,7 @@ function menu(e){
   
   
 
-const urlBowl = url + '/wp-content/themes/theme/assets/img/Arma-tu-bowl/container';
+const urlBowl = url + '/poke/wp-content/themes/theme/assets/img/Arma-tu-bowl/container';
 
 
 var auxBases = '';
