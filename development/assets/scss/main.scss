@@ -663,9 +663,9 @@ button:focus {
   }
 
   &.main-general__title--dots {
-    h2 {
+    h1,h2 {
       letter-spacing: 5.25px;
-      @include font(50px, $bold);
+      @include font(40px, $bold);
       color: $text;
       text-align: left;
       text-transform: uppercase;
@@ -682,9 +682,9 @@ button:focus {
         @include font(35px, $bold);
       }
     }
-    h1 {
+    /* h1 {
       letter-spacing: 5.25px;
-      @include font(50px, $bold);
+      @include font(40px, $bold);
       color: $text;
       text-align: left;
       text-transform: uppercase;
@@ -700,13 +700,14 @@ button:focus {
       @include respond-to(xs) {
         @include font(35px, $bold);
       }
-    }
+    } */
   }
 }
 
 .main-general__description {
   margin-top: 20px;
   p {
+    font-size: 16px !important;
     letter-spacing: 2.45px;
     color: $white;
     @include font(20px, $medium);
