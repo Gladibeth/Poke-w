@@ -7,7 +7,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle">Aviso</h5>
       </div>
       <div class="modal-body">
-        <p>El sitio web URL <a href="https://pokecolombia.co/" rel="noopener noreferrer">https://www.pokecolombia.co/</a> ,utiliza cookies propias y de terceros para recopilar información que ayuda a optimizar su visita a sus páginas web. No se utilizarán las cookies para recoger información de carácter personal.</p> 
+        <p>El sitio web URL <a href="https://pokecolombia.co/" rel="noopener noreferrer">https://www.pokecolombia.co/</a>, utiliza cookies propias y de terceros para recopilar información que ayuda a optimizar su visita a sus páginas web. No se utilizarán las cookies para recoger información de carácter personal.</p> 
         <p class="m-0">Para permitir el uso de las cookies, dar clic en ACEPTAR</p>
         <p>Encontrará más información en nuestra <a href="https://www.pokecolombia.co/wp-content/uploads/2020/03/politica-de-cookies.pdf" target="_blank" rel="noopener noreferrer">Política de Cookies.</a></p>
       </div>
