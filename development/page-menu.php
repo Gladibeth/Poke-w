@@ -54,12 +54,6 @@ $mobile = true;
 else {
   $desktop = true;
 }  
-
-  if ($mobile){
-    $link_rappi = 'https://bnc.lt/scMl/pMH3RUMe61';
-  }else{
-    $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
-  }
 ?>  
 <div id="banner-entradas" class="about-banner about-banner__imgmobile js-hiddenMenu" >
   <?php 
@@ -250,12 +244,19 @@ else {
                                 <p itemprop = "price">COP: <?php the_field('precio_menu');?></p>
                               </div>
                               <div class="btn-modal">
-                                
-                                <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
+                                <?php if ($mobile):?>
+                                  <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo get_field('link_plato_poke_rappi_app_menu');?>">
                                     <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
-                                    <span class="line"></span>
-                                    Pide en línea
+                                  <span class="line"></span>
+                                  Pide en línea
                                   </a>
+                                <?php else:?>
+                                  <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo get_field('link_plato_poke_rappi_web_menu');?>">
+                                    <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                                  <span class="line"></span>
+                                  Pide en línea
+                                  </a>
+                                <?php endif;?>
                               </div>
                             </div>
                           </div>
@@ -397,12 +398,19 @@ else {
                               <?php endif;?>
                             </div>
                             <div class="btn-modal">
-                              
-                              <a class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo $link_rappi;?>">
-                                  <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
-                                  <span class="line"></span>
-                                  Pide en línea
+                            <?php if ($mobile):?>
+                              <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo get_field('link_plato_poke_rappi_app_menu');?>">
+                                <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                              <span class="line"></span>
+                              Pide en línea
                               </a>
+                            <?php else:?>
+                              <a itemprop = "url" class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi" id="<?php echo the_title(); ?>" style="width:165px;" target="_blank" href="<?php echo get_field('link_plato_poke_rappi_web_menu');?>">
+                                <img itemprop = "image" src="<?php echo get_template_directory_uri();?>/assets/img/Home/R Rappi.svg">
+                              <span class="line"></span>
+                              Pide en línea
+                              </a>
+                            <?php endif;?>
                             </div>
                           </div>
                         </div>
