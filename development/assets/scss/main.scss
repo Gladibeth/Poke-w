@@ -703,11 +703,17 @@ button:focus {
     } */
   }
 }
-
+#poke-puntos-content{
+  .main-general__description {
+    margin-top: 20px;
+    p { 
+      font-size: 16px !important;
+    }  
+  }
+}
 .main-general__description {
   margin-top: 20px;
   p {
-    font-size: 16px !important;
     letter-spacing: 2.45px;
     color: $white;
     @include font(20px, $medium);

@@ -9,6 +9,8 @@ if (URLactual == 'http://localhost/poke/menu/#entradas'){
   document.getElementById("juiceBar").click();
 }
 
+
+//cookies
 $( document ).ready(function() {
   if( !localStorage.getItem('session') ){
     $('#modalCoockie').modal('toggle');

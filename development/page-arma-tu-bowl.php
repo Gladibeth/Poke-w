@@ -509,7 +509,7 @@ else {
             </div>
 
             <div class="6 6 5 6 mixins-a" id="repollo-morado-a" style="z-index:1;">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt=">Repollo morado">  
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/mixins/repollo-morado.png" alt="Repollo morado">  
               <p class="items__title">Repollo morado</p>
             </div>
 
@@ -679,12 +679,12 @@ else {
                 <p class="items__title">Masago</p>   
               </div> 
 
-              <div class="4 4 4 4 toppings-b" id="cilantro-b" style="z-index:1;">
+              <div class="4 4 4 4 toppings-a" id="cilantro-a" style="z-index:1;">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/cilantro.png" alt="Cilantro">  
                 <p class="items__title">Cilantro</p>   
               </div> 
 
-              <div class="5 5 5 5 toppings-b" id="edamame-b" style="z-index:1;">
+              <div class="5 5 5 5 toppings-a" id="edamame-a" style="z-index:1;">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Arma-tu-bowl/items/toppings/edamame.png" alt="Edamame">  
                 <p class="items__title">Edamame</p>  
               </div> 
