@@ -10,15 +10,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 4px;
-  -webkit-transition: color .2s ease-in-out,
-    background-color .2s ease-in-out,
-    border-color .2s ease-in-out;
-  -o-transition: color .2s ease-in-out,
-    background-color .2s ease-in-out,
-    border-color .2s ease-in-out;
-  transition: color .2s ease-in-out,
-    background-color .2s ease-in-out,
-    border-color .2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
   font-family: $Ostrich;
@@ -34,7 +31,6 @@
   padding: 5px 12px;
   // min-width: 85px;
   font-size: 17px;
-
 }
 
 .btn--large {
@@ -58,7 +54,7 @@ button {
 }
 
 .btn--filled {
-  color: #4A4A4A;
+  color: #4a4a4a;
   background: $white;
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -66,24 +62,24 @@ button {
   &:hover {
     text-decoration: none;
     background: $white;
-    color: #4A4A4A;
+    color: #4a4a4a;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }
-  &.btn--filled--mobile{
-    @include respond-to(sm){
-      color:#fff;
+  &.btn--filled--mobile {
+    @include respond-to(sm) {
+      color: #fff;
       background: #686868;
     }
-    @include respond-to(xs){
-      color:#fff;
+    @include respond-to(xs) {
+      color: #fff;
       background: #686868;
     }
   }
-  &.btn-event{
+  &.btn-event {
     border-radius: 0px !important;
     width: 127px;
     height: 40px;
@@ -93,11 +89,11 @@ button {
     font-size: 20px;
     margin-top: 10px;
     padding: 5px;
-    @include respond-to(sm){
+    @include respond-to(sm) {
       color: #fff;
       background-color: #686868;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       color: #fff;
       background-color: #686868;
     }
@@ -120,18 +116,16 @@ button {
     // border-radius: 5px;
     color: #000;
 
-    @include respond-to(sm){
+    @include respond-to(sm) {
       font-size: 20px;
       padding: 5px 15px;
-  
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       font-size: 20px;
       padding: 5px 15px;
-  
     }
 
-    &:hover{
+    &:hover {
       background-color: #000;
       color: #fff;
     }
@@ -149,7 +143,7 @@ button {
   text-transform: lowercase;
   font-weight: $superBold;
   font-family: $Ostrich;
-  @include respond-to(xs){
+  @include respond-to(xs) {
     width: 180px;
   }
 
@@ -183,8 +177,7 @@ button {
   }
 }
 
-
-.btn--filled-modalgray{
+.btn--filled-modalgray {
   color: $white;
   background: #686868;
   border: 1px solid transparent;
@@ -206,7 +199,6 @@ button {
     transition: 0.3s ease-in-out;
   }
 }
-
 
 .btn--filled-footer {
   color: $white;
@@ -280,6 +272,9 @@ button {
   margin-top: 10px;
 }
 
+.btn-rappi-home img {
+  margin-bottom: 5px;
+}
 .btn-form__center {
   width: 100%;
   justify-content: center;
@@ -307,8 +302,8 @@ button {
   margin-left: 5px;
 }
 
-.btn__tabs{
-  @include respond-to(xs){
+.btn__tabs {
+  @include respond-to(xs) {
     display: flex;
     justify-content: center;
   }
