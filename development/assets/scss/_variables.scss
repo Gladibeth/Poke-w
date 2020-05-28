@@ -1,108 +1,100 @@
 // Medias querys
-$breakpoints: ('xxs': "(min-width: 0px) and (max-width: 480px)",
-  'xs': "(min-width: 0px) and (max-width: 767px)",
-  'sm': "(min-width: 768px) and (max-width: 991px)",
-  'md': "(min-width: 992px) and (max-width: 1199px)",
-  'lg': "(min-width: 1200px) and (max-width: 1600px)",
-  'xl': "(min-width: 1601px) and (max-width: 2048px)",
+$breakpoints: (
+  "xxs": "(min-width: 0px) and (max-width: 480px)",
+  "xs": "(min-width: 0px) and (max-width: 767px)",
+  "sm": "(min-width: 768px) and (max-width: 991px)",
+  "md": "(min-width: 992px) and (max-width: 1199px)",
+  "lg": "(min-width: 1200px) and (max-width: 1600px)",
+  "xl": "(min-width: 1601px) and (max-width: 2048px)"
 ) !default;
 
-
-
 @font-face {
-  font-family: 'Ostrich Sans';
-  src: url('../fonts/OstrichSans-Heavy.woff2') format('woff2'),
-    url('../fonts/OstrichSans-Heavy.woff') format('woff');
+  font-family: "Ostrich Sans";
+  src: url("../fonts/OstrichSans-Heavy.woff2") format("woff2"),
+    url("../fonts/OstrichSans-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url('../fonts/AcuminPro-BoldItalic.woff2') format('woff2'),
-      url('../fonts/AcuminPro-BoldItalic.woff') format('woff');
+  font-family: "Acumin Pro";
+  src: url("../fonts/AcuminPro-BoldItalic.woff2") format("woff2"),
+    url("../fonts/AcuminPro-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url('../fonts/AcuminPro-Italic.woff2') format('woff2'),
-      url('../fonts/AcuminPro-Italic.woff') format('woff');
+  font-family: "Acumin Pro";
+  src: url("../fonts/AcuminPro-Italic.woff2") format("woff2"),
+    url("../fonts/AcuminPro-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
-      url('../fonts/AcuminPro-Regular.woff') format('woff');
+  font-family: "Acumin Pro";
+  src: url("../fonts/AcuminPro-Regular.woff2") format("woff2"),
+    url("../fonts/AcuminPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
-      url('../fonts/AcuminPro-Bold.woff') format('woff');
+  font-family: "Acumin Pro";
+  src: url("../fonts/AcuminPro-Bold.woff2") format("woff2"),
+    url("../fonts/AcuminPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('../fonts/SegoeUI-BoldItalic.woff2') format('woff2'),
-      url('../fonts/SegoeUI-BoldItalic.woff') format('woff');
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI-BoldItalic.woff2") format("woff2"),
+    url("../fonts/SegoeUI-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('../fonts/SegoeUI.woff2') format('woff2'),
-      url('../fonts/SegoeUI.woff') format('woff');
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI.woff2") format("woff2"),
+    url("../fonts/SegoeUI.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
-      url('../fonts/SegoeUI-Bold.woff') format('woff');
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"),
+    url("../fonts/SegoeUI-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('../fonts/SegoeUI-Italic.woff2') format('woff2'),
-      url('../fonts/SegoeUI-Italic.woff') format('woff');
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI-Italic.woff2") format("woff2"),
+    url("../fonts/SegoeUI-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-
-
-
-
-
 
 // Fonts
-$Raleway:'Raleway',
-sans-serif;
-$Roboto:'Roboto',
-sans-serif;
-$Ostrich:'Ostrich Sans';
-$Acumin: 'Acumin Pro';
-$Segoe: 'Segoe UI';
+$Raleway: "Raleway", sans-serif;
+$Roboto: "Roboto", sans-serif;
+$Ostrich: "Ostrich Sans";
+$Acumin: "Acumin Pro";
+$Segoe: "Segoe UI";
 
 $light: 300;
 $regular: 400;
@@ -115,18 +107,18 @@ $superBold: 900;
 $white: #fff;
 $black: #000;
 $contact: #161743;
-$text:#686868;
+$text: #686868;
 $bcMision: #4a23de;
-$bcVision:#692be6;
-$orange: #DF8239;
+$bcVision: #692be6;
+$orange: #df8239;
 $gradient: linear-gradient(45deg, #eb4a82 0%, #5225f8 100%);
 $recutex: #ebe5e2;
 $recutex2: #d9c8c0;
-$green:#94b99e;
+$green: #94b99e;
 $line: rgba(112, 112, 112, 0.35);
-$fep: #FC3D2D;
+$fep: #fc3d2d;
 
-$past: #f75d63;
+$past: #e61e25;
 // Slick
 $arrow-color: #f50000;
 $arrow-size: 25px;
