@@ -267,14 +267,14 @@ if ($tablet_browser > 0) {
                                                     <div class="btn-modal">
 
                                                         <a itemprop="url"
-                                                            class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi"
-                                                            id="<?php echo the_title(); ?>" style="width:165px;"
+                                                            class="btn-btn_custom btn--medium btn--filled-modalgray btn-domicilios btn-rappi"
+                                                            id="<?php echo the_title(); ?>" style="width:140px;"
                                                             target="_blank"
                                                             href="<?php echo get_field('link_plato_poke_rappi_web_menu'); ?>">
                                                             <img itemprop="image"
                                                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg">
                                                             <span class="line"></span>
-                                                            Pide en línea
+                                                            Agregar
                                                         </a>
 
                                                     </div>
@@ -432,14 +432,14 @@ if ($tablet_browser > 0) {
                                                     <div class="btn-modal">
 
                                                         <a itemprop="url"
-                                                            class="btn-btn_custom btn--medium btn--filled-modalgray btn-rappi"
-                                                            id="<?php echo the_title(); ?>" style="width:165px;"
+                                                            class="btn-btn_custom btn--medium btn--filled-modalgray btn-domicilios btn-rappi"
+                                                            id="<?php echo the_title(); ?>" style="width:140px;"
                                                             target="_blank"
                                                             href="<?php echo get_field('link_plato_poke_rappi_web_menu'); ?>">
                                                             <img itemprop="image"
                                                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg">
                                                             <span class="line"></span>
-                                                            Pide en línea
+                                                            Agregar
                                                         </a>
 
                                                     </div>

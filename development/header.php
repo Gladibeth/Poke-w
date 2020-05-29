@@ -61,7 +61,7 @@
                         <li class="nav-item">
                             <div class="main-nav__btn">
                                 <div class="btn__buy">
-                                    <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi-home btn-rappi"
+                                    <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
                                         href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"
@@ -122,7 +122,7 @@
                             <div class="main-nav__btn">
                                 <div class="btn__buy">
                                     <a itemprop="url"
-                                        class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi-home btn-rappi"
+                                        class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
                                         href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"
@@ -179,7 +179,7 @@
                         <li class="nav-item">
                             <div class="main-nav__btn">
                                 <div class="btn__buy">
-                                    <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-rappi-home btn-rappi"
+                                    <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
                                         href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"

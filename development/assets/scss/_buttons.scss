@@ -72,11 +72,11 @@ button {
   &.btn--filled--mobile {
     @include respond-to(sm) {
       color: #fff;
-      background: #686868;
+      background: $text;
     }
     @include respond-to(xs) {
       color: #fff;
-      background: #686868;
+      background: $text;
     }
   }
   &.btn-event {
@@ -91,11 +91,11 @@ button {
     padding: 5px;
     @include respond-to(sm) {
       color: #fff;
-      background-color: #686868;
+      background-color: $text;
     }
     @include respond-to(xs) {
       color: #fff;
-      background-color: #686868;
+      background-color: $text;
     }
   }
   &.btn--filled--buy {
@@ -134,7 +134,7 @@ button {
 
 .btn--filled-gray {
   color: $white;
-  background: #686868;
+  background: $text;
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -164,11 +164,11 @@ button {
 
   &.active {
     background: transparent;
-    border: 2px solid #686868;
-    color: #686868;
+    border: 2px solid $text;
+    color: $text;
 
     .line {
-      border-right: 1px solid #686868;
+      border-right: 1px solid $text;
     }
 
     img {
@@ -179,7 +179,7 @@ button {
 
 .btn--filled-modalgray {
   color: $white;
-  background: #686868;
+  background: $agregar;
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -202,7 +202,7 @@ button {
 
 .btn--filled-footer {
   color: $white;
-  background: #686868;
+  background: $text;
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -272,8 +272,17 @@ button {
   margin-top: 10px;
 }
 
-.btn-rappi-home img {
-  margin-bottom: 5px;
+.btn-domicilios {
+  font-family: $Ostrich;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  .line {
+    border-right: 2px solid #fff;
+    margin: 0 10px;
+    padding: 12px 0;
+  }
 }
 .btn-form__center {
   width: 100%;
