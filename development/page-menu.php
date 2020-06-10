@@ -111,6 +111,26 @@ if ($tablet_browser > 0) {
         </div>
     </div>
 </div>
+
+<div id="banner-desayunos" class="about-banner js-hiddenMenu">
+    <?php
+    $image = get_field('imagen_desayuno_menu');
+    $image_sizes = $image['sizes'];
+    ?>
+    <?php if ($mobile) : ?>
+    <img itemprop="img" src="<?php echo get_field('imagen_desayuno_menu_mobile'); ?>" alt="<?php echo $alt; ?>">
+    <?php else : ?>
+    <img itemprop="img"
+        srcset="<?php echo get_field('imagen_desayuno_menu_mobile'); ?> 1024w, <?php echo $image['url']; ?> 1920w,"
+        alt="<?php echo $alt; ?>">
+    <?php endif; ?>
+    <div class="overlay"></div>
+    <div class="about-banner__text about-banner__text--center">
+        <div class="about-banner__title">
+            <h3>Desayunos</h3>
+        </div>
+    </div>
+</div>
 <div class="main-entries">
     <div class="container">
         <div class="main-entries__nav">
@@ -129,6 +149,12 @@ if ($tablet_browser > 0) {
                         href="#v-pills-contact" id="juiceBar" role="tab" onclick="menu(this)">juice
                         bar</a>
                 </li>
+
+                <li class="nav-item nav-item--tabs">
+                    <a aria-controls="v-pills-home" aria-selected="true" class="nav-link--tabs" data-toggle="pill"
+                        href="#v-pills-desayunos" id="desayunos" role="tab" onclick="menu(this)">Desayunos</a>
+                </li>
+
             </ul>
             <div class="btn__tabs">
                 <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" target="_blank"
@@ -551,6 +577,168 @@ if ($tablet_browser > 0) {
 
                     endwhile;
                     wp_reset_query(); ?>
+                </div>
+            </div>
+
+            <div class="tab-pane fade show active" id="v-pills-desayunos">
+                <div class="main-pokebowls__content" itemscope itemtype="http://schema.org/Menu">
+
+                    <!--4 Desayunos-->
+                    <?php
+                    $args = array(
+                        'post_type' => 'desayunos',
+                        'post_status' => 'publish',
+                        'order' => 'ASC'
+                    );
+                    $loop = new WP_Query($args);
+                    global $post;
+                    ?>
+                    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                    <a class="main-entries__item" data-target="<?php echo '#' . $post->post_name; ?>"
+                        data-toggle="modal" href="">
+                        <div class="main-entries__img">
+                            <?php
+                                $img_id = get_post_thumbnail_id(get_the_ID());
+                                $alt = get_post_meta($img_id, '_wp_attachment_image_alt', true); //alt de imágenes
+                                ?>
+
+                            <img itemprop="image" src="<?php echo the_post_thumbnail_url(); ?>"
+                                alt="<?php echo $alt; ?>">
+
+                        </div>
+                        <div class="main-entries__text">
+                            <div class="main-entries__title">
+                                <h3 itemprop="name"><?php the_title(); ?></h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--- MODAL 4-->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" role="dialog"
+                        tabindex="-1" id="<?php echo $post->post_name; ?>">
+                        <div class="modal__flex">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                        <div class="main-modal__content">
+                                            <div class="main-modal__item">
+                                                <div class="main-modal__img">
+                                                    <?php
+                                                        $image = get_field('imagen_en_el_modal');
+                                                        $image_sizes = $image['sizes'];
+                                                        ?>
+                                                    <img itemprop="image" src="<?php echo $image['url']; ?>"
+                                                        alt="<?php echo $image['alt']; ?>">
+                                                </div>
+                                            </div>
+                                            <div class="main-modal__item">
+                                                <div class="main-modal__text">
+                                                    <div class="main-modal__title d-flex">
+                                                        <p class="" itemprop="name"><?php the_title(); ?></p>
+                                                        <span class="line line-color  line-color--entries"></span>
+                                                        <div class="main-modals__icons mt-2">
+                                                            <?php if (get_field('mariscos_menu')) : ?>
+                                                            <img itemprop="logo" title="Mariscos"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Mariscos.svg"
+                                                                alt="Icono Mariscos">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('pescados_menu')) : ?>
+                                                            <img itemprop="logo" title="Pescados"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Pescados.svg"
+                                                                alt="Icono Pescados">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('semillas_menu')) : ?>
+                                                            <img itemprop="logo" title="Semillas"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Semillas.svg"
+                                                                alt="Icono Semillas">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('picantes_menu')) : ?>
+                                                            <img itemprop="logo" title="Picantes"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Picantes.svg"
+                                                                alt="Icono Picantes">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('soya_menu')) : ?>
+                                                            <img itemprop="logo" title="Soya"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Soya.svg"
+                                                                alt="Icono Soya">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('nueces_menu')) : ?>
+                                                            <img itemprop="logo" title="Nueces"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Nueces.svg"
+                                                                alt="Icono Nueces">
+                                                            <?php endif; ?>
+                                                            <?php if (get_field('lacteos_menu')) : ?>
+                                                            <img itemprop="logo" title="Lacteos"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Alergenos/Lacteos.svg"
+                                                                alt="Icono Lacteos">
+                                                            <?php endif; ?>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="line-gray line-gray--entries">
+                                                    <div class="main-modal__description">
+                                                        <strong>Ingredientes:</strong>
+                                                        <p itemprop="description">
+                                                            <?php the_field('ingredientes_menu'); ?></p>
+
+                                                    </div>
+                                                    <div class="main-modal__boxdetails">
+                                                        <div class="main-modal__details">
+                                                            <?php if (get_field('cantidad_de_calorias_menu') != 0) : ?>
+                                                            <span
+                                                                class="badge badge-secondary"><?php the_field('cantidad_de_calorias_menu'); ?></span>
+                                                            <p>Calorías</p>
+                                                            <?php endif; ?>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="main-modal__text--calorias">
+                                                        <p>'Basadas en la porción de un plato mediano'</p>
+                                                    </div>
+                                                    <div class="main-modal__description">
+                                                        <strong>Superfoods:</strong>
+                                                        <p><?php the_field('superfoods_menu'); ?></p>
+                                                    </div>
+                                                    <div class="main-modal__price">
+                                                        <?php if (get_field('precio_menu') != 0) : ?>
+                                                        <div class="main-modal__smallprice">
+
+                                                            <p itemprop="price">COP
+                                                                <?php the_field('precio_menu'); ?></p>
+                                                        </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div class="btn-modal">
+
+                                                        <a itemprop="url"
+                                                            class="btn-btn_custom btn--medium btn--filled-modalgray btn-domicilios btn-rappi"
+                                                            id="<?php echo the_title(); ?>" style="width:140px;"
+                                                            target="_blank"
+                                                            href="<?php echo get_field('link_plato_poke_rappi_web_menu'); ?>">
+                                                            <img itemprop="image"
+                                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg">
+                                                            <span class="line"></span>
+                                                            Agregar
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <?php
+
+                    endwhile;
+                    wp_reset_query(); ?>
+
                 </div>
             </div>
         </div>
