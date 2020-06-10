@@ -297,31 +297,8 @@ $(document).ready(function () {
 
 //productos menu
 function menu(e) {
-  if ("banner-" + e.id == "banner-entradas") {
-    $("#banner-pokeBowl").addClass("js-hiddenMenu");
-    $("#banner-juiceBar").addClass("js-hiddenMenu");
-    $("#banner-desayunos").addClass("js-hiddenMenu");
-    $("#banner-entradas").removeClass("js-hiddenMenu");
-  }
-  if ("banner-" + e.id == "banner-pokeBowl") {
-    $("#banner-entradas").addClass("js-hiddenMenu");
-    $("#banner-juiceBar").addClass("js-hiddenMenu");
-    $("#banner-desayunos").addClass("js-hiddenMenu");
-    $("#banner-pokeBowl").removeClass("js-hiddenMenu");
-  }
-  if ("banner-" + e.id == "banner-juiceBar") {
-    $("#banner-entradas").addClass("js-hiddenMenu");
-    $("#banner-pokeBowl").addClass("js-hiddenMenu");
-    $("#banner-desayunos").addClass("js-hiddenMenu");
-    $("#banner-juiceBar").removeClass("js-hiddenMenu");
-  }
-  if ("banner-" + e.id == "banner-desayunos") {
-    $("#banner-entradas").addClass("js-hiddenMenu");
-    $("#banner-pokeBowl").addClass("js-hiddenMenu");
-    $("#banner-juiceBar").addClass("js-hiddenMenu");
-    $("#banner-desayunos").removeClass("js-hiddenMenu");
-  }
-  console.log(e);
+  $(`.about-banner`).addClass("js-hiddenMenu");
+  $(`#banner-${e.id}`).removeClass("js-hiddenMenu");
 }
 
 const urlBowl =
