@@ -182,8 +182,8 @@ if ($tablet_browser > 0) {
 
             </ul>
             <div class="btn__tabs">
-                <a class="btn-btn_custom btn--large btn--filled btn--filled-gray" target="_blank"
-                    href="https://domicilios.pokecolombia.co/productos/bowls/arma-tu-bowl">
+                <a class="btn-btn_custom btn--large btn--filled btn--filled-gray"
+                    href="<?php echo bloginfo('url') . '/arma-tu-bowl'; ?>">
                     <img itemprop="image"
                         src="<?php echo get_template_directory_uri(); ?>/assets/img/Menu_entradas/Bowl.svg">
                     <span class="line"></span>
