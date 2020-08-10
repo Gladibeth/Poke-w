@@ -13,44 +13,42 @@
 @import "createpokebolw";
 @import "modals";
 
-
-
-#iso{
+#iso {
   filter: brightness(0) invert(1);
 }
-#iso.active{
+#iso.active {
   filter: brightness(0);
 }
-.display_none{
+.display_none {
   display: none;
 }
 
-.display_block{
+.display_block {
   display: block;
 }
 
-.form-control{
-  border-radius:0 !important;
+.form-control {
+  border-radius: 0 !important;
   color: #898989 !important;
 }
-select{
+select {
   font-weight: 600;
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: 1.3rem .75rem;
+  padding: 1.3rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid hsla(0,0%,41%,.24);
+  border: 2px solid hsla(0, 0%, 41%, 0.24);
   border-radius: 0;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  font-family: Raleway,sans-serif;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: Raleway, sans-serif;
 }
 
-p{
+p {
   line-height: 1.5;
 }
 
@@ -59,7 +57,6 @@ body {
   overflow-x: hidden;
   padding-top: 0;
   background-color: #f3f3f3;
-
 }
 
 .mask {
@@ -110,8 +107,8 @@ button:focus {
     margin: 20px 10px;
   }
 
-  &.line-color--entries{
-    border-right: 1px solid hsla(0,0%,44%,.35);
+  &.line-color--entries {
+    border-right: 1px solid hsla(0, 0%, 44%, 0.35);
     height: 45px;
     margin-top: 20px;
   }
@@ -146,7 +143,6 @@ button:focus {
     margin: 50px 0 0 15px;
     width: 90%;
   }
-
 }
 
 .img-round {
@@ -190,11 +186,11 @@ button:focus {
   padding: 0 18px;
   display: flex;
   align-items: center;
-  &:last-child{
-    @include respond-to(xl){
+  &:last-child {
+    @include respond-to(xl) {
       padding: 0px;
     }
-    @include respond-to(md){
+    @include respond-to(md) {
       padding: 0px;
     }
   }
@@ -235,7 +231,6 @@ button:focus {
   padding: 0px 10px;
   border-radius: 5px;
   text-shadow: 0 4px 4px #0000007a;
-  
 
   @include respond-to(xs) {
     color: $black;
@@ -245,7 +240,6 @@ button:focus {
     color: $black;
     transition: 0.3s ease-in-out;
     text-shadow: 0 0px 0px #00000000;
-    
 
     &:hover {
       color: $black;
@@ -264,13 +258,11 @@ button:focus {
   &.nav-link-bc {
     color: $black;
     transition: 0.3s ease-in-out;
-    
 
     &:hover {
       color: $black;
       border: 2px solid $black;
       border-radius: 5px;
-      
     }
 
     &.active {
@@ -291,7 +283,6 @@ button:focus {
     padding: 0 5px;
   }
 }
-
 
 .navbar-brand {
   width: 80px;
@@ -373,12 +364,11 @@ button:focus {
 
   .main-banner__item {
     position: relative;
-    .container{
-      @include respond-to(sm){
-        padding: 0
+    .container {
+      @include respond-to(sm) {
+        padding: 0;
       }
     }
-
   }
 
   .mask2 {
@@ -424,7 +414,6 @@ button:focus {
         // padding-left: 30px;
       }
 
-
       .main-banner__title {
         // text-align: center;
         text-transform: uppercase;
@@ -442,7 +431,7 @@ button:focus {
 
         &.title-color-gray {
           h2 {
-            color: #4C4C4C;
+            color: #4c4c4c;
             text-shadow: 0px 4px 4px #0000007a;
           }
         }
@@ -456,7 +445,7 @@ button:focus {
           font-family: $Raleway;
           text-shadow: 0px 4px 4px #0000007a;
 
-          @include respond-to(xl){
+          @include respond-to(xl) {
             @include font(85px, $bold);
           }
 
@@ -477,7 +466,7 @@ button:focus {
           margin: 0;
           font-family: $Raleway;
           text-shadow: 0px 4px 4px #0000007a;
-          @include respond-to(xl){
+          @include respond-to(xl) {
             @include font(85px, $bold);
           }
 
@@ -499,7 +488,6 @@ button:focus {
           line-height: 1;
           margin: 0;
         }
-
       }
 
       .main-banner__description {
@@ -541,7 +529,7 @@ button:focus {
     letter-spacing: 5.86px;
     @include font(60px, $bold);
     line-height: 0.9;
-    @include respond-to(xl){
+    @include respond-to(xl) {
       @include font(80px, $bold);
     }
 
@@ -586,10 +574,10 @@ button:focus {
   }
 
   &.main-general__title--event {
-    @include respond-to(sm){
+    @include respond-to(sm) {
       width: 70%;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       width: 70%;
     }
     h2 {
@@ -610,16 +598,16 @@ button:focus {
 
       @include respond-to(xs) {
         letter-spacing: 0.25px;
-        
+
         @include font(30px, $bold);
         text-align: right;
       }
     }
-    p{
-      @include respond-to(sm){
+    p {
+      @include respond-to(sm) {
         text-align: right;
       }
-      @include respond-to(xs){
+      @include respond-to(xs) {
         text-align: right;
       }
     }
@@ -650,10 +638,8 @@ button:focus {
       }
     }
 
-
-
     &.title--left {
-      @include respond-to(xs){
+      @include respond-to(xs) {
         margin-top: -30px;
       }
       h2 {
@@ -663,7 +649,8 @@ button:focus {
   }
 
   &.main-general__title--dots {
-    h1,h2 {
+    h1,
+    h2 {
       letter-spacing: 5.25px;
       @include font(40px, $bold);
       color: $text;
@@ -703,12 +690,12 @@ button:focus {
     } */
   }
 }
-#poke-puntos-content{
+#poke-puntos-content {
   .main-general__description {
     margin-top: 20px;
-    p { 
+    p {
       font-size: 16px !important;
-    }  
+    }
   }
 }
 .main-general__description {
@@ -731,20 +718,19 @@ button:focus {
     @include respond-to(xs) {
       @include font(18px, $medium);
     }
-
   }
 
   strong {
     color: $white;
     @include font(25px, $superBold);
-    @include respond-to(sm){
+    @include respond-to(sm) {
       color: #686868;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.7;
       letter-spacing: 1.54px;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       color: #686868;
       font-size: 18px;
       font-weight: 700;
@@ -752,7 +738,6 @@ button:focus {
       letter-spacing: 1.54px;
     }
   }
-
 
   &.main-general__description--font {
     p {
@@ -771,8 +756,7 @@ button:focus {
         line-height: 2;
       }
 
-
-      @include respond-to(xl){
+      @include respond-to(xl) {
         font-size: 20px;
         line-height: 2;
       }
@@ -802,7 +786,7 @@ button:focus {
   &.main-general__description--create {
     margin: 40px;
 
-    @include respond-to(xs){
+    @include respond-to(xs) {
       margin: 0 0 20px 0;
     }
 
@@ -850,8 +834,6 @@ button:focus {
     }
   }
 
-
-
   &.main-general__description--requiere {
     p {
       color: $text;
@@ -880,7 +862,7 @@ button:focus {
   h3 {
     @include font(18px, $bold);
     text-transform: uppercase;
-    color:#686868;
+    color: #686868;
     margin-bottom: 0;
     text-align: center;
   }
@@ -944,69 +926,65 @@ button:focus {
   // }
 }
 
-.main-home__contentline{
+.main-home__contentline {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   padding: 30px 0;
-  @include respond-to(sm){
+  @include respond-to(sm) {
     grid-template-columns: 35% 30% 35%;
-
   }
-  @include respond-to(xs){
+  @include respond-to(xs) {
     grid-template-columns: 20% 60% 20%;
-    
   }
-  &.contentline__margint{
-    @include respond-to(xs){
+  &.contentline__margint {
+    @include respond-to(xs) {
       margin-top: -40px;
     }
   }
 }
 
-.main-home__contentline.main-home__contentline--about{
+.main-home__contentline.main-home__contentline--about {
   grid-template-columns: 42% 15% 42%;
-  @include respond-to(sm){
+  @include respond-to(sm) {
     grid-template-columns: 35% 30% 35%;
-
   }
-  @include respond-to(xs){
+  @include respond-to(xs) {
     grid-template-columns: 20% 60% 20%;
   }
 }
 
-.main-home__contentline.main-home__contentline--about.main-home__contentline--aboutp{
-  @include respond-to(xs){
+.main-home__contentline.main-home__contentline--about.main-home__contentline--aboutp {
+  @include respond-to(xs) {
     padding: 0px 0 30px 0;
     margin-top: -40px;
   }
 }
-.main-home__item{
+.main-home__item {
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-home__line{
+.main-home__line {
   width: 70%;
   height: 1px;
   background-color: #686868;
 }
 
-.main-home__line.main-home__line--first{
+.main-home__line.main-home__line--first {
   margin-left: 100px;
 
-  @include respond-to(xs){
+  @include respond-to(xs) {
     margin-left: 20px;
   }
 }
-.main-home__line.main-home__line--last{
+.main-home__line.main-home__line--last {
   margin-right: 100px;
-  @include respond-to(xs){
+  @include respond-to(xs) {
     margin-right: 20px;
   }
 }
-
 
 .main-general__subtitle--medium {
   width: 100%;
@@ -1017,8 +995,7 @@ button:focus {
   h4 {
     @include font(25px, $superBold);
     text-transform: uppercase;
-    color:#686868;
-    
+    color: #686868;
   }
 }
 
@@ -1044,100 +1021,96 @@ button:focus {
       height: auto;
     }
   }
-
-
 }
 
-.main-about__contentimg{
+.main-about__contentimg {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
   position: relative;
   background-position: 50% -140px;
-  padding: 0!important;
-  @include respond-to(md){
+  padding: 0 !important;
+  @include respond-to(md) {
     height: 700px;
   }
-  
-  @include respond-to(sm){
+
+  @include respond-to(sm) {
     height: 880px;
   }
-  @include respond-to(xs){
+  @include respond-to(xs) {
     height: 800px;
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     height: 100vh !important;
   }
-  &.main-event__img-bg{
+  &.main-event__img-bg {
     height: 1100px !important;
-    &.main-event__img-height{
+    &.main-event__img-height {
       height: 1300px !important;
     }
   }
   &.main-about__contentimg--about {
-    @include respond-to(xs){
+    @include respond-to(xs) {
       min-height: 300px !important;
       margin-bottom: 0px;
     }
-    .container{
+    .container {
       left: -450px;
-      @include respond-to(xl){
+      @include respond-to(xl) {
         left: -120px !important;
       }
-      @include respond-to(md){
+      @include respond-to(md) {
         left: -310px;
       }
 
-      @include respond-to(xs){
+      @include respond-to(xs) {
         left: 0px;
         // margin-top: 50px;
       }
-     
     }
   }
 
-
-  &.main-about__contentimg--why{
+  &.main-about__contentimg--why {
     // height: initial;
 
-    .container{
-      @include respond-to(sm){
+    .container {
+      @include respond-to(sm) {
         left: -10px;
         top: 0%;
       }
     }
   }
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
-    @include respond-to(sm){
+    @include respond-to(sm) {
       object-position: top left;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       object-position: top left;
     }
   }
-  .container{
+  .container {
     position: absolute;
     top: 0;
     left: 8%;
 
-    @include respond-to(xl){
+    @include respond-to(xl) {
       left: 20%;
       transform: translateX(0%);
     }
-    @include respond-to(md){
-      left: 3%
+    @include respond-to(md) {
+      left: 3%;
     }
-    @include respond-to(sm){
+    @include respond-to(sm) {
       left: 0.6%;
-      top:15%;
+      top: 15%;
     }
 
-    @include respond-to(xs){
-      left:0;
+    @include respond-to(xs) {
+      left: 0;
     }
   }
 }
@@ -1150,9 +1123,8 @@ button:focus {
 .main-about__mt {
   margin-top: 50px;
   position: initial;
-  .container{
-
-    @include respond-to(sm){
+  .container {
+    @include respond-to(sm) {
       padding: 0;
     }
   }
@@ -1194,7 +1166,6 @@ button:focus {
     width: 100%;
   }
 }
-
 
 .main-why__content {
   display: grid;
@@ -1250,50 +1221,85 @@ button:focus {
   }
 }
 
-#modalCoockie{
+#modalCoockie {
   color: #686868;
-  font-family: Roboto,sans-serif;
-  .btn{
-    background: #686868;
-    color: white;
-  }
-  a{
-    color: #686868;
-    font-family: Roboto,sans-serif;
-    text-decoration: underline;
-  }
-  h5{
-    font-size: 25px;
+  font-family: Roboto, sans-serif;
+  .modal-dialog.modal-dialog-centered {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    transform: translateY(0%);
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end !important;
   }
 
-  & .modal-header{
-    justify-content: center !important;
+  .btn {
+    background: #686868;
+    color: #fff;
+    padding: 1px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Ostrich Sans";
+    line-height: 1;
+    margin: 5px 0;
   }
-  .modal-content{
-    width: 50%;
-    padding: 20px;
+  a {
+    color: #686868;
+    font-family: Roboto, sans-serif;
+    text-decoration: underline;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  & .modal-header {
+    padding: 0;
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: initial;
+    justify-content: flex-start !important;
+    color: #4a4a4a;
+  }
+  .modal-content {
+    width: 60%;
+    padding: 5px 20px;
     text-align: center;
-    margin: auto;
-    @include respond-to(sm){
+    margin: 0;
+    border-radius: 10px;
+    border: 0;
+    @include respond-to(sm) {
       width: 80%;
     }
-     @include respond-to(xs){
-      width: 100%;
+    @include respond-to(xs) {
+      width: 90% !important;
     }
   }
-  .modal-footer{
+  .modal-footer {
+    border: 0 !important;
     text-align: center;
-    margin: auto;
+    margin: 0;
+    justify-content: flex-start;
     padding: 0;
+  }
+  .modal-body {
+    p {
+      font-size: 12px;
+      line-height: 2;
+      text-align: justify;
+      margin-bottom: 5px;
+      margin: 0;
+    }
   }
 }
 
 .main-footer {
   background-color: $white;
-  .container{
-
-    @include respond-to(sm){
-     padding: 0; 
+  .container {
+    @include respond-to(sm) {
+      padding: 0;
     }
   }
 }
@@ -1351,8 +1357,6 @@ button:focus {
     @include font(15px, $light);
     font-family: $Roboto;
     color: #686868;
-
-
   }
 }
 
@@ -1362,7 +1366,6 @@ button:focus {
     @include font(15px, $bold);
     font-family: $Roboto;
     text-transform: uppercase;
-
   }
 }
 
@@ -1391,7 +1394,7 @@ button:focus {
         line-height: 2;
         text-transform: uppercase;
 
-        @include respond-to(md){
+        @include respond-to(md) {
           @include font(14px, $light);
         }
 
@@ -1415,13 +1418,13 @@ button:focus {
     justify-content: center;
   }
 }
-.btn__footer{
+.btn__footer {
   width: 120px;
 }
 
 .main-footer__redes {
   display: flex;
-  p{
+  p {
     display: flex;
     margin: 0;
   }
@@ -1429,7 +1432,7 @@ button:focus {
     margin-right: 22px;
     transition: 0.3s ease-in-out;
 
-    img{
+    img {
       width: 25px;
     }
     &:hover {
@@ -1438,7 +1441,6 @@ button:focus {
     }
   }
 }
-
 
 .main-footer__email {
   margin-top: 10px;
@@ -1457,7 +1459,7 @@ button:focus {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   align-items: center;
   padding: 10px;
 
@@ -1471,8 +1473,6 @@ button:focus {
     }
   }
 }
-
-
 
 .main-footer-grid {
   display: flex;
@@ -1491,36 +1491,36 @@ button:focus {
       font-size: 12px;
       text-decoration: underline;
       font-style: italic;
-    font-family: $Roboto;
+      font-family: $Roboto;
     }
   }
 }
 
-.card-header{
+.card-header {
   padding: 0rem 1.25rem;
 }
 
-#sb_instagram{
+#sb_instagram {
   margin-top: 25px;
 }
-#ubications{
+#ubications {
   color: white !important;
   height: 58px;
 }
-#ubications:focus{
+#ubications:focus {
   color: white !important;
-  background-color: #898989!important;
+  background-color: #898989 !important;
 }
-#nuestra-promesa{
+#nuestra-promesa {
   padding-top: 90px;
   margin-top: -90px;
 }
 
-.ambiental__description p{
+.ambiental__description p {
   line-height: 1.2;
 }
 @media (max-width: 767px) {
-  .message{
+  .message {
     width: 50%;
   }
   .main-footer-grid {
@@ -1528,15 +1528,17 @@ button:focus {
     display: flex;
     justify-content: center;
   }
-  .label-acept{
+  .label-acept {
     font-size: 15px !important;
   }
-  #text-3{
-  text-align:center;
-  margin:auto;
-  list-style:none;
+  #text-3 {
+    text-align: center;
+    margin: auto;
+    list-style: none;
   }
-  body > div:nth-child(2) > div:nth-child(8) > div > div:nth-child(2) {display:none;}
+  body > div:nth-child(2) > div:nth-child(8) > div > div:nth-child(2) {
+    display: none;
+  }
 }
 
 div.wpcf7 .screen-reader-response {
@@ -1547,70 +1549,76 @@ div.wpcf7 .screen-reader-response {
   top: 0px !important;
   font-weight: 400 !important;
   color: #686868 !important;
-  & ul{
+  & ul {
     display: none;
   }
 }
-div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
   display: none !important;
 }
-div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
   display: none !important;
 }
 
 .input-file .file-selected {
   font-size: 14px !important;
-  display: inline !important;;
-  padding: 0 20px !important;;
-  font-family: Raleway,sans-serif !important;;
+  display: inline !important;
+  padding: 0 20px !important;
+  font-family: Raleway, sans-serif !important;
   font-weight: 400 !important;
   color: #686868 !important;
 }
-#wpcf7-f245-o1 > form > div:nth-child(7) > div:nth-child(5) > div > div{
+#wpcf7-f245-o1 > form > div:nth-child(7) > div:nth-child(5) > div > div {
   padding-left: 0 !important;
 }
-#wpcf7-f247-p27-o1 > div{
+#wpcf7-f247-p27-o1 > div {
   color: white !important;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  body > div.main-about.main-about__height > div.main-about__contentimg.main-about__contentimg--why {
+  body
+    > div.main-about.main-about__height
+    > div.main-about__contentimg.main-about__contentimg--why {
     height: 120vh;
   }
 }
-#wpcf7-f261-p27-o1 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
+#wpcf7-f261-p27-o1
+  > form
+  > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
   display: block;
   margin-top: 80px;
   color: white;
   border: none;
   padding-left: 0;
-
 }
-#wpcf7-f261-p27-o1 > div{
+#wpcf7-f261-p27-o1 > div {
   color: white;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* Safari and Chrome */
-  body > div.main-entries > div > div.main-entries__nav > div > a{
-      height:42px;
+  body > div.main-entries > div > div.main-entries__nav > div > a {
+    height: 42px;
   }
 }
 
-.main-footer__address li{
-  list-style:none;
+.main-footer__address li {
+  list-style: none;
 }
- #text-3,.main-footer__box,div.main-footer__copy{
-  list-style:none;
-  }
-  #text-4 > div.main-footer__title,#text-5 > h2,#text-6 > h2{
-  display:none;
-  }
+#text-3,
+.main-footer__box,
+div.main-footer__copy {
+  list-style: none;
+}
+#text-4 > div.main-footer__title,
+#text-5 > h2,
+#text-6 > h2 {
+  display: none;
+}
 
-  
-
-  .sombra .nav-link-bc{
-    text-shadow:none !important;
-  }
-.que-es-poke{
+.sombra .nav-link-bc {
+  text-shadow: none !important;
+}
+.que-es-poke {
   .main-about__contentimg {
     height: auto;
   }
@@ -1622,50 +1630,49 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
- .que-es-poke{
-  .main-about__contentimg img {
-    object-position: center;
-  }
-  .main-about__contentimg {
-    height: auto;
-    background: #f3f3f3;
-    position: relative;
-  }
-  .main-about__contentimg--why{
-    &.main-about__contentimg--why--mobile{
-      margin-bottom: -30px;
+  .que-es-poke {
+    .main-about__contentimg img {
+      object-position: center;
     }
-    .container{
+    .main-about__contentimg {
+      height: auto;
+      background: #f3f3f3;
       position: relative;
     }
-    img{
-      height: auto;
-      position: relative;    
+    .main-about__contentimg--why {
+      &.main-about__contentimg--why--mobile {
+        margin-bottom: -30px;
+      }
+      .container {
+        position: relative;
+      }
+      img {
+        height: auto;
+        position: relative;
+      }
+      h2 {
+        font-size: 35px !important;
+        color: #686868;
+      }
+      p {
+        color: #686868;
+      }
     }
-    h2{
-      font-size: 35px !important;
-      color: #686868;
+    .main-general__description {
+      margin: 0;
     }
-    p{
-      color: #686868;
-    }
-  }
-  .main-general__description{
-    margin: 0;
-  }
-  .main-why__item:nth-child(2) {
+    .main-why__item:nth-child(2) {
       padding: 25px 0;
 
-      @include respond-to(xs){
+      @include respond-to(xs) {
         padding: 40px 0;
       }
     }
- }
+  }
 }
 
-
-@media (min-width: 768px) and (max-width: 991px){
-  .que-es-poke{
+@media (min-width: 768px) and (max-width: 991px) {
+  .que-es-poke {
     .main-about__contentimg img {
       object-position: center;
     }
@@ -1675,46 +1682,46 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
       background: #f3f3f3;
       position: relative;
     }
-    .main-about__contentimg--why{
-      .container{
+    .main-about__contentimg--why {
+      .container {
         position: relative;
       }
-      img{
+      img {
         height: auto;
-        position: relative;    
+        position: relative;
       }
-      h2{
+      h2 {
         font-size: 35px !important;
         color: #686868;
       }
-      p{
+      p {
         color: #686868;
         line-height: 2 !important;
       }
     }
-    .main-general__description{
+    .main-general__description {
       margin: 0;
     }
     .main-why__item:nth-child(2) {
-        padding: 25px 0;
-      }
-   }
+      padding: 25px 0;
+    }
+  }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .main-ourorigin__img {
     height: auto;
   }
-  #poke-puntos{
+  #poke-puntos {
     height: 85vh !important;
     .about-banner__text.about-banner__text--top {
       padding-top: 0;
       margin: 290px 0;
       font-size: -7px;
-      h3{
+      h3 {
         font-size: 30px;
       }
-      p{
+      p {
         font-size: 15px;
       }
       .btn-box {
@@ -1722,18 +1729,18 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
       }
     }
   }
-  #poke-puntos-content{
-    h1{
+  #poke-puntos-content {
+    h1 {
       font-size: 25px;
     }
-    p{
+    p {
       line-height: 1.2;
       font-size: 15px;
       margin-bottom: -20px;
     }
   }
-  #poke-puntos-premios{
-    h2{
+  #poke-puntos-premios {
+    h2 {
       font-size: 25px;
     }
   }
@@ -1742,48 +1749,48 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   }
 }
 
-.main-event__banner--mobile{
-  #wpcf7-f261-p27-o1{
-    @include respond-to(sm){
+.main-event__banner--mobile {
+  #wpcf7-f261-p27-o1 {
+    @include respond-to(sm) {
       padding: 20px;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       padding: 20px;
     }
-
   }
-  .main-why__item{
-    @include respond-to(sm){
+  .main-why__item {
+    @include respond-to(sm) {
       padding-top: 20px;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       padding-top: 30px;
     }
   }
-  .about-banner{
-    @include respond-to(sm){
+  .about-banner {
+    @include respond-to(sm) {
       height: 80vh;
     }
-    @include respond-to(xs){
+    @include respond-to(xs) {
       height: 80vh;
     }
-    .about-banner__text{
-      @include respond-to(sm){
+    .about-banner__text {
+      @include respond-to(sm) {
         width: 100%;
         display: flex;
         justify-content: flex-end;
       }
-      @include respond-to(xs){
+      @include respond-to(xs) {
         width: 100%;
         display: flex;
         justify-content: flex-end;
       }
     }
-
   }
 }
 
-#wpcf7-f261-p27-o2 > form > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
+#wpcf7-f261-p27-o2
+  > form
+  > div.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
   margin-top: 80px;
   margin-left: 0;
   color: white;
@@ -1791,7 +1798,6 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
   padding: 0;
 }
 
-#wpcf7-f261-p27-o2 > div{
+#wpcf7-f261-p27-o2 > div {
   display: none;
 }
-
