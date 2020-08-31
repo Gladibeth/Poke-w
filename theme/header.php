@@ -62,7 +62,8 @@
                             <div class="main-nav__btn">
                                 <div class="btn__buy">
                                     <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
-                                        href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
+                                        href="https://domicilios.pokecolombia.co/?utm_source=website&utm_medium=boton&utm_campaign=&utm_content=pide-en-linea"
+                                        target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"
                                             alt="carrito">
@@ -123,7 +124,8 @@
                                 <div class="btn__buy">
                                     <a itemprop="url"
                                         class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
-                                        href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
+                                        href="https://domicilios.pokecolombia.co/?utm_source=website&utm_medium=boton&utm_campaign=&utm_content=pide-en-linea"
+                                        target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"
                                             alt="icon carrito">
@@ -180,7 +182,8 @@
                             <div class="main-nav__btn">
                                 <div class="btn__buy">
                                     <a class="btn-btn_custom btn--medium btn--filled btn--filled--buy btn-domicilios btn-rappi"
-                                        href="https://domicilios.pokecolombia.co/" target="_blank" id="menu-rappi">
+                                        href="https://domicilios.pokecolombia.co/?utm_source=website&utm_medium=boton&utm_campaign=&utm_content=pide-en-linea"
+                                        target="_blank" id="menu-rappi">
                                         <img itemprop="logo"
                                             src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/icon-compra.svg"
                                             alt="icon carrito">
