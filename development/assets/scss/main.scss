@@ -1787,6 +1787,21 @@ div.main-footer__copy {
     }
   }
 }
+#event {
+  h2,
+  p,
+  label,
+  a {
+    color: $text;
+  }
+}
+
+.new-bowl h2 {
+  color: #4c4c4c !important;
+  @include respond-to(xs) {
+    color: #fff !important;
+  }
+}
 
 #wpcf7-f261-p27-o2
   > form

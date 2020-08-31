@@ -222,6 +222,12 @@
   function BackgroundNode({node: e, loadedClassName: a}){let o=e.getAttribute("data-background-image-url"); return{node: e, load: d=>{let n=new Image; n.onload=(d=>{requestAnimationFrame(()=>{e.style.backgroundImage=`url(${o})`, e.classList.add(a), d()})})(d), n.src=o}}}let defaultOptions={selector: "[data-background-image-url]", loadedClassName: "loaded"}; function BackgroundLazyLoader({selector: e, loadedClassName: a}=defaultOptions){let o=[].slice.apply(document.querySelectorAll(e)).map(e=> new BackgroundNode({node: e, loadedClassName: a})), d=new IntersectionObserver((e, a)=>{e.forEach(({target: e, isIntersecting: d})=>{if (!d) return; let n=o.find(a=> a.node.isSameNode(e)); n && n.load(()=>{a.unobserve(e), (o=o.filter(a=> !a.node.isSameNode(e))).length || a.disconnect()})})}); o.forEach(e=> d.observe(e.node))}BackgroundLazyLoader();
   </script> -->
 <?php wp_footer(); ?>
+<script id="mcjs">
+! function(c, h, i, m, p) {
+    m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+}(document, "script",
+    "https://chimpstatic.com/mcjs-connected/js/users/a06b75f091a54f9a351eaa9e7/b4e0c3b56fcac88e26d8b3282.js");
+</script>
 <!-- Hotjar Tracking Code for www.pokecolombia.co -->
 <!-- <script>
     (function(h,o,t,j,a,r){

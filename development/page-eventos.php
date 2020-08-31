@@ -60,63 +60,69 @@ if ($mobile) {
   $link_rappi = 'https://www.rappi.com.co/restaurantes/poke-cocina-0';
 }
 ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?> s
-<div class="main-event__banner--mobile d-lg-none  d-block">
-    <div class="about-banner page-eventos">
-        <?php if ($mobile) : ?>
-        <img itemprop="img" src="<?php echo get_field('banner_mobile'); ?>" alt="<?php echo $alt; ?>">
-        <?php else : ?>
-        <img itemprop="img"
-            srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w,"
-            alt="<?php echo $alt; ?>"><img itemprop="image" src="<?php the_post_thumbnail_url() ?>"
-            alt="<?php echo $alt; ?>">
-        <?php endif; ?>
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="about-banner__text about-banner__text--acenter">
-                <div class="main-general__title main-general__title--event">
-                    <?php the_content(); ?>
+<div id="event">
 
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="main-event__banner--mobile d-lg-none  d-block">
+        <div class="about-banner page-eventos">
+            <?php if ($mobile) : ?>
+            <img itemprop="img" src="<?php echo get_field('banner_mobile'); ?>" alt="<?php echo $alt; ?>">
+            <?php else : ?>
+            <img itemprop="img"
+                srcset="<?php echo get_field('banner_mobile'); ?> 1024w, <?php echo the_post_thumbnail_url(); ?> 1920w,"
+                alt="<?php echo $alt; ?>"><img itemprop="image" src="<?php the_post_thumbnail_url() ?>"
+                alt="<?php echo $alt; ?>">
+            <?php endif; ?>
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="about-banner__text about-banner__text--acenter">
+                    <div class="main-general__title main-general__title--event">
+                        <?php the_content(); ?>
+
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="main-why__item">
+            <p class="format format--gray d-lg-none  d-block">¿Estás pensando celebrar tu grado, hacer una fiesta de
+                cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a celebrar contigo!
+                Poke es
+                una opción de catering ideal para cualquier evento por la gran variedad de opciones para tus invitados y
+                la
+                simplicidad de ejecución. ¡Déjanos tus datos y te contactaremos muy pronto!</p>
+            <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
+        </div>
     </div>
-    <div class="main-why__item">
-        <p class="format format--gray d-lg-none  d-block">¿Estás pensando celebrar tu grado, hacer una fiesta de
-            cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a celebrar contigo! Poke es
-            una opción de catering ideal para cualquier evento por la gran variedad de opciones para tus invitados y la
-            simplicidad de ejecución. ¡Déjanos tus datos y te contactaremos muy pronto!</p>
-        <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
-    </div>
-</div>
-<div class="main-event__banner--desktop d-none d-lg-block d-md-none">
-    <div class="main-about main-about__mt">
-        <div class="mask"></div>
-        <div class="main-about__contentimg main-event__img-bg">
-            <img src="<?php the_post_thumbnail_url() ?>" alt="">
-            <div class="container">
-                <div class="main-why__content">
-                    <div class="main-why__item"></div>
-                    <div class="main-why__item main-why__item--event">
-                        <div class="main-general__title main-general__title--event">
-                            <?php the_content(); ?>
-                            <!--  <p class="format format--white">Déjanos tus datos, te llamaremos.</p> -->
+    <div class="main-event__banner--desktop d-none d-lg-block d-md-none">
+        <div class="main-about main-about__mt">
+            <div class="mask"></div>
+            <div class="main-about__contentimg main-event__img-bg">
+                <img src="<?php the_post_thumbnail_url() ?>" alt="">
+                <div class="container">
+                    <div class="main-why__content">
+                        <div class="main-why__item"></div>
+                        <div class="main-why__item main-why__item--event">
+                            <div class="main-general__title main-general__title--event">
+                                <?php the_content(); ?>
+                                <!--  <p class="format format--white">Déjanos tus datos, te llamaremos.</p> -->
+                            </div>
+                            <hr class="line-gray line--white">
+                            <div class="main-event__text-mobile">
+                                <p class="format format--white">¿Estás pensando celebrar tu grado, hacer una fiesta de
+                                    cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a
+                                    celebrar contigo! Poke es una opción de catering ideal para cualquier evento por la
+                                    gran
+                                    variedad de opciones para tus invitados y la simplicidad de ejecución. ¡Déjanos tus
+                                    datos y te contactaremos muy pronto!</p>
+                            </div>
+                            <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
                         </div>
-                        <hr class="line-gray line--white">
-                        <div class="main-event__text-mobile">
-                            <p class="format format--white">¿Estás pensando celebrar tu grado, hacer una fiesta de
-                                cumpleaños, o invitar a tus amigos más cercanos en un evento en casa? ¡Invítanos a
-                                celebrar contigo! Poke es una opción de catering ideal para cualquier evento por la gran
-                                variedad de opciones para tus invitados y la simplicidad de ejecución. ¡Déjanos tus
-                                datos y te contactaremos muy pronto!</p>
-                        </div>
-                        <?php echo do_shortcode('[contact-form-7 id="261" title="Eventos"]'); ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <?php endwhile;
+  endif; ?>
 </div>
-<?php endwhile;
-endif; ?>
 <?php get_footer(); ?>
